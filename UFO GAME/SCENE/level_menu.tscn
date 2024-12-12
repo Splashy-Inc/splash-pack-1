@@ -1,0 +1,210 @@
+[gd_scene load_steps=5 format=3 uid="uid://dmoo4c7qouxv3"]
+
+[ext_resource type="PackedScene" uid="uid://cmpnk5y6o83rw" path="res://SCENE/bg.tscn" id="1_cxny6"]
+[ext_resource type="Script" path="res://SCRIPTS/level_menu.gd" id="1_o8ow0"]
+[ext_resource type="Texture2D" uid="uid://cjvw16el77bmo" path="res://ASSETS/TRACKS/Background2.64X64.png" id="2_7wenh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3bkuj"]
+line_spacing = 1.0
+font_size = 40
+font_color = Color(0.87451, 0.415686, 0.184314, 1)
+outline_size = 5
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
+
+[node name="LevelMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o8ow0")
+
+[node name="BG" parent="." instance=ExtResource("1_cxny6")]
+bg_texture = ExtResource("2_7wenh")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.5
+offset_top = -215.5
+offset_right = 59.5
+offset_bottom = -160.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Levels"
+label_settings = SubResource("LabelSettings_3bkuj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LevelButton_01" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 200.0
+offset_top = -131.0
+offset_right = 275.0
+offset_bottom = -95.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Level 1"
+
+[node name="LevelButton_02" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 200.0
+offset_top = -42.0
+offset_right = 275.0
+offset_bottom = -6.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Level 2"
+
+[node name="LevelButton_03" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 200.0
+offset_top = 48.0
+offset_right = 275.0
+offset_bottom = 84.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Level 3"
+
+[node name="LevelButton_04" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 200.0
+offset_top = 135.0
+offset_right = 275.0
+offset_bottom = 171.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Level 4"
+
+[node name="LevelButton_05" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 200.0
+offset_top = 215.0
+offset_right = 275.0
+offset_bottom = 251.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Level 5"
+
+[node name="LevelButton_06" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -276.0
+offset_top = -131.0
+offset_right = -201.0
+offset_bottom = -95.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Level 6"
+
+[node name="LevelButton_07" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -276.0
+offset_top = -42.0
+offset_right = -197.0
+offset_bottom = -6.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Level 7
+"
+
+[node name="LevelButton_08" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -276.0
+offset_top = 48.0
+offset_right = -201.0
+offset_bottom = 84.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Level 8"
+
+[node name="LevelButton_09" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -276.0
+offset_top = 135.0
+offset_right = -201.0
+offset_bottom = 171.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Level 9"
+
+[node name="LevelButton_10" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -276.0
+offset_top = 215.0
+offset_right = -189.0
+offset_bottom = 251.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Level 10"
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 23.0
+offset_right = 97.0
+offset_bottom = 59.0
+theme_override_font_sizes/font_size = 20
+text = "BACK"
+
+[connection signal="pressed" from="LevelButton_01" to="." method="_on_level_button_01_pressed"]
+[connection signal="pressed" from="LevelButton_02" to="." method="_on_level_button_02_pressed"]
+[connection signal="pressed" from="LevelButton_03" to="." method="_on_level_button_03_pressed"]
+[connection signal="pressed" from="LevelButton_04" to="." method="_on_level_button_04_pressed"]
+[connection signal="pressed" from="LevelButton_05" to="." method="_on_level_button_05_pressed"]
+[connection signal="pressed" from="LevelButton_06" to="." method="_on_level_button_06_pressed"]
+[connection signal="pressed" from="LevelButton_07" to="." method="_on_level_button_07_pressed"]
+[connection signal="pressed" from="LevelButton_08" to="." method="_on_level_button_08_pressed"]
+[connection signal="pressed" from="LevelButton_09" to="." method="_on_level_button_09_pressed"]
+[connection signal="pressed" from="LevelButton_10" to="." method="_on_level_button_10_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

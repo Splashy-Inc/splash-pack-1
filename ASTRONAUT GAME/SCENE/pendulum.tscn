@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=3 uid="uid://b3p7fpgpq0eoa"]
+
+[ext_resource type="Script" path="res://SCRIPTS/pendulum.gd" id="1_pq0w2"]
+[ext_resource type="Texture2D" uid="uid://bvwt8ddtu514k" path="res://ASSETS/Other/Pendulum.png" id="2_nedx7"]
+
+[sub_resource type="Animation" id="Animation_6q7c4"]
+resource_name = "swing"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0472, 0.0, -1.0472]
+}
+
+[sub_resource type="Animation" id="Animation_u83ma"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.785398]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eb21x"]
+_data = {
+"RESET": SubResource("Animation_u83ma"),
+"swing": SubResource("Animation_6q7c4")
+}
+
+[node name="Pendulum" type="Node2D" groups=["traps"]]
+script = ExtResource("1_pq0w2")
+
+[node name="Area2D" type="Area2D" parent="."]
+z_index = -10
+rotation = -0.785398
+collision_layer = 8
+collision_mask = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(0, 30)
+texture = ExtResource("2_nedx7")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(0, 30)
+polygon = PackedVector2Array(-10, 20, 10, 20, 10, 23, 9, 23, 9, 26, 8, 26, 8, 27, 7, 27, 7, 28, 6, 28, 6, 29, 5, 29, 5, 30, 2, 30, 2, 31, -2, 31, -2, 30, -5, 30, -5, 29, -6, 29, -6, 28, -7, 28, -7, 27, -8, 27, -8, 26, -9, 26, -9, 23, -10, 23)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_eb21x")
+}
+autoplay = "swing"
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

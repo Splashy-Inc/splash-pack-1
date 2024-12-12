@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://d0fhxtivg7sha"]
+
+[ext_resource type="Script" path="res://SCRIPTS/trap.gd" id="1_kxohp"]
+[ext_resource type="Texture2D" uid="uid://bsdoxsankuufu" path="res://ASSETS/Other/SpikeWallA.png" id="1_ohb3j"]
+[ext_resource type="Texture2D" uid="uid://1mvujq6w770h" path="res://ASSETS/Other/SpikeWallB.png" id="2_qnn1p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cpgu7"]
+size = Vector2(8, 57)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qe8e0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ohb3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qnn1p")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="SpikeWall" type="Node2D" groups=["traps"]]
+script = ExtResource("1_kxohp")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_cpgu7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+sprite_frames = SubResource("SpriteFrames_qe8e0")
+autoplay = "default"
+frame_progress = 0.707473
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

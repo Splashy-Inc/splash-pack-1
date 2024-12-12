@@ -1,0 +1,63 @@
+[gd_scene load_steps=11 format=3 uid="uid://c7vn3hjp4lgwr"]
+
+[ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_0es3l"]
+[ext_resource type="PackedScene" uid="uid://c41dpbcmfxs52" path="res://SCENE/bg_2.tscn" id="1_r0gyp"]
+[ext_resource type="PackedScene" uid="uid://cr7yr8g5qigr2" path="res://SCENE/TrackScene/track_3.tscn" id="2_2ofva"]
+[ext_resource type="PackedScene" uid="uid://bqcfrxm21lxa1" path="res://SCENE/player.tscn" id="2_5qrop"]
+[ext_resource type="PackedScene" uid="uid://dxk2rnv61gg2c" path="res://SCENE/level_4.tscn" id="2_ickei"]
+[ext_resource type="PackedScene" uid="uid://dwvh6tkxy5h0x" path="res://SCENE/start.tscn" id="5_erbhr"]
+[ext_resource type="PackedScene" uid="uid://c5bcnnxo1vige" path="res://SCENE/ui_layer.tscn" id="5_h01ys"]
+[ext_resource type="PackedScene" uid="uid://b7kd42vp1cap2" path="res://SCENE/exit.tscn" id="7_56t0m"]
+[ext_resource type="PackedScene" uid="uid://b312dkg3bdpq5" path="res://SCENE/speed_boost.tscn" id="8_4wubq"]
+[ext_resource type="PackedScene" uid="uid://c2oxd5gviwrqd" path="res://SCENE/satellite.tscn" id="9_qfjdm"]
+
+[node name="level3" type="Node2D"]
+script = ExtResource("1_0es3l")
+next_level = ExtResource("2_ickei")
+
+[node name="bg2" parent="." instance=ExtResource("1_r0gyp")]
+
+[node name="Track3" parent="." instance=ExtResource("2_2ofva")]
+z_index = -10
+scale = Vector2(2, 2)
+
+[node name="UILayer" parent="." instance=ExtResource("5_h01ys")]
+
+[node name="LevelLabel" parent="UILayer/HUD" index="0"]
+text = "LEVEL: 3
+"
+
+[node name="player" parent="." node_paths=PackedStringArray("start") instance=ExtResource("2_5qrop")]
+position = Vector2(-104, 2057)
+start = NodePath("../Interactables/Start")
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+
+[node name="Interactables" type="Node" parent="."]
+
+[node name="Start" parent="Interactables" instance=ExtResource("5_erbhr")]
+position = Vector2(72, 2077)
+
+[node name="Exit" parent="Interactables" instance=ExtResource("7_56t0m")]
+position = Vector2(2190, 1281)
+
+[node name="SpeedBoost_01" parent="Interactables" instance=ExtResource("8_4wubq")]
+position = Vector2(926, 1303)
+rotation = -2.47488
+
+[node name="SpeedBoost_02" parent="Interactables" instance=ExtResource("8_4wubq")]
+position = Vector2(3636, 1164)
+rotation = 0.66148
+
+[node name="SpeedBoost_03" parent="Interactables" instance=ExtResource("8_4wubq")]
+position = Vector2(1731, 1261)
+rotation = -2.31431
+
+[node name="Satellite_01" parent="Interactables" instance=ExtResource("9_qfjdm")]
+position = Vector2(2325, 79)
+
+[node name="Satellite_02" parent="Interactables" instance=ExtResource("9_qfjdm")]
+position = Vector2(2843, 2045)
+
+[editable path="UILayer"]
+[editable path="UILayer/HUD"]

@@ -1,0 +1,77 @@
+[gd_scene load_steps=10 format=3 uid="uid://cp3kjiywwu83x"]
+
+[ext_resource type="Script" path="res://SCRIPTS/jump_pad.gd" id="1_blivp"]
+[ext_resource type="Texture2D" uid="uid://ck22tiv3pqr4b" path="res://ASSETS/Other/JumpPadA.png" id="2_gq1fs"]
+[ext_resource type="Texture2D" uid="uid://dbfvl4jbkqsbn" path="res://ASSETS/Other/JumpPadC.png" id="3_5y56x"]
+[ext_resource type="Texture2D" uid="uid://bg1ysn7pu86k8" path="res://ASSETS/Other/JumpPadD.png" id="4_fourm"]
+[ext_resource type="Texture2D" uid="uid://l4vuupix8dvb" path="res://ASSETS/Other/JumpPadE.png" id="5_pmuel"]
+[ext_resource type="Texture2D" uid="uid://6e6t8bnb3y2d" path="res://ASSETS/Other/JumpPadF.png" id="6_wjg4p"]
+[ext_resource type="Texture2D" uid="uid://c835t84g1wg7r" path="res://ASSETS/Other/JumpPadB.png" id="7_lnwnt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d4v88"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gq1fs")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gq1fs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5y56x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fourm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pmuel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wjg4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pmuel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fourm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5y56x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_lnwnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gq1fs")
+}],
+"loop": false,
+"name": &"jump_animation",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3d7my"]
+size = Vector2(39, 3)
+
+[node name="jumpPad" type="Area2D"]
+z_index = -10
+collision_mask = 2
+script = ExtResource("1_blivp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -32)
+sprite_frames = SubResource("SpriteFrames_d4v88")
+animation = &"jump_animation"
+autoplay = "idle"
+frame = 9
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, -10.5)
+shape = SubResource("RectangleShape2D_3d7my")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

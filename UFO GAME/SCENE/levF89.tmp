@@ -1,0 +1,45 @@
+[gd_scene load_steps=9 format=3 uid="uid://ct0rc8ej615xj"]
+
+[ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_f87td"]
+[ext_resource type="PackedScene" uid="uid://cmpnk5y6o83rw" path="res://SCENE/bg.tscn" id="3_6gaif"]
+[ext_resource type="PackedScene" uid="uid://bqcfrxm21lxa1" path="res://SCENE/player.tscn" id="3_x4ln5"]
+[ext_resource type="PackedScene" uid="uid://b312dkg3bdpq5" path="res://SCENE/speed_boost.tscn" id="4_gjmoe"]
+[ext_resource type="PackedScene" uid="uid://c1kdj1ccsr8y6" path="res://SCENE/star.tscn" id="5_7llwe"]
+[ext_resource type="PackedScene" uid="uid://c2oxd5gviwrqd" path="res://SCENE/satellite.tscn" id="6_prxbx"]
+[ext_resource type="PackedScene" uid="uid://bp3e2ja8l" path="res://SCENE/asteroid.tscn" id="7_peg54"]
+[ext_resource type="PackedScene" uid="uid://bd0xoq8a7ccg8" path="res://SCENE/comet.tscn" id="8_fayc7"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_f87td")
+
+[node name="BG" parent="." instance=ExtResource("3_6gaif")]
+
+[node name="StartPosition" type="Marker2D" parent="."]
+position = Vector2(100, 95)
+
+[node name="player" parent="." instance=ExtResource("3_x4ln5")]
+position = Vector2(95, 98)
+
+[node name="Interactables" type="Node" parent="."]
+
+[node name="SpeedBoost" parent="Interactables" instance=ExtResource("4_gjmoe")]
+position = Vector2(524, 99)
+rotation = -1.5708
+
+[node name="Star" parent="Interactables" instance=ExtResource("5_7llwe")]
+position = Vector2(852, 422)
+
+[node name="Satellite" parent="Interactables" instance=ExtResource("6_prxbx")]
+position = Vector2(105, 434)
+
+[node name="Asteroid" parent="Interactables" instance=ExtResource("7_peg54")]
+position = Vector2(322, 431)
+
+[node name="Comet" parent="Interactables" instance=ExtResource("8_fayc7")]
+position = Vector2(598, 407)
+
+[connection signal="touched_player" from="Interactables/SpeedBoost" to="." method="_on_speed_boost_touched_player"]
+[connection signal="touched_player" from="Interactables/Star" to="." method="_on_star_touched_player"]
+[connection signal="touched_player" from="Interactables/Satellite" to="." method="_on_satellite_touched_player"]
+[connection signal="touched_player" from="Interactables/Asteroid" to="." method="_on_asteroid_touched_player"]
+[connection signal="touched_player" from="Interactables/Comet" to="." method="_on_comet_touched_player"]

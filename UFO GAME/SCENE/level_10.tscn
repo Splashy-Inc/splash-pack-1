@@ -1,0 +1,118 @@
+[gd_scene load_steps=13 format=3 uid="uid://bf4sdo3a5vxwh"]
+
+[ext_resource type="PackedScene" uid="uid://c41dpbcmfxs52" path="res://SCENE/bg_2.tscn" id="1_eyjyc"]
+[ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_q6w24"]
+[ext_resource type="PackedScene" uid="uid://bqcfrxm21lxa1" path="res://SCENE/player.tscn" id="2_0lx3y"]
+[ext_resource type="PackedScene" uid="uid://6ft0fpryo1p5" path="res://SCENE/TrackScene/track_10.tscn" id="2_db2k6"]
+[ext_resource type="PackedScene" uid="uid://dwvh6tkxy5h0x" path="res://SCENE/start.tscn" id="5_2b0rn"]
+[ext_resource type="PackedScene" uid="uid://c5bcnnxo1vige" path="res://SCENE/ui_layer.tscn" id="5_15nsy"]
+[ext_resource type="PackedScene" uid="uid://b7kd42vp1cap2" path="res://SCENE/exit.tscn" id="7_vi2lq"]
+[ext_resource type="PackedScene" uid="uid://b312dkg3bdpq5" path="res://SCENE/speed_boost.tscn" id="8_avwwv"]
+[ext_resource type="PackedScene" uid="uid://c2oxd5gviwrqd" path="res://SCENE/satellite.tscn" id="9_acox1"]
+[ext_resource type="PackedScene" uid="uid://bp3e2ja8l" path="res://SCENE/asteroid.tscn" id="10_x2t3i"]
+[ext_resource type="PackedScene" uid="uid://c1kdj1ccsr8y6" path="res://SCENE/star.tscn" id="11_00tj2"]
+[ext_resource type="PackedScene" uid="uid://bd0xoq8a7ccg8" path="res://SCENE/comet.tscn" id="12_3mb8y"]
+
+[node name="level10" type="Node2D"]
+script = ExtResource("1_q6w24")
+is_final_level = true
+
+[node name="bg2" parent="." instance=ExtResource("1_eyjyc")]
+
+[node name="Track10" parent="." instance=ExtResource("2_db2k6")]
+z_index = -10
+scale = Vector2(2, 2)
+
+[node name="UILayer" parent="." instance=ExtResource("5_15nsy")]
+
+[node name="LevelLabel" parent="UILayer/HUD" index="0"]
+text = "LEVEL: 10"
+
+[node name="player" parent="." node_paths=PackedStringArray("start") instance=ExtResource("2_0lx3y")]
+position = Vector2(-74, 1229)
+start = NodePath("../Interactables/Start")
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+
+[node name="Interactables" type="Node" parent="."]
+
+[node name="Start" parent="Interactables" instance=ExtResource("5_2b0rn")]
+position = Vector2(75, 1155)
+
+[node name="Exit" parent="Interactables" instance=ExtResource("7_vi2lq")]
+position = Vector2(513, 1621)
+
+[node name="SpeedBoost_01" parent="Interactables" instance=ExtResource("8_avwwv")]
+position = Vector2(521, 638)
+rotation = -2.0944
+
+[node name="Satellite_01" parent="Interactables" instance=ExtResource("9_acox1")]
+position = Vector2(1252, 1740)
+
+[node name="Asteroid_01" parent="Interactables" instance=ExtResource("10_x2t3i")]
+position = Vector2(2207, 121)
+rotation = -2.5604
+
+[node name="Asteroid_02" parent="Interactables" instance=ExtResource("10_x2t3i")]
+position = Vector2(2280, 557)
+rotation = -2.21133
+
+[node name="Asteroid_03" parent="Interactables" instance=ExtResource("10_x2t3i")]
+position = Vector2(2478, 538)
+
+[node name="Asteroid_04" parent="Interactables" instance=ExtResource("10_x2t3i")]
+position = Vector2(2122, 312)
+
+[node name="Asteroid_05" parent="Interactables" instance=ExtResource("10_x2t3i")]
+position = Vector2(2286, 386)
+rotation = -2.44346
+
+[node name="Asteroid_06" parent="Interactables" instance=ExtResource("10_x2t3i")]
+position = Vector2(1826, 116)
+rotation = -0.863938
+
+[node name="Asteroid_07" parent="Interactables" instance=ExtResource("10_x2t3i")]
+position = Vector2(3502, 1324)
+rotation = -2.67559
+
+[node name="Asteroid_08" parent="Interactables" instance=ExtResource("10_x2t3i")]
+position = Vector2(3461, 1491)
+
+[node name="Asteroid_09" parent="Interactables" instance=ExtResource("10_x2t3i")]
+position = Vector2(3500, 1627)
+rotation = -2.39983
+
+[node name="Asteroid_10" parent="Interactables" instance=ExtResource("10_x2t3i")]
+position = Vector2(3661, 1508)
+rotation = 1.37008
+
+[node name="Asteroid_11" parent="Interactables" instance=ExtResource("10_x2t3i")]
+position = Vector2(3313, 1262)
+rotation = -2.90946
+
+[node name="Asteroid_12" parent="Interactables" instance=ExtResource("10_x2t3i")]
+position = Vector2(3379, 1111)
+
+[node name="Star_01" parent="Interactables" instance=ExtResource("11_00tj2")]
+position = Vector2(2568, 1571)
+
+[node name="Star_02" parent="Interactables" instance=ExtResource("11_00tj2")]
+position = Vector2(2285, 1571)
+
+[node name="Star_03" parent="Interactables" instance=ExtResource("11_00tj2")]
+position = Vector2(2245, 1908)
+
+[node name="Comet_01" parent="Interactables" instance=ExtResource("12_3mb8y")]
+position = Vector2(3677, 1312)
+rotation = 1.56207
+
+[node name="Comet_02" parent="Interactables" instance=ExtResource("12_3mb8y")]
+position = Vector2(3345, -157)
+rotation = -1.32296
+
+[node name="Comet_03" parent="Interactables" instance=ExtResource("12_3mb8y")]
+position = Vector2(2362, 42)
+rotation = -1.54287
+
+[editable path="UILayer"]
+[editable path="UILayer/HUD"]

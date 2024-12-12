@@ -1,0 +1,110 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0bdhkxhkgqr8"]
+
+[ext_resource type="Script" path="res://SCRIPTS/levels_menu.gd" id="1_iwb1a"]
+[ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://SCENE/BG.tscn" id="1_qrqwm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_iadxd"]
+font_size = 20
+font_color = Color(1, 0.956863, 0.678431, 1)
+outline_size = 5
+outline_color = Color(0.858824, 0.603922, 0.34902, 1)
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="LabelSettings" id="LabelSettings_h8owi"]
+font_size = 20
+font_color = Color(1, 0.956863, 0.678431, 1)
+outline_size = 5
+outline_color = Color(0.858824, 0.603922, 0.34902, 1)
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
+
+[node name="LevelsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iwb1a")
+
+[node name="BG" parent="." instance=ExtResource("1_qrqwm")]
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 230.0
+offset_right = 57.0
+offset_bottom = 261.0
+text = "Back"
+
+[node name="StorylineLevels" type="Label" parent="."]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 10.0
+offset_right = 176.0
+offset_bottom = 38.0
+text = "Storyline Levels"
+label_settings = SubResource("LabelSettings_iadxd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BonusLevels" type="Label" parent="."]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 10.0
+offset_right = 449.0
+offset_bottom = 38.0
+text = "Bonus Levels"
+label_settings = SubResource("LabelSettings_h8owi")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="B_L_1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 59.0
+offset_right = 344.0
+offset_bottom = 90.0
+text = "B.L.1"
+
+[node name="B_L_2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 100.0
+offset_right = 344.0
+offset_bottom = 131.0
+text = "B.L.2"
+
+[node name="B_L_3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 140.0
+offset_right = 344.0
+offset_bottom = 171.0
+text = "B.L.3"
+
+[node name="B_L_4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 178.0
+offset_right = 344.0
+offset_bottom = 209.0
+text = "B.L.4"
+
+[node name="B_L_5" type="Button" parent="."]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 215.0
+offset_right = 344.0
+offset_bottom = 246.0
+text = "B.L.5"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="B_L_1" to="." method="_on_b_l_1_pressed"]
+[connection signal="pressed" from="B_L_2" to="." method="_on_b_l_2_pressed"]
+[connection signal="pressed" from="B_L_3" to="." method="_on_b_l_3_pressed"]
+[connection signal="pressed" from="B_L_4" to="." method="_on_b_l_4_pressed"]
+[connection signal="pressed" from="B_L_5" to="." method="_on_b_l_5_pressed"]

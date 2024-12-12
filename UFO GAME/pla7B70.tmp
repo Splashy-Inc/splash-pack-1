@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnvyqcboq6sy5"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_667mt"]
+[ext_resource type="Texture2D" uid="uid://bymrbnoxdrspi" path="res://SplashShip.png" id="1_u517l"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b1tu8"]
+radius = 47.0956
+
+[node name="Player" type="RigidBody2D"]
+position = Vector2(960, 540)
+gravity_scale = 0.0
+script = ExtResource("1_667mt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_u517l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
+position = Vector2(1, 2)
+shape = SubResource("CircleShape2D_b1tu8")

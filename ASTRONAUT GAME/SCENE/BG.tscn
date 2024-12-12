@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1n78tt1oejk8"]
+
+[ext_resource type="Script" path="res://SCRIPTS/BG.gd" id="1_p3s6g"]
+[ext_resource type="Texture2D" uid="uid://c157vltpr0vgo" path="res://ASSETS/Background/Terrain/DesertSky.png" id="2_frh6m"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_p3s6g")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(640, 640)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture_repeat = 3
+texture = ExtResource("2_frh6m")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 640, 640)

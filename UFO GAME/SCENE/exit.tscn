@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7kd42vp1cap2"]
+
+[ext_resource type="PackedScene" uid="uid://cy2t33egs2uq7" path="res://SCENE/blackhole.tscn" id="1_g3imy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0b1rm"]
+radius = 7.0
+
+[node name="Exit" type="Area2D"]
+z_index = -50
+collision_layer = 9
+collision_mask = 2
+
+[node name="blackhole" parent="." instance=ExtResource("1_g3imy")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("CircleShape2D_0b1rm")

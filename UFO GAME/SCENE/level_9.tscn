@@ -1,0 +1,90 @@
+[gd_scene load_steps=14 format=3 uid="uid://bmypw6pbllf6s"]
+
+[ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_q1k3t"]
+[ext_resource type="PackedScene" uid="uid://c41dpbcmfxs52" path="res://SCENE/bg_2.tscn" id="2_kaiqv"]
+[ext_resource type="PackedScene" uid="uid://cu57iocv5n2g5" path="res://SCENE/TrackScene/track_9.tscn" id="2_ol6r1"]
+[ext_resource type="PackedScene" uid="uid://bf4sdo3a5vxwh" path="res://SCENE/level_10.tscn" id="2_ua1uk"]
+[ext_resource type="PackedScene" uid="uid://bqcfrxm21lxa1" path="res://SCENE/player.tscn" id="2_ycgqp"]
+[ext_resource type="PackedScene" uid="uid://c5bcnnxo1vige" path="res://SCENE/ui_layer.tscn" id="5_bkki5"]
+[ext_resource type="PackedScene" uid="uid://dwvh6tkxy5h0x" path="res://SCENE/start.tscn" id="5_mfuvs"]
+[ext_resource type="PackedScene" uid="uid://b7kd42vp1cap2" path="res://SCENE/exit.tscn" id="7_ke104"]
+[ext_resource type="PackedScene" uid="uid://b312dkg3bdpq5" path="res://SCENE/speed_boost.tscn" id="8_0b0a7"]
+[ext_resource type="PackedScene" uid="uid://c2oxd5gviwrqd" path="res://SCENE/satellite.tscn" id="9_crdyt"]
+[ext_resource type="PackedScene" uid="uid://c1kdj1ccsr8y6" path="res://SCENE/star.tscn" id="11_nxf74"]
+[ext_resource type="PackedScene" uid="uid://bd0xoq8a7ccg8" path="res://SCENE/comet.tscn" id="12_vb2r2"]
+[ext_resource type="PackedScene" uid="uid://bp3e2ja8l" path="res://SCENE/asteroid.tscn" id="13_cldap"]
+
+[node name="level9" type="Node2D"]
+script = ExtResource("1_q1k3t")
+next_level = ExtResource("2_ua1uk")
+
+[node name="bg2" parent="." instance=ExtResource("2_kaiqv")]
+
+[node name="Track9" parent="." instance=ExtResource("2_ol6r1")]
+z_index = -10
+scale = Vector2(2, 2)
+
+[node name="UILayer" parent="." instance=ExtResource("5_bkki5")]
+
+[node name="LevelLabel" parent="UILayer/HUD" index="0"]
+text = "LEVEL: 9"
+
+[node name="player" parent="." node_paths=PackedStringArray("start") instance=ExtResource("2_ycgqp")]
+position = Vector2(-76, 570)
+start = NodePath("../Interactables/Start")
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+
+[node name="Interactables" type="Node" parent="."]
+
+[node name="Start" parent="Interactables" instance=ExtResource("5_mfuvs")]
+position = Vector2(68, 572)
+
+[node name="Exit" parent="Interactables" instance=ExtResource("7_ke104")]
+position = Vector2(62, 926)
+
+[node name="SpeedBoost_01" parent="Interactables" instance=ExtResource("8_0b0a7")]
+position = Vector2(731, 101)
+rotation = -1.5708
+
+[node name="SpeedBoost_02" parent="Interactables" instance=ExtResource("8_0b0a7")]
+position = Vector2(2550, 146)
+rotation = -1.23918
+
+[node name="SpeedBoost_03" parent="Interactables" instance=ExtResource("8_0b0a7")]
+position = Vector2(2784, 2005)
+rotation = 2.15548
+
+[node name="Satellite_01" parent="Interactables" instance=ExtResource("9_crdyt")]
+position = Vector2(3049, 1137)
+
+[node name="Star_01" parent="Interactables" instance=ExtResource("11_nxf74")]
+position = Vector2(979, 2042)
+
+[node name="Comet_01" parent="Interactables" instance=ExtResource("12_vb2r2")]
+position = Vector2(4005, 990)
+
+[node name="Asteroid_01" parent="Interactables" instance=ExtResource("13_cldap")]
+position = Vector2(1534, 38)
+rotation = 1.09956
+
+[node name="Asteroid_02" parent="Interactables" instance=ExtResource("13_cldap")]
+position = Vector2(1558, 330)
+rotation = -1.97746
+
+[node name="Asteroid_03" parent="Interactables" instance=ExtResource("13_cldap")]
+position = Vector2(1971, 368)
+
+[node name="Asteroid_04" parent="Interactables" instance=ExtResource("13_cldap")]
+position = Vector2(1734, 424)
+rotation = 2.67559
+
+[node name="Asteroid_05" parent="Interactables" instance=ExtResource("13_cldap")]
+position = Vector2(1797, 284)
+rotation = -2.90946
+
+[node name="Asteroid_06" parent="Interactables" instance=ExtResource("13_cldap")]
+position = Vector2(1986, 501)
+
+[editable path="UILayer"]
+[editable path="UILayer/HUD"]

@@ -1,0 +1,75 @@
+[gd_scene load_steps=8 format=3 uid="uid://cwbjb0hiu4icf"]
+
+[ext_resource type="Script" path="res://SCENE/trap_door.gd" id="1_gf7xn"]
+[ext_resource type="Texture2D" uid="uid://b5d0rxcpqx7s0" path="res://ASSETS/Background/Terrain/DesertShelf.png" id="1_siii0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pyla0"]
+size = Vector2(64, 2.5)
+
+[sub_resource type="Animation" id="Animation_70juv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_ydqir"]
+resource_name = "idle"
+
+[sub_resource type="Animation" id="Animation_pn8lv"]
+resource_name = "swingopen"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 1.5708, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ktdpg"]
+_data = {
+"RESET": SubResource("Animation_70juv"),
+"idle": SubResource("Animation_ydqir"),
+"swingopen": SubResource("Animation_pn8lv")
+}
+
+[node name="TrapDoor" type="RigidBody2D"]
+collision_mask = 2
+gravity_scale = 0.0
+script = ExtResource("1_gf7xn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(32, 32)
+texture = ExtResource("1_siii0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(32, 2.25)
+shape = SubResource("RectangleShape2D_pyla0")
+one_way_collision = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ktdpg")
+}
+autoplay = "idle"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

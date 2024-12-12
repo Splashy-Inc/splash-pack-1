@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnshcfaeu5hcx"]
+
+[ext_resource type="Texture2D" uid="uid://bs0edw2h1ywhs" path="res://ASSETS/Other/StartAnchor.png" id="1_m5py3"]
+[ext_resource type="Script" path="res://SCRIPTS/start.gd" id="1_m0640"]
+
+[node name="Start" type="Node2D"]
+script = ExtResource("1_m0640")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -16)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_m5py3")
+
+[node name="SpawnPosition" type="Marker2D" parent="."]
+position = Vector2(0, -29)

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwvh6tkxy5h0x"]
+
+[ext_resource type="PackedScene" uid="uid://cy2t33egs2uq7" path="res://SCENE/blackhole.tscn" id="1_bfywe"]
+[ext_resource type="Script" path="res://SCRIPTS/start.gd" id="1_ytgjj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3wf57"]
+radius = 24.0208
+
+[node name="Start" type="StaticBody2D"]
+collision_layer = 0
+script = ExtResource("1_ytgjj")
+
+[node name="blackhole" parent="." instance=ExtResource("1_bfywe")]
+z_index = -50
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 4
+z_index = -50
+position = Vector2(0, -2)
+shape = SubResource("CircleShape2D_3wf57")
+
+[node name="SpawnPosition" type="Marker2D" parent="."]
+z_index = -9

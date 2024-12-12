@@ -1,0 +1,55 @@
+[gd_scene load_steps=10 format=3 uid="uid://dafv8rjqv3hoo"]
+
+[ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_ew48j"]
+[ext_resource type="PackedScene" uid="uid://c125273w2lmtg" path="res://SCENE/level_2.tscn" id="2_7mj4m"]
+[ext_resource type="PackedScene" uid="uid://c41dpbcmfxs52" path="res://SCENE/bg_2.tscn" id="2_mh6ye"]
+[ext_resource type="PackedScene" uid="uid://bqcfrxm21lxa1" path="res://SCENE/player.tscn" id="3_j0dph"]
+[ext_resource type="PackedScene" uid="uid://bl2qfvltga4dc" path="res://SCENE/TrackScene/track_1.tscn" id="4_0548k"]
+[ext_resource type="PackedScene" uid="uid://c5bcnnxo1vige" path="res://SCENE/ui_layer.tscn" id="4_dlygr"]
+[ext_resource type="PackedScene" uid="uid://dwvh6tkxy5h0x" path="res://SCENE/start.tscn" id="5_bvn07"]
+[ext_resource type="PackedScene" uid="uid://b7kd42vp1cap2" path="res://SCENE/exit.tscn" id="7_ipipb"]
+[ext_resource type="PackedScene" uid="uid://b312dkg3bdpq5" path="res://SCENE/speed_boost.tscn" id="8_x11tn"]
+
+[node name="level1" type="Node2D"]
+script = ExtResource("1_ew48j")
+next_level = ExtResource("2_7mj4m")
+
+[node name="bg2" parent="." instance=ExtResource("2_mh6ye")]
+
+[node name="UILayer" parent="." instance=ExtResource("4_dlygr")]
+
+[node name="Track1" parent="." instance=ExtResource("4_0548k")]
+z_index = -10
+position = Vector2(-3, -490)
+scale = Vector2(2, 2)
+
+[node name="player" parent="." node_paths=PackedStringArray("start") instance=ExtResource("3_j0dph")]
+position = Vector2(182, 128)
+start = NodePath("../Interactables/Start")
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(0, 5)
+
+[node name="Interactables" type="Node" parent="."]
+
+[node name="Start" parent="Interactables" instance=ExtResource("5_bvn07")]
+position = Vector2(83, 394)
+
+[node name="Exit" parent="Interactables" instance=ExtResource("7_ipipb")]
+position = Vector2(81, 738)
+
+[node name="SpeedBoost_01" parent="Interactables" instance=ExtResource("8_x11tn")]
+position = Vector2(919, 128)
+rotation = -1.87448
+
+[node name="SpeedBoost_02" parent="Interactables" instance=ExtResource("8_x11tn")]
+position = Vector2(2911, -161)
+rotation = -0.881391
+
+[node name="SpeedBoost_03" parent="Interactables" instance=ExtResource("8_x11tn")]
+position = Vector2(3531, 762)
+rotation = 0.881391
+
+[node name="SpeedBoost_04" parent="Interactables" instance=ExtResource("8_x11tn")]
+position = Vector2(2250, 1461)
+rotation = 1.76453

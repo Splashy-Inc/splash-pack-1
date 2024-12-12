@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c41dpbcmfxs52"]
+
+[ext_resource type="Texture2D" uid="uid://bnwww8i5nif8q" path="res://ASSETS/TRACKS/Background64X64.png" id="1_3tlra"]
+
+[node name="bg2" type="CanvasLayer"]
+layer = -10
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -129.0
+offset_top = -60.0
+offset_right = 1117.0
+offset_bottom = 677.0
+texture = ExtResource("1_3tlra")
+stretch_mode = 1

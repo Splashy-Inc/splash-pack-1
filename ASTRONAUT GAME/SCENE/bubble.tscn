@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://ckra64lrageiy"]
+
+[ext_resource type="Texture2D" uid="uid://djwi7mkwim2bp" path="res://ASSETS/Other/BubbleA.png" id="1_0ktl1"]
+[ext_resource type="Texture2D" uid="uid://dxb8l708b1ror" path="res://ASSETS/Other/BubbleB.png" id="2_8o7rh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ysj8y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0ktl1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8o7rh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rgr1v"]
+size = Vector2(49, 1)
+
+[node name="Bubble" type="RigidBody2D"]
+gravity_scale = 0.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ysj8y")
+autoplay = "default"
+frame_progress = 0.692984
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 31.5)
+shape = SubResource("RectangleShape2D_rgr1v")
+one_way_collision = true

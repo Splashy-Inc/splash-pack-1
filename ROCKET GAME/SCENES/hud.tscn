@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=3 uid="uid://dg5bjrwdd0x71"]
+
+[ext_resource type="Script" path="res://SCRIPTS/hud.gd" id="1_mir7y"]
+[ext_resource type="Texture2D" uid="uid://bg8w8056ydpkc" path="res://ASSETS/SplishLife.png" id="2_66hcs"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8dine"]
+font_size = 48
+outline_size = 10
+outline_color = Color(0.0431373, 0.0431373, 0.0431373, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_byqsh"]
+font_size = 36
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ihplj"]
+font_size = 48
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mir7y")
+
+[node name="SCORE" type="Label" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 25.0
+offset_right = 317.0
+offset_bottom = 92.0
+text = "SCORE: 9999"
+label_settings = SubResource("LabelSettings_8dine")
+
+[node name="X" type="Label" parent="."]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 104.0
+offset_right = 149.0
+offset_bottom = 171.0
+text = "X"
+label_settings = SubResource("LabelSettings_byqsh")
+
+[node name="LifeTextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 100.0
+offset_right = 86.0
+offset_bottom = 152.0
+texture = ExtResource("2_66hcs")
+
+[node name="LivesLeft" type="Label" parent="."]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 96.0
+offset_right = 204.0
+offset_bottom = 163.0
+text = "99"
+label_settings = SubResource("LabelSettings_ihplj")

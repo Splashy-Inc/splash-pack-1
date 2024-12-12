@@ -1,0 +1,54 @@
+[gd_scene load_steps=13 format=3 uid="uid://diro1r53mvxfi"]
+
+[ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_upu77"]
+[ext_resource type="PackedScene" uid="uid://cy5yig72udp4a" path="res://SCENE/BL2.tscn" id="2_keby3"]
+[ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://SCENE/BG.tscn" id="3_wbx0j"]
+[ext_resource type="PackedScene" uid="uid://com54dlwngvg2" path="res://SCENE/ui_layer.tscn" id="4_7aibj"]
+[ext_resource type="PackedScene" uid="uid://cnshcfaeu5hcx" path="res://SCENE/start.tscn" id="5_hd7bg"]
+[ext_resource type="PackedScene" uid="uid://0v5wypgl6sop" path="res://SCENE/exit.tscn" id="6_mv358"]
+[ext_resource type="PackedScene" uid="uid://de5ui441h8jdk" path="res://SCENE/player.tscn" id="7_55ywp"]
+[ext_resource type="PackedScene" uid="uid://cksr5brjbu80q" path="res://SCENE/death_zone.tscn" id="8_rioi4"]
+[ext_resource type="PackedScene" uid="uid://bt7sgvg3lc4ly" path="res://SCENE/saw.tscn" id="9_v7isq"]
+[ext_resource type="PackedScene" uid="uid://dyp2m5krd85j6" path="res://SCENE/cactus.tscn" id="10_y6ay0"]
+[ext_resource type="PackedScene" uid="uid://cp3kjiywwu83x" path="res://SCENE/jump_pad.tscn" id="11_etv6k"]
+[ext_resource type="PackedScene" uid="uid://b7s2kk15xecal" path="res://SCENE/tile_map_O1.tscn" id="12_2q0to"]
+
+[node name="BL1" type="Node2D"]
+script = ExtResource("1_upu77")
+next_level = ExtResource("2_keby3")
+
+[node name="BackgroundO" parent="." instance=ExtResource("3_wbx0j")]
+
+[node name="UILayer" parent="." instance=ExtResource("4_7aibj")]
+
+[node name="Start" parent="." instance=ExtResource("5_hd7bg")]
+z_index = -100
+position = Vector2(12, 224)
+
+[node name="Exit" parent="." instance=ExtResource("6_mv358")]
+z_index = -50
+position = Vector2(452, 224)
+
+[node name="Player" parent="." instance=ExtResource("7_55ywp")]
+position = Vector2(231, 105)
+collision_mask = 5
+
+[node name="DeathZone" parent="." instance=ExtResource("8_rioi4")]
+position = Vector2(-229, 0)
+scale = Vector2(2, 1)
+
+[node name="Traps" type="Node2D" parent="."]
+
+[node name="saw" parent="Traps" instance=ExtResource("9_v7isq")]
+position = Vector2(291, 161)
+
+[node name="cactus" parent="Traps" instance=ExtResource("10_y6ay0")]
+position = Vector2(409, 223)
+
+[node name="Objects" type="Node2D" parent="."]
+
+[node name="jumpPad" parent="Objects" instance=ExtResource("11_etv6k")]
+position = Vector2(319, 139)
+
+[node name="TileMap" parent="." instance=ExtResource("12_2q0to")]
+layer_0/tile_data = PackedInt32Array(983040, 1, 1, 983041, 65537, 1, 983042, 131073, 1, 983043, 196609, 1, 983044, 1, 1, 983045, 65537, 1, 983046, 131073, 1, 983049, 1, 1, 983050, 65537, 1, 983051, 131073, 1, 983052, 196609, 1, 851982, 1, 3, 786447, 1, 3, 720912, 1, 1, 983053, 1, 2, 983054, 65537, 2, 983055, 131073, 2, 983056, 1, 2, 983057, 65537, 2, 983058, 131073, 2, 983059, 196609, 2, 983060, 1, 2, 983061, 65537, 2, 983062, 131073, 2, 983063, 196609, 2, 917518, 65537, 1, 917519, 131073, 1, 917520, 1, 1, 917521, 65537, 1, 851983, 65537, 3, 851984, 1, 3, 851985, 65537, 3, 851986, 131073, 3, 917522, 131073, 1, 917523, 196609, 1, 917524, 1, 1, 917525, 65537, 1, 917526, 131073, 1, 917527, 196609, 1, 851987, 196609, 3, 851988, 1, 3, 851989, 65537, 3, 851990, 131073, 3, 851991, 196609, 3, 786448, 1, 2, 786449, 65537, 2, 786450, 131073, 2, 786451, 196609, 2, 720913, 65537, 1, 720914, 131073, 1, 720915, 196609, 1, 720916, 1, 1, 786452, 1, 2, 720917, 65537, 1, 786453, 65537, 2, 720918, 131073, 1, 786454, 131073, 2, 720919, 196609, 1, 786455, 196609, 2, 983064, 1, 1, 983065, 65537, 1, 983066, 131073, 1, 983067, 196609, 1, 983068, 65537, 1, 983069, 1, 1, 524307, 0, 3, 524308, 65536, 3, 524309, 0, 3, 524306, 65536, 3, 917517, 1, 1, 917504, 1, 0, 917505, 65537, 0, 917506, 131073, 0, 917507, 196609, 0, 917508, 1, 0, 917509, 65537, 0, 917510, 131073, 0, 917513, 1, 0, 917514, 65537, 0, 917515, 131073, 0, 917516, 196609, 0, 851981, 65537, 0, 786446, 65537, 0, 720911, 65537, 0, 655376, 65537, 0, 655377, 65537, 0, 655378, 131073, 0, 655379, 196609, 0, 655380, 1, 0, 655381, 65537, 0, 655382, 131073, 0, 655383, 196609, 0, 917528, 1, 0, 917529, 65537, 0, 917530, 131073, 0, 917531, 196609, 0, 917532, 65537, 0, 917533, 1, 0)

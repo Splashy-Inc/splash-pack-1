@@ -1,0 +1,168 @@
+[gd_scene load_steps=15 format=3 uid="uid://id6tv0fprkeu"]
+
+[ext_resource type="Texture2D" uid="uid://caub5rv0wf6y5" path="res://ASSETS/IntroBackground.png" id="1_ji0mt"]
+[ext_resource type="Script" path="res://SCENE/into_scene.gd" id="1_r55il"]
+[ext_resource type="Texture2D" uid="uid://c5v8vnuv1g6gb" path="res://ASSETS/PLAYER/SplashShip.png" id="3_df6jl"]
+[ext_resource type="Texture2D" uid="uid://4ddomrrrlhic" path="res://ASSETS/PLAYER/SplashShipA.png" id="4_jclvy"]
+[ext_resource type="Texture2D" uid="uid://et442pc8yiew" path="res://ASSETS/PLAYER/SplashShipB.png" id="5_5tcbr"]
+[ext_resource type="Texture2D" uid="uid://b3ggwm72nruvx" path="res://ASSETS/PLAYER/SplashShipD.png" id="6_tpti6"]
+[ext_resource type="Texture2D" uid="uid://dn2x67q1dagfq" path="res://ASSETS/PLAYER/SplashShipF.png" id="7_if253"]
+[ext_resource type="Texture2D" uid="uid://citi377bitu4w" path="res://ASSETS/PLAYER/SplashShipH.png" id="8_vassn"]
+[ext_resource type="Texture2D" uid="uid://ddiwmx7e3agtq" path="res://ASSETS/fish_watercolor_neutral.png" id="9_u7oet"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vnpfl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_df6jl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jclvy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5tcbr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tpti6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_if253")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vassn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_vxg4k"]
+resource_name = "splashy_spiral"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Splashy/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-106, 287), Vector2(1099, 461), Vector2(137, -80), Vector2(245, 214)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Splashy/Sprite:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(1, 1), Vector2(1.5, 1.5)]
+}
+
+[sub_resource type="Animation" id="Animation_ea1tq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Splashy/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1099, 461)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Splashy/Sprite:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yjivs"]
+_data = {
+"RESET": SubResource("Animation_ea1tq"),
+"splashy_spiral": SubResource("Animation_vxg4k")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_t548a"]
+line_spacing = 1.0
+font_size = 18
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[node name="IntoScene" type="CanvasLayer"]
+script = ExtResource("1_r55il")
+
+[node name="BG" type="TextureRect" parent="."]
+texture = ExtResource("1_ji0mt")
+
+[node name="Splashy" type="Node" parent="."]
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Splashy"]
+position = Vector2(1099, 461)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_vnpfl")
+autoplay = "default"
+frame_progress = 0.47556
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Splashy"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_yjivs")
+}
+
+[node name="Dialog" type="PanelContainer" parent="."]
+visible = false
+offset_top = 352.0
+offset_right = 960.0
+offset_bottom = 540.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Dialog"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Spacer" type="Container" parent="Dialog/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Dialog/HBoxContainer"]
+custom_minimum_size = Vector2(592, 188)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Whew! Glad your escape pod made it out ok.
+
+It looks like the ship crash landed on Kromulon in sector SF-298. You'll have to follow the series of flight paths through several wormholes to get there...
+
+Good luck out there, Splorsh!"
+label_settings = SubResource("LabelSettings_t548a")
+autowrap_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Dialog/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("9_u7oet")
+expand_mode = 3
+flip_h = true
+
+[node name="Button" type="Button" parent="."]
+visible = false
+offset_left = 850.0
+offset_top = 300.0
+offset_right = 946.0
+offset_bottom = 336.0
+theme_override_font_sizes/font_size = 20
+text = "Continue"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

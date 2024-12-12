@@ -1,0 +1,85 @@
+[gd_scene load_steps=9 format=3 uid="uid://bd0xoq8a7ccg8"]
+
+[ext_resource type="Script" path="res://SCRIPTS/comet.gd" id="1_xhdko"]
+[ext_resource type="Texture2D" uid="uid://c4x70ojfx5lea" path="res://ASSETS/INTERACTABLES/CometA.png" id="2_kjc4y"]
+[ext_resource type="Texture2D" uid="uid://deuehbpg2huam" path="res://ASSETS/INTERACTABLES/CometB.png" id="3_m3nwl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_in7j4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_kjc4y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_m3nwl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_s5i0j"]
+radius = 23.6008
+
+[sub_resource type="Animation" id="Animation_jvun4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_xurti"]
+resource_name = "move"
+length = 2.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1000, 1000)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qasxl"]
+_data = {
+"RESET": SubResource("Animation_jvun4"),
+"move": SubResource("Animation_xurti")
+}
+
+[node name="Comet" type="Node2D"]
+script = ExtResource("1_xhdko")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+sprite_frames = SubResource("SpriteFrames_in7j4")
+autoplay = "default"
+frame_progress = 0.63175
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-16, 18)
+rotation = -1.41023
+shape = SubResource("CircleShape2D_s5i0j")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_qasxl")
+}
+autoplay = "move"
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

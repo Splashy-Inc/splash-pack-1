@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2oxd5gviwrqd"]
+
+[ext_resource type="Texture2D" uid="uid://dkto0rukrb5h1" path="res://ASSETS/INTERACTABLES/Satalite.png" id="2_01hwt"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g4rcn"]
+
+[node name="Satellite" type="RigidBody2D"]
+collision_layer = 4
+collision_mask = 6
+mass = 2.0
+physics_material_override = SubResource("PhysicsMaterial_g4rcn")
+gravity_scale = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_01hwt")
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(1, -19.6, 3, -18.6, 3, -10, 3.7, -8, 4.4, -8, 8, -4.4, 8, -1.3, 14.7, 11, 12.5, 11, 9.5, 15, 7.4, 15, 5.2, 17.2, 4, 16.7, 4, 15.5, 0, 12.5, 0, 10.4, -2, 8.4, -2, 5.3, -5, 1.3, -5, -4.8, -5.6, -6, -6.4, -6, -12, -10.5, -12, -13.4, -5.4, -20, -4, -20, -4, -21, 1, -21)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-12, -0.5, -9, 1.5, -9, 8.4, -11.6, 11, -13.7, 11, -29.7, 23, -33.4, 23, -40, 16.4, -40, 13, -38.5, 13, -31.4, 7, -29.3, 7, -18, -0.5, -18, -2, -12, -2)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(41, -26.5, 44, -24.5, 44, -22.4, 45.2, -21.2, 44.7, -20, 43.3, -20, 31.3, -11, 29.3, -11, 23, -7.4, 23, -6.6, 21.4, -5, 14, -5, 14, -6.5, 11, -8.5, 11, -13, 12.4, -13, 13.4, -15, 15.7, -15, 36, -26.6, 36, -28, 41, -28)
