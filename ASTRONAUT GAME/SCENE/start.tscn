@@ -1,10 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://cnshcfaeu5hcx"]
+[gd_scene load_steps=4 format=3 uid="uid://cnshcfaeu5hcx"]
 
 [ext_resource type="Texture2D" uid="uid://bs0edw2h1ywhs" path="res://ASSETS/Other/StartAnchor.png" id="1_m5py3"]
 [ext_resource type="Script" path="res://SCRIPTS/start.gd" id="1_m0640"]
+[ext_resource type="Texture2D" uid="uid://ctu3hgpb54j1a" path="res://ASSETS/Other/StartTunnel.png" id="2_rp281"]
 
 [node name="Start" type="Node2D"]
 script = ExtResource("1_m0640")
+
+[node name="StartTunnel" type="Sprite2D" parent="."]
+position = Vector2(8, -32)
+texture = ExtResource("2_rp281")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -16)

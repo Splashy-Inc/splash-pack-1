@@ -10,6 +10,21 @@
 [ext_resource type="PackedScene" uid="uid://b7s2kk15xecal" path="res://SCENE/tile_map_O1.tscn" id="8_kbi16"]
 [ext_resource type="PackedScene" uid="uid://ckra64lrageiy" path="res://SCENE/bubble.tscn" id="8_rxba8"]
 
+[sub_resource type="Animation" id="Animation_oqlvj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(327, 176)]
+}
+
 [sub_resource type="Animation" id="Animation_tkohn"]
 resource_name = "new_animation"
 length = 2.0
@@ -25,21 +40,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector2(318, 176), Vector2(318, 176), Vector2(318, 19)]
-}
-
-[sub_resource type="Animation" id="Animation_oqlvj"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(327, 176)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6nusb"]
