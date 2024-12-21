@@ -1,0 +1,31 @@
+[gd_scene load_steps=9 format=3 uid="uid://bdwubm8uoqty3"]
+
+[ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_0fg3d"]
+[ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://SCENE/BG.tscn" id="2_r40e8"]
+[ext_resource type="PackedScene" uid="uid://com54dlwngvg2" path="res://SCENE/ui_layer.tscn" id="3_6vudl"]
+[ext_resource type="PackedScene" uid="uid://cnshcfaeu5hcx" path="res://SCENE/start.tscn" id="4_11s64"]
+[ext_resource type="PackedScene" uid="uid://0v5wypgl6sop" path="res://SCENE/exit.tscn" id="5_8j44i"]
+[ext_resource type="PackedScene" uid="uid://de5ui441h8jdk" path="res://SCENE/player.tscn" id="6_onhj6"]
+[ext_resource type="PackedScene" uid="uid://cksr5brjbu80q" path="res://SCENE/death_zone.tscn" id="7_ul1hk"]
+[ext_resource type="PackedScene" uid="uid://b7s2kk15xecal" path="res://SCENE/tile_map_O1.tscn" id="8_g3f8y"]
+
+[node name="Level_09" type="Node2D"]
+script = ExtResource("1_0fg3d")
+
+[node name="BG" parent="." instance=ExtResource("2_r40e8")]
+
+[node name="UILayer" parent="." instance=ExtResource("3_6vudl")]
+
+[node name="Start" parent="." instance=ExtResource("4_11s64")]
+
+[node name="Exit" parent="." instance=ExtResource("5_8j44i")]
+
+[node name="Player" parent="." instance=ExtResource("6_onhj6")]
+
+[node name="DeathZone" parent="." instance=ExtResource("7_ul1hk")]
+
+[node name="Traps" type="Node" parent="."]
+
+[node name="Objects" type="Node" parent="."]
+
+[node name="TileMap" parent="." instance=ExtResource("8_g3f8y")]

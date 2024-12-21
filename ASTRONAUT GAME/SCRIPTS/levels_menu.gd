@@ -5,32 +5,32 @@ func _on_back_button_pressed():
 
 #STORYLINE LEVEL BUTTONS
 
-func _on_level_01_pressed() -> void:
-	pass # Replace with function body.
+func _on_level_01_pressed():
+	get_tree().change_scene_to_file("res://SCENE/level_1.tscn")
 
-func _on_level_02_pressed() -> void:
-	pass # Replace with function body.
+func _on_level_02_pressed():
+	get_tree().change_scene_to_file("res://SCENE/level_02.tscn")
 
-func _on_level_03_pressed() -> void:
-	pass # Replace with function body.
+func _on_level_03_pressed():
+	get_tree().change_scene_to_file("res://SCENE/level_03.tscn")
 
 func _on_level_04_pressed():
 	get_tree().change_scene_to_file("res://SCENE/level_4.tscn")
 
-func _on_level_05_pressed() -> void:
-	pass # Replace with function body.
+func _on_level_05_pressed():
+	get_tree().change_scene_to_file("res://SCENE/level_05.tscn")
 
-func _on_level_06_pressed() -> void:
-	pass # Replace with function body.
+func _on_level_06_pressed():
+	get_tree().change_scene_to_file("res://SCENE/level_06.tscn")
 
-func _on_level_07_pressed() -> void:
-	pass # Replace with function body.
+func _on_level_07_pressed():
+	get_tree().change_scene_to_file("res://SCENE/level_07.tscn")
 
-func _on_level_08_pressed() -> void:
-	pass # Replace with function body.
+func _on_level_08_pressed():
+	get_tree().change_scene_to_file("res://SCENE/level_08.tscn")
 
-func _on_level_09_pressed() -> void:
-	pass # Replace with function body.
+func _on_level_09_pressed():
+	get_tree().change_scene_to_file("res://SCENE/level_09.tscn")
 
 
 #BONUS LEVEL BUTTONS

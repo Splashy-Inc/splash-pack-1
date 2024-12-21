@@ -332,7 +332,7 @@ sources/9 = SubResource("TileSetAtlasSource_xgvn4")
 sources/10 = SubResource("TileSetAtlasSource_mtqtu")
 sources/11 = SubResource("TileSetAtlasSource_s0pr2")
 
-[node name="Level4" type="Node2D"]
+[node name="Level_04" type="Node2D"]
 script = ExtResource("1_wlnn5")
 
 [node name="BG" parent="." instance=ExtResource("1_ryt7c")]
@@ -344,7 +344,6 @@ position = Vector2(94, 369)
 
 [node name="Exit" parent="." instance=ExtResource("4_vp7bh")]
 position = Vector2(1888, -127)
-scale = Vector2(0.5, 0.5)
 
 [node name="Player" parent="." instance=ExtResource("5_e6pn2")]
 position = Vector2(97, 272)
