@@ -28,6 +28,13 @@ func _physics_process(delta):
 	
 	velocity.x = direction * speed
 	move_and_slide()
+	var collision = get_last_slide_collision()
+	if collision:
+		var collider = collision.get_collider()
+	
+		if collider.has_method("drop"):
+			collider.drop()
+	
 	
 	updated_animation(direction)
 	
