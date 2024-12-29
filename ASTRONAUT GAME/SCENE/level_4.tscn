@@ -1,7 +1,8 @@
-[gd_scene load_steps=32 format=4 uid="uid://w4hv7utmdr0h"]
+[gd_scene load_steps=33 format=4 uid="uid://w4hv7utmdr0h"]
 
 [ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://SCENE/BG.tscn" id="1_ryt7c"]
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_wlnn5"]
+[ext_resource type="PackedScene" uid="uid://c51kgjlmi2swh" path="res://SCENE/level_05.tscn" id="2_1h515"]
 [ext_resource type="PackedScene" uid="uid://com54dlwngvg2" path="res://SCENE/ui_layer.tscn" id="2_ao8f6"]
 [ext_resource type="PackedScene" uid="uid://cnshcfaeu5hcx" path="res://SCENE/start.tscn" id="3_3lqi2"]
 [ext_resource type="PackedScene" uid="uid://0v5wypgl6sop" path="res://SCENE/exit.tscn" id="4_vp7bh"]
@@ -334,6 +335,7 @@ sources/11 = SubResource("TileSetAtlasSource_s0pr2")
 
 [node name="Level_04" type="Node2D"]
 script = ExtResource("1_wlnn5")
+next_level = ExtResource("2_1h515")
 
 [node name="BG" parent="." instance=ExtResource("1_ryt7c")]
 

@@ -11,24 +11,26 @@ extends Node2D
 
 var player = null
 
-@export var level_time = 999 
+@export var level_time = 60 
 var timer_node = null
 var time_left 
 var win = false
 
 func _ready():
 	player = get_tree().get_first_node_in_group("player")
-	if player != null:
+	if player != null and start != null:
 		player.global_position = start.get_spawn_posistion()
 	var traps =  get_tree().get_nodes_in_group("traps")
 	for trap in traps: 
 		trap.touched_player.connect(_on_saw_touched_player)
 		
 	exit.body_entered.connect(_on_exit_body_entered)
-	death_zone.body_entered.connect(_on_death_zone_body_entered)
+	if death_zone != null:
+		death_zone.body_entered.connect(_on_death_zone_body_entered)
 	
 	time_left = level_time
-	hud.set_time_label(time_left)
+	if hud != null:
+		hud.set_time_label(time_left)
 	
 	timer_node = Timer.new()
 	timer_node.name = "Level Timer"
@@ -38,12 +40,13 @@ func _ready():
 	timer_node.start()
 
 func _on_level_timer_timeout():
-	if win == false:
-		time_left -= 1
-		if time_left < 0:
-			reset_player()
-			time_left = level_time
-		hud.set_time_label(time_left)
+	if hud != null:
+		if win == false:
+			time_left -= 1
+			if time_left < 0:
+				reset_player()
+				time_left = level_time
+			hud.set_time_label(time_left)
 	
 func _process(delta):
 	if Input.is_action_just_pressed("quit"):
