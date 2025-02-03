@@ -13,7 +13,7 @@ config_version=5
 config/name="Splashy Fish IN SPACE"
 run/main_scene="res://SCENE/into_scene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-boot_splash/image="res://SplashySplashScreen.png"
+boot_splash/image="res://Splashy Inc. CleanedUp.png"
 boot_splash/fullsize=false
 config/icon="res://ASSETS/PLAYER/SplashShipF.png"
 
