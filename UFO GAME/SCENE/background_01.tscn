@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5aeo451sdwy"]
+
+[ext_resource type="Texture2D" uid="uid://dcnm2oh23amfn" path="res://ASSETS/BACKGROUNDS/SpaceBGNavy.png" id="1_a7ufm"]
+[ext_resource type="Texture2D" uid="uid://dyoivygkt2bk2" path="res://ASSETS/BACKGROUNDS/StarsWhite.png" id="2_3k4v1"]
+[ext_resource type="Texture2D" uid="uid://kves6iw2glol" path="res://ASSETS/BACKGROUNDS/SpaceFlareYellow2.png" id="3_fdeex"]
+
+[node name="Background_01" type="Node2D"]
+z_index = -15
+
+[node name="Background" type="Parallax2D" parent="."]
+repeat_size = Vector2(1280, 720)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+texture = ExtResource("1_a7ufm")
+
+[node name="Stars" type="Parallax2D" parent="."]
+repeat_size = Vector2(1280, 720)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="Stars"]
+texture = ExtResource("2_3k4v1")
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(243, 608)
+rotation = 0.551524
+texture = ExtResource("3_fdeex")

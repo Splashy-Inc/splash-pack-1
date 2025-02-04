@@ -1,11 +1,11 @@
 [gd_scene load_steps=13 format=3 uid="uid://cs5pvahf38qdw"]
 
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_f87td"]
-[ext_resource type="PackedScene" uid="uid://c41dpbcmfxs52" path="res://SCENE/bg_2.tscn" id="2_vo3i1"]
 [ext_resource type="PackedScene" uid="uid://co77vqbj8tbj4" path="res://SCENE/start_menu.tscn" id="2_xlx54"]
 [ext_resource type="PackedScene" uid="uid://bqcfrxm21lxa1" path="res://SCENE/player.tscn" id="3_x4ln5"]
 [ext_resource type="PackedScene" uid="uid://b312dkg3bdpq5" path="res://SCENE/speed_boost.tscn" id="4_gjmoe"]
 [ext_resource type="PackedScene" uid="uid://c5bcnnxo1vige" path="res://SCENE/ui_layer.tscn" id="4_rcgn7"]
+[ext_resource type="PackedScene" uid="uid://c5aeo451sdwy" path="res://SCENE/background_01.tscn" id="4_tsayv"]
 [ext_resource type="PackedScene" uid="uid://c1kdj1ccsr8y6" path="res://SCENE/star.tscn" id="5_7llwe"]
 [ext_resource type="PackedScene" uid="uid://c2oxd5gviwrqd" path="res://SCENE/satellite.tscn" id="6_prxbx"]
 [ext_resource type="PackedScene" uid="uid://bp3e2ja8l" path="res://SCENE/asteroid.tscn" id="7_peg54"]
@@ -17,7 +17,7 @@
 script = ExtResource("1_f87td")
 next_level = ExtResource("2_xlx54")
 
-[node name="bg2" parent="." instance=ExtResource("2_vo3i1")]
+[node name="Background_01" parent="." instance=ExtResource("4_tsayv")]
 
 [node name="UILayer" parent="." instance=ExtResource("4_rcgn7")]
 

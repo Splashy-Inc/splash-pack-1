@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_ew48j"]
 [ext_resource type="PackedScene" uid="uid://c125273w2lmtg" path="res://SCENE/level_2.tscn" id="2_7mj4m"]
-[ext_resource type="PackedScene" uid="uid://c41dpbcmfxs52" path="res://SCENE/bg_2.tscn" id="2_mh6ye"]
 [ext_resource type="PackedScene" uid="uid://bqcfrxm21lxa1" path="res://SCENE/player.tscn" id="3_j0dph"]
+[ext_resource type="PackedScene" uid="uid://c5aeo451sdwy" path="res://SCENE/background_01.tscn" id="3_tu8hl"]
 [ext_resource type="PackedScene" uid="uid://bl2qfvltga4dc" path="res://SCENE/TrackScene/track_1.tscn" id="4_0548k"]
 [ext_resource type="PackedScene" uid="uid://c5bcnnxo1vige" path="res://SCENE/ui_layer.tscn" id="4_dlygr"]
 [ext_resource type="PackedScene" uid="uid://dwvh6tkxy5h0x" path="res://SCENE/start.tscn" id="5_bvn07"]
@@ -14,7 +14,7 @@
 script = ExtResource("1_ew48j")
 next_level = ExtResource("2_7mj4m")
 
-[node name="bg2" parent="." instance=ExtResource("2_mh6ye")]
+[node name="Background_01" parent="." instance=ExtResource("3_tu8hl")]
 
 [node name="UILayer" parent="." instance=ExtResource("4_dlygr")]
 
