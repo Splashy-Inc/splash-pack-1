@@ -15,7 +15,7 @@ run/main_scene="res://SCENE/into_scene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/image="res://Splashy Inc. CleanedUp.png"
 boot_splash/fullsize=false
-config/icon="res://ASSETS/PLAYER/SplashShipF.png"
+config/icon="res://SplorshIcon.png"
 
 [autoload]
 

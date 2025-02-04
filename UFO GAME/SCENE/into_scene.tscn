@@ -1,35 +1,29 @@
-[gd_scene load_steps=15 format=3 uid="uid://id6tv0fprkeu"]
+[gd_scene load_steps=9 format=3 uid="uid://id6tv0fprkeu"]
 
 [ext_resource type="Texture2D" uid="uid://caub5rv0wf6y5" path="res://ASSETS/IntroBackground.png" id="1_ji0mt"]
 [ext_resource type="Script" path="res://SCENE/into_scene.gd" id="1_r55il"]
-[ext_resource type="Texture2D" uid="uid://c5v8vnuv1g6gb" path="res://ASSETS/PLAYER/SplashShip.png" id="3_df6jl"]
-[ext_resource type="Texture2D" uid="uid://4ddomrrrlhic" path="res://ASSETS/PLAYER/SplashShipA.png" id="4_jclvy"]
-[ext_resource type="Texture2D" uid="uid://et442pc8yiew" path="res://ASSETS/PLAYER/SplashShipB.png" id="5_5tcbr"]
-[ext_resource type="Texture2D" uid="uid://b3ggwm72nruvx" path="res://ASSETS/PLAYER/SplashShipD.png" id="6_tpti6"]
-[ext_resource type="Texture2D" uid="uid://dn2x67q1dagfq" path="res://ASSETS/PLAYER/SplashShipF.png" id="7_if253"]
-[ext_resource type="Texture2D" uid="uid://citi377bitu4w" path="res://ASSETS/PLAYER/SplashShipH.png" id="8_vassn"]
 [ext_resource type="Texture2D" uid="uid://ddiwmx7e3agtq" path="res://ASSETS/fish_watercolor_neutral.png" id="9_u7oet"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vnpfl"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_df6jl")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_jclvy")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_5tcbr")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_tpti6")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_if253")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_vassn")
+"texture": null
 }],
 "loop": true,
 "name": &"default",
