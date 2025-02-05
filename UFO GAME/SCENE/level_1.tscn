@@ -20,36 +20,35 @@ next_level = ExtResource("2_7mj4m")
 
 [node name="Track1" parent="." instance=ExtResource("4_0548k")]
 z_index = -10
-position = Vector2(-3, -490)
+position = Vector2(-1489, -550)
 scale = Vector2(2, 2)
-
-[node name="player" parent="." node_paths=PackedStringArray("start") instance=ExtResource("3_j0dph")]
-position = Vector2(182, 128)
-start = NodePath("../Interactables/Start")
-
-[node name="Camera2D" type="Camera2D" parent="player"]
-position = Vector2(0, 5)
 
 [node name="Interactables" type="Node" parent="."]
 
 [node name="Start" parent="Interactables" instance=ExtResource("5_bvn07")]
-position = Vector2(83, 394)
+position = Vector2(-522, 646)
 
 [node name="Exit" parent="Interactables" instance=ExtResource("7_ipipb")]
-position = Vector2(81, 738)
+position = Vector2(1405, 440)
 
 [node name="SpeedBoost_01" parent="Interactables" instance=ExtResource("8_x11tn")]
-position = Vector2(919, 128)
-rotation = -1.87448
+position = Vector2(-532, 404)
+rotation = 3.14159
 
 [node name="SpeedBoost_02" parent="Interactables" instance=ExtResource("8_x11tn")]
-position = Vector2(2911, -161)
-rotation = -0.881391
+position = Vector2(498, 1531)
+rotation = -1.5708
 
 [node name="SpeedBoost_03" parent="Interactables" instance=ExtResource("8_x11tn")]
-position = Vector2(3531, 762)
-rotation = 0.881391
+position = Vector2(156, 1067)
+rotation = -1.5708
 
 [node name="SpeedBoost_04" parent="Interactables" instance=ExtResource("8_x11tn")]
-position = Vector2(2250, 1461)
-rotation = 1.76453
+position = Vector2(16, -244)
+rotation = -1.5708
+
+[node name="player" parent="." instance=ExtResource("3_j0dph")]
+position = Vector2(-527, 779)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(0, 5)
