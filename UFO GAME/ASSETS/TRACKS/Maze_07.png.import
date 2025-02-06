@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckxlpbvu1wkia"
-path="res://.godot/imported/BackGround.png-47b2aeb113e25c555188e9b4db3ba9b1.ctex"
+uid="uid://5cp43ev7b0w"
+path="res://.godot/imported/Maze_07.png-b892d2e0c527f388c01fbfd3733ef869.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/TRACKS/BackGround.png"
-dest_files=["res://.godot/imported/BackGround.png-47b2aeb113e25c555188e9b4db3ba9b1.ctex"]
+source_file="res://ASSETS/TRACKS/Maze_07.png"
+dest_files=["res://.godot/imported/Maze_07.png-b892d2e0c527f388c01fbfd3733ef869.ctex"]
 
 [params]
 

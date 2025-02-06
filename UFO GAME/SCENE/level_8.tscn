@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://c3x0canppkjx8" path="res://SCENE/TrackScene/track_8.tscn" id="2_8yk8j"]
 [ext_resource type="PackedScene" uid="uid://bmypw6pbllf6s" path="res://SCENE/level_9.tscn" id="2_11ni5"]
 [ext_resource type="PackedScene" uid="uid://bqcfrxm21lxa1" path="res://SCENE/player.tscn" id="2_crotv"]
-[ext_resource type="PackedScene" uid="uid://c41dpbcmfxs52" path="res://SCENE/bg_2.tscn" id="3_ndllg"]
+[ext_resource type="PackedScene" uid="uid://c5aeo451sdwy" path="res://SCENE/background_01.tscn" id="3_up40f"]
 [ext_resource type="PackedScene" uid="uid://c5bcnnxo1vige" path="res://SCENE/ui_layer.tscn" id="5_e16xr"]
 [ext_resource type="PackedScene" uid="uid://dwvh6tkxy5h0x" path="res://SCENE/start.tscn" id="5_m8n8h"]
 [ext_resource type="PackedScene" uid="uid://b7kd42vp1cap2" path="res://SCENE/exit.tscn" id="7_np5dv"]
@@ -17,7 +17,7 @@
 script = ExtResource("1_kelch")
 next_level = ExtResource("2_11ni5")
 
-[node name="bg2" parent="." instance=ExtResource("3_ndllg")]
+[node name="Background_01" parent="." instance=ExtResource("3_up40f")]
 
 [node name="Track8" parent="." instance=ExtResource("2_8yk8j")]
 z_index = -10

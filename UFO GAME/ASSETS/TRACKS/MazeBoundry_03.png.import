@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwmbqalvknmdk"
-path="res://.godot/imported/Track1.png-d1287b3707e985682706c22b21cb9afc.ctex"
+uid="uid://dxvoqo017kfa0"
+path="res://.godot/imported/MazeBoundry_03.png-806f87a92f6f8ae942aa93210c951695.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/TRACKS/Track1.png"
-dest_files=["res://.godot/imported/Track1.png-d1287b3707e985682706c22b21cb9afc.ctex"]
+source_file="res://ASSETS/TRACKS/MazeBoundry_03.png"
+dest_files=["res://.godot/imported/MazeBoundry_03.png-806f87a92f6f8ae942aa93210c951695.ctex"]
 
 [params]
 

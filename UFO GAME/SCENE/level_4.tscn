@@ -1,10 +1,10 @@
 [gd_scene load_steps=11 format=3 uid="uid://dxk2rnv61gg2c"]
 
-[ext_resource type="PackedScene" uid="uid://c41dpbcmfxs52" path="res://SCENE/bg_2.tscn" id="1_f22wi"]
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_mj3fc"]
 [ext_resource type="PackedScene" uid="uid://bjcm8cqkewblj" path="res://SCENE/level_5.tscn" id="2_8gsrs"]
 [ext_resource type="PackedScene" uid="uid://c1ykao2wdv80q" path="res://SCENE/TrackScene/track_4.tscn" id="2_epwv5"]
 [ext_resource type="PackedScene" uid="uid://bqcfrxm21lxa1" path="res://SCENE/player.tscn" id="2_je36t"]
+[ext_resource type="PackedScene" uid="uid://c5aeo451sdwy" path="res://SCENE/background_01.tscn" id="3_etrxf"]
 [ext_resource type="PackedScene" uid="uid://dwvh6tkxy5h0x" path="res://SCENE/start.tscn" id="5_6wb3q"]
 [ext_resource type="PackedScene" uid="uid://c5bcnnxo1vige" path="res://SCENE/ui_layer.tscn" id="5_wjlby"]
 [ext_resource type="PackedScene" uid="uid://b7kd42vp1cap2" path="res://SCENE/exit.tscn" id="7_xj84n"]
@@ -15,7 +15,7 @@
 script = ExtResource("1_mj3fc")
 next_level = ExtResource("2_8gsrs")
 
-[node name="bg2" parent="." instance=ExtResource("1_f22wi")]
+[node name="Background_01" parent="." instance=ExtResource("3_etrxf")]
 
 [node name="Track4" parent="." instance=ExtResource("2_epwv5")]
 z_index = -10

@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dmoo4c7qouxv3"]
+[gd_scene load_steps=4 format=3 uid="uid://dmoo4c7qouxv3"]
 
-[ext_resource type="PackedScene" uid="uid://cmpnk5y6o83rw" path="res://SCENE/bg.tscn" id="1_cxny6"]
 [ext_resource type="Script" path="res://SCRIPTS/level_menu.gd" id="1_o8ow0"]
-[ext_resource type="Texture2D" uid="uid://cjvw16el77bmo" path="res://ASSETS/TRACKS/Background2.64X64.png" id="2_7wenh"]
+[ext_resource type="PackedScene" uid="uid://cpw7abbnhi66m" path="res://SCENE/bg_menus.tscn" id="2_ndi2h"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_3bkuj"]
 line_spacing = 1.0
@@ -21,8 +20,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_o8ow0")
 
-[node name="BG" parent="." instance=ExtResource("1_cxny6")]
-bg_texture = ExtResource("2_7wenh")
+[node name="BGMenus" parent="." instance=ExtResource("2_ndi2h")]
 
 [node name="Title" type="Label" parent="."]
 layout_mode = 1

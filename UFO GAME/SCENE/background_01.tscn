@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5aeo451sdwy"]
+[gd_scene load_steps=9 format=3 uid="uid://c5aeo451sdwy"]
 
 [ext_resource type="Texture2D" uid="uid://dcnm2oh23amfn" path="res://ASSETS/BACKGROUNDS/SpaceBGNavy.png" id="1_a7ufm"]
 [ext_resource type="Texture2D" uid="uid://dyoivygkt2bk2" path="res://ASSETS/BACKGROUNDS/StarsWhite.png" id="2_3k4v1"]
-[ext_resource type="Texture2D" uid="uid://kves6iw2glol" path="res://ASSETS/BACKGROUNDS/SpaceFlareYellow2.png" id="3_fdeex"]
+[ext_resource type="Texture2D" uid="uid://c7dx0kgrgl3fn" path="res://ASSETS/BACKGROUNDS/SpaceFlareYellow1.png" id="3_ep3jg"]
+[ext_resource type="Texture2D" uid="uid://cr7pmoq4e7k47" path="res://ASSETS/BACKGROUNDS/SpaceFlareMagenta4.png" id="6_4gu8l"]
+[ext_resource type="Texture2D" uid="uid://d2ifrnyc0olew" path="res://ASSETS/BACKGROUNDS/SpaceFlareYellow4.png" id="6_saiv3"]
+[ext_resource type="Texture2D" uid="uid://c5iiqdhmlt4uf" path="res://ASSETS/BACKGROUNDS/SpaceFlareMagenta2.png" id="7_damjd"]
+[ext_resource type="Texture2D" uid="uid://cv8m13rbl8t22" path="res://ASSETS/BACKGROUNDS/SpaceFlareCyan4.png" id="8_ittlj"]
+[ext_resource type="Texture2D" uid="uid://cxpvb2gyn5tgj" path="res://ASSETS/BACKGROUNDS/Planet3.png" id="8_q57dv"]
 
 [node name="Background_01" type="Node2D"]
 z_index = -15
@@ -21,9 +26,32 @@ repeat_times = 5
 [node name="Sprite2D" type="Sprite2D" parent="Stars"]
 texture = ExtResource("2_3k4v1")
 
-[node name="Parallax2D" type="Parallax2D" parent="."]
+[node name="SpaceFlareMagenta4" type="Sprite2D" parent="."]
+position = Vector2(-172, 1064)
+rotation = 2.42426
+texture = ExtResource("6_4gu8l")
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
-position = Vector2(243, 608)
-rotation = 0.551524
-texture = ExtResource("3_fdeex")
+[node name="SpaceFlareMagenta2" type="Sprite2D" parent="SpaceFlareMagenta4"]
+position = Vector2(-51, -83)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_damjd")
+
+[node name="SpaceFlareYellow1" type="Sprite2D" parent="."]
+position = Vector2(-156, -497)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("3_ep3jg")
+
+[node name="SpaceFlareYellow4" type="Sprite2D" parent="SpaceFlareYellow1"]
+position = Vector2(-507.2, 355.2)
+rotation = -1.54287
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("6_saiv3")
+
+[node name="Planet3" type="Sprite2D" parent="."]
+position = Vector2(1309, -68)
+texture = ExtResource("8_q57dv")
+
+[node name="SpaceFlareCyan4" type="Sprite2D" parent="."]
+position = Vector2(1879, -40)
+scale = Vector2(2, 2)
+texture = ExtResource("8_ittlj")
