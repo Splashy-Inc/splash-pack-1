@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8bmf4h8y3gvh"]
+
+[ext_resource type="Texture2D" uid="uid://bvjqthq7u0s21" path="res://ASSETS/SHIPUPGRADES/ShipLightGreen.png" id="1_02wt8"]
+[ext_resource type="Script" path="res://ship_light_green.gd" id="1_3nohb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_w8lep"]
+radius = 4.0
+
+[node name="ShipLightGreen" type="Area2D"]
+z_index = -1
+scale = Vector2(2, 2)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_3nohb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_02wt8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_w8lep")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

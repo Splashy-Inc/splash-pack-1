@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dafv8rjqv3hoo"]
+[gd_scene load_steps=11 format=3 uid="uid://dafv8rjqv3hoo"]
 
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_ew48j"]
 [ext_resource type="PackedScene" uid="uid://c125273w2lmtg" path="res://SCENE/level_2.tscn" id="2_7mj4m"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dwvh6tkxy5h0x" path="res://SCENE/start.tscn" id="5_bvn07"]
 [ext_resource type="PackedScene" uid="uid://b7kd42vp1cap2" path="res://SCENE/exit.tscn" id="7_ipipb"]
 [ext_resource type="PackedScene" uid="uid://b312dkg3bdpq5" path="res://SCENE/speed_boost.tscn" id="8_x11tn"]
+[ext_resource type="PackedScene" uid="uid://c8bmf4h8y3gvh" path="res://ship_light_green.tscn" id="9_ydhmj"]
 
 [node name="level1" type="Node2D"]
 script = ExtResource("1_ew48j")
@@ -46,6 +47,24 @@ rotation = -1.5708
 [node name="SpeedBoost_04" parent="Interactables" instance=ExtResource("8_x11tn")]
 position = Vector2(16, -244)
 rotation = -1.5708
+
+[node name="ShipLightGreen" parent="Interactables" instance=ExtResource("9_ydhmj")]
+position = Vector2(-68, -14)
+
+[node name="ShipLightGreen2" parent="Interactables" instance=ExtResource("9_ydhmj")]
+position = Vector2(1221, -424)
+
+[node name="ShipLightGreen3" parent="Interactables" instance=ExtResource("9_ydhmj")]
+position = Vector2(1422, 865)
+
+[node name="ShipLightGreen4" parent="Interactables" instance=ExtResource("9_ydhmj")]
+position = Vector2(97, 1514)
+
+[node name="ShipLightGreen5" parent="Interactables" instance=ExtResource("9_ydhmj")]
+position = Vector2(-283, 755)
+
+[node name="ShipLightGreen6" parent="Interactables" instance=ExtResource("9_ydhmj")]
+position = Vector2(1459, 158)
 
 [node name="player" parent="." instance=ExtResource("3_j0dph")]
 position = Vector2(-527, 779)
