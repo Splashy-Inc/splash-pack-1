@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c7vn3hjp4lgwr"]
+[gd_scene load_steps=12 format=3 uid="uid://c7vn3hjp4lgwr"]
 
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_0es3l"]
 [ext_resource type="PackedScene" uid="uid://cr7yr8g5qigr2" path="res://SCENE/TrackScene/track_3.tscn" id="2_2ofva"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://b7kd42vp1cap2" path="res://SCENE/exit.tscn" id="7_56t0m"]
 [ext_resource type="PackedScene" uid="uid://b312dkg3bdpq5" path="res://SCENE/speed_boost.tscn" id="8_4wubq"]
 [ext_resource type="PackedScene" uid="uid://c2oxd5gviwrqd" path="res://SCENE/satellite.tscn" id="9_qfjdm"]
+[ext_resource type="PackedScene" uid="uid://c8bmf4h8y3gvh" path="res://ship_light_green.tscn" id="11_5585u"]
 
 [node name="level3" type="Node2D"]
 script = ExtResource("1_0es3l")
@@ -19,6 +20,7 @@ next_level = ExtResource("2_ickei")
 
 [node name="Track3" parent="." instance=ExtResource("2_2ofva")]
 z_index = -10
+position = Vector2(-2020, -1509)
 scale = Vector2(2, 2)
 
 [node name="UILayer" parent="." instance=ExtResource("5_h01ys")]
@@ -36,28 +38,46 @@ start = NodePath("../Interactables/Start")
 [node name="Interactables" type="Node" parent="."]
 
 [node name="Start" parent="Interactables" instance=ExtResource("5_erbhr")]
-position = Vector2(72, 2077)
+position = Vector2(-1392, 497)
 
 [node name="Exit" parent="Interactables" instance=ExtResource("7_56t0m")]
-position = Vector2(2190, 1281)
+position = Vector2(1175, -1377)
 
 [node name="SpeedBoost_01" parent="Interactables" instance=ExtResource("8_4wubq")]
-position = Vector2(926, 1303)
-rotation = -2.47488
+position = Vector2(-161, -1364)
+rotation = -1.48353
 
 [node name="SpeedBoost_02" parent="Interactables" instance=ExtResource("8_4wubq")]
-position = Vector2(3636, 1164)
-rotation = 0.66148
+position = Vector2(-1376, 338)
+rotation = 3.14159
 
 [node name="SpeedBoost_03" parent="Interactables" instance=ExtResource("8_4wubq")]
-position = Vector2(1731, 1261)
-rotation = -2.31431
+position = Vector2(-56, -176)
+rotation = -0.771436
 
 [node name="Satellite_01" parent="Interactables" instance=ExtResource("9_qfjdm")]
-position = Vector2(2325, 79)
+position = Vector2(-1384, -1358)
 
 [node name="Satellite_02" parent="Interactables" instance=ExtResource("9_qfjdm")]
-position = Vector2(2843, 2045)
+position = Vector2(858, -1152)
+
+[node name="ShipLightGreen" parent="Interactables" instance=ExtResource("11_5585u")]
+position = Vector2(-483, -801)
+
+[node name="ShipLightGreen2" parent="Interactables" instance=ExtResource("11_5585u")]
+position = Vector2(-1408, -816)
+
+[node name="ShipLightGreen3" parent="Interactables" instance=ExtResource("11_5585u")]
+position = Vector2(1197, 471)
+
+[node name="ShipLightGreen4" parent="Interactables" instance=ExtResource("11_5585u")]
+position = Vector2(540, -1390)
+
+[node name="ShipLightGreen5" parent="Interactables" instance=ExtResource("11_5585u")]
+position = Vector2(-751, -133)
+
+[node name="ShipLightGreen6" parent="Interactables" instance=ExtResource("11_5585u")]
+position = Vector2(314, -299)
 
 [editable path="UILayer"]
 [editable path="UILayer/HUD"]

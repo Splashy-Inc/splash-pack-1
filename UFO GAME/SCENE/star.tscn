@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://c1kdj1ccsr8y6"]
+[gd_scene load_steps=7 format=3 uid="uid://c1kdj1ccsr8y6"]
 
 [ext_resource type="Script" path="res://SCRIPTS/star.gd" id="1_w4va6"]
-[ext_resource type="Texture2D" uid="uid://wtyfa140r0eg" path="res://ASSETS/INTERACTABLES/StarA.png" id="2_ywqbx"]
+[ext_resource type="Texture2D" uid="uid://8hbsnd3fy2pe" path="res://ASSETS/INTERACTABLES/STAR/SunYellow.png" id="2_24itw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l3l3i"]
+radius = 55.7315
 
 [sub_resource type="Animation" id="Animation_p68c2"]
 length = 0.001
@@ -49,10 +52,10 @@ collision_layer = 4
 collision_mask = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
-texture = ExtResource("2_ywqbx")
+texture = ExtResource("2_24itw")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-polygon = PackedVector2Array(16, -40.8, 23, -38.8, 23, -37.6, 25, -36.6, 25, -35, 26.2, -35, 29, -33.6, 29, -32.4, 41, -20.4, 41, -17.6, 43, -16.6, 43, -14, 46, -11.4, 46, 16, 45, 16, 45, 19, 43.4, 19, 24.4, 39, 21.4, 39, 16.4, 43, 13.1, 43, 5.2, 46, -6, 46, -6, 44.9, -14, 43.9, -14, 42.8, -21, 40.8, -21, 39.4, -21.4, 39, -25, 39, -25, 37.4, -38, 25.4, -38, 22, -40.7, 14, -41.4, 14, -43, 12.4, -43, 10, -46, 7.4, -46, -10, -44.8, -10, -40.7, -23, -39.6, -23, -38.6, -25, -35.4, -25, -35, -25.4, -35, -28.4, -30.4, -33, -29, -33, -29, -34.6, -25, -36.6, -25, -37.4, -22.4, -40, -18, -40, -16, -40.7, -16, -42, 16, -42)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_l3l3i")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

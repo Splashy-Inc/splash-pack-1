@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://bl2qfvltga4dc"]
+[gd_scene load_steps=5 format=3 uid="uid://bl2qfvltga4dc"]
 
 [ext_resource type="Script" path="res://SCRIPTS/track.gd" id="1_nwobu"]
 [ext_resource type="Texture2D" uid="uid://ckxncym72qov0" path="res://ASSETS/TRACKS/Maze_01.png" id="2_iwys7"]
 [ext_resource type="Texture2D" uid="uid://bhd7ukgewxuh1" path="res://ASSETS/TRACKS/MazeBoundry_01.png" id="3_e6bia"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7fs8j"]
+friction = 0.0
 
 [node name="Track1" type="Node2D"]
 script = ExtResource("1_nwobu")
@@ -37,6 +40,7 @@ visible = false
 position = Vector2(961, 541)
 collision_layer = 16
 collision_mask = 0
+physics_material_override = SubResource("PhysicsMaterial_7fs8j")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(-57, -538, -57, -536.7, -60.4, -536, -146.4, -536, -157.4, -532, -160.7, -532, -172.7, -523, -174.9, -523, -184.9, -512, -186.3, -512, -192.3, -499, -193.9, -499, -197, -438, -295, -438, -295, -482.4, -299, -493.5, -299, -496.8, -315, -514.8, -315, -516.3, -328, -522.3, -328, -523.8, -337, -524.8, -337, -526, -480, -525, -485.5, -525, -506.5, -513, -508.9, -513, -518.9, -502, -520.3, -502, -526.3, -489, -527.8, -489, -528.8, -480, -530, -480, -528, -18, -524.2, -18, -521, -21.2, -521, -474.6, -517, -485.6, -517, -488.5, -510, -498.4, -510, -499.9, -489, -512.9, -475, -516.4, -475, -517, -337, -515, -333.5, -515, -318.6, -506, -317.1, -506, -308.1, -491, -307.5, -491, -304, -479, -304, -434.2, -298.8, -429, -192, -429, -189, -433, -187.1, -433, -185, -490, -185, -493.5, -176, -508.4, -176, -509.9, -161, -519.9, -161, -520.6, -141, -526.5, 161, -527, 161, -536)
