@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://w8aqqi4cfycx"]
+[gd_scene load_steps=13 format=3 uid="uid://w8aqqi4cfycx"]
 
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_u0jq6"]
 [ext_resource type="PackedScene" uid="uid://beb4hnlxxxx36" path="res://SCENE/level_7.tscn" id="2_154an"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://b312dkg3bdpq5" path="res://SCENE/speed_boost.tscn" id="8_2wij8"]
 [ext_resource type="PackedScene" uid="uid://c1kdj1ccsr8y6" path="res://SCENE/star.tscn" id="9_2f0ff"]
 [ext_resource type="PackedScene" uid="uid://c2oxd5gviwrqd" path="res://SCENE/satellite.tscn" id="10_hoext"]
+[ext_resource type="PackedScene" uid="uid://c8bmf4h8y3gvh" path="res://ship_light_green.tscn" id="12_0lere"]
 
 [node name="level6" type="Node2D"]
 script = ExtResource("1_u0jq6")
@@ -20,6 +21,7 @@ next_level = ExtResource("2_154an")
 
 [node name="Track6" parent="." instance=ExtResource("2_j6o1x")]
 z_index = -10
+position = Vector2(-2590, -833)
 scale = Vector2(2, 2)
 
 [node name="UILayer" parent="." instance=ExtResource("5_s8s50")]
@@ -28,7 +30,7 @@ scale = Vector2(2, 2)
 text = "LEVEL: 6"
 
 [node name="player" parent="." node_paths=PackedStringArray("start") instance=ExtResource("2_f0vf1")]
-position = Vector2(-117, 956)
+position = Vector2(-1842, 1182)
 start = NodePath("../Interactables/Start")
 
 [node name="Camera2D" type="Camera2D" parent="player"]
@@ -36,33 +38,52 @@ start = NodePath("../Interactables/Start")
 [node name="Interactables" type="Node" parent="."]
 
 [node name="Start" parent="Interactables" instance=ExtResource("5_neoiy")]
-position = Vector2(79, 925)
+position = Vector2(-1856, 1185)
 
 [node name="Exit" parent="Interactables" instance=ExtResource("7_v4rxx")]
-position = Vector2(3756, 1546)
+position = Vector2(837, -694)
 
 [node name="SpeedBoost_01" parent="Interactables" instance=ExtResource("8_2wij8")]
-position = Vector2(283, 748)
-rotation = -2.31431
+position = Vector2(-1657, 822)
+rotation = -3.14159
 
 [node name="SpeedBoost_02" parent="Interactables" instance=ExtResource("8_2wij8")]
-position = Vector2(2670, 2056)
-rotation = -1.98444
+position = Vector2(-600, 342)
+rotation = -1.5708
 
 [node name="Star_01" parent="Interactables" instance=ExtResource("9_2f0ff")]
-position = Vector2(2077, 139)
+position = Vector2(-1216, -296)
+scale = Vector2(3, 3)
 
 [node name="Star_02" parent="Interactables" instance=ExtResource("9_2f0ff")]
-position = Vector2(2098, 1089)
+position = Vector2(-2399, 569)
 
 [node name="Star_03" parent="Interactables" instance=ExtResource("9_2f0ff")]
-position = Vector2(1992, 2146)
+position = Vector2(777, 372)
 
 [node name="Satellite_01" parent="Interactables" instance=ExtResource("10_hoext")]
-position = Vector2(3775, 902)
+position = Vector2(-2299, 56)
 
 [node name="Satellite_02" parent="Interactables" instance=ExtResource("10_hoext")]
-position = Vector2(347, 1452)
+position = Vector2(219, -118)
+
+[node name="ShipLightGreen" parent="Interactables" instance=ExtResource("12_0lere")]
+position = Vector2(-2407, -628)
+
+[node name="ShipLightGreen2" parent="Interactables" instance=ExtResource("12_0lere")]
+position = Vector2(-2364, 866)
+
+[node name="ShipLightGreen3" parent="Interactables" instance=ExtResource("12_0lere")]
+position = Vector2(-1446, -709)
+
+[node name="ShipLightGreen4" parent="Interactables" instance=ExtResource("12_0lere")]
+position = Vector2(-866, 1170)
+
+[node name="ShipLightGreen5" parent="Interactables" instance=ExtResource("12_0lere")]
+position = Vector2(647, 970)
+
+[node name="ShipLightGreen6" parent="Interactables" instance=ExtResource("12_0lere")]
+position = Vector2(-181, -681)
 
 [editable path="UILayer"]
 [editable path="UILayer/HUD"]
