@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://beb4hnlxxxx36"]
+[gd_scene load_steps=13 format=3 uid="uid://beb4hnlxxxx36"]
 
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_ce6pk"]
 [ext_resource type="PackedScene" uid="uid://2nas7neg6gq7" path="res://SCENE/TrackScene/track_7.tscn" id="2_1a2me"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bp3e2ja8l" path="res://SCENE/asteroid.tscn" id="8_v7drn"]
 [ext_resource type="PackedScene" uid="uid://b312dkg3bdpq5" path="res://SCENE/speed_boost.tscn" id="9_cjvr3"]
 [ext_resource type="PackedScene" uid="uid://c1kdj1ccsr8y6" path="res://SCENE/star.tscn" id="10_peqbc"]
+[ext_resource type="PackedScene" uid="uid://c8bmf4h8y3gvh" path="res://ship_light_green.tscn" id="12_4lb21"]
 
 [node name="level7" type="Node2D"]
 script = ExtResource("1_ce6pk")
@@ -20,6 +21,7 @@ next_level = ExtResource("2_c5p72")
 
 [node name="Track7" parent="." instance=ExtResource("2_1a2me")]
 z_index = -10
+position = Vector2(-1638, 96)
 scale = Vector2(2, 2)
 
 [node name="UILayer" parent="." instance=ExtResource("5_rfxjk")]
@@ -28,7 +30,7 @@ scale = Vector2(2, 2)
 text = "LEVEL: 7"
 
 [node name="player" parent="." node_paths=PackedStringArray("start") instance=ExtResource("2_bqf5a")]
-position = Vector2(723, 91)
+position = Vector2(733, 912)
 start = NodePath("../Interactables/Start")
 
 [node name="Camera2D" type="Camera2D" parent="player"]
@@ -36,55 +38,75 @@ start = NodePath("../Interactables/Start")
 [node name="Interactables" type="Node" parent="."]
 
 [node name="Start" parent="Interactables" instance=ExtResource("5_8mhsp")]
-position = Vector2(887, 89)
+position = Vector2(746, 910)
 
 [node name="Exit" parent="Interactables" instance=ExtResource("7_wq7ru")]
-position = Vector2(82, 687)
+position = Vector2(-1107, 1715)
 
 [node name="SpeedBoost_01" parent="Interactables" instance=ExtResource("9_cjvr3")]
-position = Vector2(1522, 1978)
-rotation = -3.85892
+position = Vector2(781, 2059)
+rotation = -1.98444
 
 [node name="Star_01" parent="Interactables" instance=ExtResource("10_peqbc")]
-position = Vector2(2717, 1579)
+position = Vector2(-1400, 208)
 
 [node name="Asteroid_01" parent="Interactables" instance=ExtResource("8_v7drn")]
-position = Vector2(3380, 313)
+position = Vector2(1339, 414)
 
-[node name="Asteroid_02" parent="Interactables" instance=ExtResource("8_v7drn")]
-position = Vector2(3298, 118)
+[node name="Asteroid_02" parent="Interactables/Asteroid_01" instance=ExtResource("8_v7drn")]
+position = Vector2(-42, -230)
 rotation = -0.93026
 
-[node name="Asteroid_03" parent="Interactables" instance=ExtResource("8_v7drn")]
-position = Vector2(3569, 529)
+[node name="Asteroid_03" parent="Interactables/Asteroid_01" instance=ExtResource("8_v7drn")]
+position = Vector2(229, 181)
 rotation = -2.90946
 
-[node name="Asteroid_04" parent="Interactables" instance=ExtResource("8_v7drn")]
-position = Vector2(3067, 253)
+[node name="Asteroid_04" parent="Interactables/Asteroid_01" instance=ExtResource("8_v7drn")]
+position = Vector2(-273, -95)
 rotation = 0.581195
+scale = Vector2(1, 1)
 
-[node name="Asteroid_05" parent="Interactables" instance=ExtResource("8_v7drn")]
-position = Vector2(3630, 368)
+[node name="Asteroid_05" parent="Interactables/Asteroid_01" instance=ExtResource("8_v7drn")]
+position = Vector2(290, 20)
 rotation = -1.14319
+scale = Vector2(1, 1)
 
 [node name="Asteroid_06" parent="Interactables" instance=ExtResource("8_v7drn")]
-position = Vector2(2309, 2047)
+position = Vector2(1825, 1851)
 
-[node name="Asteroid_07" parent="Interactables" instance=ExtResource("8_v7drn")]
-position = Vector2(2319, 1797)
+[node name="Asteroid_07" parent="Interactables/Asteroid_06" instance=ExtResource("8_v7drn")]
+position = Vector2(5, -255)
 rotation = -1.39626
 
-[node name="Asteroid_08" parent="Interactables" instance=ExtResource("8_v7drn")]
-position = Vector2(2157, 2160)
+[node name="Asteroid_08" parent="Interactables/Asteroid_06" instance=ExtResource("8_v7drn")]
+position = Vector2(-157, 108)
 rotation = 1.97746
 
-[node name="Asteroid_10" parent="Interactables" instance=ExtResource("8_v7drn")]
-position = Vector2(1963, 1986)
+[node name="Asteroid_10" parent="Interactables/Asteroid_06" instance=ExtResource("8_v7drn")]
+position = Vector2(-351, -66)
 rotation = -0.637045
 
-[node name="Asteroid_09" parent="Interactables" instance=ExtResource("8_v7drn")]
-position = Vector2(1744, 2160)
+[node name="Asteroid_09" parent="Interactables/Asteroid_06" instance=ExtResource("8_v7drn")]
+position = Vector2(-570, 108)
 rotation = -2.44346
+
+[node name="ShipLightGreen" parent="Interactables" instance=ExtResource("12_4lb21")]
+position = Vector2(-847, 408)
+
+[node name="ShipLightGreen2" parent="Interactables" instance=ExtResource("12_4lb21")]
+position = Vector2(420, 1311)
+
+[node name="ShipLightGreen3" parent="Interactables" instance=ExtResource("12_4lb21")]
+position = Vector2(132, 2014)
+
+[node name="ShipLightGreen4" parent="Interactables" instance=ExtResource("12_4lb21")]
+position = Vector2(1806, 760)
+
+[node name="ShipLightGreen5" parent="Interactables" instance=ExtResource("12_4lb21")]
+position = Vector2(1577, 290)
+
+[node name="ShipLightGreen6" parent="Interactables" instance=ExtResource("12_4lb21")]
+position = Vector2(1869, 1955)
 
 [editable path="UILayer"]
 [editable path="UILayer/HUD"]
