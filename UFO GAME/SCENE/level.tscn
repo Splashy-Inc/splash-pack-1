@@ -32,7 +32,6 @@ start = NodePath("../Interactables/Start")
 
 [node name="SpeedBoost" parent="Interactables" instance=ExtResource("4_gjmoe")]
 position = Vector2(524, 99)
-rotation = -1.5708
 
 [node name="Star" parent="Interactables" instance=ExtResource("5_7llwe")]
 position = Vector2(852, 422)
