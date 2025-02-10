@@ -1,17 +1,64 @@
-[gd_scene load_steps=7 format=3 uid="uid://c1kdj1ccsr8y6"]
+[gd_scene load_steps=11 format=3 uid="uid://c1kdj1ccsr8y6"]
 
 [ext_resource type="Script" path="res://SCRIPTS/star.gd" id="1_w4va6"]
-[ext_resource type="Texture2D" uid="uid://8hbsnd3fy2pe" path="res://ASSETS/INTERACTABLES/STAR/SunYellow.png" id="2_24itw"]
+[ext_resource type="Texture2D" uid="uid://pom6q8txrvsf" path="res://ASSETS/INTERACTABLES/STAR/Star_01.png" id="2_eushe"]
+[ext_resource type="Texture2D" uid="uid://ma1ix4pmr2bx" path="res://ASSETS/INTERACTABLES/STAR/Star_02.png" id="3_37f68"]
+[ext_resource type="Texture2D" uid="uid://bk3dtkg7fa01s" path="res://ASSETS/INTERACTABLES/STAR/Star_03.png" id="4_qa4qu"]
+[ext_resource type="Texture2D" uid="uid://cmioi7vtcdcu8" path="res://ASSETS/INTERACTABLES/STAR/Star_04.png" id="5_k2xh0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ht2hs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_eushe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_37f68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qa4qu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_k2xh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qa4qu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_37f68")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_l3l3i"]
 radius = 55.7315
 
-[sub_resource type="Animation" id="Animation_p68c2"]
+[sub_resource type="Animation" id="Animation_60bjh"]
+resource_name = "new_animation"
+length = 12.0
+loop_mode = 1
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3, 6, 9, 12),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [6.28319, 4.71239, 3.14159, 1.5708, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_5kaus"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Area2D:rotation")
+tracks/0/path = NodePath(".:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -21,46 +68,34 @@ tracks/0/keys = {
 "values": [0.0]
 }
 
-[sub_resource type="Animation" id="Animation_wq57g"]
-resource_name = "spin"
-length = 5.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Area2D:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 6.28319]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_rgbxt"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uq7bk"]
 _data = {
-"RESET": SubResource("Animation_p68c2"),
-"spin": SubResource("Animation_wq57g")
+"RESET": SubResource("Animation_5kaus"),
+"new_animation": SubResource("Animation_60bjh")
 }
 
 [node name="Star" type="Node2D"]
 script = ExtResource("1_w4va6")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ht2hs")
+autoplay = "default"
+frame_progress = 0.0109617
+
+[node name="Area2D" type="Area2D" parent="AnimatedSprite2D"]
+rotation = 4.62372
 collision_layer = 4
 collision_mask = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
-texture = ExtResource("2_24itw")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/Area2D"]
+rotation = 1.65947
+scale = Vector2(1, 1)
 shape = SubResource("CircleShape2D_l3l3i")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite2D"]
 libraries = {
-"": SubResource("AnimationLibrary_rgbxt")
+"": SubResource("AnimationLibrary_uq7bk")
 }
-autoplay = "spin"
+autoplay = "new_animation"
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="AnimatedSprite2D/Area2D" to="." method="_on_area_2d_body_entered"]
