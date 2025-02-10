@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://id6tv0fprkeu"]
 
 [ext_resource type="Texture2D" uid="uid://caub5rv0wf6y5" path="res://ASSETS/IntroBackground.png" id="1_ji0mt"]
-[ext_resource type="Script" path="res://SCENE/into_scene.gd" id="1_r55il"]
+[ext_resource type="Script" path="res://SCRIPTS/into_scene.gd" id="1_r55il"]
 [ext_resource type="Texture2D" uid="uid://ddiwmx7e3agtq" path="res://ASSETS/fish_watercolor_neutral.png" id="9_u7oet"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vnpfl"]

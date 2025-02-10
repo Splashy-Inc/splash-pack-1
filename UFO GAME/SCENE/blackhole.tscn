@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dymmjyn2xupgx" path="res://ASSETS/INTERACTABLES/StartFishish.png" id="1_1pvkh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8758n"]
-radius = 26.0
+radius = 7.0
 
 [sub_resource type="Animation" id="Animation_fo1l0"]
 length = 0.001
@@ -52,7 +52,7 @@ z_index = -1
 texture = ExtResource("1_1pvkh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, -2)
+position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_8758n")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

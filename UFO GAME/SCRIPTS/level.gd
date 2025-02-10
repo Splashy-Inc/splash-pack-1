@@ -26,7 +26,7 @@ func reset_player():
 func _on_exit_body_entered(body):
 	if body is Player:
 		if is_final_level || (next_level != null):
-			player.freeze() 
+			body.shrink() 
 			await get_tree().create_timer(.5).timeout
 			if is_final_level:
 				ui_layer.show_win_screen(true)

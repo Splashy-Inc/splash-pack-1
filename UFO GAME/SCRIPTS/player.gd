@@ -7,6 +7,10 @@ var force = 500
 var active = true
 @export var start: StaticBody2D
 
+func _ready(): 
+	$AnimationPlayer.play("grow")
+
+
 #Player Controls  
 func _physics_process(delta):
 	if active == true:
@@ -39,4 +43,8 @@ func reset():
 	active = false
 	await $HurtSFX.finished
 	get_tree().reload_current_scene()
+	
+func shrink():
+	freeze()
+	$AnimationPlayer.play("shrink")
 	

@@ -89,7 +89,6 @@ rotation = -3.3807
 [node name="Asteroid_02" parent="Interactables/Asteroid_01" instance=ExtResource("10_x2t3i")]
 position = Vector2(-300.387, -324.334)
 rotation = 0.34907
-scale = Vector2(1, 1)
 
 [node name="Asteroid_03" parent="Interactables/Asteroid_01" instance=ExtResource("10_x2t3i")]
 position = Vector2(-455.446, -199.747)
@@ -106,7 +105,6 @@ rotation = 0.11694
 [node name="Asteroid_06" parent="Interactables/Asteroid_01" instance=ExtResource("10_x2t3i")]
 position = Vector2(254.537, -151.645)
 rotation = 1.69646
-scale = Vector2(1, 1)
 
 [node name="Asteroid_07" parent="Interactables" instance=ExtResource("10_x2t3i")]
 position = Vector2(430, 383)
@@ -119,7 +117,6 @@ rotation = 2.67559
 [node name="Asteroid_09" parent="Interactables/Asteroid_07" instance=ExtResource("10_x2t3i")]
 position = Vector2(-134.357, -271.59)
 rotation = 0.27576
-scale = Vector2(1, 1)
 
 [node name="Asteroid_10" parent="Interactables/Asteroid_07" instance=ExtResource("10_x2t3i")]
 position = Vector2(-224.72, -92.9386)
