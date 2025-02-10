@@ -61,10 +61,11 @@ position = Vector2(158, -445)
 rotation = -2.12232
 
 [node name="Star_01" parent="Interactables" instance=ExtResource("9_5mbaf")]
-position = Vector2(3185, 1930)
+position = Vector2(716, -1061)
 
 [node name="Star_02" parent="Interactables" instance=ExtResource("9_5mbaf")]
-position = Vector2(91, 91)
+position = Vector2(2099, -754)
+scale = Vector2(2, 2)
 
 [node name="Satellite_01" parent="Interactables" instance=ExtResource("10_cjwjs")]
 position = Vector2(-240, 653)
