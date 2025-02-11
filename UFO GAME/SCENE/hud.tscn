@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dlonkosvlpesj"]
+[gd_scene load_steps=7 format=3 uid="uid://dlonkosvlpesj"]
 
 [ext_resource type="Script" path="res://SCRIPTS/hud.gd" id="1_7nb6x"]
 [ext_resource type="Texture2D" uid="uid://bvjqthq7u0s21" path="res://ASSETS/SHIPUPGRADES/ShipLightGreen.png" id="2_01qiw"]
+[ext_resource type="PackedScene" uid="uid://6j5hge64tn42" path="res://SCENE/pause_menu.tscn" id="3_tf2bh"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ddpme"]
 font_size = 30
@@ -64,3 +65,21 @@ offset_right = 1227.0
 offset_bottom = 52.0
 text = "0"
 label_settings = SubResource("LabelSettings_8meuj")
+
+[node name="Pause" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -47.5
+offset_right = 47.5
+offset_bottom = 50.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "Pause"
+
+[node name="Pause_menu" parent="." instance=ExtResource("3_tf2bh")]
+visible = false
+layout_mode = 1
+
+[connection signal="pressed" from="Pause" to="." method="_on_pause_pressed"]

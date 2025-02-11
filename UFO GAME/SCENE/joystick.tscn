@@ -6,6 +6,8 @@
 [ext_resource type="Script" path="res://SCRIPTS/knob.gd" id="4_s6r2d"]
 
 [node name="joystick" type="Node2D"]
+z_index = 10
+z_as_relative = false
 script = ExtResource("1_nsi5b")
 
 [node name="Ring" type="Sprite2D" parent="."]

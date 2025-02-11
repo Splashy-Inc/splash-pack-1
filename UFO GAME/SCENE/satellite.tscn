@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2oxd5gviwrqd"]
+[gd_scene load_steps=5 format=3 uid="uid://c2oxd5gviwrqd"]
 
+[ext_resource type="Script" path="res://SCRIPTS/asteroid.gd" id="1_0vmic"]
 [ext_resource type="Texture2D" uid="uid://dkto0rukrb5h1" path="res://ASSETS/INTERACTABLES/Satalite.png" id="2_01hwt"]
 [ext_resource type="AudioStream" uid="uid://sdqwrtgqtdkw" path="res://ASSETS/AUDIO/SataliteNoise.wav" id="3_elqi2"]
 
@@ -11,6 +12,7 @@ collision_mask = 6
 mass = 2.0
 physics_material_override = SubResource("PhysicsMaterial_g4rcn")
 gravity_scale = 0.0
+script = ExtResource("1_0vmic")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_01hwt")

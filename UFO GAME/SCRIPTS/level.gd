@@ -17,9 +17,7 @@ func _ready():
 	exit.body_entered.connect(_on_exit_body_entered)
 
 func _process(delta):
-	if Input.is_action_just_pressed("quit"):
-		get_tree().quit()
-	elif Input.is_action_just_pressed("reset"):
+	if Input.is_action_just_pressed("reset"):
 		get_tree().reload_current_scene()
 
 func reset_player():

@@ -24,21 +24,23 @@ func _physics_process(delta):
 		if Input.is_action_pressed("move_down"):
 			velocity += Vector2(0, force * delta)
 	
+	#Joystick Command
+	var direction = joystick.posVector
+	if direction != Vector2.ZERO:
+			velocity += direction * force * delta
+
+	
 	var collision = move_and_collide(velocity * delta)
 	if collision:
 		var collider = collision.get_collider()
 		if collider is RigidBody2D:
 			collider.apply_impulse(velocity/2)
+			if collider.has_method("play_collision_noise"):
+				collider.play_collision_noise()
 			velocity = velocity/2
 		else:
 			velocity = velocity.slide(collision.get_normal())
 			
-#Joystick Command
-	var direction = joystick.posVector
-	if direction != Vector2.ZERO:
-			velocity += direction * force * delta
-
-	move_and_slide()
 	
 func freeze():
 	active = false

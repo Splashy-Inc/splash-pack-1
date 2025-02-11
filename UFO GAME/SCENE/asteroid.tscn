@@ -1,12 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://bp3e2ja8l"]
+[gd_scene load_steps=4 format=3 uid="uid://bp3e2ja8l"]
 
+[ext_resource type="Script" path="res://SCRIPTS/asteroid.gd" id="1_e6gf2"]
 [ext_resource type="Texture2D" uid="uid://bx2w6qgbfv0yy" path="res://ASSETS/INTERACTABLES/Asteroid.png" id="2_wa8xs"]
+[ext_resource type="AudioStream" uid="uid://c6kgqddvxgtcy" path="res://ASSETS/AUDIO/AsteroidNoise.wav" id="3_34nfr"]
 
 [node name="Asteroid" type="RigidBody2D"]
+collision_layer = 4
+collision_mask = 6
 gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("1_e6gf2")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(30, -29.8, 39, -27.8, 39, -26.5, 42, -24.5, 42, -22, 43, -8, 41.7, -8, 40.7, -5, 39.5, -5, 33.5, 2, 31.5, 2, 29.5, 5, 27.4, 5, 26, 6.4, 26, 8.2, 22.7, 16, 21.5, 16, 19.5, 19, 17.2, 19, 4, 21.8, 4, 22.6, -12.8, 31, -20, 31, -20, 29.8, -37, 24.7, -37, 23.7, -40, 22.7, -40, 21.5, -46, 16.5, -46, 11, -44.7, 11, -41.7, 3, -40.5, 3, -36.5, -3, -34.4, -3, -31.4, -6, -29.3, -6, -21, -10.6, -21, -11.5, -10.4, -20, -8.3, -20, -3.3, -23, 0.0999985, -23, 6, -22.2, 6, -23, 9, -23, 9, -23.6, 22, -29.6, 22, -31, 30, -31)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_wa8xs")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_34nfr")

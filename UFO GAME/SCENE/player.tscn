@@ -309,4 +309,5 @@ libraries = {
 }
 
 [node name="joystick" parent="." instance=ExtResource("4_ukepj")]
-position = Vector2(530, 221)
+position = Vector2(480, 200)
+scale = Vector2(1.5, 1.5)

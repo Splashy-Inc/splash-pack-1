@@ -141,28 +141,27 @@ rotation = -0.748746
 position = Vector2(3252, 1402)
 rotation = -0.748746
 
+[node name="Asteroid_06" parent="Interactables" instance=ExtResource("13_cldap")]
+position = Vector2(396, 2006)
+
+[node name="Asteroid_05" parent="Interactables" instance=ExtResource("13_cldap")]
+position = Vector2(3443, 1851)
+rotation = -2.90946
+
+[node name="Asteroid_04" parent="Interactables" instance=ExtResource("13_cldap")]
+position = Vector2(3380, 1991)
+rotation = 2.67559
+
+[node name="Asteroid_03" parent="Interactables" instance=ExtResource("13_cldap")]
+position = Vector2(3617, 1935)
+
+[node name="Asteroid_02" parent="Interactables" instance=ExtResource("13_cldap")]
+position = Vector2(3204, 1897)
+rotation = -1.97746
+
 [node name="Asteroid_01" parent="Interactables" instance=ExtResource("13_cldap")]
 position = Vector2(3180, 1605)
 rotation = 1.09956
-
-[node name="Asteroid_02" parent="Interactables/Asteroid_01" instance=ExtResource("13_cldap")]
-position = Vector2(271.07, 111.18)
-rotation = -3.07702
-
-[node name="Asteroid_03" parent="Interactables/Asteroid_01" instance=ExtResource("13_cldap")]
-position = Vector2(492.425, -239.554)
-rotation = -1.09956
-
-[node name="Asteroid_04" parent="Interactables/Asteroid_01" instance=ExtResource("13_cldap")]
-position = Vector2(434.727, -2.96228)
-rotation = 1.57603
-
-[node name="Asteroid_05" parent="Interactables/Asteroid_01" instance=ExtResource("13_cldap")]
-position = Vector2(338.587, -122.654)
-rotation = 2.27417
-
-[node name="Asteroid_06" parent="Interactables" instance=ExtResource("13_cldap")]
-position = Vector2(396, 2006)
 
 [node name="ShipLightGreen" parent="Interactables" instance=ExtResource("14_3dhsl")]
 position = Vector2(3270, 119)

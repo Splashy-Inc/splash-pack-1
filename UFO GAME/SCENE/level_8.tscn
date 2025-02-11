@@ -125,42 +125,42 @@ position = Vector2(2342, 154)
 [node name="Satellite_02" parent="Interactables" instance=ExtResource("10_cjwjs")]
 position = Vector2(2002, -357)
 
+[node name="Asteroid_05" parent="Interactables" instance=ExtResource("11_lvpse")]
+position = Vector2(-678, 541)
+
+[node name="Asteroid_04" parent="Interactables" instance=ExtResource("11_lvpse")]
+position = Vector2(-714, 360)
+rotation = -2.79253
+
+[node name="Asteroid_03" parent="Interactables" instance=ExtResource("11_lvpse")]
+position = Vector2(-549, 661)
+rotation = 1.16064
+
+[node name="Asteroid_02" parent="Interactables" instance=ExtResource("11_lvpse")]
+position = Vector2(-560, 488)
+
 [node name="Asteroid_01" parent="Interactables" instance=ExtResource("11_lvpse")]
 position = Vector2(-682, 775)
 rotation = -2.79253
 
-[node name="Asteroid_02" parent="Interactables/Asteroid_01" instance=ExtResource("11_lvpse")]
-position = Vector2(-16.4836, 311.418)
-rotation = 2.79253
+[node name="Asteroid_10" parent="Interactables" instance=ExtResource("11_lvpse")]
+position = Vector2(2144, 483)
 
-[node name="Asteroid_03" parent="Interactables/Asteroid_01" instance=ExtResource("11_lvpse")]
-position = Vector2(-85.9893, 152.613)
-rotation = -2.33002
+[node name="Asteroid_09" parent="Interactables" instance=ExtResource("11_lvpse")]
+position = Vector2(2055, 626)
+rotation = -1.62839
+scale = Vector2(1, 1)
 
-[node name="Asteroid_04" parent="Interactables/Asteroid_01" instance=ExtResource("11_lvpse")]
-position = Vector2(172.007, 379.028)
+[node name="Asteroid_08" parent="Interactables" instance=ExtResource("11_lvpse")]
+position = Vector2(2388, 679)
+rotation = -1.5132
 
-[node name="Asteroid_05" parent="Interactables/Asteroid_01" instance=ExtResource("11_lvpse")]
-position = Vector2(76.2732, 221.256)
-rotation = 2.79253
+[node name="Asteroid_07" parent="Interactables" instance=ExtResource("11_lvpse")]
+position = Vector2(2258, 834)
+rotation = 1.25664
 
 [node name="Asteroid_06" parent="Interactables" instance=ExtResource("11_lvpse")]
 position = Vector2(2217, 688)
-
-[node name="Asteroid_07" parent="Interactables/Asteroid_06" instance=ExtResource("11_lvpse")]
-position = Vector2(41, 146)
-rotation = 1.25664
-
-[node name="Asteroid_08" parent="Interactables/Asteroid_06" instance=ExtResource("11_lvpse")]
-position = Vector2(171, -9)
-rotation = -1.5132
-
-[node name="Asteroid_09" parent="Interactables/Asteroid_06" instance=ExtResource("11_lvpse")]
-position = Vector2(-162, -62)
-rotation = -1.62839
-
-[node name="Asteroid_10" parent="Interactables/Asteroid_06" instance=ExtResource("11_lvpse")]
-position = Vector2(-73, -205)
 
 [node name="ShipLightGreen" parent="Interactables" instance=ExtResource("13_f3m7q")]
 position = Vector2(2546, 899)
