@@ -11,9 +11,10 @@
 [ext_resource type="PackedScene" uid="uid://b312dkg3bdpq5" path="res://SCENE/speed_boost.tscn" id="8_x11tn"]
 [ext_resource type="PackedScene" uid="uid://c8bmf4h8y3gvh" path="res://SCENE/ship_light_green.tscn" id="9_ydhmj"]
 
-[node name="level1" type="Node2D"]
+[node name="level1" type="Node2D" groups=["Level"]]
 script = ExtResource("1_ew48j")
 next_level = ExtResource("2_7mj4m")
+is_final_level = null
 
 [node name="Background_01" parent="." instance=ExtResource("3_tu8hl")]
 

@@ -7,7 +7,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_w8lep"]
 radius = 4.0
 
-[node name="ShipLightGreen" type="Area2D"]
+[node name="ShipLightGreen" type="Area2D" groups=["Egg"]]
 z_index = -1
 scale = Vector2(2, 2)
 collision_layer = 4

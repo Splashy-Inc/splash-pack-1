@@ -9,6 +9,8 @@ extends Node2D
 @export var next_level : PackedScene = null
 @export var is_final_level: bool = false
 
+var eggs_collected := 0
+
 #SET UP
 func _ready():
 	player.global_position = start.get_spawn_position()
@@ -26,8 +28,9 @@ func reset_player():
 func _on_exit_body_entered(body):
 	if body is Player:
 		if is_final_level || (next_level != null):
-			body.shrink() 
+			body.shrink()
 			await get_tree().create_timer(.5).timeout
+			Globals.update_eggs_collected(eggs_collected)
 			if is_final_level:
 				ui_layer.show_win_screen(true)
 			else:
@@ -44,3 +47,6 @@ func _on_star_touched_player():
 
 func _on_comet_touched_player():
 	reset_player()
+
+func _on_egg_collected():
+	eggs_collected += 1

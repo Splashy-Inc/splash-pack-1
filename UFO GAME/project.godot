@@ -20,6 +20,7 @@ config/icon="res://SplorshIcon.png"
 [autoload]
 
 AudioPlayer="*res://SCENE/audio_player.tscn"
+Globals="*res://SCRIPTS/globals.gd"
 
 [display]
 
@@ -29,6 +30,12 @@ window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="canvas_items"
 window/stretch/scale_mode="integer"
+
+[global_group]
+
+Egg=""
+HUD=""
+Level=""
 
 [input]
 
@@ -78,3 +85,4 @@ reset={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"

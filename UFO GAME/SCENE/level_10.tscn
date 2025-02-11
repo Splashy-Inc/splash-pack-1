@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bd0xoq8a7ccg8" path="res://SCENE/comet.tscn" id="12_3mb8y"]
 [ext_resource type="PackedScene" uid="uid://c8bmf4h8y3gvh" path="res://SCENE/ship_light_green.tscn" id="13_klrmi"]
 
-[node name="level10" type="Node2D"]
+[node name="level10" type="Node2D" groups=["Level"]]
 script = ExtResource("1_q6w24")
 is_final_level = true
 

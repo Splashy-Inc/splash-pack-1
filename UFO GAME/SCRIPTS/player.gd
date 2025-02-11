@@ -2,6 +2,7 @@ extends CharacterBody2D
 class_name Player
 
 @onready var animated_sprite = $AnimatedSprite2D
+@onready var joystick = $joystick
 
 var force = 500
 var active = true
@@ -31,6 +32,13 @@ func _physics_process(delta):
 			velocity = velocity/2
 		else:
 			velocity = velocity.slide(collision.get_normal())
+			
+#Joystick Command
+	var direction = joystick.posVector
+	if direction != Vector2.ZERO:
+			velocity += direction * force * delta
+
+	move_and_slide()
 	
 func freeze():
 	active = false
