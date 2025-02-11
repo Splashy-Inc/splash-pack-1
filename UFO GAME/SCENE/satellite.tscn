@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c2oxd5gviwrqd"]
+[gd_scene load_steps=5 format=3 uid="uid://c2oxd5gviwrqd"]
 
+[ext_resource type="Script" path="res://SCRIPTS/satellite.gd" id="1_eftvk"]
 [ext_resource type="Texture2D" uid="uid://dkto0rukrb5h1" path="res://ASSETS/INTERACTABLES/Satalite.png" id="2_01hwt"]
+[ext_resource type="AudioStream" uid="uid://sdqwrtgqtdkw" path="res://ASSETS/AUDIO/SataliteNoise.wav" id="3_elqi2"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g4rcn"]
 
@@ -10,9 +12,15 @@ collision_mask = 6
 mass = 2.0
 physics_material_override = SubResource("PhysicsMaterial_g4rcn")
 gravity_scale = 0.0
+script = ExtResource("1_eftvk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_01hwt")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-52, -47.4, -52, -44.3, -54, -43.2, -54, -23, -21.3, -0.200001, -24.1, 3.1, -33.5, -2, -43.8, -2, -51.7, 5, -53.4, 5, -55, 9.7, -55, 23.6, -45, 37.6, -45, 39.4, -35, 43.3, -35, 45.2, -23.8, 44, -20.1, 44, -15.1, 38, -13.3, 38, -11, 23.2, -11, 22.2, -10.5, 22, -2.4, 22, 17.3, 9.1, 18, 9.8, 18, 21.1, 21, 23.1, 21, 24.2, 53, 41.2, 53, 42.2, 55.1, 43.3, 58.6, 41, 61, 41, 61, 17.9, 29.6, -1, 28.1, -1, 27, -2.7, 27, -8.7, 21, -15.8, 21, -17, 15.7, -21, 8.4, -21, -8.5, -9.1, -12, -23, -12, -25.2)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_elqi2")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -4,7 +4,7 @@ func _ready():
 	$Splashy/AnimationPlayer.play("splashy_spiral")
 	await $Splashy/AnimationPlayer.animation_finished
 	$Dialog.show()
-	await get_tree().create_timer(5).timeout
+	$Dialog/AudioStreamPlayer.play()
 	$Button.show()
 
 func _on_button_pressed():

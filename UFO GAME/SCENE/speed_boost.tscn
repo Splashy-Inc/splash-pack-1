@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b312dkg3bdpq5"]
+[gd_scene load_steps=11 format=3 uid="uid://b312dkg3bdpq5"]
 
 [ext_resource type="Script" path="res://SCRIPTS/speed_boost.gd" id="1_crh60"]
 [ext_resource type="Texture2D" uid="uid://1ua4lmmc5exb" path="res://ASSETS/INTERACTABLES/Boost1.png" id="2_kb26s"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://drrnif17yle1l" path="res://ASSETS/INTERACTABLES/Boost4.png" id="5_eljox"]
 [ext_resource type="Texture2D" uid="uid://bhorwodo64ah" path="res://ASSETS/INTERACTABLES/Boost5.png" id="6_a8mol"]
 [ext_resource type="Texture2D" uid="uid://cdk1vjqpbn1x1" path="res://ASSETS/INTERACTABLES/Boost6.png" id="7_bcr0c"]
+[ext_resource type="AudioStream" uid="uid://b0djprj5dtpkf" path="res://ASSETS/AUDIO/Speedboost.wav" id="8_mfw8d"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v825y"]
 animations = [{
@@ -70,5 +71,8 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_1r8w0")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_mfw8d")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://c5bcnnxo1vige" path="res://SCENE/ui_layer.tscn" id="5_rg4m1"]
 [ext_resource type="PackedScene" uid="uid://b7kd42vp1cap2" path="res://SCENE/exit.tscn" id="7_plisr"]
 [ext_resource type="PackedScene" uid="uid://b312dkg3bdpq5" path="res://SCENE/speed_boost.tscn" id="8_q3gki"]
-[ext_resource type="PackedScene" uid="uid://c8bmf4h8y3gvh" path="res://ship_light_green.tscn" id="10_l2msf"]
+[ext_resource type="PackedScene" uid="uid://c8bmf4h8y3gvh" path="res://SCENE/ship_light_green.tscn" id="10_l2msf"]
 
 [node name="level2" type="Node2D"]
 script = ExtResource("1_6lexr")
@@ -66,6 +66,22 @@ rotation = 0.991347
 position = Vector2(2834, 1268)
 rotation = -3.07527
 
+[node name="SpeedBoost_07" parent="Interactables" instance=ExtResource("8_q3gki")]
+position = Vector2(2003, 459)
+rotation = -3.07527
+
+[node name="SpeedBoost_08" parent="Interactables" instance=ExtResource("8_q3gki")]
+position = Vector2(1083, 802)
+rotation = -3.07527
+
+[node name="SpeedBoost_09" parent="Interactables" instance=ExtResource("8_q3gki")]
+position = Vector2(2460, 1734)
+rotation = -3.07527
+
+[node name="SpeedBoost_10" parent="Interactables" instance=ExtResource("8_q3gki")]
+position = Vector2(2655, 552)
+rotation = -3.4767
+
 [node name="ShipLightGreen" parent="Interactables" instance=ExtResource("10_l2msf")]
 position = Vector2(1140, 292)
 
@@ -80,6 +96,39 @@ position = Vector2(3064, 1532)
 
 [node name="ShipLightGreen5" parent="Interactables" instance=ExtResource("10_l2msf")]
 position = Vector2(2016, 2024)
+
+[node name="ShipLightGreen6" parent="Interactables" instance=ExtResource("10_l2msf")]
+position = Vector2(1465, 1905)
+
+[node name="ShipLightGreen7" parent="Interactables" instance=ExtResource("10_l2msf")]
+position = Vector2(1562, 1532)
+
+[node name="ShipLightGreen8" parent="Interactables" instance=ExtResource("10_l2msf")]
+position = Vector2(1270, 1676)
+
+[node name="ShipLightGreen9" parent="Interactables" instance=ExtResource("10_l2msf")]
+position = Vector2(1550, 1265)
+
+[node name="ShipLightGreen10" parent="Interactables" instance=ExtResource("10_l2msf")]
+position = Vector2(2241, 1947)
+
+[node name="ShipLightGreen11" parent="Interactables" instance=ExtResource("10_l2msf")]
+position = Vector2(2381, 1570)
+
+[node name="ShipLightGreen12" parent="Interactables" instance=ExtResource("10_l2msf")]
+position = Vector2(2428, 858)
+
+[node name="ShipLightGreen13" parent="Interactables" instance=ExtResource("10_l2msf")]
+position = Vector2(2030, 235)
+
+[node name="ShipLightGreen14" parent="Interactables" instance=ExtResource("10_l2msf")]
+position = Vector2(1742, 180)
+
+[node name="ShipLightGreen15" parent="Interactables" instance=ExtResource("10_l2msf")]
+position = Vector2(954, 574)
+
+[node name="ShipLightGreen16" parent="Interactables" instance=ExtResource("10_l2msf")]
+position = Vector2(1441, 909)
 
 [editable path="UILayer"]
 [editable path="UILayer/HUD"]

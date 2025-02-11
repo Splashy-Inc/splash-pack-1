@@ -1,29 +1,62 @@
-[gd_scene load_steps=9 format=3 uid="uid://id6tv0fprkeu"]
+[gd_scene load_steps=18 format=3 uid="uid://id6tv0fprkeu"]
 
-[ext_resource type="Texture2D" uid="uid://caub5rv0wf6y5" path="res://ASSETS/IntroBackground.png" id="1_ji0mt"]
 [ext_resource type="Script" path="res://SCRIPTS/into_scene.gd" id="1_r55il"]
+[ext_resource type="Texture2D" uid="uid://ousoteoa23yy" path="res://ASSETS/PLAYER/SploshShipSpriteSheet.png" id="2_pe8a0"]
+[ext_resource type="PackedScene" uid="uid://c5aeo451sdwy" path="res://SCENE/background_01.tscn" id="3_m6rkd"]
+[ext_resource type="AudioStream" uid="uid://xqbkjstiepn4" path="res://ASSETS/AUDIO/SaveMyBabies.ogg" id="4_74w4n"]
 [ext_resource type="Texture2D" uid="uid://ddiwmx7e3agtq" path="res://ASSETS/fish_watercolor_neutral.png" id="9_u7oet"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tg4oo"]
+atlas = ExtResource("2_pe8a0")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xt0et"]
+atlas = ExtResource("2_pe8a0")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5xegt"]
+atlas = ExtResource("2_pe8a0")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ycr72"]
+atlas = ExtResource("2_pe8a0")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o203q"]
+atlas = ExtResource("2_pe8a0")
+region = Rect2(480, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eqrpw"]
+atlas = ExtResource("2_pe8a0")
+region = Rect2(576, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ejjll"]
+atlas = ExtResource("2_pe8a0")
+region = Rect2(768, 0, 96, 96)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vnpfl"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": null
+"texture": SubResource("AtlasTexture_tg4oo")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": SubResource("AtlasTexture_xt0et")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": SubResource("AtlasTexture_5xegt")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": SubResource("AtlasTexture_ycr72")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": SubResource("AtlasTexture_o203q")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": SubResource("AtlasTexture_eqrpw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ejjll")
 }],
 "loop": true,
 "name": &"default",
@@ -93,15 +126,12 @@ _data = {
 
 [sub_resource type="LabelSettings" id="LabelSettings_t548a"]
 line_spacing = 1.0
-font_size = 18
+font_size = 22
 outline_size = 5
 outline_color = Color(0, 0, 0, 1)
 
 [node name="IntoScene" type="CanvasLayer"]
 script = ExtResource("1_r55il")
-
-[node name="BG" type="TextureRect" parent="."]
-texture = ExtResource("1_ji0mt")
 
 [node name="Splashy" type="Node" parent="."]
 
@@ -120,9 +150,9 @@ libraries = {
 
 [node name="Dialog" type="PanelContainer" parent="."]
 visible = false
-offset_top = 352.0
-offset_right = 960.0
-offset_bottom = 540.0
+offset_top = 534.0
+offset_right = 1280.0
+offset_bottom = 722.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Dialog"]
 layout_mode = 2
@@ -136,11 +166,11 @@ custom_minimum_size = Vector2(592, 188)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
-text = "Whew! Glad your escape pod made it out ok.
+text = "Captain Splorsh! 
 
-It looks like the ship crash landed on Kromulon in sector SF-298. You'll have to follow the series of flight paths through several wormholes to get there...
+Someone threw my baby eggs into the wormholes! 
 
-Good luck out there, Splorsh!"
+Please save them Captain Splorsh! Please!"
 label_settings = SubResource("LabelSettings_t548a")
 autowrap_mode = 2
 
@@ -150,13 +180,18 @@ texture = ExtResource("9_u7oet")
 expand_mode = 3
 flip_h = true
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Dialog"]
+stream = ExtResource("4_74w4n")
+
 [node name="Button" type="Button" parent="."]
-visible = false
-offset_left = 850.0
-offset_top = 300.0
-offset_right = 946.0
-offset_bottom = 336.0
+offset_left = 1169.0
+offset_top = 18.0
+offset_right = 1265.0
+offset_bottom = 54.0
 theme_override_font_sizes/font_size = 20
-text = "Continue"
+text = "Next"
+
+[node name="Background_01" parent="." instance=ExtResource("3_m6rkd")]
+position = Vector2(795, 506)
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
