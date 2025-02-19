@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://cwbjb0hiu4icf"]
+[gd_scene load_steps=9 format=3 uid="uid://cwbjb0hiu4icf"]
 
-[ext_resource type="Script" path="res://SCENE/trap_door.gd" id="1_gf7xn"]
+[ext_resource type="Script" path="res://SCRIPTS/trap_door.gd" id="1_gf7xn"]
 [ext_resource type="Texture2D" uid="uid://b5d0rxcpqx7s0" path="res://ASSETS/Background/Terrain/DesertShelf.png" id="1_siii0"]
+[ext_resource type="AudioStream" uid="uid://sjvq38e46v0c" path="res://ASSETS/Audio/TrapDoorUhOh.mp3" id="3_huxjv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pyla0"]
 size = Vector2(64, 2.5)
@@ -72,6 +73,9 @@ autoplay = "idle"
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_huxjv")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

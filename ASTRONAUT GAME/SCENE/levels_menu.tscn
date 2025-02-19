@@ -1,18 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://d0bdhkxhkgqr8"]
+[gd_scene load_steps=4 format=3 uid="uid://d0bdhkxhkgqr8"]
 
 [ext_resource type="Script" path="res://SCRIPTS/levels_menu.gd" id="1_iwb1a"]
 [ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://SCENE/BG.tscn" id="1_qrqwm"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_iadxd"]
-font_size = 20
-font_color = Color(1, 0.956863, 0.678431, 1)
-outline_size = 5
-outline_color = Color(0.858824, 0.603922, 0.34902, 1)
-shadow_size = 5
-shadow_color = Color(0, 0, 0, 1)
-shadow_offset = Vector2(5, 5)
-
-[sub_resource type="LabelSettings" id="LabelSettings_h8owi"]
 font_size = 20
 font_color = Color(1, 0.956863, 0.678431, 1)
 outline_size = 5
@@ -41,160 +32,101 @@ offset_bottom = 261.0
 text = "Back"
 
 [node name="StorylineLevels" type="Label" parent="."]
-layout_mode = 0
-offset_left = 25.0
-offset_top = 10.0
-offset_right = 176.0
-offset_bottom = 38.0
-text = "Storyline"
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -75.5
+offset_right = 75.5
+offset_bottom = 28.0
+grow_horizontal = 2
+text = "Levels"
 label_settings = SubResource("LabelSettings_iadxd")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Level_01" type="Button" parent="."]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 57.0
-offset_right = 70.0
-offset_bottom = 88.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -102.0
+offset_top = -55.0
+offset_right = -40.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "Level 1"
 
-[node name="Level_02" type="Button" parent="."]
+[node name="Level_02" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_left = 8.0
-offset_top = 95.0
-offset_right = 70.0
-offset_bottom = 126.0
+offset_top = 38.0
+offset_right = 62.0
+offset_bottom = 69.0
 text = "Level 2"
 
-[node name="Level_03" type="Button" parent="."]
+[node name="Level_03" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_left = 8.0
-offset_top = 133.0
-offset_right = 70.0
-offset_bottom = 164.0
+offset_top = 76.0
+offset_right = 62.0
+offset_bottom = 107.0
 text = "Level 3"
 
-[node name="Level_04" type="Button" parent="."]
+[node name="Level_04" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_left = 86.0
-offset_top = 57.0
-offset_right = 148.0
-offset_bottom = 88.0
+offset_left = 78.0
+offset_right = 140.0
+offset_bottom = 31.0
 text = "Level 4"
 
-[node name="Level_05" type="Button" parent="."]
+[node name="Level_05" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_left = 86.0
-offset_top = 95.0
-offset_right = 148.0
-offset_bottom = 126.0
+offset_left = 78.0
+offset_top = 38.0
+offset_right = 140.0
+offset_bottom = 69.0
 text = "Level 5"
 
-[node name="Level_06" type="Button" parent="."]
+[node name="Level_06" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_left = 86.0
-offset_top = 133.0
-offset_right = 148.0
-offset_bottom = 164.0
+offset_left = 78.0
+offset_top = 76.0
+offset_right = 140.0
+offset_bottom = 107.0
 text = "Level 6"
 
-[node name="Level_07" type="Button" parent="."]
+[node name="Level_07" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_left = 162.0
-offset_top = 57.0
-offset_right = 224.0
-offset_bottom = 88.0
+offset_left = 154.0
+offset_right = 216.0
+offset_bottom = 31.0
 text = "Level 7"
 
-[node name="Level_08" type="Button" parent="."]
+[node name="Level_08" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_left = 162.0
-offset_top = 95.0
-offset_right = 224.0
-offset_bottom = 126.0
+offset_left = 154.0
+offset_top = 38.0
+offset_right = 216.0
+offset_bottom = 69.0
 text = "Level 8"
 
-[node name="Level_09" type="Button" parent="."]
+[node name="Level_09" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_left = 162.0
-offset_top = 133.0
-offset_right = 224.0
-offset_bottom = 164.0
+offset_left = 154.0
+offset_top = 76.0
+offset_right = 216.0
+offset_bottom = 107.0
 text = "Level 9"
-
-[node name="BonusLevels" type="Label" parent="."]
-layout_mode = 0
-offset_left = 323.0
-offset_top = 10.0
-offset_right = 449.0
-offset_bottom = 38.0
-text = "Bonus Levels"
-label_settings = SubResource("LabelSettings_h8owi")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="B_L_1" type="Button" parent="."]
-layout_mode = 0
-offset_left = 298.0
-offset_top = 59.0
-offset_right = 344.0
-offset_bottom = 90.0
-text = "B.L.1"
-
-[node name="B_L_2" type="Button" parent="."]
-layout_mode = 0
-offset_left = 298.0
-offset_top = 100.0
-offset_right = 344.0
-offset_bottom = 131.0
-text = "B.L.2"
-
-[node name="B_L_3" type="Button" parent="."]
-layout_mode = 0
-offset_left = 298.0
-offset_top = 140.0
-offset_right = 344.0
-offset_bottom = 171.0
-text = "B.L.3"
-
-[node name="B_L_4" type="Button" parent="."]
-layout_mode = 0
-offset_left = 298.0
-offset_top = 178.0
-offset_right = 344.0
-offset_bottom = 209.0
-text = "B.L.4"
-
-[node name="B_L_5" type="Button" parent="."]
-layout_mode = 0
-offset_left = 298.0
-offset_top = 215.0
-offset_right = 344.0
-offset_bottom = 246.0
-text = "B.L.5"
-
-[node name="B_L_6" type="Button" parent="."]
-layout_mode = 0
-offset_left = 393.0
-offset_top = 58.0
-offset_right = 439.0
-offset_bottom = 89.0
-text = "B.L.6"
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="Level_01" to="." method="_on_level_01_pressed"]
-[connection signal="pressed" from="Level_02" to="." method="_on_level_02_pressed"]
-[connection signal="pressed" from="Level_03" to="." method="_on_level_03_pressed"]
-[connection signal="pressed" from="Level_04" to="." method="_on_level_04_pressed"]
-[connection signal="pressed" from="Level_05" to="." method="_on_level_05_pressed"]
-[connection signal="pressed" from="Level_06" to="." method="_on_level_06_pressed"]
-[connection signal="pressed" from="Level_07" to="." method="_on_level_07_pressed"]
-[connection signal="pressed" from="Level_08" to="." method="_on_level_08_pressed"]
-[connection signal="pressed" from="Level_09" to="." method="_on_level_09_pressed"]
-[connection signal="pressed" from="B_L_1" to="." method="_on_b_l_1_pressed"]
-[connection signal="pressed" from="B_L_2" to="." method="_on_b_l_2_pressed"]
-[connection signal="pressed" from="B_L_3" to="." method="_on_b_l_3_pressed"]
-[connection signal="pressed" from="B_L_4" to="." method="_on_b_l_4_pressed"]
-[connection signal="pressed" from="B_L_5" to="." method="_on_b_l_5_pressed"]
-[connection signal="pressed" from="B_L_6" to="." method="_on_b_l_6_pressed"]
+[connection signal="pressed" from="Level_01/Level_02" to="." method="_on_level_02_pressed"]
+[connection signal="pressed" from="Level_01/Level_03" to="." method="_on_level_03_pressed"]
+[connection signal="pressed" from="Level_01/Level_04" to="." method="_on_level_04_pressed"]
+[connection signal="pressed" from="Level_01/Level_05" to="." method="_on_level_05_pressed"]
+[connection signal="pressed" from="Level_01/Level_06" to="." method="_on_level_06_pressed"]
+[connection signal="pressed" from="Level_01/Level_07" to="." method="_on_level_07_pressed"]
+[connection signal="pressed" from="Level_01/Level_08" to="." method="_on_level_08_pressed"]
+[connection signal="pressed" from="Level_01/Level_09" to="." method="_on_level_09_pressed"]

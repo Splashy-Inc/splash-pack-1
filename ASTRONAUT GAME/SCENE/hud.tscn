@@ -1,8 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://o02n2e0hnmey"]
+[gd_scene load_steps=5 format=3 uid="uid://o02n2e0hnmey"]
 
 [ext_resource type="Script" path="res://SCRIPTS/hud.gd" id="1_53xtl"]
+[ext_resource type="PackedScene" uid="uid://dh6egqagpuftj" path="res://SCENE/pause_menu.tscn" id="2_u50pr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_pkdis"]
+font_size = 20
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_hdptj"]
 font_size = 20
 outline_size = 5
 outline_color = Color(0, 0, 0, 1)
@@ -29,3 +35,28 @@ text = "TIME : 9999"
 label_settings = SubResource("LabelSettings_pkdis")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="LevelLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Level:"
+label_settings = SubResource("LabelSettings_hdptj")
+
+[node name="PauseButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -55.0
+offset_bottom = 31.0
+grow_horizontal = 0
+text = "Pause"
+
+[node name="Pause" parent="." instance=ExtResource("2_u50pr")]
+visible = false
+layout_mode = 1
+
+[connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]

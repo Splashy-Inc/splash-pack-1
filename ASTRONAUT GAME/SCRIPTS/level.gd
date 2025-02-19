@@ -68,7 +68,8 @@ func _on_saw_touched_player():
 func reset_player():
 	AudioPlayer.play_sfx("hurt")
 	player.velocity = Vector2.ZERO
-	player.global_position = start.get_spawn_posistion()
+	#player.global_position = start.get_spawn_posistion()
+	get_tree().reload_current_scene()
 	
 	
 #Load next level

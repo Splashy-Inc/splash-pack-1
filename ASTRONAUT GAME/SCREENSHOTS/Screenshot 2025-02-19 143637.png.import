@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qyrorsc21pa8"
-path="res://.godot/imported/RunB.png-48ad30c9b4263ce73126b80144c4bdd4.ctex"
+uid="uid://c1cvno2vmg5f"
+path="res://.godot/imported/Screenshot 2025-02-19 143637.png-cd5841e7a6b672dae4ae8628df5b8be9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Player/RunB.png"
-dest_files=["res://.godot/imported/RunB.png-48ad30c9b4263ce73126b80144c4bdd4.ctex"]
+source_file="res://SCREENSHOTS/Screenshot 2025-02-19 143637.png"
+dest_files=["res://.godot/imported/Screenshot 2025-02-19 143637.png-cd5841e7a6b672dae4ae8628df5b8be9.ctex"]
 
 [params]
 

@@ -35,7 +35,7 @@ scale = Vector2(2, 1)
 [node name="Objects" type="Node" parent="."]
 
 [node name="TrapDoor" parent="Objects" instance=ExtResource("8_7nh70")]
-position = Vector2(104, 160)
+position = Vector2(104, 159)
 custom_integrator = false
 
 [node name="TileMap" parent="." instance=ExtResource("8_kbi16")]

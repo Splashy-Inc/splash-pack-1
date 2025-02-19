@@ -4,8 +4,11 @@ func _process(delta: float) -> void:
 	if get_contact_count() > 0:
 		drop()
 
+
 func drop() -> void:
 	if $Timer.is_stopped():
+		if not $AudioStreamPlayer2D.playing:
+			$AudioStreamPlayer2D.play()
 		$Timer.start()
 
 func _on_timer_timeout() -> void:
