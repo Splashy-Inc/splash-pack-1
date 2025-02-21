@@ -1,7 +1,8 @@
 extends Control
 
 func set_time_label(value):
-	$TimeLabel.text = "TIME: " + str(value)
+	#$TimeLabel.text = "TIME: " + str(value)
+	pass
 
 func set_level_number(value):
 	$LevelLable.text = "level: "

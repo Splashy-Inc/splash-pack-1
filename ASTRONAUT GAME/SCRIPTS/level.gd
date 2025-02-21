@@ -28,25 +28,25 @@ func _ready():
 	if death_zone != null:
 		death_zone.body_entered.connect(_on_death_zone_body_entered)
 	
-	time_left = level_time
-	if hud != null:
-		hud.set_time_label(time_left)
+	#time_left = level_time
+	#if hud != null:
+		#hud.set_time_label(time_left)
 	
-	timer_node = Timer.new()
-	timer_node.name = "Level Timer"
-	timer_node.wait_time = 1
-	timer_node.timeout.connect(_on_level_timer_timeout)
-	add_child(timer_node)
-	timer_node.start()
-
-func _on_level_timer_timeout():
-	if hud != null:
-		if win == false:
-			time_left -= 1
-			if time_left < 0:
-				reset_player()
-				time_left = level_time
-			hud.set_time_label(time_left)
+	#timer_node = Timer.new()
+	#timer_node.name = "Level Timer"
+	#timer_node.wait_time = 1
+	#timer_node.timeout.connect(_on_level_timer_timeout)
+	#add_child(timer_node)
+	#timer_node.start()
+#
+#func _on_level_timer_timeout():
+	#if hud != null:
+		#if win == false:
+			#time_left -= 1
+			#if time_left < 0:
+				#reset_player()
+				#time_left = level_time
+			#hud.set_time_label(time_left)
 	
 func _process(delta):
 	if Input.is_action_just_pressed("quit"):
@@ -56,14 +56,14 @@ func _process(delta):
 	
 func _on_death_zone_body_entered(body):
 	reset_player()
-	time_left = level_time
-	hud.set_time_label(time_left)
+	#time_left = level_time
+	#hud.set_time_label(time_left)
 	
 
 func _on_saw_touched_player():
 	reset_player()
-	time_left = level_time
-	hud.set_time_label(time_left)
+	#time_left = level_time
+	#hud.set_time_label(time_left)
 
 func reset_player():
 	AudioPlayer.play_sfx("hurt")

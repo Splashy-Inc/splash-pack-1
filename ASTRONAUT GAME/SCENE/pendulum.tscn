@@ -3,23 +3,6 @@
 [ext_resource type="Script" path="res://SCRIPTS/pendulum.gd" id="1_pq0w2"]
 [ext_resource type="Texture2D" uid="uid://bvwt8ddtu514k" path="res://ASSETS/Other/Pendulum.png" id="2_nedx7"]
 
-[sub_resource type="Animation" id="Animation_6q7c4"]
-resource_name = "swing"
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Area2D:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [0.0, 1.0472, 0.0, -1.0472]
-}
-
 [sub_resource type="Animation" id="Animation_u83ma"]
 length = 0.001
 tracks/0/type = "value"
@@ -33,6 +16,23 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [-0.785398]
+}
+
+[sub_resource type="Animation" id="Animation_6q7c4"]
+resource_name = "swing"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area2D:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.75, 1.25, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [1.0472, 0.6545, -0.676317, -1.0472]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_eb21x"]

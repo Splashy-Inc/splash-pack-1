@@ -23,6 +23,7 @@ grow_vertical = 2
 script = ExtResource("1_53xtl")
 
 [node name="TimeLabel" type="Label" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
