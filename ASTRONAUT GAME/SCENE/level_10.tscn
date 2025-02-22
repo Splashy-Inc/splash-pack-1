@@ -1,7 +1,6 @@
 [gd_scene load_steps=27 format=3 uid="uid://komu852dqkfm"]
 
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_1se2j"]
-[ext_resource type="PackedScene" uid="uid://dtjpy157bqm16" path="res://SCENE/level_03.tscn" id="2_p7av2"]
 [ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://SCENE/BG.tscn" id="3_61ro3"]
 [ext_resource type="PackedScene" uid="uid://com54dlwngvg2" path="res://SCENE/ui_layer.tscn" id="5_6g6j6"]
 [ext_resource type="PackedScene" uid="uid://cnshcfaeu5hcx" path="res://SCENE/start.tscn" id="6_bkly1"]
@@ -134,7 +133,7 @@ _data = {
 
 [node name="Level_10" type="Node2D"]
 script = ExtResource("1_1se2j")
-next_level = ExtResource("2_p7av2")
+is_final_level = true
 
 [node name="BG" parent="." instance=ExtResource("3_61ro3")]
 
