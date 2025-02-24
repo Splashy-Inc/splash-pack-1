@@ -1,0 +1,92 @@
+[gd_scene load_steps=13 format=3 uid="uid://elfwk57rxtd3"]
+
+[ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_36rsw"]
+[ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://SCENE/BG.tscn" id="2_r0rj3"]
+[ext_resource type="PackedScene" uid="uid://com54dlwngvg2" path="res://SCENE/ui_layer.tscn" id="3_2bly0"]
+[ext_resource type="PackedScene" uid="uid://cnshcfaeu5hcx" path="res://SCENE/start.tscn" id="4_b2tvn"]
+[ext_resource type="PackedScene" uid="uid://0v5wypgl6sop" path="res://SCENE/exit.tscn" id="5_ixjmi"]
+[ext_resource type="PackedScene" uid="uid://de5ui441h8jdk" path="res://SCENE/player.tscn" id="6_5uqo3"]
+[ext_resource type="PackedScene" uid="uid://cksr5brjbu80q" path="res://SCENE/death_zone.tscn" id="7_oa4vs"]
+[ext_resource type="PackedScene" uid="uid://cdu1lookb7ft" path="res://ASSETS/Scobus5/SCENES/anemone.tscn" id="8_lejlo"]
+[ext_resource type="PackedScene" uid="uid://bqhm3ilh2l7e3" path="res://ASSETS/Scobus5/SCENES/scobus_tile_map.tscn" id="8_m25o6"]
+
+[sub_resource type="Animation" id="Animation_p0owx"]
+resource_name = "new_animation"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5, 10),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(239, 485), Vector2(170, 485), Vector2(239, 485)]
+}
+
+[sub_resource type="Animation" id="Animation_75biq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(239, 485)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fwcp2"]
+_data = {
+"RESET": SubResource("Animation_75biq"),
+"new_animation": SubResource("Animation_p0owx")
+}
+
+[node name="Level_11" type="Node2D"]
+script = ExtResource("1_36rsw")
+is_final_level = true
+
+[node name="BG" parent="." instance=ExtResource("2_r0rj3")]
+
+[node name="UILayer" parent="." instance=ExtResource("3_2bly0")]
+
+[node name="LevelLabel" parent="UILayer/HUD" index="1"]
+text = "Level: 11"
+
+[node name="Start" parent="." instance=ExtResource("4_b2tvn")]
+position = Vector2(59, 497)
+
+[node name="Exit" parent="." instance=ExtResource("5_ixjmi")]
+position = Vector2(580, 497)
+
+[node name="Player" parent="." instance=ExtResource("6_5uqo3")]
+position = Vector2(147, 498)
+
+[node name="DeathZone" parent="." instance=ExtResource("7_oa4vs")]
+position = Vector2(105, 223)
+scale = Vector2(5, 1)
+
+[node name="Traps" type="Node" parent="."]
+
+[node name="anemone" parent="Traps" instance=ExtResource("8_lejlo")]
+position = Vector2(239, 485)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Traps/anemone"]
+libraries = {
+"": SubResource("AnimationLibrary_fwcp2")
+}
+autoplay = "new_animation"
+
+[node name="Objects" type="Node" parent="."]
+
+[node name="ScobusTileMap" parent="." instance=ExtResource("8_m25o6")]
+layer_0/tile_data = PackedInt32Array(2031618, 65536, 4, 2031619, 65536, 4, 2031620, 65536, 4, 2031621, 65536, 4, 2031622, 65536, 4, 2031623, 65536, 4, 2031624, 65536, 4, 2031625, 65536, 4, 2031626, 65536, 4, 2031627, 65536, 4, 2031628, 65536, 4, 2031629, 65536, 4, 2031630, 65536, 4, 2031631, 65536, 4, 2031632, 65536, 4, 2031633, 65536, 4, 2031634, 65536, 4, 2031635, 65536, 4, 2031636, 65536, 4, 2031637, 65536, 4, 2031638, 65536, 4, 2031639, 65536, 4, 2031640, 65536, 4, 2031641, 65536, 4, 2031642, 65536, 4, 2031643, 65536, 4, 2031644, 65536, 4, 2031645, 65536, 4, 2031646, 65536, 4, 2031647, 65536, 4, 2031648, 65536, 4, 2031649, 65536, 4, 2031650, 65536, 4, 2031651, 65536, 4, 2031652, 65536, 4, 2031653, 65536, 4)
+
+[editable path="UILayer"]
+[editable path="UILayer/HUD"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxm5ht5cfh4kv"
-path="res://.godot/imported/Background2.png-fe21e3ad577d162f80712f0c6f34d3b7.ctex"
+uid="uid://c3grecnk7qyp5"
+path="res://.godot/imported/Anemone.png-df988b8ac7dad8cd44360bd24a1f26bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Background/Background2.png"
-dest_files=["res://.godot/imported/Background2.png-fe21e3ad577d162f80712f0c6f34d3b7.ctex"]
+source_file="res://ASSETS/Scobus5/ASSETS/Anemone.png"
+dest_files=["res://.godot/imported/Anemone.png-df988b8ac7dad8cd44360bd24a1f26bb.ctex"]
 
 [params]
 

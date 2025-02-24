@@ -1,6 +1,7 @@
 [gd_scene load_steps=27 format=3 uid="uid://komu852dqkfm"]
 
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_1se2j"]
+[ext_resource type="PackedScene" uid="uid://elfwk57rxtd3" path="res://SCENE/level_11.tscn" id="2_w0yym"]
 [ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://SCENE/BG.tscn" id="3_61ro3"]
 [ext_resource type="PackedScene" uid="uid://com54dlwngvg2" path="res://SCENE/ui_layer.tscn" id="5_6g6j6"]
 [ext_resource type="PackedScene" uid="uid://cnshcfaeu5hcx" path="res://SCENE/start.tscn" id="6_bkly1"]
@@ -17,6 +18,21 @@
 [ext_resource type="PackedScene" uid="uid://b3p7fpgpq0eoa" path="res://SCENE/pendulum.tscn" id="16_srd8r"]
 [ext_resource type="PackedScene" uid="uid://cwbjb0hiu4icf" path="res://SCENE/trap_door.tscn" id="17_xmrfe"]
 
+[sub_resource type="Animation" id="Animation_fo8er"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
 [sub_resource type="Animation" id="Animation_vwm58"]
 resource_name = "new_animation"
 length = 3.0
@@ -32,21 +48,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, 6.28319]
-}
-
-[sub_resource type="Animation" id="Animation_fo8er"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_h7g5y"]
@@ -93,6 +94,21 @@ _data = {
 "bubble 1": SubResource("Animation_6fukr")
 }
 
+[sub_resource type="Animation" id="Animation_12irg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-81, 1442)]
+}
+
 [sub_resource type="Animation" id="Animation_xy53w"]
 resource_name = "new_animation"
 length = 6.0
@@ -110,21 +126,6 @@ tracks/0/keys = {
 "values": [Vector2(-81, 1442), Vector2(-81, 482)]
 }
 
-[sub_resource type="Animation" id="Animation_12irg"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-81, 1442)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6rtep"]
 _data = {
 "RESET": SubResource("Animation_12irg"),
@@ -133,7 +134,7 @@ _data = {
 
 [node name="Level_10" type="Node2D"]
 script = ExtResource("1_1se2j")
-is_final_level = true
+next_level = ExtResource("2_w0yym")
 
 [node name="BG" parent="." instance=ExtResource("3_61ro3")]
 
@@ -175,7 +176,6 @@ position = Vector2(114, 743)
 
 [node name="SpikeWall3" parent="Traps" instance=ExtResource("11_srlqi")]
 position = Vector2(603, 763)
-scale = Vector2(1, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Traps/SpikeWall3"]
 libraries = {
@@ -185,7 +185,6 @@ autoplay = "new_animation"
 
 [node name="SpikeWall4" parent="Traps" instance=ExtResource("11_srlqi")]
 position = Vector2(516, 1382)
-scale = Vector2(1, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Traps/SpikeWall4"]
 root_node = NodePath("../../SpikeWall4")
