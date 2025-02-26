@@ -8,3 +8,9 @@ func _on_body_entered(body):
 	if body is Player:
 		animated_sprite.play("jump_animation")
 		body.jump(jump_force)
+		
+
+
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	animated_sprite.play("idle")

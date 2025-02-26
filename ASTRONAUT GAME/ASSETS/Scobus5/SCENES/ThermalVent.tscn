@@ -1,0 +1,109 @@
+[gd_scene load_steps=15 format=3 uid="uid://b02qjg4gut26y"]
+
+[ext_resource type="Script" path="res://SCRIPTS/jump_pad.gd" id="1_dukkh"]
+[ext_resource type="Texture2D" uid="uid://d17ypi7thv634" path="res://ASSETS/Scobus5/ASSETS/ThermalVentSpriteSheet.png" id="2_ar733"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4nalh"]
+atlas = ExtResource("2_ar733")
+region = Rect2(0, 0, 64, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_of3cs"]
+atlas = ExtResource("2_ar733")
+region = Rect2(64, 0, 64, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xf81i"]
+atlas = ExtResource("2_ar733")
+region = Rect2(128, 0, 64, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e5k2i"]
+atlas = ExtResource("2_ar733")
+region = Rect2(192, 0, 64, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ks35f"]
+atlas = ExtResource("2_ar733")
+region = Rect2(256, 0, 64, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xulti"]
+atlas = ExtResource("2_ar733")
+region = Rect2(320, 0, 64, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8goum"]
+atlas = ExtResource("2_ar733")
+region = Rect2(384, 0, 64, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_128s1"]
+atlas = ExtResource("2_ar733")
+region = Rect2(448, 0, 64, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_103ga"]
+atlas = ExtResource("2_ar733")
+region = Rect2(512, 0, 64, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6f4k"]
+atlas = ExtResource("2_ar733")
+region = Rect2(576, 0, 64, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d4v88"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4nalh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_of3cs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xf81i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e5k2i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ks35f")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xulti")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8goum")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_128s1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_103ga")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6f4k")
+}],
+"loop": false,
+"name": &"jump_animation",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3d7my"]
+size = Vector2(11, 3.25)
+
+[node name="ThermalVent" type="Area2D"]
+z_index = -10
+collision_mask = 2
+script = ExtResource("1_dukkh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -64)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_d4v88")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -63)
+shape = SubResource("RectangleShape2D_3d7my")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
