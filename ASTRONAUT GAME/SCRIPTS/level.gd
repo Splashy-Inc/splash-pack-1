@@ -20,6 +20,7 @@ func _ready():
 	player = get_tree().get_first_node_in_group("player")
 	if player != null and start != null:
 		player.global_position = start.get_spawn_posistion()
+		player.died.connect(_on_player_died)
 	var traps =  get_tree().get_nodes_in_group("traps")
 	for trap in traps: 
 		trap.touched_player.connect(_on_saw_touched_player)
@@ -55,15 +56,14 @@ func _process(delta):
 		get_tree().reload_current_scene()
 	
 func _on_death_zone_body_entered(body):
-	reset_player()
-	#time_left = level_time
-	#hud.set_time_label(time_left)
+	_on_player_died()
 	
 
 func _on_saw_touched_player():
+	_on_player_died()
+	
+func _on_player_died():
 	reset_player()
-	#time_left = level_time
-	#hud.set_time_label(time_left)
 
 func reset_player():
 	AudioPlayer.play_sfx("hurt")

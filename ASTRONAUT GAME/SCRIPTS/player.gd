@@ -1,6 +1,8 @@
 extends CharacterBody2D
+
 class_name Player
 
+signal died
 
 @export var gravity = 400 
 @export var speed = 125 
@@ -55,3 +57,5 @@ func updated_animation(direction):
 		else:
 			animated_sprite.play("fall")
 			
+func hit():
+	died.emit()

@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://ewfy6gokgqr3"]
+
+[ext_resource type="Script" path="res://ASSETS/Scobus5/SCRIPTS/pearl.gd" id="1_013jy"]
+[ext_resource type="Texture2D" uid="uid://dtr7oejui0e0w" path="res://ASSETS/Scobus5/ASSETS/Pearl.png" id="1_dyhjj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_81vqp"]
+radius = 7.0
+
+[node name="Pearl" type="Node2D" groups=["traps"]]
+script = ExtResource("1_013jy")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(0, -3)
+texture = ExtResource("1_dyhjj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_81vqp")
+
+[node name="Timer" type="Timer" parent="Area2D"]
+wait_time = 3.0
+autostart = true
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
