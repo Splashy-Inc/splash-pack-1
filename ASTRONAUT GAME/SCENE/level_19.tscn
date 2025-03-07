@@ -1,0 +1,47 @@
+[gd_scene load_steps=11 format=3 uid="uid://b3oec2y30bauq"]
+
+[ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_4k5nf"]
+[ext_resource type="PackedScene" uid="uid://be5nae6lix3yf" path="res://SCENE/level_20.tscn" id="2_1bga6"]
+[ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://SCENE/BG.tscn" id="2_8tu5x"]
+[ext_resource type="Texture2D" uid="uid://dna42xcil1f8g" path="res://ASSETS/Scobus5/ASSETS/ScobusBackground.png" id="3_xflq5"]
+[ext_resource type="PackedScene" uid="uid://com54dlwngvg2" path="res://SCENE/ui_layer.tscn" id="4_bso8a"]
+[ext_resource type="PackedScene" uid="uid://cnshcfaeu5hcx" path="res://SCENE/start.tscn" id="5_vbkts"]
+[ext_resource type="PackedScene" uid="uid://0v5wypgl6sop" path="res://SCENE/exit.tscn" id="6_k2xjr"]
+[ext_resource type="PackedScene" uid="uid://de5ui441h8jdk" path="res://SCENE/player.tscn" id="7_pt5vq"]
+[ext_resource type="PackedScene" uid="uid://cksr5brjbu80q" path="res://SCENE/death_zone.tscn" id="8_8147q"]
+[ext_resource type="PackedScene" uid="uid://bqhm3ilh2l7e3" path="res://ASSETS/Scobus5/SCENES/scobus_tile_map.tscn" id="9_66sbl"]
+
+[node name="Level_19" type="Node2D"]
+script = ExtResource("1_4k5nf")
+next_level = ExtResource("2_1bga6")
+
+[node name="BG" parent="." instance=ExtResource("2_8tu5x")]
+bg_texture = ExtResource("3_xflq5")
+
+[node name="UILayer" parent="." instance=ExtResource("4_bso8a")]
+
+[node name="LevelLabel" parent="UILayer/HUD" index="1"]
+text = "Level: 19"
+
+[node name="Start" parent="." instance=ExtResource("5_vbkts")]
+position = Vector2(59, 497)
+
+[node name="Exit" parent="." instance=ExtResource("6_k2xjr")]
+position = Vector2(580, 497)
+
+[node name="Player" parent="." instance=ExtResource("7_pt5vq")]
+position = Vector2(152, 497)
+
+[node name="DeathZone" parent="." instance=ExtResource("8_8147q")]
+position = Vector2(105, 223)
+scale = Vector2(5, 1)
+
+[node name="Traps" type="Node" parent="."]
+
+[node name="Objects" type="Node" parent="."]
+
+[node name="ScobusTileMap" parent="." instance=ExtResource("9_66sbl")]
+layer_0/tile_data = PackedInt32Array(2031618, 65536, 0, 2031619, 65536, 0, 2031620, 65536, 0, 2031621, 65536, 0, 2031622, 65536, 0, 2031623, 65536, 0, 2031624, 65536, 0, 2031625, 65536, 0, 2031627, 65536, 0, 2031633, 65536, 0, 2031634, 65536, 0, 2031635, 65536, 0, 2031636, 65536, 0, 2031637, 65536, 0, 2031638, 65536, 0, 2031639, 65536, 0, 2031640, 65536, 0, 2031643, 65536, 0, 2031644, 65536, 0, 2031646, 65536, 0, 2031647, 65536, 0, 2031648, 65536, 0, 2031649, 65536, 0, 2031650, 65536, 0, 2031651, 65536, 0, 2031652, 65536, 0, 2031653, 65536, 0, 2031617, 65536, 0, 2031645, 65536, 0, 2031629, 65536, 0, 2031630, 65536, 0, 2031631, 65536, 0, 2031626, 65536, 0, 2031628, 65536, 0, 2031632, 65536, 0, 2031641, 65536, 0, 2031642, 65536, 0)
+
+[editable path="UILayer"]
+[editable path="UILayer/HUD"]

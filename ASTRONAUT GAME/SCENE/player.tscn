@@ -114,13 +114,12 @@ script = ExtResource("1_oacfc")
 position = Vector2(0, -16)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_yvpmv")
-animation = &"run"
+animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.602689
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(0, -15)
-polygon = PackedVector2Array(-8, 15, -6, -10, -2, -14, 2, -14, 6, -10, 8, 15)
+polygon = PackedVector2Array(-7, 15, -6, -10, -2, -14, 2, -14, 6, -10, 7, 15)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 

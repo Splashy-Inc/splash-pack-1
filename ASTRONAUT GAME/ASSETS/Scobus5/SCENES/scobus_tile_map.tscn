@@ -1,6 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://bqhm3ilh2l7e3"]
+[gd_scene load_steps=7 format=3 uid="uid://bqhm3ilh2l7e3"]
 
 [ext_resource type="Texture2D" uid="uid://b3hdw3mwrbkv8" path="res://ASSETS/Scobus5/ASSETS/Scobus5Terrain.png" id="1_wbcrr"]
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_inqyx"]
+tile_data = PackedInt32Array(0, 131072, 1, 8, 131072, 1)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_xq5sy"]
+tile_data = PackedInt32Array(196608, 131072, 1, 1, 131072, 1, 65537, 131072, 1, 131073, 131072, 1, 196609, 131072, 1)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_l8yey"]
+tile_data = PackedInt32Array(196608, 131072, 1, 4, 131072, 1)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4eyle"]
 texture = ExtResource("1_wbcrr")
@@ -229,7 +238,11 @@ texture = ExtResource("1_wbcrr")
 physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 2
 sources/0 = SubResource("TileSetAtlasSource_4eyle")
+pattern_0 = SubResource("TileMapPattern_inqyx")
+pattern_1 = SubResource("TileMapPattern_xq5sy")
+pattern_2 = SubResource("TileMapPattern_l8yey")
 
 [node name="ScobusTileMap" type="TileMap"]
 tile_set = SubResource("TileSet_eq62j")
 format = 2
+layer_0/tile_data = PackedInt32Array(0, 131072, 1, -196604, 131072, 1)

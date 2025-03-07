@@ -10,7 +10,7 @@ outline_size = 5
 outline_color = Color(0.858824, 0.603922, 0.34902, 1)
 shadow_size = 5
 shadow_color = Color(0, 0, 0, 1)
-shadow_offset = Vector2(5, 5)
+shadow_offset = Vector2(3, 3)
 
 [node name="LevelsMenu" type="Control"]
 layout_mode = 3
@@ -31,18 +31,18 @@ offset_right = 57.0
 offset_bottom = 261.0
 text = "Back"
 
-[node name="StorylineLevels" type="Label" parent="."]
+[node name="KromulonLabel" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -75.5
-offset_right = 75.5
-offset_bottom = 28.0
+offset_left = -227.0
+offset_top = 3.0
+offset_right = -76.0
+offset_bottom = 31.0
 grow_horizontal = 2
-text = "Levels"
+text = "Kromulon"
 label_settings = SubResource("LabelSettings_iadxd")
-horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Level_01" type="Button" parent="."]
@@ -52,73 +52,172 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -102.0
-offset_top = -55.0
-offset_right = -40.0
-offset_bottom = -24.0
+offset_left = -147.0
+offset_top = -89.0
+offset_right = -85.0
+offset_bottom = -58.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.5, 0.5)
 text = "Level 1"
 
 [node name="Level_02" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_top = 38.0
-offset_right = 62.0
-offset_bottom = 69.0
+offset_left = 72.0
+offset_right = 134.0
+offset_bottom = 31.0
 text = "Level 2"
 
 [node name="Level_03" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_top = 76.0
-offset_right = 62.0
-offset_bottom = 107.0
+offset_left = 144.0
+offset_right = 206.0
+offset_bottom = 31.0
 text = "Level 3"
 
 [node name="Level_04" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_left = 78.0
-offset_right = 140.0
+offset_left = 216.0
+offset_right = 278.0
 offset_bottom = 31.0
 text = "Level 4"
 
 [node name="Level_05" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_left = 78.0
-offset_top = 38.0
-offset_right = 140.0
-offset_bottom = 69.0
+offset_left = 288.0
+offset_right = 350.0
+offset_bottom = 31.0
 text = "Level 5"
 
 [node name="Level_06" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_left = 78.0
-offset_top = 76.0
-offset_right = 140.0
-offset_bottom = 107.0
+offset_left = 360.0
+offset_right = 422.0
+offset_bottom = 31.0
 text = "Level 6"
 
 [node name="Level_07" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_left = 154.0
-offset_right = 216.0
+offset_left = 432.0
+offset_right = 494.0
 offset_bottom = 31.0
 text = "Level 7"
 
 [node name="Level_08" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_left = 154.0
-offset_top = 38.0
-offset_right = 216.0
-offset_bottom = 69.0
+offset_left = 504.0
+offset_right = 566.0
+offset_bottom = 31.0
 text = "Level 8"
 
 [node name="Level_09" type="Button" parent="Level_01"]
 layout_mode = 0
-offset_left = 154.0
-offset_top = 76.0
-offset_right = 216.0
-offset_bottom = 107.0
+offset_left = 576.0
+offset_right = 638.0
+offset_bottom = 31.0
 text = "Level 9"
+
+[node name="Level_10" type="Button" parent="Level_01"]
+layout_mode = 0
+offset_left = 648.0
+offset_right = 719.0
+offset_bottom = 31.0
+text = "Level 10
+"
+
+[node name="Scobus5Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -227.0
+offset_top = 61.0
+offset_right = -76.0
+offset_bottom = 89.0
+grow_horizontal = 2
+text = "Scobus 5"
+label_settings = SubResource("LabelSettings_iadxd")
+vertical_alignment = 1
+
+[node name="Level_11" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -147.0
+offset_top = -39.0
+offset_right = -85.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+text = "Level 11"
+
+[node name="Level_12" type="Button" parent="Level_11"]
+layout_mode = 0
+offset_left = 72.0
+offset_right = 134.0
+offset_bottom = 31.0
+text = "Level 12"
+
+[node name="Level_13" type="Button" parent="Level_11"]
+layout_mode = 0
+offset_left = 144.0
+offset_right = 206.0
+offset_bottom = 31.0
+text = "Level 13"
+
+[node name="Level_14" type="Button" parent="Level_11"]
+layout_mode = 0
+offset_left = 216.0
+offset_right = 278.0
+offset_bottom = 31.0
+text = "Level 14"
+
+[node name="Level_15" type="Button" parent="Level_11"]
+layout_mode = 0
+offset_left = 288.0
+offset_right = 350.0
+offset_bottom = 31.0
+text = "Level 15"
+
+[node name="Level_16" type="Button" parent="Level_11"]
+layout_mode = 0
+offset_left = 360.0
+offset_right = 422.0
+offset_bottom = 31.0
+text = "Level 16"
+
+[node name="Level_17" type="Button" parent="Level_11"]
+layout_mode = 0
+offset_left = 432.0
+offset_right = 494.0
+offset_bottom = 31.0
+text = "Level 17"
+
+[node name="Level_18" type="Button" parent="Level_11"]
+layout_mode = 0
+offset_left = 504.0
+offset_right = 566.0
+offset_bottom = 31.0
+text = "Level 18"
+
+[node name="Level_19" type="Button" parent="Level_11"]
+layout_mode = 0
+offset_left = 576.0
+offset_right = 638.0
+offset_bottom = 31.0
+text = "Level 19"
+
+[node name="Level_20" type="Button" parent="Level_11"]
+layout_mode = 0
+offset_left = 648.0
+offset_right = 719.0
+offset_bottom = 31.0
+text = "Level 20
+"
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="Level_01" to="." method="_on_level_01_pressed"]
@@ -130,3 +229,14 @@ text = "Level 9"
 [connection signal="pressed" from="Level_01/Level_07" to="." method="_on_level_07_pressed"]
 [connection signal="pressed" from="Level_01/Level_08" to="." method="_on_level_08_pressed"]
 [connection signal="pressed" from="Level_01/Level_09" to="." method="_on_level_09_pressed"]
+[connection signal="pressed" from="Level_01/Level_10" to="." method="_on_level_10_pressed"]
+[connection signal="pressed" from="Level_11" to="." method="_on_level_11_pressed"]
+[connection signal="pressed" from="Level_11/Level_12" to="." method="_on_level_12_pressed"]
+[connection signal="pressed" from="Level_11/Level_13" to="." method="_on_level_13_pressed"]
+[connection signal="pressed" from="Level_11/Level_14" to="." method="_on_level_14_pressed"]
+[connection signal="pressed" from="Level_11/Level_15" to="." method="_on_level_15_pressed"]
+[connection signal="pressed" from="Level_11/Level_16" to="." method="_on_level_16_pressed"]
+[connection signal="pressed" from="Level_11/Level_17" to="." method="_on_level_17_pressed"]
+[connection signal="pressed" from="Level_11/Level_18" to="." method="_on_level_18_pressed"]
+[connection signal="pressed" from="Level_11/Level_19" to="." method="_on_level_19_pressed"]
+[connection signal="pressed" from="Level_11/Level_20" to="." method="_on_level_20_pressed"]
