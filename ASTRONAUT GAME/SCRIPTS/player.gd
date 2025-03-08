@@ -5,7 +5,9 @@ class_name Player
 signal died
 
 @export var gravity = 400 
-@export var speed = 125 
+@export var speed = 125
+var speed_multiplier = 1
+var speed_influencers = []
 @export var jump_force = 200
 
 @onready var animated_sprite = $AnimatedSprite2D
@@ -28,7 +30,7 @@ func _physics_process(delta):
 	if direction != 0:
 		animated_sprite.flip_h = direction == -1
 	
-	velocity.x = direction * speed
+	velocity.x = direction * speed * speed_multiplier
 	move_and_slide()
 	var collision = get_last_slide_collision()
 	if collision:
@@ -59,3 +61,18 @@ func updated_animation(direction):
 			
 func hit():
 	died.emit()
+
+func add_speed_influencer(influencer):
+	if not influencer in speed_influencers:
+		speed_influencers.append(influencer)
+	_update_speed_modifier()
+
+func remove_speed_influencer(influencer):
+	speed_influencers.erase(influencer)
+	_update_speed_modifier()
+	
+func _update_speed_modifier():
+	speed_multiplier = 1
+	for influencer in speed_influencers:
+		if influencer.boost_multiplier and influencer.boost_multiplier > speed_multiplier:
+			speed_multiplier = influencer.boost_multiplier

@@ -1,0 +1,75 @@
+[gd_scene load_steps=11 format=3 uid="uid://cij41mi1l2q2j"]
+
+[ext_resource type="Texture2D" uid="uid://cnnlniufe6wux" path="res://ASSETS/Scobus5/ASSETS/SnailSpriteSheets.png" id="1_x2i3l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vnydd"]
+atlas = ExtResource("1_x2i3l")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qmhy"]
+atlas = ExtResource("1_x2i3l")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bqrio"]
+atlas = ExtResource("1_x2i3l")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_de4wa"]
+atlas = ExtResource("1_x2i3l")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8domi"]
+atlas = ExtResource("1_x2i3l")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8fqnq"]
+atlas = ExtResource("1_x2i3l")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evkr6"]
+atlas = ExtResource("1_x2i3l")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ik4p"]
+atlas = ExtResource("1_x2i3l")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_asrx5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vnydd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qmhy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bqrio")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_de4wa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8domi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8fqnq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_evkr6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ik4p")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="Snail" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = -2
+sprite_frames = SubResource("SpriteFrames_asrx5")
+autoplay = "default"
+frame_progress = 0.832955

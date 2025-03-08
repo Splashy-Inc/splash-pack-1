@@ -69,7 +69,7 @@ func reset_player():
 	AudioPlayer.play_sfx("hurt")
 	player.velocity = Vector2.ZERO
 	#player.global_position = start.get_spawn_posistion()
-	get_tree().reload_current_scene()
+	get_tree().call_deferred("reload_current_scene")
 	
 	
 #Load next level
