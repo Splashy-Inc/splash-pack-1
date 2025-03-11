@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://fsueg6sfts72"]
+
+[ext_resource type="Texture2D" uid="uid://bpodrygx85xk6" path="res://ASSETS/Scobus5/ASSETS/Watertop1.png" id="1_6ubas"]
+[ext_resource type="Texture2D" uid="uid://ct0lvt00d2q77" path="res://ASSETS/Scobus5/ASSETS/Watertop2.png" id="2_a77lh"]
+[ext_resource type="Texture2D" uid="uid://qrmkw4nnsqyb" path="res://ASSETS/Scobus5/ASSETS/Watertop3.png" id="3_m5uut"]
+[ext_resource type="Texture2D" uid="uid://b11ss4tpkpa8i" path="res://ASSETS/Scobus5/ASSETS/Watertop4.png" id="4_f5j5w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sfuy3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6ubas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_a77lh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_m5uut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_f5j5w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="WaterTopScobus5" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = -15
+sprite_frames = SubResource("SpriteFrames_sfuy3")
+autoplay = "default"
+frame_progress = 0.131025

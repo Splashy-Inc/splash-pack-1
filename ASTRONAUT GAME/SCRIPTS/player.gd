@@ -18,7 +18,9 @@ func _physics_process(delta):
 	if is_on_floor() == false:
 		velocity.y += gravity * delta
 		if velocity.y > 500: 
-			velocity.y = 500  
+			velocity.y = 500
+		if speed_multiplier != 1:
+			velocity.y *= speed_multiplier*1.75
 	
 	var direction = 0
 	
@@ -74,5 +76,5 @@ func remove_speed_influencer(influencer):
 func _update_speed_modifier():
 	speed_multiplier = 1
 	for influencer in speed_influencers:
-		if influencer.boost_multiplier and influencer.boost_multiplier > speed_multiplier:
+		if influencer.boost_multiplier and influencer.boost_multiplier != speed_multiplier:
 			speed_multiplier = influencer.boost_multiplier
