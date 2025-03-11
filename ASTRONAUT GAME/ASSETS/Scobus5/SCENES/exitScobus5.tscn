@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://7mpcj6c2j41o"]
+
+[ext_resource type="Script" path="res://SCRIPTS/exit.gd" id="1_kupku"]
+[ext_resource type="Texture2D" uid="uid://dhtu7kiep206i" path="res://ASSETS/Scobus5/ASSETS/ExitTunnelScobus5.png" id="2_ewvmo"]
+[ext_resource type="Texture2D" uid="uid://dhucs3p8p88ek" path="res://ASSETS/Other/Exit.png" id="3_2ai4d"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lm37g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_2ai4d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2ai4d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2ai4d")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wmb6r"]
+size = Vector2(22, 29)
+
+[node name="Exit" type="Area2D"]
+scale = Vector2(0.5, 0.5)
+collision_layer = 16
+collision_mask = 2
+script = ExtResource("1_kupku")
+
+[node name="ExitTunnel" type="Sprite2D" parent="."]
+position = Vector2(-10, -64)
+scale = Vector2(2, 2)
+texture = ExtResource("2_ewvmo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -33)
+sprite_frames = SubResource("SpriteFrames_lm37g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -14.5)
+shape = SubResource("RectangleShape2D_wmb6r")

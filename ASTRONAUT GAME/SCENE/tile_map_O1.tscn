@@ -404,5 +404,6 @@ pattern_2 = SubResource("TileMapPattern_nnpeq")
 pattern_3 = SubResource("TileMapPattern_knjro")
 
 [node name="TileMap" type="TileMap"]
+z_index = -1
 tile_set = SubResource("TileSet_462cm")
 format = 2
