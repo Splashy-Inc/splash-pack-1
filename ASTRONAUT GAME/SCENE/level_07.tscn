@@ -770,6 +770,7 @@ position = Vector2(1665, 342)
 libraries = {
 "": SubResource("AnimationLibrary_2tpqt")
 }
+autoplay = "RESET"
 
 [node name="Bubble8" parent="Objects" instance=ExtResource("12_6b4rm")]
 position = Vector2(1789, 338)

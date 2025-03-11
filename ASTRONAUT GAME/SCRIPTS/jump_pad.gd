@@ -8,7 +8,7 @@ func _on_body_entered(body):
 	if body is Player:
 		animated_sprite.play("jump_animation")
 		body.jump(jump_force)
-		
+		$AudioStreamPlayer2D.play()
 
 
 

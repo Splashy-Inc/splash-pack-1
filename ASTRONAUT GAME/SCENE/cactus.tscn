@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://dyp2m5krd85j6"]
+[gd_scene load_steps=9 format=3 uid="uid://dyp2m5krd85j6"]
 
 [ext_resource type="Script" path="res://SCRIPTS/trap.gd" id="1_b7thu"]
 [ext_resource type="Texture2D" uid="uid://qr85xmt7akcf" path="res://ASSETS/Other/cactusA.png" id="2_611fp"]
+[ext_resource type="AudioStream" uid="uid://c6ngv4enjsfm8" path="res://ASSETS/Audio/Desert/cactus.ogg" id="3_rmr0j"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_66x5q"]
 radius = 16.0
@@ -32,7 +33,7 @@ tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/path = NodePath("Area2D:rotation")
-tracks/0/interp = 1
+tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5, 1.5),
@@ -74,5 +75,10 @@ libraries = {
 "": SubResource("AnimationLibrary_gn7le")
 }
 autoplay = "spin"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_rmr0j")
+autoplay = true
+max_distance = 320.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

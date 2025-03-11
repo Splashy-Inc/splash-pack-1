@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bt7sgvg3lc4ly"]
+[gd_scene load_steps=7 format=3 uid="uid://bt7sgvg3lc4ly"]
 
 [ext_resource type="Script" path="res://SCRIPTS/trap.gd" id="1_s4ftm"]
 [ext_resource type="Texture2D" uid="uid://2id6bucmqori" path="res://ASSETS/Other/SawPlant.png" id="2_dhlwu"]
+[ext_resource type="AudioStream" uid="uid://d4juomthp1ms5" path="res://ASSETS/Audio/Desert/saw.ogg" id="3_8v83t"]
 
 [sub_resource type="Animation" id="Animation_ast0d"]
 length = 0.001
@@ -60,5 +61,10 @@ libraries = {
 "": SubResource("AnimationLibrary_ucuq7")
 }
 autoplay = "move"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_8v83t")
+autoplay = true
+max_distance = 320.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

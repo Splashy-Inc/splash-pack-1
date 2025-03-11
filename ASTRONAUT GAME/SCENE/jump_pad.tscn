@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cp3kjiywwu83x"]
+[gd_scene load_steps=11 format=3 uid="uid://cp3kjiywwu83x"]
 
 [ext_resource type="Script" path="res://SCRIPTS/jump_pad.gd" id="1_blivp"]
 [ext_resource type="Texture2D" uid="uid://ck22tiv3pqr4b" path="res://ASSETS/Other/JumpPadA.png" id="2_gq1fs"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://l4vuupix8dvb" path="res://ASSETS/Other/JumpPadE.png" id="5_pmuel"]
 [ext_resource type="Texture2D" uid="uid://6e6t8bnb3y2d" path="res://ASSETS/Other/JumpPadF.png" id="6_wjg4p"]
 [ext_resource type="Texture2D" uid="uid://c835t84g1wg7r" path="res://ASSETS/Other/JumpPadB.png" id="7_lnwnt"]
+[ext_resource type="AudioStream" uid="uid://bfagv4uaaw6u4" path="res://ASSETS/Audio/Desert/jump_pad.ogg" id="8_oaook"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_d4v88"]
 animations = [{
@@ -67,9 +68,15 @@ position = Vector2(0, -32)
 sprite_frames = SubResource("SpriteFrames_d4v88")
 animation = &"jump_animation"
 autoplay = "idle"
+frame = 9
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.5, -10.5)
 shape = SubResource("RectangleShape2D_3d7my")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_oaook")
+max_distance = 320.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

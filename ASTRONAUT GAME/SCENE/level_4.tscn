@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://w4hv7utmdr0h"]
+[gd_scene load_steps=27 format=4 uid="uid://w4hv7utmdr0h"]
 
 [ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://SCENE/BG.tscn" id="1_ryt7c"]
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_wlnn5"]
@@ -8,21 +8,14 @@
 [ext_resource type="PackedScene" uid="uid://0v5wypgl6sop" path="res://SCENE/exit.tscn" id="4_vp7bh"]
 [ext_resource type="PackedScene" uid="uid://de5ui441h8jdk" path="res://SCENE/player.tscn" id="5_e6pn2"]
 [ext_resource type="PackedScene" uid="uid://cksr5brjbu80q" path="res://SCENE/death_zone.tscn" id="6_1unco"]
-[ext_resource type="Texture2D" uid="uid://jda13votx7gg" path="res://ASSETS/Background/Shelf1.png" id="7_f2evj"]
 [ext_resource type="PackedScene" uid="uid://cwbjb0hiu4icf" path="res://SCENE/trap_door.tscn" id="7_niinx"]
-[ext_resource type="Texture2D" uid="uid://bk2n5ts6pddad" path="res://ASSETS/Background/Terrain1.png" id="8_0oqam"]
 [ext_resource type="Texture2D" uid="uid://dcs1uv542i5q4" path="res://ASSETS/Background/Terrain/Desert4.png" id="9_nsyno"]
 [ext_resource type="Texture2D" uid="uid://dyyvmdcx1aa6l" path="res://ASSETS/Background/Terrain/Desert3.png" id="10_lqfxv"]
-[ext_resource type="Texture2D" uid="uid://bhqmqi1m4g2wf" path="res://ASSETS/Background/Shelf2.png" id="11_uqhu6"]
-[ext_resource type="Texture2D" uid="uid://b6m5mcxvjtwjb" path="res://ASSETS/Background/Shelf3.png" id="12_jis84"]
-[ext_resource type="Texture2D" uid="uid://dmo7v7rn3t8o8" path="res://ASSETS/Background/Terrain2.png" id="13_vyj6b"]
-[ext_resource type="Texture2D" uid="uid://dhne4e4ets0yr" path="res://ASSETS/Background/Terrain3.png" id="14_d3ajw"]
 [ext_resource type="Texture2D" uid="uid://v42s363lgppy" path="res://ASSETS/Background/Terrain/Desert1.png" id="15_1fper"]
 [ext_resource type="Texture2D" uid="uid://du31dswipoh01" path="res://ASSETS/Background/Terrain/Desert2.png" id="16_wgx61"]
 [ext_resource type="Texture2D" uid="uid://b5d0rxcpqx7s0" path="res://ASSETS/Background/Terrain/DesertShelf.png" id="17_u3lix"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v28vy"]
-texture = ExtResource("7_f2evj")
 0:3/0 = 0
 0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 3, 8, 3.125, 8, 8, -8, 8)
 0:3/0/physics_layer_0/polygon_0/one_way = true
@@ -37,7 +30,6 @@ texture = ExtResource("7_f2evj")
 3:3/0/physics_layer_0/polygon_0/one_way = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gssph"]
-texture = ExtResource("8_0oqam")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -134,7 +126,6 @@ texture = ExtResource("10_lqfxv")
 3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, -8, -8, 8, -8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jb6vc"]
-texture = ExtResource("11_uqhu6")
 0:3/0 = 0
 0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 3.125, 8, 3.09359, 8, 8, -8, 8)
 0:3/0/physics_layer_0/polygon_0/one_way = true
@@ -149,7 +140,6 @@ texture = ExtResource("11_uqhu6")
 3:3/0/physics_layer_0/polygon_0/one_way = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7q48m"]
-texture = ExtResource("12_jis84")
 0:3/0 = 0
 0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 3.09359, 8, 3.18198, 8, 8, -8, 8)
 0:3/0/physics_layer_0/polygon_0/one_way = true
@@ -164,7 +154,6 @@ texture = ExtResource("12_jis84")
 3:3/0/physics_layer_0/polygon_0/one_way = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_osoig"]
-texture = ExtResource("13_vyj6b")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -199,7 +188,6 @@ texture = ExtResource("13_vyj6b")
 3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ksmu8"]
-texture = ExtResource("14_d3ajw")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0

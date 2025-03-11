@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://b3p7fpgpq0eoa"]
+[gd_scene load_steps=7 format=3 uid="uid://b3p7fpgpq0eoa"]
 
 [ext_resource type="Script" path="res://SCRIPTS/pendulum.gd" id="1_pq0w2"]
 [ext_resource type="Texture2D" uid="uid://bvwt8ddtu514k" path="res://ASSETS/Other/Pendulum.png" id="2_nedx7"]
+[ext_resource type="AudioStream" uid="uid://ckmg0mrigu7og" path="res://ASSETS/Audio/Desert/pendulum.ogg" id="3_kybrh"]
 
 [sub_resource type="Animation" id="Animation_u83ma"]
 length = 0.001
@@ -63,5 +64,10 @@ libraries = {
 "": SubResource("AnimationLibrary_eb21x")
 }
 autoplay = "swing"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_kybrh")
+autoplay = true
+max_distance = 320.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
