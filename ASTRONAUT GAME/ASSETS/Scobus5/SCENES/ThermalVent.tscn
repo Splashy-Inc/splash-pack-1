@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://SCRIPTS/jump_pad.gd" id="1_dukkh"]
 [ext_resource type="Texture2D" uid="uid://d17ypi7thv634" path="res://ASSETS/Scobus5/ASSETS/ThermalVentSpriteSheet.png" id="2_ar733"]
-[ext_resource type="AudioStream" uid="uid://bfagv4uaaw6u4" path="res://ASSETS/Audio/Desert/jump_pad.ogg" id="3_7itts"]
+[ext_resource type="AudioStream" uid="uid://c0idkeujcrjmf" path="res://ASSETS/Scobus5/ASSETS/Scobus5Audio/thermal_vent.ogg" id="3_cvhwg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4nalh"]
 atlas = ExtResource("2_ar733")
@@ -99,15 +99,17 @@ script = ExtResource("1_dukkh")
 position = Vector2(0, -64)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_d4v88")
-animation = &"idle"
+animation = &"jump_animation"
 autoplay = "idle"
+frame = 4
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -63)
 shape = SubResource("RectangleShape2D_3d7my")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_7itts")
+stream = ExtResource("3_cvhwg")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

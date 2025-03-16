@@ -1,6 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://cij41mi1l2q2j"]
+[gd_scene load_steps=19 format=3 uid="uid://cij41mi1l2q2j"]
 
 [ext_resource type="Texture2D" uid="uid://cnnlniufe6wux" path="res://ASSETS/Scobus5/ASSETS/SnailSpriteSheets.png" id="1_x2i3l"]
+[ext_resource type="AudioStream" uid="uid://haa53xm4vq88" path="res://ASSETS/Scobus5/ASSETS/Scobus5Audio/snail_1.ogg" id="2_1228l"]
+[ext_resource type="AudioStream" uid="uid://c44gwyfneycf3" path="res://ASSETS/Scobus5/ASSETS/Scobus5Audio/snail_2.ogg" id="3_5ckbe"]
+[ext_resource type="AudioStream" uid="uid://bxmbw4e43uxsp" path="res://ASSETS/Scobus5/ASSETS/Scobus5Audio/snail_3.ogg" id="4_t3ge5"]
+[ext_resource type="AudioStream" uid="uid://c42a72ilobi1r" path="res://ASSETS/Scobus5/ASSETS/Scobus5Audio/snail_4.ogg" id="5_ipbmn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vnydd"]
 atlas = ExtResource("1_x2i3l")
@@ -63,8 +67,95 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 3.0
+"speed": 4.0
 }]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_sttj6"]
+streams_count = 4
+stream_0/stream = ExtResource("2_1228l")
+stream_1/stream = ExtResource("3_5ckbe")
+stream_2/stream = ExtResource("4_t3ge5")
+stream_3/stream = ExtResource("5_ipbmn")
+
+[sub_resource type="Animation" id="Animation_tfut7"]
+resource_name = "default"
+length = 2.00003
+loop_mode = 1
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 7]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer2D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.25, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}, {
+"args": [0.0],
+"method": &"play"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_vwm7w"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gjdua"]
+_data = {
+"RESET": SubResource("Animation_vwm7w"),
+"default": SubResource("Animation_tfut7")
+}
 
 [node name="Snail" type="Node2D"]
 
@@ -72,4 +163,14 @@ animations = [{
 z_index = -2
 sprite_frames = SubResource("SpriteFrames_asrx5")
 autoplay = "default"
-frame_progress = 0.832955
+frame = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamRandomizer_sttj6")
+max_distance = 340.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_gjdua")
+}
+autoplay = "default"

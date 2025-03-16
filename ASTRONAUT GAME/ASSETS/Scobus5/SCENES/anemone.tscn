@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://cdu1lookb7ft"]
+[gd_scene load_steps=10 format=3 uid="uid://cdu1lookb7ft"]
 
 [ext_resource type="Script" path="res://SCRIPTS/trap.gd" id="1_g8pcu"]
 [ext_resource type="Texture2D" uid="uid://c3grecnk7qyp5" path="res://ASSETS/Scobus5/ASSETS/Anemone.png" id="2_njs5c"]
+[ext_resource type="AudioStream" uid="uid://b2hjfj7g8bo5u" path="res://ASSETS/Scobus5/ASSETS/Scobus5Audio/anenome.ogg" id="3_2si2s"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ox8qb"]
 atlas = ExtResource("2_njs5c")
@@ -59,10 +60,15 @@ collision_mask = 2
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_eotso")
 autoplay = "default"
-frame_progress = 0.670159
+frame_progress = 0.787508
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 scale = Vector2(0.5, 0.5)
 shape = SubResource("CircleShape2D_d4vha")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_2si2s")
+autoplay = true
+max_distance = 340.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

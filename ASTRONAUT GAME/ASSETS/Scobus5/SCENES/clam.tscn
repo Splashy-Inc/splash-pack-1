@@ -1,8 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://dgyexjakcxy4h"]
+[gd_scene load_steps=15 format=3 uid="uid://dgyexjakcxy4h"]
 
 [ext_resource type="Texture2D" uid="uid://urweab74mxio" path="res://ASSETS/Scobus5/ASSETS/Clam.png" id="1_eeoy7"]
 [ext_resource type="Script" path="res://ASSETS/Scobus5/SCRIPTS/clam.gd" id="1_ku6ly"]
 [ext_resource type="PackedScene" uid="uid://ewfy6gokgqr3" path="res://ASSETS/Scobus5/SCENES/pearl.tscn" id="2_4svol"]
+[ext_resource type="AudioStream" uid="uid://dgye6wl3dg263" path="res://ASSETS/Scobus5/ASSETS/Scobus5Audio/clam.ogg" id="4_3xlwo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_otbhw"]
 atlas = ExtResource("1_eeoy7")
@@ -162,7 +163,6 @@ pearl = ExtResource("2_4svol")
 position = Vector2(1, -5)
 sprite_frames = SubResource("SpriteFrames_6y7i0")
 autoplay = "default"
-frame = 11
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 0)
@@ -177,3 +177,7 @@ libraries = {
 "": SubResource("AnimationLibrary_wxw1h")
 }
 autoplay = "default"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_3xlwo")
+max_distance = 340.0

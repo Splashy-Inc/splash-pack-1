@@ -18,3 +18,4 @@ func _shoot_Pearl():
 		new_pearl.speed *= -1
 		add_child(new_pearl)
 	new_pearl.global_position = positionPearl.global_position
+	$AudioStreamPlayer2D.play()
