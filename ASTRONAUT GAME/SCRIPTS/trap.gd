@@ -1,5 +1,7 @@
 extends Node2D
 
+class_name Trap
+
 signal touched_player
 
 
