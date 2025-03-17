@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bk5rvrl2ttmxg"]
+[gd_scene load_steps=21 format=3 uid="uid://bk5rvrl2ttmxg"]
 
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_7677d"]
 [ext_resource type="PackedScene" uid="uid://dip1fk52kl443" path="res://SCENE/level_15.tscn" id="2_j2m43"]
@@ -10,6 +10,135 @@
 [ext_resource type="PackedScene" uid="uid://de5ui441h8jdk" path="res://SCENE/player.tscn" id="7_aeta5"]
 [ext_resource type="PackedScene" uid="uid://cksr5brjbu80q" path="res://SCENE/death_zone.tscn" id="8_74n3i"]
 [ext_resource type="PackedScene" uid="uid://bqhm3ilh2l7e3" path="res://ASSETS/Scobus5/SCENES/scobus_tile_map.tscn" id="9_2d5gk"]
+[ext_resource type="PackedScene" uid="uid://dgyexjakcxy4h" path="res://ASSETS/Scobus5/SCENES/clam.tscn" id="10_1456c"]
+[ext_resource type="PackedScene" uid="uid://cdu1lookb7ft" path="res://ASSETS/Scobus5/SCENES/anemone.tscn" id="11_47tmc"]
+[ext_resource type="PackedScene" uid="uid://b02qjg4gut26y" path="res://ASSETS/Scobus5/SCENES/ThermalVent.tscn" id="12_gt7dk"]
+[ext_resource type="PackedScene" uid="uid://cbyj7euuswjtr" path="res://ASSETS/Scobus5/SCENES/Claw.tscn" id="12_pgs5f"]
+
+[sub_resource type="Animation" id="Animation_7vefa"]
+resource_name = "new_animation"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.5, 0.5), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(610, 484), Vector2(610, 492), Vector2(610, 484)]
+}
+
+[sub_resource type="Animation" id="Animation_valcu"]
+length = 3.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 1.23333, 2, 2.53333, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(735, 485), Vector2(788, 484), Vector2(788, 484), Vector2(788, 418), Vector2(815, 405), Vector2(815, 405)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 1.23333, 2, 2.53333, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, -1.5708, -1.5708, 0.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_l8bwr"]
+_data = {
+"RESET": SubResource("Animation_valcu"),
+"new_animation": SubResource("Animation_7vefa")
+}
+
+[sub_resource type="Animation" id="Animation_uo7f2"]
+resource_name = "new_animation"
+length = 2.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.75, 0.75)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(663, 484), Vector2(663, 489)]
+}
+
+[sub_resource type="Animation" id="Animation_su1er"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.5, 1.5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(663, 477)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3fdw2"]
+_data = {
+"RESET": SubResource("Animation_su1er"),
+"new_animation": SubResource("Animation_uo7f2")
+}
 
 [node name="Level_14" type="Node2D"]
 script = ExtResource("1_7677d")
@@ -24,25 +153,144 @@ bg_texture = ExtResource("3_dpxsc")
 text = "Level: 14"
 
 [node name="Start" parent="." instance=ExtResource("6_wwcyr")]
-position = Vector2(45, 493)
+position = Vector2(40, 497)
 
 [node name="Exit" parent="." instance=ExtResource("7_8csca")]
-position = Vector2(575, 487)
+position = Vector2(2387, 498)
 
 [node name="Player" parent="." instance=ExtResource("7_aeta5")]
 position = Vector2(152, 497)
 
 [node name="DeathZone" parent="." instance=ExtResource("8_74n3i")]
-position = Vector2(105, 223)
+position = Vector2(105, 273)
 scale = Vector2(5, 1)
 
 [node name="Traps" type="Node" parent="."]
 
+[node name="Clam" parent="Traps" instance=ExtResource("10_1456c")]
+position = Vector2(467, 492)
+scale = Vector2(0.5, 0.5)
+
+[node name="Clam2" parent="Traps" instance=ExtResource("10_1456c")]
+position = Vector2(237, 492)
+scale = Vector2(-0.5, 0.5)
+
+[node name="anemone" parent="Traps" instance=ExtResource("11_47tmc")]
+position = Vector2(735, 485)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Traps/anemone"]
+libraries = {
+"": SubResource("AnimationLibrary_l8bwr")
+}
+autoplay = "new_animation"
+
+[node name="anemone2" parent="Traps" instance=ExtResource("11_47tmc")]
+position = Vector2(663, 477)
+scale = Vector2(1.5, 1.5)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Traps/anemone2"]
+libraries = {
+"": SubResource("AnimationLibrary_3fdw2")
+}
+autoplay = "new_animation"
+
+[node name="anemone3" parent="Traps" instance=ExtResource("11_47tmc")]
+position = Vector2(735, 485)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Traps/anemone3"]
+libraries = {
+"": SubResource("AnimationLibrary_l8bwr")
+}
+autoplay = "RESET"
+
+[node name="anemone4" parent="Traps" instance=ExtResource("11_47tmc")]
+position = Vector2(715, 447)
+scale = Vector2(0.25, 0.25)
+
+[node name="anemone5" parent="Traps" instance=ExtResource("11_47tmc")]
+position = Vector2(638, 495)
+scale = Vector2(0.25, 0.25)
+
+[node name="anemone6" parent="Traps" instance=ExtResource("11_47tmc")]
+position = Vector2(597, 498)
+scale = Vector2(0.25, 0.25)
+
+[node name="anemone7" parent="Traps" instance=ExtResource("11_47tmc")]
+position = Vector2(719, 496)
+scale = Vector2(0.25, 0.25)
+
+[node name="anemone8" parent="Traps" instance=ExtResource("11_47tmc")]
+position = Vector2(689, 496)
+scale = Vector2(0.25, 0.25)
+
+[node name="anemone9" parent="Traps" instance=ExtResource("11_47tmc")]
+position = Vector2(830, 495)
+scale = Vector2(0.25, 0.25)
+
+[node name="anemone10" parent="Traps" instance=ExtResource("11_47tmc")]
+position = Vector2(838, 496)
+scale = Vector2(0.25, 0.25)
+
+[node name="anemone11" parent="Traps" instance=ExtResource("11_47tmc")]
+position = Vector2(846, 495)
+scale = Vector2(0.25, 0.25)
+
+[node name="Claw" parent="Traps" instance=ExtResource("12_pgs5f")]
+position = Vector2(1752, 490)
+scale = Vector2(0.5, 0.5)
+
+[node name="Claw3" parent="Traps" instance=ExtResource("12_pgs5f")]
+position = Vector2(1974, 482)
+
+[node name="Claw9" parent="Traps" instance=ExtResource("12_pgs5f")]
+position = Vector2(2100, 482)
+scale = Vector2(-1, 1)
+
+[node name="Claw4" parent="Traps" instance=ExtResource("12_pgs5f")]
+position = Vector2(2231, 491)
+scale = Vector2(0.5, 0.5)
+
+[node name="Claw6" parent="Traps" instance=ExtResource("12_pgs5f")]
+position = Vector2(2295, 491)
+scale = Vector2(-0.5, 0.5)
+
+[node name="Claw8" parent="Traps" instance=ExtResource("12_pgs5f")]
+position = Vector2(1815, 490)
+scale = Vector2(-0.5, 0.5)
+
 [node name="Objects" type="Node" parent="."]
+
+[node name="ThermalVent" parent="Objects" instance=ExtResource("12_gt7dk")]
+z_index = 1
+position = Vector2(1002, 450)
+
+[node name="ThermalVent2" parent="Objects" instance=ExtResource("12_gt7dk")]
+z_index = 1
+position = Vector2(1128, 371)
+
+[node name="ThermalVent3" parent="Objects" instance=ExtResource("12_gt7dk")]
+z_index = 1
+position = Vector2(1256, 307)
+
+[node name="ThermalVent4" parent="Objects" instance=ExtResource("12_gt7dk")]
+z_index = 1
+position = Vector2(1400, 226)
+
+[node name="ThermalVent5" parent="Objects" instance=ExtResource("12_gt7dk")]
+z_index = 1
+position = Vector2(1528, 339)
+
+[node name="ThermalVent6" parent="Objects" instance=ExtResource("12_gt7dk")]
+z_index = 1
+position = Vector2(1673, 435)
+
+[node name="ThermalVent7" parent="Objects" instance=ExtResource("12_gt7dk")]
+z_index = 1
+position = Vector2(909, 530)
 
 [node name="ScobusTileMap" parent="." instance=ExtResource("9_2d5gk")]
 z_index = -1
-layer_0/tile_data = PackedInt32Array(2031618, 65536, 0, 2031619, 65536, 0, 2031620, 65536, 0, 2031621, 65536, 0, 2031622, 65536, 0, 2031623, 65536, 0, 2031624, 65536, 0, 2031625, 65536, 0, 2031627, 65536, 0, 2031633, 65536, 0, 2031634, 65536, 0, 2031635, 65536, 0, 2031636, 65536, 0, 2031637, 65536, 0, 2031638, 65536, 0, 2031639, 65536, 0, 2031640, 65536, 0, 2031643, 65536, 0, 2031644, 65536, 0, 2031646, 65536, 0, 2031647, 65536, 0, 2031648, 65536, 0, 2031649, 65536, 0, 2031650, 65536, 0, 2031651, 65536, 0, 2031652, 65536, 0, 2031653, 65536, 0, 2031617, 65536, 0, 2031645, 65536, 0, 2031629, 65536, 0, 2031630, 65536, 0, 2031631, 65536, 0, 2031626, 65536, 0, 2031628, 65536, 0, 2031632, 65536, 0, 2031641, 65536, 0, 2031642, 65536, 0)
+layer_0/tile_data = PackedInt32Array(2031618, 131072, 0, 2031619, 65536, 0, 2031620, 131072, 0, 2031621, 65536, 0, 2031622, 131072, 0, 2031623, 65536, 0, 2031624, 131072, 0, 2031625, 65536, 0, 2031617, 65536, 0, 2031626, 131072, 0, 2031627, 65536, 0, 2031628, 131072, 0, 2031629, 262144, 2, 2031630, 65536, 0, 2031631, 65536, 0, 2031632, 131072, 0, 2031633, 65536, 0, 2031634, 131072, 0, 2031635, 65536, 0, 2031636, 131072, 0, 2031637, 65536, 0, 2031638, 131072, 0, 2031639, 65536, 0, 2031640, 131072, 0, 2031641, 65536, 0, 2031642, 131072, 0, 2031643, 65536, 0, 2031644, 131072, 0, 2031645, 65536, 0, 2031646, 327680, 2, 2031647, 196608, 0, 2031650, 0, 0, 2031651, 65536, 0, 2031652, 131072, 0, 2031653, 131072, 0, 2031654, 65536, 0, 2031655, 327680, 2, 2031656, 65536, 0, 2031657, 131072, 0, 2031658, 65536, 0, 2031659, 262144, 2, 2031660, 327680, 2, 2031661, 131072, 0, 2031662, 65536, 0, 2031663, 131072, 0, 2031664, 65536, 0, 2031665, 131072, 0, 2031666, 262144, 2, 2031667, 327680, 2, 2031668, 65536, 0, 2031669, 131072, 0, 2031670, 65536, 0, 2031671, 131072, 0, 2031672, 65536, 0, 2031673, 196608, 0, 2031723, 262144, 0, 2031724, 327680, 0, 2031725, 393216, 0, 2031726, 327680, 0, 2031727, 393216, 0, 2031728, 327680, 0, 2031729, 393216, 0, 2031730, 327680, 0, 2031731, 393216, 0, 2031732, 327680, 0, 2031733, 393216, 0, 2031734, 327680, 0, 2031735, 393216, 0, 2031736, 327680, 0, 2031737, 393216, 0, 2031738, 327680, 0, 2031739, 393216, 0, 2031740, 327680, 0, 2031741, 393216, 0, 2031742, 327680, 0, 2031743, 393216, 0, 2031744, 327680, 0, 2031745, 393216, 0, 2031746, 327680, 0, 2031747, 393216, 0, 2031748, 327680, 0, 2031749, 393216, 0, 2031750, 327680, 0, 2031751, 393216, 0, 2031752, 327680, 0, 2031753, 393216, 0, 2031754, 327680, 0, 2031755, 393216, 0, 2031756, 327680, 0, 2031757, 393216, 0, 2031758, 327680, 0, 2031759, 393216, 0, 2031760, 327680, 0, 2031761, 393216, 0, 2031762, 327680, 0, 2031763, 393216, 0, 2031764, 327680, 0, 2031765, 393216, 0, 2031766, 458752, 0, 1966093, 393216, 1, 1966110, 393216, 1, 1769472, 196608, 3, 1835008, 196608, 1, 1900544, 196608, 2, 1966080, 196608, 3, 1507328, 196608, 2, 1572864, 196608, 3, 1638400, 196608, 1, 1703936, 196608, 2, 1376256, 196608, 3, 1441792, 196608, 1, 1179648, 196608, 0, 1245184, 196608, 1, 1310720, 196608, 2, 1835007, 0, 3, 1900543, 0, 1, 1966079, 0, 2, 2031615, 0, 3, 1638399, 0, 3, 1703935, 0, 1, 1769471, 0, 2, 1441791, 0, 3, 1507327, 0, 1, 1572863, 0, 2, 1245183, 0, 0, 1310719, 0, 1, 1376255, 0, 2, 2031616, 327680, 2, 2097151, 0, 6, 2162687, 393216, 3, 2097152, 262144, 4, 2097153, 327680, 4, 2097154, 393216, 4, 2097155, 458752, 4, 2097156, 262144, 4, 2097157, 327680, 4, 2097158, 393216, 4, 2097159, 458752, 4, 2097160, 262144, 4, 2097161, 327680, 4, 2097162, 393216, 4, 2097163, 458752, 4, 2097164, 262144, 4, 2097165, 327680, 4, 2097166, 393216, 4, 2097167, 458752, 4, 2097168, 262144, 4, 2097169, 327680, 4, 2097170, 393216, 4, 2097171, 458752, 4, 2097172, 262144, 4, 2097173, 327680, 4, 2097174, 393216, 4, 2097175, 458752, 4, 2097176, 262144, 4, 2097177, 327680, 4, 2097178, 393216, 4, 2097179, 458752, 4, 2097180, 262144, 4, 2097181, 327680, 4, 2097182, 393216, 4, 2097183, 458752, 3, 2097186, 393216, 3, 2097187, 458752, 4, 2097188, 262144, 4, 2097189, 327680, 4, 2097190, 393216, 4, 2097191, 458752, 4, 2097192, 262144, 4, 2097193, 327680, 4, 2097194, 393216, 4, 2097195, 458752, 4, 2097196, 262144, 4, 2097197, 327680, 4, 2097198, 393216, 4, 2097199, 458752, 4, 2097200, 262144, 4, 2097201, 327680, 4, 2097202, 393216, 4, 2097203, 458752, 4, 2097204, 262144, 4, 2097205, 327680, 4, 2097206, 393216, 4, 2097207, 458752, 4, 1966119, 327680, 1, 2097208, 393216, 4, 2097209, 458752, 3, 1835051, 0, 0, 1900587, 0, 1, 1966123, 0, 2, 1835052, 196608, 0, 1900588, 196608, 1, 1966124, 196608, 2, 1835059, 196608, 2, 1900595, 196608, 1, 1966131, 196608, 2, 1703987, 196608, 0, 1769523, 196608, 1, 1769522, 0, 1, 1835058, 0, 2, 1900594, 0, 3, 1966130, 0, 3, 1703986, 0, 0, 1703997, 262144, 0, 1703998, 393216, 0, 1703999, 458752, 0, 1376325, 262144, 0, 1376326, 393216, 0, 1376327, 458752, 0, 1114189, 262144, 0, 1114190, 393216, 0, 1114191, 458752, 0, 786518, 262144, 0, 786519, 393216, 0, 786520, 458752, 0, 1245278, 262144, 0, 1245279, 393216, 0, 1245280, 458752, 0, 1638503, 262144, 0, 1638504, 393216, 0, 1638505, 458752, 0)
 
 [editable path="UILayer"]
 [editable path="UILayer/HUD"]
