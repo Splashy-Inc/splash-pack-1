@@ -19,7 +19,7 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 		if velocity.y > 500: 
 			velocity.y = 500
-		if speed_multiplier != 1:
+		if speed_multiplier < 1:
 			velocity.y *= speed_multiplier*1.75
 	
 	var direction = 0
