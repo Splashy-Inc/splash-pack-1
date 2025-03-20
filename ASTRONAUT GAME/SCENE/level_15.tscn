@@ -19,6 +19,21 @@
 [ext_resource type="Texture2D" uid="uid://cwa62f1so0c3i" path="res://ASSETS/Scobus5/ASSETS/SnailSlimeL.png" id="16_nxpwb"]
 [ext_resource type="Texture2D" uid="uid://cbls11anyvhwo" path="res://ASSETS/Scobus5/ASSETS/SnailSlimeR.png" id="17_fxrpk"]
 
+[sub_resource type="Animation" id="Animation_rvf2r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(363, 324)]
+}
+
 [sub_resource type="Animation" id="Animation_57j0l"]
 resource_name = "new_animation"
 length = 4.0
@@ -37,7 +52,13 @@ tracks/0/keys = {
 "values": [Vector2(363, 324), Vector2(212, 324), Vector2(363, 324)]
 }
 
-[sub_resource type="Animation" id="Animation_rvf2r"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rn0dy"]
+_data = {
+"RESET": SubResource("Animation_rvf2r"),
+"new_animation": SubResource("Animation_57j0l")
+}
+
+[sub_resource type="Animation" id="Animation_ybv2c"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -49,13 +70,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(363, 324)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_rn0dy"]
-_data = {
-"RESET": SubResource("Animation_rvf2r"),
-"new_animation": SubResource("Animation_57j0l")
+"values": [Vector2(214, 326)]
 }
 
 [sub_resource type="Animation" id="Animation_t71x4"]
@@ -75,25 +90,25 @@ tracks/0/keys = {
 "values": [Vector2(214, 326), Vector2(364, 326), Vector2(214, 326)]
 }
 
-[sub_resource type="Animation" id="Animation_ybv2c"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hqp5a"]
+_data = {
+"RESET": SubResource("Animation_ybv2c"),
+"new_animation": SubResource("Animation_t71x4")
+}
+
+[sub_resource type="Animation" id="Animation_w81oe"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
+tracks/0/path = NodePath(".:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(214, 326)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_hqp5a"]
-_data = {
-"RESET": SubResource("Animation_ybv2c"),
-"new_animation": SubResource("Animation_t71x4")
+"values": [0.0]
 }
 
 [sub_resource type="Animation" id="Animation_ijel4"]
@@ -111,21 +126,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [0.0, 3.14159, 6.28319]
-}
-
-[sub_resource type="Animation" id="Animation_w81oe"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_m271j"]

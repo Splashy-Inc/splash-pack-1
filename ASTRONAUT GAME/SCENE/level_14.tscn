@@ -15,6 +15,34 @@
 [ext_resource type="PackedScene" uid="uid://b02qjg4gut26y" path="res://ASSETS/Scobus5/SCENES/ThermalVent.tscn" id="12_gt7dk"]
 [ext_resource type="PackedScene" uid="uid://cbyj7euuswjtr" path="res://ASSETS/Scobus5/SCENES/Claw.tscn" id="12_pgs5f"]
 
+[sub_resource type="Animation" id="Animation_valcu"]
+length = 3.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 1.23333, 2, 2.53333, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(735, 485), Vector2(788, 484), Vector2(788, 484), Vector2(788, 418), Vector2(815, 405), Vector2(815, 405)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 1.23333, 2, 2.53333, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, -1.5708, -1.5708, 0.0, 0.0]
+}
+
 [sub_resource type="Animation" id="Animation_7vefa"]
 resource_name = "new_animation"
 length = 3.0
@@ -44,38 +72,37 @@ tracks/1/keys = {
 "values": [Vector2(610, 484), Vector2(610, 492), Vector2(610, 484)]
 }
 
-[sub_resource type="Animation" id="Animation_valcu"]
-length = 3.0
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1, 1.23333, 2, 2.53333, 3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(735, 485), Vector2(788, 484), Vector2(788, 484), Vector2(788, 418), Vector2(815, 405), Vector2(815, 405)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1, 1.23333, 2, 2.53333, 3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [0.0, 0.0, -1.5708, -1.5708, 0.0, 0.0]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_l8bwr"]
 _data = {
 "RESET": SubResource("Animation_valcu"),
 "new_animation": SubResource("Animation_7vefa")
+}
+
+[sub_resource type="Animation" id="Animation_su1er"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.5, 1.5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(663, 477)]
 }
 
 [sub_resource type="Animation" id="Animation_uo7f2"]
@@ -105,33 +132,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(663, 484), Vector2(663, 489)]
-}
-
-[sub_resource type="Animation" id="Animation_su1er"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1.5, 1.5)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(663, 477)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3fdw2"]
