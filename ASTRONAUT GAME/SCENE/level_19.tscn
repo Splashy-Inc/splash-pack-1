@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b3oec2y30bauq"]
+[gd_scene load_steps=12 format=3 uid="uid://b3oec2y30bauq"]
 
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_4k5nf"]
 [ext_resource type="PackedScene" uid="uid://be5nae6lix3yf" path="res://SCENE/level_20.tscn" id="2_1bga6"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://7mpcj6c2j41o" path="res://ASSETS/Scobus5/SCENES/exitScobus5.tscn" id="7_xd3bw"]
 [ext_resource type="PackedScene" uid="uid://cksr5brjbu80q" path="res://SCENE/death_zone.tscn" id="8_8147q"]
 [ext_resource type="PackedScene" uid="uid://bqhm3ilh2l7e3" path="res://ASSETS/Scobus5/SCENES/scobus_tile_map.tscn" id="9_66sbl"]
+[ext_resource type="PackedScene" uid="uid://2nm5f3i2dlg6" path="res://ASSETS/Scobus5/SCENES/shark_tooth.tscn" id="10_5kyn8"]
 
 [node name="Level_19" type="Node2D"]
 script = ExtResource("1_4k5nf")
@@ -24,24 +25,54 @@ bg_texture = ExtResource("3_xflq5")
 text = "Level: 19"
 
 [node name="Start" parent="." instance=ExtResource("6_yuk5a")]
-position = Vector2(47, 493)
+position = Vector2(47, 496)
 
 [node name="Exit" parent="." instance=ExtResource("7_xd3bw")]
-position = Vector2(571, 495)
+position = Vector2(2354, 495)
 
 [node name="Player" parent="." instance=ExtResource("7_pt5vq")]
 position = Vector2(152, 497)
 
 [node name="DeathZone" parent="." instance=ExtResource("8_8147q")]
-position = Vector2(105, 223)
+position = Vector2(105, 398)
 scale = Vector2(5, 1)
 
 [node name="Traps" type="Node" parent="."]
 
+[node name="SharkTooth2" parent="Traps" instance=ExtResource("10_5kyn8")]
+position = Vector2(769, 497)
+
+[node name="SharkTooth2" parent="Traps/SharkTooth2" instance=ExtResource("10_5kyn8")]
+position = Vector2(88, 0)
+
+[node name="SharkTooth3" parent="Traps/SharkTooth2" instance=ExtResource("10_5kyn8")]
+position = Vector2(178, 0)
+
+[node name="SharkTooth4" parent="Traps" instance=ExtResource("10_5kyn8")]
+position = Vector2(1210, 422)
+rotation = 3.14159
+
+[node name="SharkTooth2" parent="Traps/SharkTooth4" instance=ExtResource("10_5kyn8")]
+position = Vector2(88, 0)
+
+[node name="SharkTooth3" parent="Traps/SharkTooth4" instance=ExtResource("10_5kyn8")]
+position = Vector2(178, 0)
+
+[node name="SharkTooth5" parent="Traps" instance=ExtResource("10_5kyn8")]
+position = Vector2(415, 422)
+rotation = 3.14159
+
+[node name="SharkTooth2" parent="Traps/SharkTooth5" instance=ExtResource("10_5kyn8")]
+position = Vector2(88, 0)
+
+[node name="SharkTooth3" parent="Traps/SharkTooth5" instance=ExtResource("10_5kyn8")]
+position = Vector2(178, 0)
+
 [node name="Objects" type="Node" parent="."]
 
 [node name="ScobusTileMap" parent="." instance=ExtResource("9_66sbl")]
-layer_0/tile_data = PackedInt32Array(2031618, 65536, 0, 2031619, 65536, 0, 2031620, 65536, 0, 2031621, 65536, 0, 2031622, 65536, 0, 2031623, 65536, 0, 2031624, 65536, 0, 2031625, 65536, 0, 2031627, 65536, 0, 2031633, 65536, 0, 2031634, 65536, 0, 2031635, 65536, 0, 2031636, 65536, 0, 2031637, 65536, 0, 2031638, 65536, 0, 2031639, 65536, 0, 2031640, 65536, 0, 2031643, 65536, 0, 2031644, 65536, 0, 2031646, 65536, 0, 2031647, 65536, 0, 2031648, 65536, 0, 2031649, 65536, 0, 2031650, 65536, 0, 2031651, 65536, 0, 2031652, 65536, 0, 2031653, 65536, 0, 2031617, 65536, 0, 2031645, 65536, 0, 2031629, 65536, 0, 2031630, 65536, 0, 2031631, 65536, 0, 2031626, 65536, 0, 2031628, 65536, 0, 2031632, 65536, 0, 2031641, 65536, 0, 2031642, 65536, 0)
+z_index = -15
+layer_0/tile_data = PackedInt32Array(2031618, 65536, 0, 2031619, 65536, 0, 2031620, 65536, 0, 2031621, 65536, 0, 2031622, 65536, 0, 2031623, 65536, 0, 2031624, 65536, 0, 2031625, 65536, 0, 2031617, 65536, 0, 2031626, 65536, 0, 2031627, 65536, 0, 2031628, 65536, 0, 2031629, 65536, 0, 2031630, 65536, 0, 2031631, 65536, 0, 2031632, 65536, 0, 2031633, 65536, 0, 2031634, 65536, 0, 2031635, 65536, 0, 2031636, 65536, 0, 2031637, 65536, 0, 2031638, 65536, 0, 2031639, 65536, 0, 2031640, 65536, 0, 2031641, 65536, 0, 2031642, 65536, 0, 2031643, 65536, 0, 2031644, 65536, 0, 2031645, 65536, 0, 2031646, 65536, 0, 2031647, 65536, 0, 2031648, 65536, 0, 2031649, 65536, 0, 2031650, 65536, 0, 2031651, 65536, 0, 2031652, 65536, 0, 2031653, 65536, 0, 2031654, 65536, 0, 2031655, 65536, 0, 2031656, 65536, 0, 2031657, 65536, 0, 2031658, 65536, 0, 2031659, 65536, 0, 2031660, 65536, 0, 2031661, 65536, 0, 2031662, 65536, 0, 2031663, 65536, 0, 2031664, 65536, 0, 2031665, 65536, 0, 2031666, 65536, 0, 2031667, 65536, 0, 2031668, 65536, 0, 2031669, 65536, 0, 2031670, 65536, 0, 2031671, 65536, 0, 2031672, 65536, 0, 2031673, 65536, 0, 2031674, 65536, 0, 2031675, 65536, 0, 2031676, 65536, 0, 2031677, 65536, 0, 2031678, 65536, 0, 2031679, 65536, 0, 2031680, 65536, 0, 2031681, 65536, 0, 2031682, 65536, 0, 2031683, 65536, 0, 2031684, 65536, 0, 2031685, 65536, 0, 2031686, 65536, 0, 2031688, 65536, 0, 2031689, 65536, 0, 2031690, 65536, 0, 2031691, 65536, 0, 2031692, 65536, 0, 2031693, 65536, 0, 2031694, 65536, 0, 2031695, 65536, 0, 2031696, 65536, 0, 2031697, 65536, 0, 2031687, 65536, 0, 2031698, 65536, 0, 2031699, 65536, 0, 2031700, 65536, 0, 2031701, 65536, 0, 2031702, 65536, 0, 2031703, 65536, 0, 2031704, 65536, 0, 2031705, 65536, 0, 2031706, 65536, 0, 2031707, 65536, 0, 2031708, 65536, 0, 2031709, 65536, 0, 2031710, 65536, 0, 2031711, 65536, 0, 2031712, 65536, 0, 2031713, 65536, 0, 2031714, 65536, 0, 2031715, 65536, 0, 2031716, 65536, 0, 2031717, 65536, 0, 2031718, 65536, 0, 2031719, 65536, 0, 2031720, 65536, 0, 2031721, 65536, 0, 2031722, 65536, 0, 2031723, 65536, 0, 2031724, 65536, 0, 2031725, 65536, 0, 2031726, 65536, 0, 2031727, 65536, 0, 2031728, 65536, 0, 2031729, 65536, 0, 2031730, 65536, 0, 2031731, 65536, 0, 2031732, 65536, 0, 2031733, 65536, 0, 2031734, 65536, 0, 2031735, 65536, 0, 2031736, 65536, 0, 2031737, 65536, 0, 2031738, 65536, 0, 2031739, 65536, 0, 2031740, 65536, 0, 2031741, 65536, 0, 2031742, 65536, 0, 2031743, 65536, 0, 2031744, 65536, 0, 2031745, 65536, 0, 2031746, 65536, 0, 2031747, 65536, 0, 2031748, 65536, 0, 2031749, 65536, 0, 2031750, 65536, 0, 2031751, 65536, 0, 2031752, 65536, 0, 2031753, 65536, 0, 2031754, 65536, 0, 2031755, 65536, 0, 2031756, 65536, 0, 2031757, 65536, 0, 2031758, 65536, 0, 2031759, 65536, 0, 2031760, 65536, 0, 2031761, 65536, 0, 2031762, 65536, 0, 2031763, 65536, 0, 2031764, 65536, 0, 2424800, 65536, 0, 2424801, 65536, 0, 2424802, 65536, 0, 2424803, 65536, 0, 2424804, 65536, 0, 2424805, 65536, 0, 2424806, 65536, 0, 2424807, 65536, 0, 2424808, 65536, 0, 2424809, 65536, 0)
 
 [editable path="UILayer"]
 [editable path="UILayer/HUD"]
