@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://be5nae6lix3yf"]
+[gd_scene load_steps=14 format=3 uid="uid://be5nae6lix3yf"]
 
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_t0c0t"]
 [ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://SCENE/BG.tscn" id="2_xgnuh"]
@@ -9,6 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://de5ui441h8jdk" path="res://SCENE/player.tscn" id="7_6ry12"]
 [ext_resource type="PackedScene" uid="uid://cksr5brjbu80q" path="res://SCENE/death_zone.tscn" id="8_c5ero"]
 [ext_resource type="PackedScene" uid="uid://bqhm3ilh2l7e3" path="res://ASSETS/Scobus5/SCENES/scobus_tile_map.tscn" id="9_48w8d"]
+[ext_resource type="PackedScene" uid="uid://bj66u8iqvnjo4" path="res://ASSETS/Scobus5/SCENES/snail_slime.tscn" id="9_o0sn3"]
+[ext_resource type="Texture2D" uid="uid://cwa62f1so0c3i" path="res://ASSETS/Scobus5/ASSETS/SnailSlimeL.png" id="10_r0cft"]
+[ext_resource type="Texture2D" uid="uid://cbls11anyvhwo" path="res://ASSETS/Scobus5/ASSETS/SnailSlimeR.png" id="11_7ydlf"]
+[ext_resource type="PackedScene" uid="uid://ewpns3q3kav3" path="res://ASSETS/Scobus5/SCENES/WaterScobus.tscn" id="12_p6dda"]
 
 [node name="Level_20" type="Node2D"]
 script = ExtResource("1_t0c0t")
@@ -26,21 +30,1592 @@ text = "Level: 20"
 position = Vector2(43, 492)
 
 [node name="Exit" parent="." instance=ExtResource("6_wkxlf")]
-position = Vector2(572, 494)
+position = Vector2(580, 2057)
 
 [node name="Player" parent="." instance=ExtResource("7_6ry12")]
 position = Vector2(152, 497)
 
 [node name="DeathZone" parent="." instance=ExtResource("8_c5ero")]
-position = Vector2(105, 223)
+position = Vector2(-46, 1794)
 scale = Vector2(5, 1)
 
 [node name="Traps" type="Node" parent="."]
 
 [node name="Objects" type="Node" parent="."]
 
+[node name="HSnailTrails" type="Node" parent="Objects"]
+
+[node name="SnailSlime" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(213, 560)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(327, 610)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime2"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(168, 671)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime3" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime3" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime3" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime3" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime3" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime3"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(71, 623)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime4" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime4" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime4" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime4" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime4" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime4"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(280, 718)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime5" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime5" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime5" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime5" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime5" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime5"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(136, 768)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime6" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime6" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime6" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime6" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime6" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime6"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime7" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(168, 831)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime7" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime7" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime7" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime7" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime7" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime7"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime7"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime8" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(279, 881)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime8" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime8" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime8" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime8" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime8" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime8"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime8"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime9" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(25, 898)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime9" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime9" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime9" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime9" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime9" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime9"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime9"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime10" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(118, 943)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime10" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime10" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime10" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime10" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime10" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime10"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime10"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime11" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(232, 993)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime11" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime11" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime11" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime11" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime11" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime11"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime11"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime12" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(88, 1039)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime12" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime12" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime12" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime12" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime12" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime12"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime12"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime13" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(343, 1058)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime13" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime13" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime13" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime13" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime13" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime13"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime13"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime14" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(199, 1104)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime14" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime14" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime14" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime14" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime14" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime14"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime14"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime15" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(231, 1167)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime15" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime15" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime15" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime15" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime15" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime15"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime15"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime16" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(342, 1215)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime16" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime16" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime16" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime16" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime16" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime16"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime16"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime17" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(97, 1232)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime17" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime17" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime17" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime17" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime17" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime17"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime17"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime18" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(183, 1279)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime18" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime18" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime18" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime18" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime18" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime18"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime18"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime19" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(298, 1329)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime19" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime19" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime19" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime19" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime19" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime19"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime19"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime20" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(146, 1378)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime20" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime20" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime20" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime20" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime20" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime20"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime20"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime21" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(120, 1522)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime21" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime21" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime21" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime21" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime21" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime21"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime21"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime22" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(265, 1473)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime22" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime22" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime22" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime22" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime22" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime22"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime22"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime23" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(149, 1587)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime23" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime23" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime23" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime23" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime23" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime23"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime23"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime24" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(263, 1637)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime24" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime24" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime24" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime24" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime24" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime24"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime24"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime25" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(104, 1698)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime25" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime25" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime25" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime25" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime25" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime25"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime25"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime26" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(7, 1650)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime26" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime26" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime26" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime26" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime26" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime26"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime26"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime27" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(216, 1745)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime27" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime27" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime27" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime27" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime27" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime27"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime27"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime28" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(72, 1795)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime28" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime28" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime28" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime28" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime28" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime28"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime28"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime30" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(215, 1911)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime30" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime30" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime30" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime30" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime30" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime30"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime30"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime32" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(294, 1957)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime32" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime32" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime32" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime32" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime32" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime32"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime32"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime33" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(254, 2046)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime33" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime33" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime33" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime33" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime33" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime33"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime33"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime34" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(339, 1838)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime34" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime34" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime34" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime34" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime34" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime34"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime34"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime35" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(410, 1998)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime35" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime35" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime35" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime35" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime35" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime35"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime35"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime36" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(453, 1890)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime36" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime36" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime36" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime36" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime36" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime36"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime36"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime37" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(316, 1778)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime37" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime37" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime37" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime37" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime37" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime37"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime37"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime38" parent="Objects/HSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(461, 1732)
+
+[node name="SnailSlime2" parent="Objects/HSnailTrails/SnailSlime38" instance=ExtResource("9_o0sn3")]
+position = Vector2(16, 0)
+
+[node name="SnailSlime3" parent="Objects/HSnailTrails/SnailSlime38" instance=ExtResource("9_o0sn3")]
+position = Vector2(32, 0)
+
+[node name="SnailSlime4" parent="Objects/HSnailTrails/SnailSlime38" instance=ExtResource("9_o0sn3")]
+position = Vector2(48, 0)
+
+[node name="SnailSlime5" parent="Objects/HSnailTrails/SnailSlime38" instance=ExtResource("9_o0sn3")]
+position = Vector2(64, 0)
+
+[node name="SnailSlime6" parent="Objects/HSnailTrails/SnailSlime38" instance=ExtResource("9_o0sn3")]
+position = Vector2(80, 0)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime38"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/HSnailTrails/SnailSlime38"]
+position = Vector2(88, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="VSnailTrails" type="Node" parent="Objects"]
+
+[node name="SnailSlime" parent="Objects/VSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(282, 660)
+
+[node name="SnailSlime2" parent="Objects/VSnailTrails/SnailSlime" instance=ExtResource("9_o0sn3")]
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime3" parent="Objects/VSnailTrails/SnailSlime/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -15)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime4" parent="Objects/VSnailTrails/SnailSlime/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -29)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime5" parent="Objects/VSnailTrails/SnailSlime/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -44)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime6" parent="Objects/VSnailTrails/SnailSlime/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -59)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime2" parent="Objects/VSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(76, 813)
+
+[node name="SnailSlime2" parent="Objects/VSnailTrails/SnailSlime2" instance=ExtResource("9_o0sn3")]
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime2/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime2/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime3" parent="Objects/VSnailTrails/SnailSlime2/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -15)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime2/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime2/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime4" parent="Objects/VSnailTrails/SnailSlime2/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -29)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime2/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime2/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime5" parent="Objects/VSnailTrails/SnailSlime2/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -44)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime2/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime2/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime6" parent="Objects/VSnailTrails/SnailSlime2/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -59)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime2/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime2/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime3" parent="Objects/VSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(471, 1130)
+
+[node name="SnailSlime2" parent="Objects/VSnailTrails/SnailSlime3" instance=ExtResource("9_o0sn3")]
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime3/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime3/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime3" parent="Objects/VSnailTrails/SnailSlime3/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -15)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime3/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime3/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime4" parent="Objects/VSnailTrails/SnailSlime3/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -29)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime3/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime3/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime5" parent="Objects/VSnailTrails/SnailSlime3/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -44)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime3/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime3/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime6" parent="Objects/VSnailTrails/SnailSlime3/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -59)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime3/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime3/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime4" parent="Objects/VSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(146, 1166)
+
+[node name="SnailSlime2" parent="Objects/VSnailTrails/SnailSlime4" instance=ExtResource("9_o0sn3")]
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime4/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime4/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime3" parent="Objects/VSnailTrails/SnailSlime4/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -15)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime4/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime4/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime4" parent="Objects/VSnailTrails/SnailSlime4/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -29)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime4/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime4/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime5" parent="Objects/VSnailTrails/SnailSlime4/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -44)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime4/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime4/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime6" parent="Objects/VSnailTrails/SnailSlime4/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -59)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime4/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime4/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime5" parent="Objects/VSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(405, 948)
+
+[node name="SnailSlime2" parent="Objects/VSnailTrails/SnailSlime5" instance=ExtResource("9_o0sn3")]
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime5/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime5/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime3" parent="Objects/VSnailTrails/SnailSlime5/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -15)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime5/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime5/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime4" parent="Objects/VSnailTrails/SnailSlime5/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -29)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime5/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime5/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime5" parent="Objects/VSnailTrails/SnailSlime5/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -44)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime5/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime5/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime6" parent="Objects/VSnailTrails/SnailSlime5/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -59)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime5/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime5/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime6" parent="Objects/VSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(306, 1282)
+
+[node name="SnailSlime2" parent="Objects/VSnailTrails/SnailSlime6" instance=ExtResource("9_o0sn3")]
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime6/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime6/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime3" parent="Objects/VSnailTrails/SnailSlime6/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -15)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime6/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime6/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime4" parent="Objects/VSnailTrails/SnailSlime6/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -29)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime6/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime6/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime5" parent="Objects/VSnailTrails/SnailSlime6/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -44)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime6/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime6/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime6" parent="Objects/VSnailTrails/SnailSlime6/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -59)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime6/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime6/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime7" parent="Objects/VSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(266, 1410)
+
+[node name="SnailSlime2" parent="Objects/VSnailTrails/SnailSlime7" instance=ExtResource("9_o0sn3")]
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime7/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime7/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime3" parent="Objects/VSnailTrails/SnailSlime7/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -15)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime7/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime7/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime4" parent="Objects/VSnailTrails/SnailSlime7/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -29)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime7/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime7/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime5" parent="Objects/VSnailTrails/SnailSlime7/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -44)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime7/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime7/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime6" parent="Objects/VSnailTrails/SnailSlime7/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -59)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime7/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime7/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime8" parent="Objects/VSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(68, 1568)
+
+[node name="SnailSlime2" parent="Objects/VSnailTrails/SnailSlime8" instance=ExtResource("9_o0sn3")]
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime8/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime8/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime3" parent="Objects/VSnailTrails/SnailSlime8/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -15)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime8/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime8/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime4" parent="Objects/VSnailTrails/SnailSlime8/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -29)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime8/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime8/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime5" parent="Objects/VSnailTrails/SnailSlime8/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -44)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime8/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime8/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime6" parent="Objects/VSnailTrails/SnailSlime8/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -59)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime8/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime8/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime9" parent="Objects/VSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(413, 1690)
+
+[node name="SnailSlime2" parent="Objects/VSnailTrails/SnailSlime9" instance=ExtResource("9_o0sn3")]
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime9/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime9/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime3" parent="Objects/VSnailTrails/SnailSlime9/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -15)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime9/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime9/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime4" parent="Objects/VSnailTrails/SnailSlime9/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -29)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime9/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime9/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime5" parent="Objects/VSnailTrails/SnailSlime9/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -44)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime9/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime9/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime6" parent="Objects/VSnailTrails/SnailSlime9/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -59)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime9/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime9/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime10" parent="Objects/VSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(202, 1861)
+
+[node name="SnailSlime2" parent="Objects/VSnailTrails/SnailSlime10" instance=ExtResource("9_o0sn3")]
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime10/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime10/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime3" parent="Objects/VSnailTrails/SnailSlime10/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -15)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime10/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime10/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime4" parent="Objects/VSnailTrails/SnailSlime10/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -29)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime10/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime10/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime5" parent="Objects/VSnailTrails/SnailSlime10/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -44)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime10/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime10/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime6" parent="Objects/VSnailTrails/SnailSlime10/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -59)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime10/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime10/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime11" parent="Objects/VSnailTrails" instance=ExtResource("9_o0sn3")]
+position = Vector2(580, 1940)
+
+[node name="SnailSlime2" parent="Objects/VSnailTrails/SnailSlime11" instance=ExtResource("9_o0sn3")]
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime11/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime11/SnailSlime2"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime3" parent="Objects/VSnailTrails/SnailSlime11/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -15)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime11/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime11/SnailSlime2/SnailSlime3"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime4" parent="Objects/VSnailTrails/SnailSlime11/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -29)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime11/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime11/SnailSlime2/SnailSlime4"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime5" parent="Objects/VSnailTrails/SnailSlime11/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -44)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime11/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime11/SnailSlime2/SnailSlime5"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="SnailSlime6" parent="Objects/VSnailTrails/SnailSlime11/SnailSlime2" instance=ExtResource("9_o0sn3")]
+position = Vector2(0, -59)
+
+[node name="SnailSlimeL" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime11/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("10_r0cft")
+
+[node name="SnailSlimeR" type="Sprite2D" parent="Objects/VSnailTrails/SnailSlime11/SnailSlime2/SnailSlime6"]
+position = Vector2(8, -1)
+texture = ExtResource("11_7ydlf")
+
+[node name="ScobusWater" parent="Objects" instance=ExtResource("12_p6dda")]
+position = Vector2(255, 1507)
+scale = Vector2(10, 30)
+
 [node name="ScobusTileMap" parent="." instance=ExtResource("9_48w8d")]
-layer_0/tile_data = PackedInt32Array(2031618, 65536, 0, 2031619, 65536, 0, 2031620, 65536, 0, 2031621, 65536, 0, 2031622, 65536, 0, 2031623, 65536, 0, 2031624, 65536, 0, 2031625, 65536, 0, 2031627, 65536, 0, 2031633, 65536, 0, 2031634, 65536, 0, 2031635, 65536, 0, 2031636, 65536, 0, 2031637, 65536, 0, 2031638, 65536, 0, 2031639, 65536, 0, 2031640, 65536, 0, 2031643, 65536, 0, 2031644, 65536, 0, 2031646, 65536, 0, 2031647, 65536, 0, 2031648, 65536, 0, 2031649, 65536, 0, 2031650, 65536, 0, 2031651, 65536, 0, 2031652, 65536, 0, 2031653, 65536, 0, 2031617, 65536, 0, 2031645, 65536, 0, 2031629, 65536, 0, 2031630, 65536, 0, 2031631, 65536, 0, 2031626, 65536, 0, 2031628, 65536, 0, 2031632, 65536, 0, 2031641, 65536, 0, 2031642, 65536, 0)
+layer_0/tile_data = PackedInt32Array(2031616, 65536, 5, 2031617, 196608, 4, 2031618, 196608, 4, 2031619, 196608, 4, 2031620, 196608, 4, 2031621, 196608, 4, 2031622, 196608, 4, 2031623, 196608, 4, 2031624, 196608, 4, 2031625, 196608, 4, 2031626, 196608, 4, 2031627, 196608, 4, 2097165, 524288, 4, 2097166, 524288, 4, 2097167, 524288, 4, 2097168, 524288, 4, 2097169, 524288, 4, 2293773, 196608, 4, 2293774, 196608, 4, 2293775, 196608, 4, 2293776, 196608, 4, 2293777, 196608, 4, 2293778, 196608, 4, 2555913, 196608, 4, 2555912, 196608, 4, 2555911, 196608, 4, 2555910, 196608, 4, 2555909, 196608, 4, 2555908, 196608, 4, 2490388, 196608, 4, 2490389, 196608, 4, 2490390, 196608, 4, 2490391, 196608, 4, 2490392, 196608, 4, 2490393, 196608, 4, 2752523, 196608, 4, 2752524, 196608, 4, 2752525, 196608, 4, 2752526, 196608, 4, 2752527, 196608, 4, 2949137, 196608, 4, 2949138, 196608, 4, 2949139, 196608, 4, 2949140, 196608, 4, 2949141, 196608, 4, 2949142, 196608, 4, 2949143, 196608, 4, 3145741, 196608, 4, 3145740, 196608, 4, 3145739, 196608, 4, 3145738, 196608, 4, 3145737, 196608, 4, 3145736, 196608, 4, 2752522, 196608, 4, 2097152, 65536, 5, 2162688, 65536, 5, 2228224, 65536, 5, 2293760, 65536, 5, 2359296, 65536, 5, 3080192, 65536, 5, 3145728, 65536, 5, 3211264, 65536, 5, 3276800, 65536, 5, 3342336, 65536, 5, 3407872, 65536, 5, 3473408, 65536, 5, 3538944, 65536, 5, 3604480, 65536, 5, 2424832, 65536, 5, 2490368, 65536, 5, 2555904, 65536, 5, 2621440, 65536, 5, 2686976, 65536, 5, 2752512, 65536, 5, 2818048, 65536, 5, 2883584, 65536, 5, 2949120, 65536, 5, 3014656, 65536, 5, 3670017, 196608, 4, 3670018, 196608, 4, 3670019, 196608, 4, 3670020, 196608, 4, 3670021, 196608, 4, 4259845, 196608, 4, 3670022, 196608, 4, 4259846, 196608, 4, 3866631, 196608, 4, 4259847, 196608, 4, 3866632, 196608, 4, 4259848, 196608, 4, 3866633, 196608, 4, 4259849, 196608, 4, 3407882, 196608, 4, 3866634, 196608, 4, 3407883, 196608, 4, 3866635, 196608, 4, 3407884, 196608, 4, 3866636, 196608, 4, 3407885, 196608, 4, 3407886, 196608, 4, 4063246, 196608, 4, 3407887, 196608, 4, 4063247, 196608, 4, 4063248, 196608, 4, 3604497, 196608, 4, 4063249, 196608, 4, 3604498, 196608, 4, 4063250, 196608, 4, 3604499, 196608, 4, 4063251, 196608, 4, 3604500, 196608, 4, 4063252, 196608, 4, 3604501, 196608, 4, 3604502, 196608, 4, 3670016, 65536, 5, 3735552, 65536, 5, 3801088, 65536, 5, 3866624, 65536, 5, 3932160, 65536, 5, 3997696, 65536, 5, 4063232, 65536, 5, 4128768, 65536, 5, 4194304, 65536, 5, 4259840, 65536, 5, 4653056, 65536, 5, 4325376, 65536, 5, 4390912, 65536, 5, 4456448, 65536, 5, 4521984, 65536, 5, 4587520, 65536, 5, 4718592, 65536, 5, 4784128, 65536, 5, 4849664, 65536, 5, 4915200, 65536, 5, 4980736, 65536, 5, 5046272, 65536, 5, 5111808, 65536, 5, 5177344, 65536, 5, 5242880, 65536, 5, 5308416, 65536, 5, 5373952, 65536, 5, 5439488, 65536, 5, 5505024, 65536, 5, 5570560, 65536, 5, 5636096, 65536, 5, 5701632, 65536, 5, 5767168, 65536, 5, 5832704, 65536, 5, 5898240, 65536, 5, 5963776, 65536, 5, 6029312, 65536, 5, 6094848, 65536, 5, 6160384, 65536, 5, 6225920, 65536, 5, 6291456, 65536, 5, 6356992, 65536, 5, 6422528, 65536, 5, 6488064, 65536, 5, 6553600, 65536, 5, 6619136, 65536, 5, 6684672, 65536, 5, 6750208, 65536, 5, 6815744, 65536, 5, 6881280, 65536, 5, 6946816, 65536, 5, 7012352, 65536, 5, 7077888, 65536, 5, 7143424, 65536, 5, 7208960, 65536, 5, 7274496, 65536, 5, 7340032, 65536, 5, 7405568, 65536, 5, 7471104, 65536, 5, 7536640, 65536, 5, 7602176, 65536, 5, 7667712, 65536, 5, 7733248, 65536, 5, 7798784, 65536, 5, 7864320, 65536, 5, 7929856, 65536, 5, 7995392, 65536, 5, 8060928, 65536, 5, 8126464, 65536, 5, 8192000, 65536, 5, 8257536, 65536, 5, 8323072, 65536, 5, 8388608, 65536, 5, 8454144, 65536, 5, 8519680, 65536, 5, 5046278, 196608, 4, 5046279, 196608, 4, 5046280, 196608, 4, 5046281, 196608, 4, 5636105, 196608, 4, 5046282, 196608, 4, 5636106, 196608, 4, 5242891, 196608, 4, 5636107, 196608, 4, 4521996, 196608, 4, 5242892, 196608, 4, 5636108, 196608, 4, 4521997, 196608, 4, 5242893, 196608, 4, 5636109, 196608, 4, 4521998, 196608, 4, 4784142, 196608, 4, 5242894, 196608, 4, 4521999, 196608, 4, 4784143, 196608, 4, 5242895, 196608, 4, 4522000, 196608, 4, 4784144, 196608, 4, 5242896, 196608, 4, 4522001, 196608, 4, 4784145, 196608, 4, 4784146, 196608, 4, 5439506, 196608, 4, 4784147, 196608, 4, 5439507, 196608, 4, 5439508, 196608, 4, 4325397, 196608, 4, 4980757, 196608, 4, 5439509, 196608, 4, 4325398, 196608, 4, 4980758, 196608, 4, 5439510, 196608, 4, 4325399, 196608, 4, 4980759, 196608, 4, 5439511, 196608, 4, 4325400, 196608, 4, 4980760, 196608, 4, 5439512, 196608, 4, 4325401, 196608, 4, 4980761, 196608, 4, 4325402, 196608, 4, 4980762, 196608, 4, 4325403, 196608, 4, 6750209, 196608, 4, 6750210, 196608, 4, 6750211, 196608, 4, 6750212, 196608, 4, 7340036, 196608, 4, 6750213, 196608, 4, 7340037, 196608, 4, 6946822, 196608, 4, 7340038, 196608, 4, 6225927, 196608, 4, 6946823, 196608, 4, 7340039, 196608, 4, 6225928, 196608, 4, 6946824, 196608, 4, 7340040, 196608, 4, 6225929, 196608, 4, 6488073, 196608, 4, 6946825, 196608, 4, 6225930, 196608, 4, 6488074, 196608, 4, 6946826, 196608, 4, 6225931, 196608, 4, 6488075, 196608, 4, 6946827, 196608, 4, 6225932, 196608, 4, 6488076, 196608, 4, 6488077, 196608, 4, 7143437, 196608, 4, 6488078, 196608, 4, 7143438, 196608, 4, 7143439, 196608, 4, 6029328, 196608, 4, 6684688, 196608, 4, 7143440, 196608, 4, 6029329, 196608, 4, 6684689, 196608, 4, 7143441, 196608, 4, 6029330, 196608, 4, 6684690, 196608, 4, 7143442, 196608, 4, 6029331, 196608, 4, 6684691, 196608, 4, 7143443, 196608, 4, 6029332, 196608, 4, 6684692, 196608, 4, 6029333, 196608, 4, 6684693, 196608, 4, 6029334, 196608, 4, 7798797, 196608, 4, 7798798, 196608, 4, 7798799, 196608, 4, 7798800, 196608, 4, 8388624, 196608, 4, 7798801, 196608, 4, 8388625, 196608, 4, 7995410, 196608, 4, 8388626, 196608, 4, 7274515, 196608, 4, 7995411, 196608, 4, 8388627, 196608, 4, 7274516, 196608, 4, 7995412, 196608, 4, 8388628, 196608, 4, 7274517, 196608, 4, 7536661, 196608, 4, 7995413, 196608, 4, 7274518, 196608, 4, 7536662, 196608, 4, 7995414, 196608, 4, 7274519, 196608, 4, 7536663, 196608, 4, 7995415, 196608, 4, 7274520, 196608, 4, 7536664, 196608, 4, 7536665, 196608, 4, 8192025, 196608, 4, 7536666, 196608, 4, 8192026, 196608, 4, 8192027, 196608, 4, 7077916, 196608, 4, 7733276, 196608, 4, 8192028, 196608, 4, 7077917, 196608, 4, 7733277, 196608, 4, 8192029, 196608, 4, 7077918, 196608, 4, 7733278, 196608, 4, 8192030, 196608, 4, 7077919, 196608, 4, 7733279, 196608, 4, 8192031, 196608, 4, 7077920, 196608, 4, 7733280, 196608, 4, 7077921, 196608, 4, 7733281, 196608, 4, 7077922, 196608, 4)
 
 [editable path="UILayer"]
 [editable path="UILayer/HUD"]
