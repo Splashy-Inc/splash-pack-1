@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://ch06nt8sc3xu4"]
+
+[ext_resource type="Texture2D" uid="uid://btgu7g25gd5ci" path="res://ASSETS/Scobus5/ASSETS/ScobusBG/ScobusBG.png" id="1_506ee"]
+[ext_resource type="Texture2D" uid="uid://calpyywl1yihu" path="res://ASSETS/Scobus5/ASSETS/ScobusBG/ScobusOceanGodLight.png" id="2_l11o0"]
+[ext_resource type="Texture2D" uid="uid://k4oi55sac7xx" path="res://ASSETS/Scobus5/ASSETS/ScobusBG/ScobusOceanSpots.png" id="3_toidy"]
+[ext_resource type="Texture2D" uid="uid://bkmnhsk82gl1d" path="res://ASSETS/Scobus5/ASSETS/ScobusBG/ScobusOceanStones.png" id="4_7anhf"]
+
+[node name="BGScobus" type="Node2D"]
+z_index = -50
+
+[node name="Back" type="Parallax2D" parent="."]
+scale = Vector2(0.5, 0.5)
+repeat_size = Vector2(1280, 712)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="Back"]
+texture = ExtResource("1_506ee")
+
+[node name="OceanSpots" type="Parallax2D" parent="."]
+scale = Vector2(0.5, 0.5)
+scroll_offset = Vector2(0, 10)
+repeat_size = Vector2(1280, 720)
+autoscroll = Vector2(5, 5)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="OceanSpots"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_toidy")
+
+[node name="Godlight" type="Parallax2D" parent="."]
+scroll_offset = Vector2(-20, -67)
+repeat_size = Vector2(1280, 0)
+autoscroll = Vector2(2, 2)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="Godlight"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_l11o0")
+
+[node name="Stones" type="Parallax2D" parent="."]
+scale = Vector2(0.25, 0.25)
+repeat_size = Vector2(2560, 1425)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="Stones"]
+texture = ExtResource("4_7anhf")

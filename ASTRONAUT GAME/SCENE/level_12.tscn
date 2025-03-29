@@ -1,10 +1,9 @@
-[gd_scene load_steps=20 format=3 uid="uid://c5pqvxmfkv6yl"]
+[gd_scene load_steps=19 format=3 uid="uid://c5pqvxmfkv6yl"]
 
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_aabdc"]
-[ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://SCENE/BG.tscn" id="2_24jw1"]
 [ext_resource type="PackedScene" uid="uid://c8k872a0p1ttb" path="res://SCENE/level_13.tscn" id="2_jdl2a"]
-[ext_resource type="Texture2D" uid="uid://dna42xcil1f8g" path="res://ASSETS/Scobus5/ASSETS/ScobusBackground.png" id="3_c0uo5"]
 [ext_resource type="PackedScene" uid="uid://com54dlwngvg2" path="res://SCENE/ui_layer.tscn" id="4_bqfk7"]
+[ext_resource type="PackedScene" uid="uid://ch06nt8sc3xu4" path="res://SCENE/BGScobus.tscn" id="4_rp6pj"]
 [ext_resource type="PackedScene" uid="uid://2ywssksibvl4" path="res://ASSETS/Scobus5/SCENES/startScobus5.tscn" id="5_ybmso"]
 [ext_resource type="PackedScene" uid="uid://7mpcj6c2j41o" path="res://ASSETS/Scobus5/SCENES/exitScobus5.tscn" id="6_qkiht"]
 [ext_resource type="PackedScene" uid="uid://de5ui441h8jdk" path="res://SCENE/player.tscn" id="7_3arsa"]
@@ -95,13 +94,13 @@ z_index = -1
 script = ExtResource("1_aabdc")
 next_level = ExtResource("2_jdl2a")
 
-[node name="BG" parent="." instance=ExtResource("2_24jw1")]
-bg_texture = ExtResource("3_c0uo5")
-
 [node name="UILayer" parent="." instance=ExtResource("4_bqfk7")]
 
 [node name="LevelLabel" parent="UILayer/HUD" index="1"]
 text = "Level: 12"
+
+[node name="BGScobus" parent="." instance=ExtResource("4_rp6pj")]
+position = Vector2(436, 404)
 
 [node name="Start" parent="." instance=ExtResource("5_ybmso")]
 position = Vector2(40, 497)

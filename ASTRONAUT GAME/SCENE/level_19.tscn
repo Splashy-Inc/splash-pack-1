@@ -1,9 +1,8 @@
-[gd_scene load_steps=26 format=3 uid="uid://b3oec2y30bauq"]
+[gd_scene load_steps=25 format=3 uid="uid://b3oec2y30bauq"]
 
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_4k5nf"]
 [ext_resource type="PackedScene" uid="uid://be5nae6lix3yf" path="res://SCENE/level_20.tscn" id="2_1bga6"]
-[ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://SCENE/BG.tscn" id="2_8tu5x"]
-[ext_resource type="Texture2D" uid="uid://dna42xcil1f8g" path="res://ASSETS/Scobus5/ASSETS/ScobusBackground.png" id="3_xflq5"]
+[ext_resource type="PackedScene" uid="uid://ch06nt8sc3xu4" path="res://SCENE/BGScobus.tscn" id="3_leina"]
 [ext_resource type="PackedScene" uid="uid://com54dlwngvg2" path="res://SCENE/ui_layer.tscn" id="4_bso8a"]
 [ext_resource type="PackedScene" uid="uid://2ywssksibvl4" path="res://ASSETS/Scobus5/SCENES/startScobus5.tscn" id="6_yuk5a"]
 [ext_resource type="PackedScene" uid="uid://de5ui441h8jdk" path="res://SCENE/player.tscn" id="7_pt5vq"]
@@ -90,8 +89,8 @@ _data = {
 script = ExtResource("1_4k5nf")
 next_level = ExtResource("2_1bga6")
 
-[node name="BG" parent="." instance=ExtResource("2_8tu5x")]
-bg_texture = ExtResource("3_xflq5")
+[node name="BGScobus" parent="." instance=ExtResource("3_leina")]
+position = Vector2(272, 313)
 
 [node name="UILayer" parent="." instance=ExtResource("4_bso8a")]
 
