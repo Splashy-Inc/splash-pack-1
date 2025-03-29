@@ -326,6 +326,7 @@ script = ExtResource("1_wlnn5")
 next_level = ExtResource("2_1h515")
 
 [node name="BG" parent="." instance=ExtResource("1_ryt7c")]
+position = Vector2(0, 95)
 
 [node name="UILayer" parent="." instance=ExtResource("2_ao8f6")]
 

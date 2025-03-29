@@ -554,6 +554,7 @@ script = ExtResource("1_cin3f")
 next_level = ExtResource("2_hqr0p")
 
 [node name="BG" parent="." instance=ExtResource("2_kuqwd")]
+position = Vector2(1188, -28)
 
 [node name="Level7Outline" type="Sprite2D" parent="."]
 visible = false

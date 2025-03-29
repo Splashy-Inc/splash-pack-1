@@ -20,6 +20,7 @@ script = ExtResource("1_amdf6")
 next_level = ExtResource("2_e5vol")
 
 [node name="BG" parent="." instance=ExtResource("2_2f75i")]
+position = Vector2(1142, -143)
 
 [node name="Level6Outline" type="Sprite2D" parent="."]
 visible = false
