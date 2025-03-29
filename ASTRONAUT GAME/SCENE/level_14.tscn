@@ -144,7 +144,7 @@ script = ExtResource("1_7677d")
 next_level = ExtResource("2_j2m43")
 
 [node name="BGScobus" parent="." instance=ExtResource("3_ncshf")]
-position = Vector2(832, 272)
+position = Vector2(835, 337)
 
 [node name="UILayer" parent="." instance=ExtResource("4_isxne")]
 
