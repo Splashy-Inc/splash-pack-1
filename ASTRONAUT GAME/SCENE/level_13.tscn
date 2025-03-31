@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://SCRIPTS/level.gd" id="1_7cbua"]
 [ext_resource type="PackedScene" uid="uid://bk5rvrl2ttmxg" path="res://SCENE/level_14.tscn" id="2_hoa66"]
-[ext_resource type="PackedScene" uid="uid://ch06nt8sc3xu4" path="res://SCENE/BGScobus.tscn" id="3_eleet"]
+[ext_resource type="PackedScene" uid="uid://ch06nt8sc3xu4" path="res://ASSETS/Scobus5/SCENES/BGScobus.tscn" id="3_eleet"]
 [ext_resource type="PackedScene" uid="uid://com54dlwngvg2" path="res://SCENE/ui_layer.tscn" id="4_xdshn"]
 [ext_resource type="PackedScene" uid="uid://2ywssksibvl4" path="res://ASSETS/Scobus5/SCENES/startScobus5.tscn" id="6_f7eya"]
 [ext_resource type="PackedScene" uid="uid://7mpcj6c2j41o" path="res://ASSETS/Scobus5/SCENES/exitScobus5.tscn" id="7_1w5uk"]

@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://ewpns3q3kav3" path="res://ASSETS/Scobus5/SCENES/WaterScobus.tscn" id="12_p6dda"]
 [ext_resource type="PackedScene" uid="uid://fsueg6sfts72" path="res://ASSETS/Scobus5/SCENES/water_top_scobus_5.tscn" id="13_xgxwe"]
 [ext_resource type="PackedScene" uid="uid://c3yy7vfwkshnm" path="res://ASSETS/Scobus5/SCENES/jelly_fish.tscn" id="16_cx8ab"]
-[ext_resource type="PackedScene" uid="uid://ch06nt8sc3xu4" path="res://SCENE/BGScobus.tscn" id="16_m0foy"]
+[ext_resource type="PackedScene" uid="uid://ch06nt8sc3xu4" path="res://ASSETS/Scobus5/SCENES/BGScobus.tscn" id="16_m0foy"]
 
 [node name="Level_20" type="Node2D"]
 script = ExtResource("1_t0c0t")

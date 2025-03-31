@@ -16,7 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bj66u8iqvnjo4" path="res://ASSETS/Scobus5/SCENES/snail_slime.tscn" id="15_upv6k"]
 [ext_resource type="Texture2D" uid="uid://cwa62f1so0c3i" path="res://ASSETS/Scobus5/ASSETS/SnailSlimeL.png" id="16_nxpwb"]
 [ext_resource type="Texture2D" uid="uid://cbls11anyvhwo" path="res://ASSETS/Scobus5/ASSETS/SnailSlimeR.png" id="17_fxrpk"]
-[ext_resource type="PackedScene" uid="uid://ch06nt8sc3xu4" path="res://SCENE/BGScobus.tscn" id="17_n8ehd"]
+[ext_resource type="PackedScene" uid="uid://ch06nt8sc3xu4" path="res://ASSETS/Scobus5/SCENES/BGScobus.tscn" id="17_n8ehd"]
 
 [sub_resource type="Animation" id="Animation_rvf2r"]
 length = 0.001

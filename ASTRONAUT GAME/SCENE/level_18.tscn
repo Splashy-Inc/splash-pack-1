@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://cwa62f1so0c3i" path="res://ASSETS/Scobus5/ASSETS/SnailSlimeL.png" id="15_8cs42"]
 [ext_resource type="Texture2D" uid="uid://cbls11anyvhwo" path="res://ASSETS/Scobus5/ASSETS/SnailSlimeR.png" id="16_j64eu"]
 [ext_resource type="PackedScene" uid="uid://cij41mi1l2q2j" path="res://ASSETS/Scobus5/SCENES/snail.tscn" id="17_vmsxb"]
-[ext_resource type="PackedScene" uid="uid://ch06nt8sc3xu4" path="res://SCENE/BGScobus.tscn" id="20_dbkux"]
+[ext_resource type="PackedScene" uid="uid://ch06nt8sc3xu4" path="res://ASSETS/Scobus5/SCENES/BGScobus.tscn" id="20_dbkux"]
 [ext_resource type="PackedScene" uid="uid://c3yy7vfwkshnm" path="res://ASSETS/Scobus5/SCENES/jelly_fish.tscn" id="20_s8pjw"]
 
 [sub_resource type="Animation" id="Animation_3yjs5"]

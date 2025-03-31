@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://d2pd08ycfvvq"]
+
+[ext_resource type="Texture2D" uid="uid://eykaslbqmdcm" path="res://ASSETS/Pomum/ASSETS/Background/BackGroundLayer1.png" id="1_ic8qn"]
+[ext_resource type="Texture2D" uid="uid://db8pq8uv2cafh" path="res://ASSETS/Pomum/ASSETS/Background/BackGroundLayer2.png" id="2_ceut4"]
+[ext_resource type="Texture2D" uid="uid://uaqpvji4sw4r" path="res://ASSETS/Pomum/ASSETS/Background/BackGroundLayer4.png" id="3_4p312"]
+[ext_resource type="Texture2D" uid="uid://wj7vmpdjki5u" path="res://ASSETS/Pomum/ASSETS/Background/BackGroundLayer5.png" id="4_ebnsg"]
+
+[node name="BGPomum" type="Node2D"]
+z_index = -50
+
+[node name="Back" type="Parallax2D" parent="."]
+scale = Vector2(0.5, 0.5)
+repeat_size = Vector2(1280, 712)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="Back"]
+position = Vector2(2, 0)
+texture = ExtResource("1_ic8qn")
+
+[node name="Bush" type="Parallax2D" parent="."]
+scale = Vector2(3, 3)
+scroll_offset = Vector2(-1047, -22)
+repeat_size = Vector2(1280, 0)
+autoscroll = Vector2(2, 2)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="Bush"]
+position = Vector2(21, 67)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_ceut4")
+
+[node name="Wisps" type="Parallax2D" parent="."]
+scroll_offset = Vector2(-751, -389)
+repeat_size = Vector2(1280, 360)
+autoscroll = Vector2(5, 5)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="Wisps"]
+position = Vector2(110, 592)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_4p312")
+
+[node name="ThickTree" type="Parallax2D" parent="."]
+scale = Vector2(0.25, 0.25)
+scroll_offset = Vector2(556, 303)
+repeat_size = Vector2(2560, 1425)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="ThickTree"]
+texture = ExtResource("4_ebnsg")

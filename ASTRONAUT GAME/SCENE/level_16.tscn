@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://cbyj7euuswjtr" path="res://ASSETS/Scobus5/SCENES/Claw.tscn" id="12_hcchy"]
 [ext_resource type="Texture2D" uid="uid://cwa62f1so0c3i" path="res://ASSETS/Scobus5/ASSETS/SnailSlimeL.png" id="12_rikc7"]
 [ext_resource type="Texture2D" uid="uid://cbls11anyvhwo" path="res://ASSETS/Scobus5/ASSETS/SnailSlimeR.png" id="13_8s1na"]
-[ext_resource type="PackedScene" uid="uid://ch06nt8sc3xu4" path="res://SCENE/BGScobus.tscn" id="17_3bamv"]
+[ext_resource type="PackedScene" uid="uid://ch06nt8sc3xu4" path="res://ASSETS/Scobus5/SCENES/BGScobus.tscn" id="17_3bamv"]
 [ext_resource type="PackedScene" uid="uid://b02qjg4gut26y" path="res://ASSETS/Scobus5/SCENES/ThermalVent.tscn" id="17_3x82i"]
 
 [node name="Level_16" type="Node2D"]
