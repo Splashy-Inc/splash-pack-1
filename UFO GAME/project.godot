@@ -8,13 +8,17 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
-config/name="Splashy Fish IN SPACE"
+config/name="Wormholes"
 run/main_scene="res://SCENE/into_scene.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.6", "Forward Plus")
+boot_splash/stretch_mode=0
 boot_splash/image="res://Splashy Inc. CleanedUp.png"
-boot_splash/fullsize=false
 config/icon="res://SplorshIcon.png"
 
 [autoload]
