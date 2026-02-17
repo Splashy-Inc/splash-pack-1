@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2id6bucmqori"
-path="res://.godot/imported/SawPlant.png-40bba1c71e6e607456c34e2ed95da53c.ctex"
+path="res://.godot/imported/SawPlant.png-a3c1b5d91aa47d8c0e2fa51449069c2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Other/SawPlant.png"
-dest_files=["res://.godot/imported/SawPlant.png-40bba1c71e6e607456c34e2ed95da53c.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Other/SawPlant.png"
+dest_files=["res://.godot/imported/SawPlant.png-a3c1b5d91aa47d8c0e2fa51449069c2d.ctex"]
 
 [params]
 

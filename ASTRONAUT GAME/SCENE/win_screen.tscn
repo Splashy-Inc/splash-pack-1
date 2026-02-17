@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cuiad22fenhpw"]
+[gd_scene format=3 uid="uid://cuiad22fenhpw"]
 
-[ext_resource type="Script" path="res://SCRIPTS/win_screen.gd" id="1_k8j86"]
+[ext_resource type="Script" uid="uid://dc1ypvruni55x" path="res://ASTRONAUT GAME/SCRIPTS/win_screen.gd" id="1_k8j86"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vvfyv"]
 font_size = 30

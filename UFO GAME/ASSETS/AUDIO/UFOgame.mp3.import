@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://c3sdce2nda6ch"
-path="res://.godot/imported/UFOgame.mp3-b7df5f5a364730f4593bfd5aaec64cc1.mp3str"
+path="res://.godot/imported/UFOgame.mp3-ebcfd799e418894ebd7fb224e5ab0189.mp3str"
 
 [deps]
 
-source_file="res://ASSETS/AUDIO/UFOgame.mp3"
-dest_files=["res://.godot/imported/UFOgame.mp3-b7df5f5a364730f4593bfd5aaec64cc1.mp3str"]
+source_file="res://UFO GAME/ASSETS/AUDIO/UFOgame.mp3"
+dest_files=["res://.godot/imported/UFOgame.mp3-ebcfd799e418894ebd7fb224e5ab0189.mp3str"]
 
 [params]
 

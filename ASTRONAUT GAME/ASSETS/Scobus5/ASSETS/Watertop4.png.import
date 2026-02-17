@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b11ss4tpkpa8i"
-path="res://.godot/imported/Watertop4.png-0f6fdc91e4c8cb74b216a5f81e852d1b.ctex"
+path="res://.godot/imported/Watertop4.png-6e9ce780287893b7f8719ee42af75c2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Scobus5/ASSETS/Watertop4.png"
-dest_files=["res://.godot/imported/Watertop4.png-0f6fdc91e4c8cb74b216a5f81e852d1b.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Watertop4.png"
+dest_files=["res://.godot/imported/Watertop4.png-6e9ce780287893b7f8719ee42af75c2b.ctex"]
 
 [params]
 

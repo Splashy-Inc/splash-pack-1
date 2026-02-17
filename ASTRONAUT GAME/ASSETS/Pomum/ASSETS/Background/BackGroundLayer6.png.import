@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://27os27slbcs0"
-path="res://.godot/imported/BackGroundLayer6.png-ceff85ce8834cf7a5b1b0aa2050eef66.ctex"
+path="res://.godot/imported/BackGroundLayer6.png-ea085796e7ec6894f422e05393e3b12d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Pomum/ASSETS/Background/BackGroundLayer6.png"
-dest_files=["res://.godot/imported/BackGroundLayer6.png-ceff85ce8834cf7a5b1b0aa2050eef66.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Pomum/ASSETS/Background/BackGroundLayer6.png"
+dest_files=["res://.godot/imported/BackGroundLayer6.png-ea085796e7ec6894f422e05393e3b12d.ctex"]
 
 [params]
 

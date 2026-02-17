@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bfagv4uaaw6u4"
-path="res://.godot/imported/jump_pad.ogg-250521c046c25a261a2fc97ae9fe10e1.oggvorbisstr"
+path="res://.godot/imported/jump_pad.ogg-1b47375b47bee0cc06620c301c74abfb.oggvorbisstr"
 
 [deps]
 
-source_file="res://ASSETS/Audio/Desert/jump_pad.ogg"
-dest_files=["res://.godot/imported/jump_pad.ogg-250521c046c25a261a2fc97ae9fe10e1.oggvorbisstr"]
+source_file="res://ASTRONAUT GAME/ASSETS/Audio/Desert/jump_pad.ogg"
+dest_files=["res://.godot/imported/jump_pad.ogg-1b47375b47bee0cc06620c301c74abfb.oggvorbisstr"]
 
 [params]
 

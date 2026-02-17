@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1mvujq6w770h"
-path="res://.godot/imported/SpikeWallB.png-a3011976ec93e41fbcfca5e356509bcc.ctex"
+path="res://.godot/imported/SpikeWallB.png-ef905a066e070028bb7719457127b577.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Other/SpikeWallB.png"
-dest_files=["res://.godot/imported/SpikeWallB.png-a3011976ec93e41fbcfca5e356509bcc.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Other/SpikeWallB.png"
+dest_files=["res://.godot/imported/SpikeWallB.png-ef905a066e070028bb7719457127b577.ctex"]
 
 [params]
 

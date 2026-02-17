@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://crp2oiuudgh2v"
-path="res://.godot/imported/HURT.mp3-881f5fdf8063c199bcc97c53ea74cb39.mp3str"
+path="res://.godot/imported/HURT.mp3-61eab60a1668b8940daf95981b9e2ce3.mp3str"
 
 [deps]
 
-source_file="res://ASSETS/Audio/HURT.mp3"
-dest_files=["res://.godot/imported/HURT.mp3-881f5fdf8063c199bcc97c53ea74cb39.mp3str"]
+source_file="res://ASTRONAUT GAME/ASSETS/Audio/HURT.mp3"
+dest_files=["res://.godot/imported/HURT.mp3-61eab60a1668b8940daf95981b9e2ce3.mp3str"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg1ysn7pu86k8"
-path="res://.godot/imported/JumpPadD.png-51fbbb58bfe7ae4e48eb549950fcee32.ctex"
+path="res://.godot/imported/JumpPadD.png-56738c87e6ea5c79195a02a26218c6ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Other/JumpPadD.png"
-dest_files=["res://.godot/imported/JumpPadD.png-51fbbb58bfe7ae4e48eb549950fcee32.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Other/JumpPadD.png"
+dest_files=["res://.godot/imported/JumpPadD.png-56738c87e6ea5c79195a02a26218c6ff.ctex"]
 
 [params]
 

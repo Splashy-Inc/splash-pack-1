@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhorwodo64ah"
-path="res://.godot/imported/Boost5.png-a2637713ac70374049a332f41d783c96.ctex"
+path="res://.godot/imported/Boost5.png-5c97a04aa63364b394dd842d66086771.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/INTERACTABLES/Boost5.png"
-dest_files=["res://.godot/imported/Boost5.png-a2637713ac70374049a332f41d783c96.ctex"]
+source_file="res://UFO GAME/ASSETS/INTERACTABLES/Boost5.png"
+dest_files=["res://.godot/imported/Boost5.png-5c97a04aa63364b394dd842d66086771.ctex"]
 
 [params]
 

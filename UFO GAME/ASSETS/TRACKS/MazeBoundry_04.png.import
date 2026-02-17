@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mmlt4hhc04j8"
-path="res://.godot/imported/MazeBoundry_04.png-20b40a47241d4a63f8a54973d589ad35.ctex"
+path="res://.godot/imported/MazeBoundry_04.png-ecbba81ce284522bb2e2a237b256fe31.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/TRACKS/MazeBoundry_04.png"
-dest_files=["res://.godot/imported/MazeBoundry_04.png-20b40a47241d4a63f8a54973d589ad35.ctex"]
+source_file="res://UFO GAME/ASSETS/TRACKS/MazeBoundry_04.png"
+dest_files=["res://.godot/imported/MazeBoundry_04.png-ecbba81ce284522bb2e2a237b256fe31.ctex"]
 
 [params]
 

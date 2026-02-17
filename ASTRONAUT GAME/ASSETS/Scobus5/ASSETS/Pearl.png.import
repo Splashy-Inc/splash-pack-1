@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtr7oejui0e0w"
-path="res://.godot/imported/Pearl.png-f5cbb70d88e9948510e74e0b06d546c7.ctex"
+path="res://.godot/imported/Pearl.png-236cf60cad3c51623a7be0914ef24639.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Scobus5/ASSETS/Pearl.png"
-dest_files=["res://.godot/imported/Pearl.png-f5cbb70d88e9948510e74e0b06d546c7.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Pearl.png"
+dest_files=["res://.godot/imported/Pearl.png-236cf60cad3c51623a7be0914ef24639.ctex"]
 
 [params]
 

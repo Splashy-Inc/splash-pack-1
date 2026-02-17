@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://calpyywl1yihu"
-path="res://.godot/imported/ScobusOceanGodLight.png-7d28e13f4d885bee267052dc8ae1b99e.ctex"
+path="res://.godot/imported/ScobusOceanGodLight.png-fd39637f78887736009e18548717c594.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Scobus5/ASSETS/ScobusBG/ScobusOceanGodLight.png"
-dest_files=["res://.godot/imported/ScobusOceanGodLight.png-7d28e13f4d885bee267052dc8ae1b99e.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/ScobusBG/ScobusOceanGodLight.png"
+dest_files=["res://.godot/imported/ScobusOceanGodLight.png-fd39637f78887736009e18548717c594.ctex"]
 
 [params]
 

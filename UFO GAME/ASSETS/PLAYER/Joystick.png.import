@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cblkb2nyvuba6"
-path="res://.godot/imported/Joystick.png-fb599ea2db76c30c44aa829989e4ed2c.ctex"
+path="res://.godot/imported/Joystick.png-f4fe4cefd4f195b025a15c00db3bfb8e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/PLAYER/Joystick.png"
-dest_files=["res://.godot/imported/Joystick.png-fb599ea2db76c30c44aa829989e4ed2c.ctex"]
+source_file="res://UFO GAME/ASSETS/PLAYER/Joystick.png"
+dest_files=["res://.godot/imported/Joystick.png-f4fe4cefd4f195b025a15c00db3bfb8e.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qo2yyl6srgnn"
-path="res://.godot/imported/Screenshot 2025-03-11 121208.png-bf1b22f9989b2edc73c6b1fcfc434338.ctex"
+path="res://.godot/imported/Screenshot 2025-03-11 121208.png-5d29a33dcc9be38b54c7e030137ab0a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/ScreenShots/Screenshot 2025-03-11 121208.png"
-dest_files=["res://.godot/imported/Screenshot 2025-03-11 121208.png-bf1b22f9989b2edc73c6b1fcfc434338.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/ScreenShots/Screenshot 2025-03-11 121208.png"
+dest_files=["res://.godot/imported/Screenshot 2025-03-11 121208.png-5d29a33dcc9be38b54c7e030137ab0a8.ctex"]
 
 [params]
 

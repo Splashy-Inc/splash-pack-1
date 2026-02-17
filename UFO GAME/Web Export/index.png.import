@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddym4digxtipo"
-path="res://.godot/imported/index.png-e31ee48696c14bc4a5a4b49ee0a14de5.ctex"
+path="res://.godot/imported/index.png-2db8ce299ec4f1c6447fd701950a8bbe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Web Export/index.png"
-dest_files=["res://.godot/imported/index.png-e31ee48696c14bc4a5a4b49ee0a14de5.ctex"]
+source_file="res://UFO GAME/Web Export/index.png"
+dest_files=["res://.godot/imported/index.png-2db8ce299ec4f1c6447fd701950a8bbe.ctex"]
 
 [params]
 

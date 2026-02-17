@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3j5363a7onp1"
-path="res://.godot/imported/JellyfishSprite.png-c2d26d3ff44a36791c5b4f83c79c5aea.ctex"
+path="res://.godot/imported/JellyfishSprite.png-bb7512200e2c043600f9196e7a26b090.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Scobus5/ASSETS/JellyfishSprite.png"
-dest_files=["res://.godot/imported/JellyfishSprite.png-c2d26d3ff44a36791c5b4f83c79c5aea.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/JellyfishSprite.png"
+dest_files=["res://.godot/imported/JellyfishSprite.png-bb7512200e2c043600f9196e7a26b090.ctex"]
 
 [params]
 

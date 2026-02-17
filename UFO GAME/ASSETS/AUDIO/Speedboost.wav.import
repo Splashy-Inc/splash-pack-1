@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b0djprj5dtpkf"
-path="res://.godot/imported/Speedboost.wav-b215332e7f9a758090f522d6af3ba2f5.sample"
+path="res://.godot/imported/Speedboost.wav-7d651b3c92292aa7ece588b369cb31cf.sample"
 
 [deps]
 
-source_file="res://ASSETS/AUDIO/Speedboost.wav"
-dest_files=["res://.godot/imported/Speedboost.wav-b215332e7f9a758090f522d6af3ba2f5.sample"]
+source_file="res://UFO GAME/ASSETS/AUDIO/Speedboost.wav"
+dest_files=["res://.godot/imported/Speedboost.wav-7d651b3c92292aa7ece588b369cb31cf.sample"]
 
 [params]
 

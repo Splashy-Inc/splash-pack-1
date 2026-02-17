@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0dnl0hugejru"
-path="res://.godot/imported/OldDesertBG.png-6c856796a7117bdd1a246dad6f973a85.ctex"
+path="res://.godot/imported/OldDesertBG.png-f80e021fa166422a2035036aef4a9886.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SCREENSHOTS/OldDesertBG.png"
-dest_files=["res://.godot/imported/OldDesertBG.png-6c856796a7117bdd1a246dad6f973a85.ctex"]
+source_file="res://ASTRONAUT GAME/SCREENSHOTS/OldDesertBG.png"
+dest_files=["res://.godot/imported/OldDesertBG.png-f80e021fa166422a2035036aef4a9886.ctex"]
 
 [params]
 

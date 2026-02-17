@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bd4f2sxo08i3i"
-path="res://.godot/imported/PomumTerrain.png-ab16879d8835e27ac986f0e8006f0673.ctex"
+path="res://.godot/imported/PomumTerrain.png-80dbc9f825beca2a60bb1c448e84b3af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Pomum/ASSETS/Terrain/PomumTerrain.png"
-dest_files=["res://.godot/imported/PomumTerrain.png-ab16879d8835e27ac986f0e8006f0673.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Pomum/ASSETS/Terrain/PomumTerrain.png"
+dest_files=["res://.godot/imported/PomumTerrain.png-80dbc9f825beca2a60bb1c448e84b3af.ctex"]
 
 [params]
 

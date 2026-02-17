@@ -1,8 +1,8 @@
-[gd_scene load_steps=16 format=3 uid="uid://b02qjg4gut26y"]
+[gd_scene format=3 uid="uid://b02qjg4gut26y"]
 
-[ext_resource type="Script" path="res://SCRIPTS/jump_pad.gd" id="1_dukkh"]
-[ext_resource type="Texture2D" uid="uid://d17ypi7thv634" path="res://ASSETS/Scobus5/ASSETS/ThermalVentSpriteSheet.png" id="2_ar733"]
-[ext_resource type="AudioStream" uid="uid://c0idkeujcrjmf" path="res://ASSETS/Scobus5/ASSETS/Scobus5Audio/thermal_vent.ogg" id="3_cvhwg"]
+[ext_resource type="Script" uid="uid://ymuj1m1vj3wk" path="res://ASTRONAUT GAME/SCRIPTS/jump_pad.gd" id="1_dukkh"]
+[ext_resource type="Texture2D" uid="uid://d17ypi7thv634" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/ThermalVentSpriteSheet.png" id="2_ar733"]
+[ext_resource type="AudioStream" uid="uid://c0idkeujcrjmf" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Scobus5Audio/thermal_vent.ogg" id="3_cvhwg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4nalh"]
 atlas = ExtResource("2_ar733")

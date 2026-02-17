@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyyvmdcx1aa6l"
-path="res://.godot/imported/Desert3.png-13f52fd15940ddbafdf70c655b389fd8.ctex"
+path="res://.godot/imported/Desert3.png-8a5a85999fb34153ff8e0056fbfa0127.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Background/Terrain/Desert3.png"
-dest_files=["res://.godot/imported/Desert3.png-13f52fd15940ddbafdf70c655b389fd8.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Background/Terrain/Desert3.png"
+dest_files=["res://.godot/imported/Desert3.png-8a5a85999fb34153ff8e0056fbfa0127.ctex"]
 
 [params]
 

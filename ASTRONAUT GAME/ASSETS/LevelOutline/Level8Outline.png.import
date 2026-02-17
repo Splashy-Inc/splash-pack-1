@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5372nmw3r0se"
-path="res://.godot/imported/Level8Outline.png-a417483f38054d4856eeba50dd34ab26.ctex"
+path="res://.godot/imported/Level8Outline.png-edcf20dd83be30bd3f5801eaffe51b99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/LevelOutline/Level8Outline.png"
-dest_files=["res://.godot/imported/Level8Outline.png-a417483f38054d4856eeba50dd34ab26.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/LevelOutline/Level8Outline.png"
+dest_files=["res://.godot/imported/Level8Outline.png-edcf20dd83be30bd3f5801eaffe51b99.ctex"]
 
 [params]
 

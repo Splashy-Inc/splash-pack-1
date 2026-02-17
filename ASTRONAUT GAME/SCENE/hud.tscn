@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://o02n2e0hnmey"]
+[gd_scene format=3 uid="uid://o02n2e0hnmey"]
 
-[ext_resource type="Script" path="res://SCRIPTS/hud.gd" id="1_53xtl"]
-[ext_resource type="PackedScene" uid="uid://dh6egqagpuftj" path="res://SCENE/pause_menu.tscn" id="2_u50pr"]
+[ext_resource type="Script" uid="uid://u84krr4q636k" path="res://ASTRONAUT GAME/SCRIPTS/hud.gd" id="1_53xtl"]
+[ext_resource type="PackedScene" uid="uid://dh6egqagpuftj" path="res://ASTRONAUT GAME/SCENE/pause_menu.tscn" id="2_u50pr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_pkdis"]
 font_size = 20

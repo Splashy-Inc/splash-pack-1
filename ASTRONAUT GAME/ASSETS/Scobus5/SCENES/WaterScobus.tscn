@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://ewpns3q3kav3"]
+[gd_scene format=3 uid="uid://ewpns3q3kav3"]
 
-[ext_resource type="Script" path="res://ASSETS/Scobus5/SCRIPTS/water_scobus.gd" id="1_woek5"]
-[ext_resource type="Texture2D" uid="uid://cdawva0hyqw0k" path="res://ASSETS/Scobus5/ASSETS/WaterBody.png" id="2_0vmy0"]
+[ext_resource type="Script" uid="uid://bash4xd40bjgd" path="res://ASTRONAUT GAME/ASSETS/Scobus5/SCRIPTS/water_scobus.gd" id="1_woek5"]
+[ext_resource type="Texture2D" uid="uid://cdawva0hyqw0k" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/WaterBody.png" id="2_0vmy0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_826o3"]
 size = Vector2(64, 64)

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ca3wof7c0vmrh"
-path="res://.godot/imported/SpaceBGBlack.png-b339c96d99e8647bcddc2f5f1018cd51.ctex"
+path="res://.godot/imported/SpaceBGBlack.png-248bed4f602b24eb6c0ad69143e3be93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/BACKGROUNDS/SpaceBGBlack.png"
-dest_files=["res://.godot/imported/SpaceBGBlack.png-b339c96d99e8647bcddc2f5f1018cd51.ctex"]
+source_file="res://UFO GAME/ASSETS/BACKGROUNDS/SpaceBGBlack.png"
+dest_files=["res://.godot/imported/SpaceBGBlack.png-248bed4f602b24eb6c0ad69143e3be93.ctex"]
 
 [params]
 

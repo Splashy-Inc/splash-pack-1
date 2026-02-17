@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4wmkc4l71lgf"
-path="res://.godot/imported/BlackHoleBlue.png-108995ba8b2eb667bd015095cde839c7.ctex"
+path="res://.godot/imported/BlackHoleBlue.png-1ae479ad1e42ac710e40510ee9a776f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/INTERACTABLES/BlackHoleBlue.png"
-dest_files=["res://.godot/imported/BlackHoleBlue.png-108995ba8b2eb667bd015095cde839c7.ctex"]
+source_file="res://UFO GAME/ASSETS/INTERACTABLES/BlackHoleBlue.png"
+dest_files=["res://.godot/imported/BlackHoleBlue.png-1ae479ad1e42ac710e40510ee9a776f5.ctex"]
 
 [params]
 

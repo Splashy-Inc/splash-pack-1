@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c6kgqddvxgtcy"
-path="res://.godot/imported/AsteroidNoise.wav-9fd8fde16ce99abb66542e37c7793f98.sample"
+path="res://.godot/imported/AsteroidNoise.wav-87e61423d6ecfeaf8fa45dcc7c56a135.sample"
 
 [deps]
 
-source_file="res://ASSETS/AUDIO/AsteroidNoise.wav"
-dest_files=["res://.godot/imported/AsteroidNoise.wav-9fd8fde16ce99abb66542e37c7793f98.sample"]
+source_file="res://UFO GAME/ASSETS/AUDIO/AsteroidNoise.wav"
+dest_files=["res://.godot/imported/AsteroidNoise.wav-87e61423d6ecfeaf8fa45dcc7c56a135.sample"]
 
 [params]
 

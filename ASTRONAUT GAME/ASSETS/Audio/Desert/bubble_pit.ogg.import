@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b2sybjkwrebtf"
-path="res://.godot/imported/bubble_pit.ogg-589ff9db94b2e442157880aa8f39a2a4.oggvorbisstr"
+path="res://.godot/imported/bubble_pit.ogg-2b0a4dc816f11961bf6e72fe85b7365c.oggvorbisstr"
 
 [deps]
 
-source_file="res://ASSETS/Audio/Desert/bubble_pit.ogg"
-dest_files=["res://.godot/imported/bubble_pit.ogg-589ff9db94b2e442157880aa8f39a2a4.oggvorbisstr"]
+source_file="res://ASTRONAUT GAME/ASSETS/Audio/Desert/bubble_pit.ogg"
+dest_files=["res://.godot/imported/bubble_pit.ogg-2b0a4dc816f11961bf6e72fe85b7365c.oggvorbisstr"]
 
 [params]
 

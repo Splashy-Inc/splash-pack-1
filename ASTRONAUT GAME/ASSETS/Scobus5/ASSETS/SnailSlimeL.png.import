@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwa62f1so0c3i"
-path="res://.godot/imported/SnailSlimeL.png-ab424456ffb3d8bfdd377238d39e013e.ctex"
+path="res://.godot/imported/SnailSlimeL.png-d7f605262d626b00bcc11e933fd72202.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Scobus5/ASSETS/SnailSlimeL.png"
-dest_files=["res://.godot/imported/SnailSlimeL.png-ab424456ffb3d8bfdd377238d39e013e.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/SnailSlimeL.png"
+dest_files=["res://.godot/imported/SnailSlimeL.png-d7f605262d626b00bcc11e933fd72202.ctex"]
 
 [params]
 

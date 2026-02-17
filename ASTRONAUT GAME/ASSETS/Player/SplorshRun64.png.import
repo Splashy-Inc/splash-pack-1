@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkobw4ppy6rce"
-path="res://.godot/imported/SplorshRun64.png-c8d3883891d76c3ca21c62942e36865b.ctex"
+path="res://.godot/imported/SplorshRun64.png-a0f52d191905af75198c57498956f9d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Player/SplorshRun64.png"
-dest_files=["res://.godot/imported/SplorshRun64.png-c8d3883891d76c3ca21c62942e36865b.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Player/SplorshRun64.png"
+dest_files=["res://.godot/imported/SplorshRun64.png-a0f52d191905af75198c57498956f9d0.ctex"]
 
 [params]
 

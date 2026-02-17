@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd88bnnqofjal"
-path="res://.godot/imported/Boost2.png-0cb80c4a0a6dbcdb5751dc328ef3bbfe.ctex"
+path="res://.godot/imported/Boost2.png-d48266538529dbe7c3d6f5bee2b3f935.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/INTERACTABLES/Boost2.png"
-dest_files=["res://.godot/imported/Boost2.png-0cb80c4a0a6dbcdb5751dc328ef3bbfe.ctex"]
+source_file="res://UFO GAME/ASSETS/INTERACTABLES/Boost2.png"
+dest_files=["res://.godot/imported/Boost2.png-d48266538529dbe7c3d6f5bee2b3f935.ctex"]
 
 [params]
 

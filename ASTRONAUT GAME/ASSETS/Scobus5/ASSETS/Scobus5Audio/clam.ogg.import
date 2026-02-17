@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dgye6wl3dg263"
-path="res://.godot/imported/clam.ogg-5a6f52cc3d7e6d12b37815376ff8bfb0.oggvorbisstr"
+path="res://.godot/imported/clam.ogg-bdea21aeb431406763e1de177385b10a.oggvorbisstr"
 
 [deps]
 
-source_file="res://ASSETS/Scobus5/ASSETS/Scobus5Audio/clam.ogg"
-dest_files=["res://.godot/imported/clam.ogg-5a6f52cc3d7e6d12b37815376ff8bfb0.oggvorbisstr"]
+source_file="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Scobus5Audio/clam.ogg"
+dest_files=["res://.godot/imported/clam.ogg-bdea21aeb431406763e1de177385b10a.oggvorbisstr"]
 
 [params]
 

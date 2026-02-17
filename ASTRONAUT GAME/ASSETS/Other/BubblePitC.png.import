@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xib6wrboevx3"
-path="res://.godot/imported/BubblePitC.png-9dc4cdbc1f58288a398d53b6d8fe6f30.ctex"
+path="res://.godot/imported/BubblePitC.png-32d6b9b805da88418113cb99c86552e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Other/BubblePitC.png"
-dest_files=["res://.godot/imported/BubblePitC.png-9dc4cdbc1f58288a398d53b6d8fe6f30.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Other/BubblePitC.png"
+dest_files=["res://.godot/imported/BubblePitC.png-32d6b9b805da88418113cb99c86552e7.ctex"]
 
 [params]
 

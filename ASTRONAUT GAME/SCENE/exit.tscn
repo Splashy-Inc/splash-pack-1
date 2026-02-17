@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://0v5wypgl6sop"]
+[gd_scene format=3 uid="uid://0v5wypgl6sop"]
 
-[ext_resource type="Texture2D" uid="uid://dhucs3p8p88ek" path="res://ASSETS/Other/Exit.png" id="1_hmden"]
-[ext_resource type="Script" path="res://SCRIPTS/exit.gd" id="1_i0fvd"]
-[ext_resource type="Texture2D" uid="uid://bjpx8vgunf2p1" path="res://ASSETS/Other/ExitTunnel.png" id="2_sib8j"]
+[ext_resource type="Texture2D" uid="uid://dhucs3p8p88ek" path="res://ASTRONAUT GAME/ASSETS/Other/Exit.png" id="1_hmden"]
+[ext_resource type="Script" uid="uid://d7rdvkv1sxow" path="res://ASTRONAUT GAME/SCRIPTS/exit.gd" id="1_i0fvd"]
+[ext_resource type="Texture2D" uid="uid://bjpx8vgunf2p1" path="res://ASTRONAUT GAME/ASSETS/Other/ExitTunnel.png" id="2_sib8j"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lm37g"]
 animations = [{

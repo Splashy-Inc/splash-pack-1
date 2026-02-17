@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkto0rukrb5h1"
-path="res://.godot/imported/Satalite.png-8436945720f6019eb504432377cc1090.ctex"
+path="res://.godot/imported/Satalite.png-3d4175470021320c8d8ba1ffc7e17551.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/INTERACTABLES/Satalite.png"
-dest_files=["res://.godot/imported/Satalite.png-8436945720f6019eb504432377cc1090.ctex"]
+source_file="res://UFO GAME/ASSETS/INTERACTABLES/Satalite.png"
+dest_files=["res://.godot/imported/Satalite.png-3d4175470021320c8d8ba1ffc7e17551.ctex"]
 
 [params]
 

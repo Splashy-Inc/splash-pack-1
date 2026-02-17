@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctu3hgpb54j1a"
-path="res://.godot/imported/StartTunnel.png-30a2f1b414e926d395f688f9d07ffa4e.ctex"
+path="res://.godot/imported/StartTunnel.png-c24c8b1ab33fe475b27c2c03e16a896e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Other/StartTunnel.png"
-dest_files=["res://.godot/imported/StartTunnel.png-30a2f1b414e926d395f688f9d07ffa4e.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Other/StartTunnel.png"
+dest_files=["res://.godot/imported/StartTunnel.png-c24c8b1ab33fe475b27c2c03e16a896e.ctex"]
 
 [params]
 

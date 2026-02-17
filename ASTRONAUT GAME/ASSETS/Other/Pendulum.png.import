@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvwt8ddtu514k"
-path="res://.godot/imported/Pendulum.png-7d8daa5b3f390517f2767b67c3e10df6.ctex"
+path="res://.godot/imported/Pendulum.png-b45aeffedc52260ce42fd9fd53c99e9f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Other/Pendulum.png"
-dest_files=["res://.godot/imported/Pendulum.png-7d8daa5b3f390517f2767b67c3e10df6.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Other/Pendulum.png"
+dest_files=["res://.godot/imported/Pendulum.png-b45aeffedc52260ce42fd9fd53c99e9f.ctex"]
 
 [params]
 

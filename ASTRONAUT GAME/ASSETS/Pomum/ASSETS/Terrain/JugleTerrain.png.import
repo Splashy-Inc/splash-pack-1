@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjhxmds3nyjm"
-path="res://.godot/imported/JugleTerrain.png-a6edba0d1d30f24b38011803653e737d.ctex"
+path="res://.godot/imported/JugleTerrain.png-e07280d523b9315153821cdb8901c1c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Pomum/ASSETS/Terrain/JugleTerrain.png"
-dest_files=["res://.godot/imported/JugleTerrain.png-a6edba0d1d30f24b38011803653e737d.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Pomum/ASSETS/Terrain/JugleTerrain.png"
+dest_files=["res://.godot/imported/JugleTerrain.png-e07280d523b9315153821cdb8901c1c9.ctex"]
 
 [params]
 

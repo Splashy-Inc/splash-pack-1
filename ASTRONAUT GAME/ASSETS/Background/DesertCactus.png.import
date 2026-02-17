@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bv4i3fkx8i4k2"
-path="res://.godot/imported/DesertCactus.png-92c2035616eea6c05ef4614ecc3fcf00.ctex"
+path="res://.godot/imported/DesertCactus.png-3b48792aadd3e7208dfdee58af642eb2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Background/DesertCactus.png"
-dest_files=["res://.godot/imported/DesertCactus.png-92c2035616eea6c05ef4614ecc3fcf00.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Background/DesertCactus.png"
+dest_files=["res://.godot/imported/DesertCactus.png-3b48792aadd3e7208dfdee58af642eb2.ctex"]
 
 [params]
 

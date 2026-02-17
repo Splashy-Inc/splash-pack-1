@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://be6coflibyhkt"
-path="res://.godot/imported/SCREENSHOT.Astronaut.jpg-3d39536fe632b04b32b821fa924d3562.ctex"
+path="res://.godot/imported/SCREENSHOT.Astronaut.jpg-420fe5a6197ebbd2298932e78672c1f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/ScreenShots/SCREENSHOT.Astronaut.jpg"
-dest_files=["res://.godot/imported/SCREENSHOT.Astronaut.jpg-3d39536fe632b04b32b821fa924d3562.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/ScreenShots/SCREENSHOT.Astronaut.jpg"
+dest_files=["res://.godot/imported/SCREENSHOT.Astronaut.jpg-420fe5a6197ebbd2298932e78672c1f6.ctex"]
 
 [params]
 

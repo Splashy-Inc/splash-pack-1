@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf12aaxlv8au0"
-path="res://.godot/imported/TouchUp.png-795fd5f05581e596a1b46cdd41ebc1d6.ctex"
+path="res://.godot/imported/TouchUp.png-cf5958ee45bdfb073bb5c9c74b19f8cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Player/PlayerControls/TouchUp.png"
-dest_files=["res://.godot/imported/TouchUp.png-795fd5f05581e596a1b46cdd41ebc1d6.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Player/PlayerControls/TouchUp.png"
+dest_files=["res://.godot/imported/TouchUp.png-cf5958ee45bdfb073bb5c9c74b19f8cf.ctex"]
 
 [params]
 

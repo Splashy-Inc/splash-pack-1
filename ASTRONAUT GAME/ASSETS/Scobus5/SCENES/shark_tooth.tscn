@@ -1,8 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://2nm5f3i2dlg6"]
+[gd_scene format=3 uid="uid://2nm5f3i2dlg6"]
 
-[ext_resource type="Script" path="res://ASSETS/Scobus5/SCRIPTS/shark_tooth.gd" id="1_48yeo"]
-[ext_resource type="Texture2D" uid="uid://dh3oelgdq1se0" path="res://ASSETS/Scobus5/ASSETS/SharkTooth.png" id="1_hmjbm"]
-[ext_resource type="AudioStream" uid="uid://8jrfjgc12wad" path="res://ASSETS/Scobus5/ASSETS/Scobus5Audio/SharkTooth.ogg" id="3_payke"]
+[ext_resource type="Script" uid="uid://dfqclfu7d4yly" path="res://ASTRONAUT GAME/ASSETS/Scobus5/SCRIPTS/shark_tooth.gd" id="1_48yeo"]
+[ext_resource type="Texture2D" uid="uid://dh3oelgdq1se0" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/SharkTooth.png" id="1_hmjbm"]
+[ext_resource type="AudioStream" uid="uid://8jrfjgc12wad" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Scobus5Audio/SharkTooth.ogg" id="3_payke"]
 
 [sub_resource type="Animation" id="Animation_r5e23"]
 resource_name = "Chomp"

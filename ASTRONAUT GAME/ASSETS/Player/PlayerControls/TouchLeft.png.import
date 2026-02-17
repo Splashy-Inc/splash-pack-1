@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddxkmwtst0a0i"
-path="res://.godot/imported/TouchLeft.png-c27d389407b5ff328ea573a939463948.ctex"
+path="res://.godot/imported/TouchLeft.png-031c9d02f25d2a506b52790d24680fea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Player/PlayerControls/TouchLeft.png"
-dest_files=["res://.godot/imported/TouchLeft.png-c27d389407b5ff328ea573a939463948.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Player/PlayerControls/TouchLeft.png"
+dest_files=["res://.godot/imported/TouchLeft.png-031c9d02f25d2a506b52790d24680fea.ctex"]
 
 [params]
 

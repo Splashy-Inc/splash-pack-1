@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://k4oi55sac7xx"
-path="res://.godot/imported/ScobusOceanSpots.png-82e95a8ca100755d783ce9c4834786da.ctex"
+path="res://.godot/imported/ScobusOceanSpots.png-f8ae216d1eafa5ff89779bd086823b7d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Scobus5/ASSETS/ScobusBG/ScobusOceanSpots.png"
-dest_files=["res://.godot/imported/ScobusOceanSpots.png-82e95a8ca100755d783ce9c4834786da.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/ScobusBG/ScobusOceanSpots.png"
+dest_files=["res://.godot/imported/ScobusOceanSpots.png-f8ae216d1eafa5ff89779bd086823b7d.ctex"]
 
 [params]
 

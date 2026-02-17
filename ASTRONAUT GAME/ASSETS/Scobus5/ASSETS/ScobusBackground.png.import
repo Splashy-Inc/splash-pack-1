@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dna42xcil1f8g"
-path="res://.godot/imported/ScobusBackground.png-56168fbf31806ac93f50662c4ba7a330.ctex"
+path="res://.godot/imported/ScobusBackground.png-8b11ea9c06c2573a236da3040a85ff54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Scobus5/ASSETS/ScobusBackground.png"
-dest_files=["res://.godot/imported/ScobusBackground.png-56168fbf31806ac93f50662c4ba7a330.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/ScobusBackground.png"
+dest_files=["res://.godot/imported/ScobusBackground.png-8b11ea9c06c2573a236da3040a85ff54.ctex"]
 
 [params]
 

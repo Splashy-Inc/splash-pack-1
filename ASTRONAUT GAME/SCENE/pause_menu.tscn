@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dh6egqagpuftj"]
+[gd_scene format=3 uid="uid://dh6egqagpuftj"]
 
-[ext_resource type="Script" path="res://SCRIPTS/pause_menu.gd" id="1_ktm6n"]
+[ext_resource type="Script" uid="uid://rfdf2aq6rqhc" path="res://ASTRONAUT GAME/SCRIPTS/pause_menu.gd" id="1_ktm6n"]
 
 [node name="Pause" type="Control"]
 process_mode = 3

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxpvb2gyn5tgj"
-path="res://.godot/imported/Planet3.png-0d4290124bcd0bc31fdcf63fa3f11e3a.ctex"
+path="res://.godot/imported/Planet3.png-a1f331d4ee8e96bc44022ec532f8c566.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/BACKGROUNDS/Planet3.png"
-dest_files=["res://.godot/imported/Planet3.png-0d4290124bcd0bc31fdcf63fa3f11e3a.ctex"]
+source_file="res://UFO GAME/ASSETS/BACKGROUNDS/Planet3.png"
+dest_files=["res://.godot/imported/Planet3.png-a1f331d4ee8e96bc44022ec532f8c566.ctex"]
 
 [params]
 

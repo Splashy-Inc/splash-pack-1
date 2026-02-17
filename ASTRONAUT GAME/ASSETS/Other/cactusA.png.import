@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qr85xmt7akcf"
-path="res://.godot/imported/cactusA.png-f13c85fc3214b38151bb344fcf900584.ctex"
+path="res://.godot/imported/cactusA.png-13ab5fc7bed8109060670e50a80ea679.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Other/cactusA.png"
-dest_files=["res://.godot/imported/cactusA.png-f13c85fc3214b38151bb344fcf900584.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Other/cactusA.png"
+dest_files=["res://.godot/imported/cactusA.png-13ab5fc7bed8109060670e50a80ea679.ctex"]
 
 [params]
 

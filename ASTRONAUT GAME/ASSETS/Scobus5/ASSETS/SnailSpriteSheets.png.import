@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnnlniufe6wux"
-path="res://.godot/imported/SnailSpriteSheets.png-adbe8a5f9c1862bc61afc06544c3da19.ctex"
+path="res://.godot/imported/SnailSpriteSheets.png-cb095b8ac720da1b3c5bbf3fd7736334.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Scobus5/ASSETS/SnailSpriteSheets.png"
-dest_files=["res://.godot/imported/SnailSpriteSheets.png-adbe8a5f9c1862bc61afc06544c3da19.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/SnailSpriteSheets.png"
+dest_files=["res://.godot/imported/SnailSpriteSheets.png-cb095b8ac720da1b3c5bbf3fd7736334.ctex"]
 
 [params]
 

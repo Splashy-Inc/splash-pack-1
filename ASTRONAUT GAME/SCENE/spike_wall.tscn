@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://d0fhxtivg7sha"]
+[gd_scene format=3 uid="uid://d0fhxtivg7sha"]
 
-[ext_resource type="Script" path="res://SCRIPTS/trap.gd" id="1_kxohp"]
-[ext_resource type="Texture2D" uid="uid://bsdoxsankuufu" path="res://ASSETS/Other/SpikeWallA.png" id="1_ohb3j"]
-[ext_resource type="Texture2D" uid="uid://1mvujq6w770h" path="res://ASSETS/Other/SpikeWallB.png" id="2_qnn1p"]
+[ext_resource type="Script" uid="uid://0lcoshvc0f45" path="res://ASTRONAUT GAME/SCRIPTS/trap.gd" id="1_kxohp"]
+[ext_resource type="Texture2D" uid="uid://bsdoxsankuufu" path="res://ASTRONAUT GAME/ASSETS/Other/SpikeWallA.png" id="1_ohb3j"]
+[ext_resource type="Texture2D" uid="uid://1mvujq6w770h" path="res://ASTRONAUT GAME/ASSETS/Other/SpikeWallB.png" id="2_qnn1p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cpgu7"]
 size = Vector2(8, 57)

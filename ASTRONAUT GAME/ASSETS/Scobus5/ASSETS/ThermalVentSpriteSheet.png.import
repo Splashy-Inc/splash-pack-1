@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d17ypi7thv634"
-path="res://.godot/imported/ThermalVentSpriteSheet.png-18429245cfb00dcb1298c6f8e3d3f0dc.ctex"
+path="res://.godot/imported/ThermalVentSpriteSheet.png-61acc00eb58614fe2a4ee736e4edfd32.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Scobus5/ASSETS/ThermalVentSpriteSheet.png"
-dest_files=["res://.godot/imported/ThermalVentSpriteSheet.png-18429245cfb00dcb1298c6f8e3d3f0dc.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/ThermalVentSpriteSheet.png"
+dest_files=["res://.godot/imported/ThermalVentSpriteSheet.png-61acc00eb58614fe2a4ee736e4edfd32.ctex"]
 
 [params]
 

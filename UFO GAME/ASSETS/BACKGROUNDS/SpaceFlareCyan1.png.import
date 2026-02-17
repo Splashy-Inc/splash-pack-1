@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kvwsolrn51ha"
-path="res://.godot/imported/SpaceFlareCyan1.png-cb650e3b8d600780a1c16d56f46f3ebd.ctex"
+path="res://.godot/imported/SpaceFlareCyan1.png-f5df9563c46cd92cd85f5a733b4c1bdf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/BACKGROUNDS/SpaceFlareCyan1.png"
-dest_files=["res://.godot/imported/SpaceFlareCyan1.png-cb650e3b8d600780a1c16d56f46f3ebd.ctex"]
+source_file="res://UFO GAME/ASSETS/BACKGROUNDS/SpaceFlareCyan1.png"
+dest_files=["res://.godot/imported/SpaceFlareCyan1.png-f5df9563c46cd92cd85f5a733b4c1bdf.ctex"]
 
 [params]
 

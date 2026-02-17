@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpw83hr4mu1co"
-path="res://.godot/imported/SpaceSplashy.png-45b5c5b1cd342ef61f65829ee7c89a48.ctex"
+path="res://.godot/imported/SpaceSplashy.png-07bccbb5cce0d3cb366358c712edbc7c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Other/SpaceSplashy.png"
-dest_files=["res://.godot/imported/SpaceSplashy.png-45b5c5b1cd342ef61f65829ee7c89a48.ctex"]
+source_file="res://ASTRONAUT GAME/ASSETS/Other/SpaceSplashy.png"
+dest_files=["res://.godot/imported/SpaceSplashy.png-07bccbb5cce0d3cb366358c712edbc7c.ctex"]
 
 [params]
 

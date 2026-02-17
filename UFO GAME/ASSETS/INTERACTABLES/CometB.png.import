@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://deuehbpg2huam"
-path="res://.godot/imported/CometB.png-104d128d4116d89c847a97276320b039.ctex"
+path="res://.godot/imported/CometB.png-6fd5477058b24baa7015fc6a38c21500.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/INTERACTABLES/CometB.png"
-dest_files=["res://.godot/imported/CometB.png-104d128d4116d89c847a97276320b039.ctex"]
+source_file="res://UFO GAME/ASSETS/INTERACTABLES/CometB.png"
+dest_files=["res://.godot/imported/CometB.png-6fd5477058b24baa7015fc6a38c21500.ctex"]
 
 [params]
 

@@ -50,9 +50,7 @@ func _ready():
 			#hud.set_time_label(time_left)
 	
 func _process(delta):
-	if Input.is_action_just_pressed("quit"):
-		get_tree().quit()
-	elif Input.is_action_just_pressed("reset"):
+	if Input.is_action_just_pressed("reset"):
 		get_tree().reload_current_scene()
 	
 func _on_death_zone_body_entered(body):
@@ -66,7 +64,7 @@ func _on_player_died():
 	reset_player()
 
 func reset_player():
-	AudioPlayer.play_sfx("hurt")
+	AudioPlayerLandfall.play_sfx("hurt")
 	player.velocity = Vector2.ZERO
 	#player.global_position = start.get_spawn_posistion()
 	get_tree().call_deferred("reload_current_scene")

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pom6q8txrvsf"
-path="res://.godot/imported/Star_01.png-cd864b7f108b3518b0228ae06886f988.ctex"
+path="res://.godot/imported/Star_01.png-e6adbdfe27f22f9e16e80ab7fe0219c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/INTERACTABLES/STAR/Star_01.png"
-dest_files=["res://.godot/imported/Star_01.png-cd864b7f108b3518b0228ae06886f988.ctex"]
+source_file="res://UFO GAME/ASSETS/INTERACTABLES/STAR/Star_01.png"
+dest_files=["res://.godot/imported/Star_01.png-e6adbdfe27f22f9e16e80ab7fe0219c6.ctex"]
 
 [params]
 
