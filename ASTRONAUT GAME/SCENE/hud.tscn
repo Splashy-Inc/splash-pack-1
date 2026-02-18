@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://o02n2e0hnmey"]
 
 [ext_resource type="Script" uid="uid://u84krr4q636k" path="res://ASTRONAUT GAME/SCRIPTS/hud.gd" id="1_53xtl"]
+[ext_resource type="FontFile" uid="uid://cka5ber341jij" path="res://ASTRONAUT GAME/ASSETS/m5x7.ttf" id="2_fmw3e"]
 [ext_resource type="PackedScene" uid="uid://dh6egqagpuftj" path="res://ASTRONAUT GAME/SCENE/pause_menu.tscn" id="2_u50pr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_pkdis"]
@@ -9,11 +10,12 @@ outline_size = 5
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_hdptj"]
-font_size = 20
+font = ExtResource("2_fmw3e")
+font_size = 64
 outline_size = 5
 outline_color = Color(0, 0, 0, 1)
 
-[node name="HUD" type="Control"]
+[node name="HUD" type="Control" unique_id=1869321091]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -22,7 +24,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_53xtl")
 
-[node name="TimeLabel" type="Label" parent="."]
+[node name="TimeLabel" type="Label" parent="." unique_id=926051142]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -37,7 +39,7 @@ label_settings = SubResource("LabelSettings_pkdis")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LevelLabel" type="Label" parent="."]
+[node name="LevelLabel" type="Label" parent="." unique_id=1404072643]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
@@ -46,7 +48,7 @@ theme_override_font_sizes/font_size = 20
 text = "Level:"
 label_settings = SubResource("LabelSettings_hdptj")
 
-[node name="PauseButton" type="Button" parent="."]
+[node name="PauseButton" type="Button" parent="." unique_id=1103890286]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -54,9 +56,11 @@ anchor_right = 1.0
 offset_left = -55.0
 offset_bottom = 31.0
 grow_horizontal = 0
+theme_override_fonts/font = ExtResource("2_fmw3e")
+theme_override_font_sizes/font_size = 64
 text = "Pause"
 
-[node name="Pause" parent="." instance=ExtResource("2_u50pr")]
+[node name="Pause" parent="." unique_id=203817225 instance=ExtResource("2_u50pr")]
 visible = false
 layout_mode = 1
 

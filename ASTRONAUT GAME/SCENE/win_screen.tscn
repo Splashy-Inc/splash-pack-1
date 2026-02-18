@@ -1,13 +1,15 @@
 [gd_scene format=3 uid="uid://cuiad22fenhpw"]
 
 [ext_resource type="Script" uid="uid://dc1ypvruni55x" path="res://ASTRONAUT GAME/SCRIPTS/win_screen.gd" id="1_k8j86"]
+[ext_resource type="FontFile" uid="uid://cka5ber341jij" path="res://ASTRONAUT GAME/ASSETS/m5x7.ttf" id="2_and72"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vvfyv"]
-font_size = 30
+font = ExtResource("2_and72")
+font_size = 96
 outline_size = 5
 outline_color = Color(0, 0, 0, 1)
 
-[node name="WinScreen" type="Control"]
+[node name="WinScreen" type="Control" unique_id=764051235]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -16,7 +18,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_k8j86")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=140440199]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -25,7 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.486275)
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=1576700931]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -38,10 +40,11 @@ offset_right = 4.0
 offset_bottom = 40.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("2_and72")
+theme_override_font_sizes/font_size = 48
 text = "Now what?"
 
-[node name="YOU WIN" type="Label" parent="."]
+[node name="YOU WIN" type="Label" parent="." unique_id=576468568]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

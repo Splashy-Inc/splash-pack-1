@@ -1,9 +1,9 @@
-[gd_scene load_steps=41 format=3 uid="uid://bqcfrxm21lxa1"]
+[gd_scene format=3 uid="uid://bqcfrxm21lxa1"]
 
-[ext_resource type="Script" path="res://SCRIPTS/player.gd" id="1_7bmoo"]
-[ext_resource type="Texture2D" uid="uid://ousoteoa23yy" path="res://ASSETS/PLAYER/SploshShipSpriteSheet.png" id="2_rkhsv"]
-[ext_resource type="PackedScene" uid="uid://cfbse8qnrkqdr" path="res://SCENE/joystick.tscn" id="4_ukepj"]
-[ext_resource type="AudioStream" uid="uid://qstypnaopttd" path="res://ASSETS/AUDIO/HURT.mp3" id="7_7548w"]
+[ext_resource type="Script" uid="uid://dfdljky5tqnxn" path="res://UFO GAME/SCRIPTS/player.gd" id="1_7bmoo"]
+[ext_resource type="Texture2D" uid="uid://ousoteoa23yy" path="res://UFO GAME/ASSETS/PLAYER/SploshShipSpriteSheet.png" id="2_rkhsv"]
+[ext_resource type="PackedScene" uid="uid://cfbse8qnrkqdr" path="res://UFO GAME/SCENE/joystick.tscn" id="4_ukepj"]
+[ext_resource type="AudioStream" uid="uid://qstypnaopttd" path="res://UFO GAME/ASSETS/AUDIO/HURT.mp3" id="7_7548w"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v7d0c"]
 atlas = ExtResource("2_rkhsv")
@@ -277,12 +277,12 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6phcm"]
 _data = {
-"RESET": SubResource("Animation_asg0f"),
-"grow": SubResource("Animation_iarfg"),
-"shrink": SubResource("Animation_re3l3")
+&"RESET": SubResource("Animation_asg0f"),
+&"grow": SubResource("Animation_iarfg"),
+&"shrink": SubResource("Animation_re3l3")
 }
 
-[node name="player" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D" unique_id=117393714]
 collision_layer = 2
 collision_mask = 29
 motion_mode = 1
@@ -293,21 +293,19 @@ floor_max_angle = 3.14159
 platform_on_leave = 2
 script = ExtResource("1_7bmoo")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2113930387]
 sprite_frames = SubResource("SpriteFrames_augu7")
 autoplay = "default"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1273912889]
 polygon = PackedVector2Array(-13, -47, 13, -47, 15, -46, 18, -45, 20, -44, 22, -43, 24, -42, 26, -41, 27, -40, 28, -39, 30, -38, 31, -37, 32, -36, 33, -35, 34, -34, 35, -33, 36, -32, 37, -31, 38, -30, 39, -28, 40, -27, 41, -26, 42, -24, 43, -22, 44, -20, 45, -18, 46, -15, 47, -13, 47, 13, 46, 15, 45, 18, 44, 20, 43, 22, 42, 24, 41, 26, 40, 27, 39, 28, 38, 30, 37, 31, 36, 32, 35, 33, 34, 34, 33, 35, 32, 36, 31, 37, 30, 38, 28, 39, 27, 40, 26, 41, 24, 42, 22, 43, 20, 44, 18, 45, 15, 46, 13, 47, -13, 47, -15, 46, -18, 45, -20, 44, -22, 43, -24, 42, -26, 41, -27, 40, -28, 39, -30, 38, -31, 37, -32, 36, -33, 35, -34, 34, -35, 33, -36, 32, -37, 31, -38, 30, -39, 28, -40, 27, -41, 26, -42, 24, -43, 22, -44, 20, -45, 18, -46, 15, -47, 13, -47, -13, -46, -15, -45, -18, -44, -20, -43, -22, -42, -24, -41, -26, -40, -27, -39, -28, -38, -30, -37, -31, -36, -32, -35, -33, -34, -34, -33, -35, -32, -36, -31, -37, -30, -38, -28, -39, -27, -40, -26, -41, -24, -42, -22, -43, -20, -44, -18, -45, -15, -46)
 
-[node name="HurtSFX" type="AudioStreamPlayer" parent="."]
+[node name="HurtSFX" type="AudioStreamPlayer" parent="." unique_id=1387446295]
 stream = ExtResource("7_7548w")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_6phcm")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=773286231]
+libraries/ = SubResource("AnimationLibrary_6phcm")
 
-[node name="joystick" parent="." instance=ExtResource("4_ukepj")]
+[node name="joystick" parent="." unique_id=1107603617 instance=ExtResource("4_ukepj")]
 position = Vector2(480, 200)
 scale = Vector2(1.5, 1.5)

@@ -2,9 +2,11 @@
 
 [ext_resource type="Script" uid="uid://d3qallcqx5833" path="res://ASTRONAUT GAME/SCRIPTS/levels_menu.gd" id="1_iwb1a"]
 [ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://ASTRONAUT GAME/SCENE/BG.tscn" id="1_qrqwm"]
+[ext_resource type="FontFile" uid="uid://cka5ber341jij" path="res://ASTRONAUT GAME/ASSETS/m5x7.ttf" id="2_coc65"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_iadxd"]
-font_size = 20
+[sub_resource type="LabelSettings" id="LabelSettings_l34hs"]
+font = ExtResource("2_coc65")
+font_size = 128
 font_color = Color(1, 0.956863, 0.678431, 1)
 outline_size = 5
 outline_color = Color(0.858824, 0.603922, 0.34902, 1)
@@ -12,231 +14,242 @@ shadow_size = 5
 shadow_color = Color(0, 0, 0, 1)
 shadow_offset = Vector2(3, 3)
 
-[node name="LevelsMenu" type="Control" unique_id=1609500276]
-layout_mode = 3
+[sub_resource type="LabelSettings" id="LabelSettings_iadxd"]
+font = ExtResource("2_coc65")
+font_size = 64
+font_color = Color(1, 0.956863, 0.678431, 1)
+outline_size = 5
+outline_color = Color(0.858824, 0.603922, 0.34902, 1)
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(3, 3)
+
+[node name="LevelsMenu" type="VBoxContainer" unique_id=1940797781]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 64
 script = ExtResource("1_iwb1a")
 
-[node name="BG" parent="." unique_id=332156921 instance=ExtResource("1_qrqwm")]
+[node name="LevelSelectLabel" type="Label" parent="." unique_id=1884150432]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Level Select"
+label_settings = SubResource("LabelSettings_l34hs")
+vertical_alignment = 1
 
-[node name="BackButton" type="Button" parent="." unique_id=1778219501]
-layout_mode = 0
-offset_left = 12.0
-offset_top = 230.0
-offset_right = 57.0
-offset_bottom = 261.0
-text = "Back"
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=240900172]
+layout_mode = 2
+theme_override_constants/separation = 64
+alignment = 1
 
-[node name="KromulonLabel" type="Label" parent="." unique_id=879789055]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -227.0
-offset_top = 3.0
-offset_right = -76.0
-offset_bottom = 31.0
-grow_horizontal = 2
+[node name="KromulonLabel" type="Label" parent="HBoxContainer" unique_id=879789055]
+layout_mode = 2
+size_flags_horizontal = 4
 text = "Kromulon"
 label_settings = SubResource("LabelSettings_iadxd")
 vertical_alignment = 1
 
-[node name="Level_01" type="Button" parent="." unique_id=1632085076]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -147.0
-offset_top = -89.0
-offset_right = -85.0
-offset_bottom = -58.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.5, 0.5)
-text = "Level 1"
+[node name="VBoxContainer" type="GridContainer" parent="HBoxContainer" unique_id=40941305]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+columns = 5
 
-[node name="Level_02" type="Button" parent="Level_01" unique_id=206564274]
-layout_mode = 0
-offset_left = 72.0
-offset_right = 134.0
-offset_bottom = 31.0
-text = "Level 2"
+[node name="Level_01" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1632085076]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "1"
 
-[node name="Level_03" type="Button" parent="Level_01" unique_id=1525901033]
-layout_mode = 0
-offset_left = 144.0
-offset_right = 206.0
-offset_bottom = 31.0
-text = "Level 3"
+[node name="Level_02" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=206564274]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "2"
 
-[node name="Level_04" type="Button" parent="Level_01" unique_id=1912241022]
-layout_mode = 0
-offset_left = 216.0
-offset_right = 278.0
-offset_bottom = 31.0
-text = "Level 4"
+[node name="Level_03" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1525901033]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "3"
 
-[node name="Level_05" type="Button" parent="Level_01" unique_id=1475978040]
-layout_mode = 0
-offset_left = 288.0
-offset_right = 350.0
-offset_bottom = 31.0
-text = "Level 5"
+[node name="Level_04" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1912241022]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "4"
 
-[node name="Level_06" type="Button" parent="Level_01" unique_id=1826092139]
-layout_mode = 0
-offset_left = 360.0
-offset_right = 422.0
-offset_bottom = 31.0
-text = "Level 6"
+[node name="Level_05" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1475978040]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "5"
 
-[node name="Level_07" type="Button" parent="Level_01" unique_id=2121936094]
-layout_mode = 0
-offset_left = 432.0
-offset_right = 494.0
-offset_bottom = 31.0
-text = "Level 7"
+[node name="Level_06" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1826092139]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "6"
 
-[node name="Level_08" type="Button" parent="Level_01" unique_id=959854241]
-layout_mode = 0
-offset_left = 504.0
-offset_right = 566.0
-offset_bottom = 31.0
-text = "Level 8"
+[node name="Level_07" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=2121936094]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "7"
 
-[node name="Level_09" type="Button" parent="Level_01" unique_id=855876765]
-layout_mode = 0
-offset_left = 576.0
-offset_right = 638.0
-offset_bottom = 31.0
-text = "Level 9"
+[node name="Level_08" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=959854241]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "8"
 
-[node name="Level_10" type="Button" parent="Level_01" unique_id=631504788]
-layout_mode = 0
-offset_left = 648.0
-offset_right = 719.0
-offset_bottom = 31.0
-text = "Level 10
+[node name="Level_09" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=855876765]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "9"
+
+[node name="Level_10" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=631504788]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "10
 "
 
-[node name="Scobus5Label" type="Label" parent="." unique_id=383441177]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -227.0
-offset_top = 61.0
-offset_right = -76.0
-offset_bottom = 89.0
-grow_horizontal = 2
+[node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=1741264172]
+layout_mode = 2
+theme_override_constants/separation = 64
+alignment = 1
+
+[node name="Scobus5Label" type="Label" parent="HBoxContainer2" unique_id=383441177]
+layout_mode = 2
+size_flags_horizontal = 4
 text = "Scobus 5"
 label_settings = SubResource("LabelSettings_iadxd")
 vertical_alignment = 1
 
-[node name="Level_11" type="Button" parent="." unique_id=594262799]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -147.0
-offset_top = -39.0
-offset_right = -85.0
-offset_bottom = -8.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.5, 0.5)
-text = "Level 11"
+[node name="VBoxContainer2" type="GridContainer" parent="HBoxContainer2" unique_id=142719358]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+columns = 5
 
-[node name="Level_12" type="Button" parent="Level_11" unique_id=1304322187]
-layout_mode = 0
-offset_left = 72.0
-offset_right = 134.0
-offset_bottom = 31.0
-text = "Level 12"
+[node name="Level_11" type="Button" parent="HBoxContainer2/VBoxContainer2" unique_id=545170732]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "11"
 
-[node name="Level_13" type="Button" parent="Level_11" unique_id=264817957]
-layout_mode = 0
-offset_left = 144.0
-offset_right = 206.0
-offset_bottom = 31.0
-text = "Level 13"
+[node name="Level_12" type="Button" parent="HBoxContainer2/VBoxContainer2" unique_id=755842947]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "12"
 
-[node name="Level_14" type="Button" parent="Level_11" unique_id=148562094]
-layout_mode = 0
-offset_left = 216.0
-offset_right = 278.0
-offset_bottom = 31.0
-text = "Level 14"
+[node name="Level_13" type="Button" parent="HBoxContainer2/VBoxContainer2" unique_id=1995934948]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "13"
 
-[node name="Level_15" type="Button" parent="Level_11" unique_id=619358456]
-layout_mode = 0
-offset_left = 288.0
-offset_right = 350.0
-offset_bottom = 31.0
-text = "Level 15"
+[node name="Level_14" type="Button" parent="HBoxContainer2/VBoxContainer2" unique_id=2058121998]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "14"
 
-[node name="Level_16" type="Button" parent="Level_11" unique_id=1867804103]
-layout_mode = 0
-offset_left = 360.0
-offset_right = 422.0
-offset_bottom = 31.0
-text = "Level 16"
+[node name="Level_15" type="Button" parent="HBoxContainer2/VBoxContainer2" unique_id=537922554]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "15"
 
-[node name="Level_17" type="Button" parent="Level_11" unique_id=1276405353]
-layout_mode = 0
-offset_left = 432.0
-offset_right = 494.0
-offset_bottom = 31.0
-text = "Level 17"
+[node name="Level_16" type="Button" parent="HBoxContainer2/VBoxContainer2" unique_id=2038075538]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "16"
 
-[node name="Level_18" type="Button" parent="Level_11" unique_id=76846081]
-layout_mode = 0
-offset_left = 504.0
-offset_right = 566.0
-offset_bottom = 31.0
-text = "Level 18"
+[node name="Level_17" type="Button" parent="HBoxContainer2/VBoxContainer2" unique_id=1905796922]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "17"
 
-[node name="Level_19" type="Button" parent="Level_11" unique_id=300682507]
-layout_mode = 0
-offset_left = 576.0
-offset_right = 638.0
-offset_bottom = 31.0
-text = "Level 19"
+[node name="Level_18" type="Button" parent="HBoxContainer2/VBoxContainer2" unique_id=724203391]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "18"
 
-[node name="Level_20" type="Button" parent="Level_11" unique_id=899000381]
-layout_mode = 0
-offset_left = 648.0
-offset_right = 719.0
-offset_bottom = 31.0
-text = "Level 20
+[node name="Level_19" type="Button" parent="HBoxContainer2/VBoxContainer2" unique_id=1279846522]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "19"
+
+[node name="Level_20" type="Button" parent="HBoxContainer2/VBoxContainer2" unique_id=753538827]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 64
+text = "20
 "
 
+[node name="BackButton" type="Button" parent="." unique_id=1778219501]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("2_coc65")
+theme_override_font_sizes/font_size = 48
+text = "Back"
+
+[node name="BG" parent="." unique_id=332156921 instance=ExtResource("1_qrqwm")]
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Level_01" to="." method="_on_level_01_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Level_02" to="." method="_on_level_02_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Level_03" to="." method="_on_level_03_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Level_04" to="." method="_on_level_04_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Level_05" to="." method="_on_level_05_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Level_06" to="." method="_on_level_06_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Level_07" to="." method="_on_level_07_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Level_08" to="." method="_on_level_08_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Level_09" to="." method="_on_level_09_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Level_10" to="." method="_on_level_10_pressed"]
+[connection signal="pressed" from="HBoxContainer2/VBoxContainer2/Level_11" to="." method="_on_level_11_pressed"]
+[connection signal="pressed" from="HBoxContainer2/VBoxContainer2/Level_12" to="." method="_on_level_12_pressed"]
+[connection signal="pressed" from="HBoxContainer2/VBoxContainer2/Level_13" to="." method="_on_level_13_pressed"]
+[connection signal="pressed" from="HBoxContainer2/VBoxContainer2/Level_14" to="." method="_on_level_14_pressed"]
+[connection signal="pressed" from="HBoxContainer2/VBoxContainer2/Level_15" to="." method="_on_level_15_pressed"]
+[connection signal="pressed" from="HBoxContainer2/VBoxContainer2/Level_16" to="." method="_on_level_16_pressed"]
+[connection signal="pressed" from="HBoxContainer2/VBoxContainer2/Level_17" to="." method="_on_level_17_pressed"]
+[connection signal="pressed" from="HBoxContainer2/VBoxContainer2/Level_18" to="." method="_on_level_18_pressed"]
+[connection signal="pressed" from="HBoxContainer2/VBoxContainer2/Level_19" to="." method="_on_level_19_pressed"]
+[connection signal="pressed" from="HBoxContainer2/VBoxContainer2/Level_20" to="." method="_on_level_20_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
-[connection signal="pressed" from="Level_01" to="." method="_on_level_01_pressed"]
-[connection signal="pressed" from="Level_01/Level_02" to="." method="_on_level_02_pressed"]
-[connection signal="pressed" from="Level_01/Level_03" to="." method="_on_level_03_pressed"]
-[connection signal="pressed" from="Level_01/Level_04" to="." method="_on_level_04_pressed"]
-[connection signal="pressed" from="Level_01/Level_05" to="." method="_on_level_05_pressed"]
-[connection signal="pressed" from="Level_01/Level_06" to="." method="_on_level_06_pressed"]
-[connection signal="pressed" from="Level_01/Level_07" to="." method="_on_level_07_pressed"]
-[connection signal="pressed" from="Level_01/Level_08" to="." method="_on_level_08_pressed"]
-[connection signal="pressed" from="Level_01/Level_09" to="." method="_on_level_09_pressed"]
-[connection signal="pressed" from="Level_01/Level_10" to="." method="_on_level_10_pressed"]
-[connection signal="pressed" from="Level_11" to="." method="_on_level_11_pressed"]
-[connection signal="pressed" from="Level_11/Level_12" to="." method="_on_level_12_pressed"]
-[connection signal="pressed" from="Level_11/Level_13" to="." method="_on_level_13_pressed"]
-[connection signal="pressed" from="Level_11/Level_14" to="." method="_on_level_14_pressed"]
-[connection signal="pressed" from="Level_11/Level_15" to="." method="_on_level_15_pressed"]
-[connection signal="pressed" from="Level_11/Level_16" to="." method="_on_level_16_pressed"]
-[connection signal="pressed" from="Level_11/Level_17" to="." method="_on_level_17_pressed"]
-[connection signal="pressed" from="Level_11/Level_18" to="." method="_on_level_18_pressed"]
-[connection signal="pressed" from="Level_11/Level_19" to="." method="_on_level_19_pressed"]
-[connection signal="pressed" from="Level_11/Level_20" to="." method="_on_level_20_pressed"]
