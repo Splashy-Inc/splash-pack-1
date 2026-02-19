@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://c3v1n3ahpcu3a"
-path="res://.godot/imported/anenome.ogg-45b27dc13d39d6f6c5d237952575008c.oggvorbisstr"
+path="res://.godot/imported/anenome.ogg-ccf71d3b2e529cd283f71b666ddc7fce.oggvorbisstr"
 
 [deps]
 
-source_file="res://enemy-anemone/ASSETS/Audio/anemone/anenome.ogg"
-dest_files=["res://.godot/imported/anenome.ogg-45b27dc13d39d6f6c5d237952575008c.oggvorbisstr"]
+source_file="res://enemy anemone/ASSETS/Audio/anemone/anenome.ogg"
+dest_files=["res://.godot/imported/anenome.ogg-ccf71d3b2e529cd283f71b666ddc7fce.oggvorbisstr"]
 
 [params]
 

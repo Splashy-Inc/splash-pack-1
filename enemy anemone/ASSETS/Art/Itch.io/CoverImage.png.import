@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk8gmxsicxedq"
-path="res://.godot/imported/CoverImage.png-9c68add5dd3698bf131447f6a7caabca.ctex"
+path="res://.godot/imported/CoverImage.png-7d1aab193ee678fb8605c0991b88f40e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemy-anemone/ASSETS/Art/Itch.io/CoverImage.png"
-dest_files=["res://.godot/imported/CoverImage.png-9c68add5dd3698bf131447f6a7caabca.ctex"]
+source_file="res://enemy anemone/ASSETS/Art/Itch.io/CoverImage.png"
+dest_files=["res://.godot/imported/CoverImage.png-7d1aab193ee678fb8605c0991b88f40e.ctex"]
 
 [params]
 

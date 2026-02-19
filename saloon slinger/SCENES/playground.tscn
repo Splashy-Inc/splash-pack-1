@@ -1,18 +1,18 @@
-[gd_scene load_steps=18 format=3 uid="uid://dhvgc0glasyim"]
+[gd_scene format=3 uid="uid://dhvgc0glasyim"]
 
-[ext_resource type="Script" path="res://SCRIPTS/playground.gd" id="1_5e8d0"]
-[ext_resource type="Texture2D" uid="uid://civ6bqg82r1lu" path="res://ASSETS/BackGround.png" id="1_thoma"]
-[ext_resource type="PackedScene" uid="uid://skhuah8qm0ks" path="res://SCENES/patron.tscn" id="4_00h3x"]
-[ext_resource type="PackedScene" uid="uid://drl0fag3aodkn" path="res://SCENES/drink.tscn" id="5_ucqmk"]
-[ext_resource type="PackedScene" uid="uid://bask1qktq747g" path="res://SCENES/bar.tscn" id="5_ur80v"]
-[ext_resource type="Texture2D" uid="uid://b6lt1b82nsbjx" path="res://ASSETS/Player/Splorsh.png" id="6_kw675"]
-[ext_resource type="Texture2D" uid="uid://dvmhs5l17ok6o" path="res://ASSETS/TapOff.png" id="6_mxud1"]
-[ext_resource type="Texture2D" uid="uid://d1jiwjtrtbsy3" path="res://ASSETS/Door.png" id="7_eajuj"]
-[ext_resource type="Texture2D" uid="uid://cb82fparxttyy" path="res://ASSETS/TapOn.png" id="7_i3nhs"]
-[ext_resource type="AudioStream" uid="uid://b6t1mynwmg0y6" path="res://ASSETS/Audio/water_leak.ogg" id="8_untao"]
-[ext_resource type="Texture2D" uid="uid://blaoqyvlttjou" path="res://ASSETS/Player/SplorshSling.png" id="9_jygwl"]
-[ext_resource type="Texture2D" uid="uid://dcjtm7ykd40o0" path="res://ASSETS/Player/SplorshTap.png" id="10_e26ao"]
-[ext_resource type="PackedScene" uid="uid://bxwj3vvikmli0" path="res://SCENES/hud.tscn" id="12_gvr3o"]
+[ext_resource type="Script" uid="uid://tq0d6pw28e25" path="res://saloon slinger/SCRIPTS/playground.gd" id="1_5e8d0"]
+[ext_resource type="Texture2D" uid="uid://civ6bqg82r1lu" path="res://saloon slinger/ASSETS/BackGround.png" id="1_thoma"]
+[ext_resource type="PackedScene" uid="uid://skhuah8qm0ks" path="res://saloon slinger/SCENES/patron.tscn" id="4_00h3x"]
+[ext_resource type="PackedScene" uid="uid://drl0fag3aodkn" path="res://saloon slinger/SCENES/drink.tscn" id="5_ucqmk"]
+[ext_resource type="PackedScene" uid="uid://bask1qktq747g" path="res://saloon slinger/SCENES/bar.tscn" id="5_ur80v"]
+[ext_resource type="Texture2D" uid="uid://b6lt1b82nsbjx" path="res://saloon slinger/ASSETS/Player/Splorsh.png" id="6_kw675"]
+[ext_resource type="Texture2D" uid="uid://dvmhs5l17ok6o" path="res://saloon slinger/ASSETS/TapOff.png" id="6_mxud1"]
+[ext_resource type="Texture2D" uid="uid://d1jiwjtrtbsy3" path="res://saloon slinger/ASSETS/Door.png" id="7_eajuj"]
+[ext_resource type="Texture2D" uid="uid://cb82fparxttyy" path="res://saloon slinger/ASSETS/TapOn.png" id="7_i3nhs"]
+[ext_resource type="AudioStream" uid="uid://b6t1mynwmg0y6" path="res://saloon slinger/ASSETS/Audio/water_leak.ogg" id="8_untao"]
+[ext_resource type="Texture2D" uid="uid://blaoqyvlttjou" path="res://saloon slinger/ASSETS/Player/SplorshSling.png" id="9_jygwl"]
+[ext_resource type="Texture2D" uid="uid://dcjtm7ykd40o0" path="res://saloon slinger/ASSETS/Player/SplorshTap.png" id="10_e26ao"]
+[ext_resource type="PackedScene" uid="uid://bxwj3vvikmli0" path="res://saloon slinger/SCENES/hud.tscn" id="12_gvr3o"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tbf1d"]
 animations = [{
@@ -68,61 +68,65 @@ animations = [{
 outline_size = 5
 outline_color = Color(0, 0, 0, 1)
 
-[node name="Playground" type="Node"]
+[node name="Playground" type="Node" unique_id=1134468173]
 script = ExtResource("1_5e8d0")
 drink_scene = ExtResource("5_ucqmk")
 patron_scene = ExtResource("4_00h3x")
 
-[node name="Background" type="Node2D" parent="."]
+[node name="Background" type="Node2D" parent="." unique_id=375471081]
 z_index = -1
 
-[node name="BackGround" type="Sprite2D" parent="Background"]
+[node name="BackGround" type="Sprite2D" parent="Background" unique_id=1426909295]
 position = Vector2(320, 180)
 texture = ExtResource("1_thoma")
 
-[node name="Patrons" type="Node2D" parent="."]
+[node name="Patrons" type="Node2D" parent="." unique_id=1124369150]
 position = Vector2(0, 75)
 
-[node name="Bartop" type="Node2D" parent="."]
+[node name="Bartop" type="Node2D" parent="." unique_id=887389230]
 position = Vector2(0, 75)
 
-[node name="Bar" parent="Bartop" instance=ExtResource("5_ur80v")]
+[node name="Bar" parent="Bartop" unique_id=1495606994 instance=ExtResource("5_ur80v")]
 position = Vector2(319, 180)
 
-[node name="Tap" type="AnimatedSprite2D" parent="Bartop"]
+[node name="Tap" type="AnimatedSprite2D" parent="Bartop" unique_id=1518995914]
 position = Vector2(20, 148)
 sprite_frames = SubResource("SpriteFrames_tbf1d")
 animation = &"pour"
 autoplay = "idle"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Bartop/Tap"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Bartop/Tap" unique_id=2144156594]
 stream = SubResource("AudioStreamRandomizer_lp4cc")
 volume_db = -7.0
 pitch_scale = 0.7
 
-[node name="DrinkSpawnPoint" type="Marker2D" parent="Bartop"]
+[node name="DrinkSpawnPoint" type="Marker2D" parent="Bartop" unique_id=396551653]
 position = Vector2(22, 170)
 
-[node name="Drinks" type="Node" parent="Bartop"]
+[node name="Drinks" type="Node" parent="Bartop" unique_id=423591019]
 
-[node name="DrinkStopPoint" type="Marker2D" parent="Bartop"]
+[node name="DrinkStopPoint" type="Marker2D" parent="Bartop" unique_id=1115985991]
 position = Vector2(600, 170)
 
-[node name="Door" type="Sprite2D" parent="Bartop"]
+[node name="Door" type="Sprite2D" parent="Bartop" unique_id=1313458873]
 z_index = -1
 position = Vector2(409, -35)
 texture = ExtResource("7_eajuj")
 
-[node name="Bartender" type="Node2D" parent="."]
+[node name="Bartender" type="Node2D" parent="." unique_id=1981666377]
 position = Vector2(0, 75)
 
-[node name="Bartender" type="AnimatedSprite2D" parent="Bartender"]
+[node name="Bartender" type="AnimatedSprite2D" parent="Bartender" unique_id=1901937680]
 position = Vector2(47, 194)
 sprite_frames = SubResource("SpriteFrames_8ixy6")
 animation = &"sling"
 autoplay = "default"
 
-[node name="Label" type="Label" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=975649203]
+position = Vector2(320, 180)
+zoom = Vector2(2, 2)
+
+[node name="Label" type="Label" parent="." unique_id=650864278]
 offset_left = 2.0
 offset_top = 81.0
 offset_right = 202.0
@@ -130,7 +134,7 @@ offset_bottom = 104.0
 text = "Click + drag or swipe right"
 label_settings = SubResource("LabelSettings_xbnqf")
 
-[node name="HUD" parent="." instance=ExtResource("12_gvr3o")]
+[node name="HUD" parent="." unique_id=1169399404 instance=ExtResource("12_gvr3o")]
 
 [connection signal="bar_slot_emptied" from="Bartop/Bar" to="." method="_on_bar_slot_emptied"]
 [connection signal="animation_finished" from="Bartender/Bartender" to="." method="_on_bartender_animation_finished"]

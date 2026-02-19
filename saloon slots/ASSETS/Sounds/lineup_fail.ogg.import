@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cmf6mdljfsvc6"
-path="res://.godot/imported/lineup_fail.ogg-97e3fccb8f93ccb17b09b504efab7593.oggvorbisstr"
+path="res://.godot/imported/lineup_fail.ogg-72dccecd390ba140f5f3c9afb980f7da.oggvorbisstr"
 
 [deps]
 
-source_file="res://ASSETS/Sounds/lineup_fail.ogg"
-dest_files=["res://.godot/imported/lineup_fail.ogg-97e3fccb8f93ccb17b09b504efab7593.oggvorbisstr"]
+source_file="res://saloon slots/ASSETS/Sounds/lineup_fail.ogg"
+dest_files=["res://.godot/imported/lineup_fail.ogg-72dccecd390ba140f5f3c9afb980f7da.oggvorbisstr"]
 
 [params]
 

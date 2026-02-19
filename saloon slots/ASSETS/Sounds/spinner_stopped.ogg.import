@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bq3xn85nc8nh8"
-path="res://.godot/imported/spinner_stopped.ogg-f20e9f37cc897ba94b4826b1abe5119f.oggvorbisstr"
+path="res://.godot/imported/spinner_stopped.ogg-a910fc5aa35848ce235a1f1747429f15.oggvorbisstr"
 
 [deps]
 
-source_file="res://ASSETS/Sounds/spinner_stopped.ogg"
-dest_files=["res://.godot/imported/spinner_stopped.ogg-f20e9f37cc897ba94b4826b1abe5119f.oggvorbisstr"]
+source_file="res://saloon slots/ASSETS/Sounds/spinner_stopped.ogg"
+dest_files=["res://.godot/imported/spinner_stopped.ogg-a910fc5aa35848ce235a1f1747429f15.oggvorbisstr"]
 
 [params]
 

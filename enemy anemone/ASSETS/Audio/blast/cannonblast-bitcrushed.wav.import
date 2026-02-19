@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dymw45esa7jmr"
-path="res://.godot/imported/cannonblast-bitcrushed.wav-8d830342d6911358ef7f027bbf6e8c53.sample"
+path="res://.godot/imported/cannonblast-bitcrushed.wav-1bf760770291a6dfac2258c65b0aefa1.sample"
 
 [deps]
 
-source_file="res://enemy-anemone/ASSETS/Audio/blast/cannonblast-bitcrushed.wav"
-dest_files=["res://.godot/imported/cannonblast-bitcrushed.wav-8d830342d6911358ef7f027bbf6e8c53.sample"]
+source_file="res://enemy anemone/ASSETS/Audio/blast/cannonblast-bitcrushed.wav"
+dest_files=["res://.godot/imported/cannonblast-bitcrushed.wav-1bf760770291a6dfac2258c65b0aefa1.sample"]
 
 [params]
 

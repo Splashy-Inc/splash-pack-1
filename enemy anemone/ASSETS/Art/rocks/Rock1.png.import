@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnyulbm3afk8b"
-path="res://.godot/imported/Rock1.png-9c5fcf35cb16b5c8a26cd64712f1f1cd.ctex"
+path="res://.godot/imported/Rock1.png-81c157a663c2b48e733bb4d1c935d717.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemy-anemone/ASSETS/Art/rocks/Rock1.png"
-dest_files=["res://.godot/imported/Rock1.png-9c5fcf35cb16b5c8a26cd64712f1f1cd.ctex"]
+source_file="res://enemy anemone/ASSETS/Art/rocks/Rock1.png"
+dest_files=["res://.godot/imported/Rock1.png-81c157a663c2b48e733bb4d1c935d717.ctex"]
 
 [params]
 

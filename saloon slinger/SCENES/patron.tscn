@@ -1,13 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://skhuah8qm0ks"]
+[gd_scene format=3 uid="uid://skhuah8qm0ks"]
 
-[ext_resource type="Texture2D" uid="uid://deffeqjryx2kp" path="res://ASSETS/Patron/Patron.png" id="1_menu3"]
-[ext_resource type="Texture2D" uid="uid://ciqnh8pjlkdri" path="res://ASSETS/Patron/PatronDrink.png" id="2_vrhtj"]
-[ext_resource type="Script" path="res://SCRIPTS/patron.gd" id="3_51jdi"]
-[ext_resource type="Texture2D" uid="uid://va674g871m1j" path="res://ASSETS/Patron/PatronWalkA.png" id="4_x3qgf"]
-[ext_resource type="Texture2D" uid="uid://bui0umbb2ay5w" path="res://ASSETS/Patron/PatronWalkB.png" id="5_rnwkl"]
-[ext_resource type="AudioStream" uid="uid://ceuun33uwgad8" path="res://ASSETS/Audio/DrinkDrink.mp3" id="6_rsn65"]
-[ext_resource type="AudioStream" uid="uid://b4mgeprhc1nlp" path="res://ASSETS/Audio/boot_step2.mp3" id="6_t06lg"]
-[ext_resource type="AudioStream" uid="uid://dpsxu10q52ya8" path="res://ASSETS/Audio/boot_step.mp3" id="7_c3b2c"]
+[ext_resource type="Texture2D" uid="uid://deffeqjryx2kp" path="res://saloon slinger/ASSETS/Patron/Patron.png" id="1_menu3"]
+[ext_resource type="Texture2D" uid="uid://ciqnh8pjlkdri" path="res://saloon slinger/ASSETS/Patron/PatronDrink.png" id="2_vrhtj"]
+[ext_resource type="Script" uid="uid://8sd8216knrge" path="res://saloon slinger/SCRIPTS/patron.gd" id="3_51jdi"]
+[ext_resource type="Texture2D" uid="uid://va674g871m1j" path="res://saloon slinger/ASSETS/Patron/PatronWalkA.png" id="4_x3qgf"]
+[ext_resource type="Texture2D" uid="uid://bui0umbb2ay5w" path="res://saloon slinger/ASSETS/Patron/PatronWalkB.png" id="5_rnwkl"]
+[ext_resource type="AudioStream" uid="uid://ceuun33uwgad8" path="res://saloon slinger/ASSETS/Audio/DrinkDrink.mp3" id="6_rsn65"]
+[ext_resource type="AudioStream" uid="uid://b4mgeprhc1nlp" path="res://saloon slinger/ASSETS/Audio/boot_step2.mp3" id="6_t06lg"]
+[ext_resource type="AudioStream" uid="uid://dpsxu10q52ya8" path="res://saloon slinger/ASSETS/Audio/boot_step.mp3" id="7_c3b2c"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dsa2o"]
 animations = [{

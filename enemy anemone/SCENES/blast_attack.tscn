@@ -1,9 +1,9 @@
-[gd_scene load_steps=21 format=3 uid="uid://c46ovojbc3oqw"]
+[gd_scene format=3 uid="uid://c46ovojbc3oqw"]
 
-[ext_resource type="Texture2D" uid="uid://b24k05xkj5jk6" path="res://ASSETS/Art/blast/Blast.png" id="1_6o8t5"]
-[ext_resource type="Script" path="res://SCRIPTS/blast_attack.gd" id="1_ldvav"]
-[ext_resource type="PackedScene" uid="uid://cmiraoyeq5xh6" path="res://SCENES/sfx_manager.tscn" id="3_eofgw"]
-[ext_resource type="AudioStream" uid="uid://dymw45esa7jmr" path="res://ASSETS/Audio/blast/cannonblast-bitcrushed.wav" id="4_0t26k"]
+[ext_resource type="Texture2D" uid="uid://b24k05xkj5jk6" path="res://enemy anemone/ASSETS/Art/blast/Blast.png" id="1_6o8t5"]
+[ext_resource type="Script" uid="uid://db8gca67hwe01" path="res://enemy anemone/SCRIPTS/blast_attack.gd" id="1_ldvav"]
+[ext_resource type="PackedScene" uid="uid://cmiraoyeq5xh6" path="res://enemy anemone/SCENES/sfx_manager.tscn" id="3_eofgw"]
+[ext_resource type="AudioStream" uid="uid://dymw45esa7jmr" path="res://enemy anemone/ASSETS/Audio/blast/cannonblast-bitcrushed.wav" id="4_0t26k"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bmsoh"]
 atlas = ExtResource("1_6o8t5")

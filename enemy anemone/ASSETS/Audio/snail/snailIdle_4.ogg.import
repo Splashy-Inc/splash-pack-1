@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cajtb7nf1gkrw"
-path="res://.godot/imported/snailIdle_4.ogg-79a8992220782d6d9f8f55c9a45f53ce.oggvorbisstr"
+path="res://.godot/imported/snailIdle_4.ogg-6ba642ce5ec1f1b2911958e6b64d19bb.oggvorbisstr"
 
 [deps]
 
-source_file="res://enemy-anemone/ASSETS/Audio/snail/snailIdle_4.ogg"
-dest_files=["res://.godot/imported/snailIdle_4.ogg-79a8992220782d6d9f8f55c9a45f53ce.oggvorbisstr"]
+source_file="res://enemy anemone/ASSETS/Audio/snail/snailIdle_4.ogg"
+dest_files=["res://.godot/imported/snailIdle_4.ogg-6ba642ce5ec1f1b2911958e6b64d19bb.oggvorbisstr"]
 
 [params]
 

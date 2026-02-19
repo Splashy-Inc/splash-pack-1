@@ -1,6 +1,6 @@
 extends Node
 
-class_name Level
+class_name LevelSaloonSlots
 
 signal reset_pressed
 
@@ -25,7 +25,7 @@ var stopped_spinners : Array[Spinner]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	preload("res://confetti_material.tres")
+	preload("res://saloon slots/confetti_material.tres")
 	_update_spins_left(spins_left)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

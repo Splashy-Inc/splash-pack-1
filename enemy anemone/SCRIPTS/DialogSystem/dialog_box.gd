@@ -30,7 +30,7 @@ func _ready() -> void:
 	_hide_end_buttons()
 
 func _process(delta: float) -> void:
-	if Globals.joypad_connected and dialog_button.visible and not dialog_button.has_focus():
+	if GlobalsEnemyAnemone.joypad_connected and dialog_button.visible and not dialog_button.has_focus():
 		pass
 		#dialog_button.grab_focus()
 

@@ -15,13 +15,13 @@ const JUMP_VELOCITY = -400.0
 var placing_tower: Node2D
 
 func _ready() -> void:
-	towers_to_place *= Globals.round
+	towers_to_place *= GlobalsEnemyAnemone.round
 
 func _physics_process(delta: float) -> void:
 	attack_range.value = blast_cooldown.wait_time - blast_cooldown.time_left
-	var direction := Input.get_vector("left", "right", "up", "down").normalized()
-	if direction == Vector2.ZERO and Globals.joystick:
-		direction = Globals.joystick.posVector
+	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down").normalized()
+	if direction == Vector2.ZERO and GlobalsEnemyAnemone.joystick:
+		direction = GlobalsEnemyAnemone.joystick.posVector
 	if direction:
 		if direction.x < 0:
 			animation_player.play("move")

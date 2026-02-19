@@ -4,7 +4,7 @@ extends Node
 
 @onready var hud: HUD = $HUD
 
-var level: Level
+var level: LevelEnemyAnemone
 var game_ended = false
 var paused = true
 
@@ -33,7 +33,7 @@ func show_main_menu():
 	if level:
 		level.queue_free()
 		level = null
-	Globals.round = 1
+	GlobalsEnemyAnemone.round = 1
 	hud.show_main_menu()
 
 func toggle_pause_menu():
@@ -89,7 +89,7 @@ func _on_level_lost():
 
 func _on_level_won():
 	game_ended = true
-	Globals.round += 1
+	GlobalsEnemyAnemone.round += 1
 	hud.show_win_screen()
 
 func _on_level_selected(new_level_scene: PackedScene):
@@ -97,7 +97,7 @@ func _on_level_selected(new_level_scene: PackedScene):
 
 func _set_level(new_level_scene: PackedScene):
 	level_scene = new_level_scene
-	Globals.cur_level_scene = level_scene
+	GlobalsEnemyAnemone.cur_level_scene = level_scene
 	_restart_level()
 	_resume_play()
 

@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bqmvufwr5nweo"
-path="res://.godot/imported/boot_step2.mp3-f7dbafb5bb6b030f84ebfc2f55ed62f5.mp3str"
+path="res://.godot/imported/boot_step2.mp3-169e896b5c4cf9bfce48a10ca2bc4a4c.mp3str"
 
 [deps]
 
-source_file="res://enemy-anemone/ASSETS/Audio/player/boot_step2.mp3"
-dest_files=["res://.godot/imported/boot_step2.mp3-f7dbafb5bb6b030f84ebfc2f55ed62f5.mp3str"]
+source_file="res://enemy anemone/ASSETS/Audio/player/boot_step2.mp3"
+dest_files=["res://.godot/imported/boot_step2.mp3-169e896b5c4cf9bfce48a10ca2bc4a4c.mp3str"]
 
 [params]
 

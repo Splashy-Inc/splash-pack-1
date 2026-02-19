@@ -1,4 +1,4 @@
-extends Level
+extends LevelEnemyAnemone
 
 @onready var game_pieces: Node = $GamePieces
 @onready var path_follow_2d: PathFollow2D = $Environment/Boundary/Path2D/PathFollow2D
@@ -9,9 +9,9 @@ var num_enemies_to_spawn := num_enemies
 var num_enemies_remaining = 0
 
 func _level_ready() -> void:
-	num_enemies_to_spawn = num_enemies * Globals.round
+	num_enemies_to_spawn = num_enemies * GlobalsEnemyAnemone.round
 	num_enemies_remaining = num_enemies_to_spawn
-	Globals.update_enemies_remaining(num_enemies_remaining)
+	GlobalsEnemyAnemone.update_enemies_remaining(num_enemies_remaining)
 
 func _on_timer_timeout() -> void:
 	if num_enemies_to_spawn > 0:
@@ -26,6 +26,6 @@ func _on_timer_timeout() -> void:
 
 func _on_enemy_died():
 	num_enemies_remaining -= 1
-	Globals.update_enemies_remaining(num_enemies_remaining)
+	GlobalsEnemyAnemone.update_enemies_remaining(num_enemies_remaining)
 	if len(get_tree().get_nodes_in_group("Enemy")) <= 0:
 		won.emit()

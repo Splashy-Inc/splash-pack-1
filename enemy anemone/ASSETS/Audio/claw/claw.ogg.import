@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bco1he5iqxnb0"
-path="res://.godot/imported/claw.ogg-0831b7eb75e81b346e9eb342ea52ef45.oggvorbisstr"
+path="res://.godot/imported/claw.ogg-d1d59e53dbb4d5ff44c26050f0896df4.oggvorbisstr"
 
 [deps]
 
-source_file="res://enemy-anemone/ASSETS/Audio/claw/claw.ogg"
-dest_files=["res://.godot/imported/claw.ogg-0831b7eb75e81b346e9eb342ea52ef45.oggvorbisstr"]
+source_file="res://enemy anemone/ASSETS/Audio/claw/claw.ogg"
+dest_files=["res://.godot/imported/claw.ogg-d1d59e53dbb4d5ff44c26050f0896df4.oggvorbisstr"]
 
 [params]
 

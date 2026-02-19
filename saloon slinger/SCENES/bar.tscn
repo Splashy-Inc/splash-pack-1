@@ -1,9 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bask1qktq747g"]
+[gd_scene format=3 uid="uid://bask1qktq747g"]
 
-[ext_resource type="Texture2D" uid="uid://8eisahugqaf1" path="res://ASSETS/Bar.png" id="1_0lxil"]
-[ext_resource type="Script" path="res://SCRIPTS/bar.gd" id="1_4dfpa"]
-[ext_resource type="PackedScene" uid="uid://bbak2jlx6h5b" path="res://SCENES/bar_slot.tscn" id="2_5vd1o"]
-[ext_resource type="PackedScene" uid="uid://skhuah8qm0ks" path="res://SCENES/patron.tscn" id="2_8xjks"]
+[ext_resource type="Texture2D" uid="uid://8eisahugqaf1" path="res://saloon slinger/ASSETS/Bar.png" id="1_0lxil"]
+[ext_resource type="Script" uid="uid://bwd44xcwagtka" path="res://saloon slinger/SCRIPTS/bar.gd" id="1_4dfpa"]
+[ext_resource type="PackedScene" uid="uid://bbak2jlx6h5b" path="res://saloon slinger/SCENES/bar_slot.tscn" id="2_5vd1o"]
+[ext_resource type="PackedScene" uid="uid://skhuah8qm0ks" path="res://saloon slinger/SCENES/patron.tscn" id="2_8xjks"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i58nl"]
 radius = 8.0

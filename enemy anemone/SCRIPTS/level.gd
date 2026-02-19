@@ -1,6 +1,6 @@
 extends Node
 
-class_name Level
+class_name LevelEnemyAnemone
 
 signal won
 signal lost

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7vuwxkaqfdfd"
-path="res://.godot/imported/ClawSpriteSheet.png-9f74013b4bc9df5ee146300468449134.ctex"
+path="res://.godot/imported/ClawSpriteSheet.png-9e6beb4988bf5b1caa77e192d15829c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemy-anemone/ASSETS/Art/claw/ClawSpriteSheet.png"
-dest_files=["res://.godot/imported/ClawSpriteSheet.png-9f74013b4bc9df5ee146300468449134.ctex"]
+source_file="res://enemy anemone/ASSETS/Art/claw/ClawSpriteSheet.png"
+dest_files=["res://.godot/imported/ClawSpriteSheet.png-9e6beb4988bf5b1caa77e192d15829c8.ctex"]
 
 [params]
 

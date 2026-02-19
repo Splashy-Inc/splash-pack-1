@@ -1,9 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://cvu135vv0vgue"]
+[gd_scene format=3 uid="uid://cvu135vv0vgue"]
 
-[ext_resource type="Texture2D" uid="uid://c4xgh52byjoko" path="res://ASSETS/Art/anemone/Anemone.png" id="1_7ndqj"]
-[ext_resource type="Script" path="res://SCRIPTS/anemone.gd" id="1_rgnfp"]
-[ext_resource type="PackedScene" uid="uid://cmiraoyeq5xh6" path="res://SCENES/sfx_manager.tscn" id="3_aruoh"]
-[ext_resource type="AudioStream" uid="uid://c3v1n3ahpcu3a" path="res://ASSETS/Audio/anemone/anenome.ogg" id="4_8m4mh"]
+[ext_resource type="Texture2D" uid="uid://c4xgh52byjoko" path="res://enemy anemone/ASSETS/Art/anemone/Anemone.png" id="1_7ndqj"]
+[ext_resource type="Script" uid="uid://bq5jyefu5l3ol" path="res://enemy anemone/SCRIPTS/anemone.gd" id="1_rgnfp"]
+[ext_resource type="PackedScene" uid="uid://cmiraoyeq5xh6" path="res://enemy anemone/SCENES/sfx_manager.tscn" id="3_aruoh"]
+[ext_resource type="AudioStream" uid="uid://c3v1n3ahpcu3a" path="res://enemy anemone/ASSETS/Audio/anemone/anenome.ogg" id="4_8m4mh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_avl1i"]
 atlas = ExtResource("1_7ndqj")

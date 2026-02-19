@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dxtkaabwb56um"
-path="res://.godot/imported/lever_pull.ogg-6c9c6d69e23ef1f92c3fac4e110bde6d.oggvorbisstr"
+path="res://.godot/imported/lever_pull.ogg-79bde5317ae52002c9aee429085c4f6e.oggvorbisstr"
 
 [deps]
 
-source_file="res://ASSETS/Sounds/lever_pull.ogg"
-dest_files=["res://.godot/imported/lever_pull.ogg-6c9c6d69e23ef1f92c3fac4e110bde6d.oggvorbisstr"]
+source_file="res://saloon slots/ASSETS/Sounds/lever_pull.ogg"
+dest_files=["res://.godot/imported/lever_pull.ogg-79bde5317ae52002c9aee429085c4f6e.oggvorbisstr"]
 
 [params]
 

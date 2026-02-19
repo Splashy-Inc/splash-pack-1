@@ -1,10 +1,10 @@
-[gd_scene load_steps=17 format=3 uid="uid://bsa1pio43cai0"]
+[gd_scene format=3 uid="uid://bsa1pio43cai0"]
 
-[ext_resource type="Script" path="res://SCRIPTS/clam.gd" id="1_j5dn6"]
-[ext_resource type="Texture2D" uid="uid://dkq5gidklwrqd" path="res://ASSETS/Art/clam/Clam.png" id="1_kwr1j"]
-[ext_resource type="PackedScene" uid="uid://tajnjj2x3pty" path="res://SCENES/pearl.tscn" id="2_ud4y2"]
-[ext_resource type="PackedScene" uid="uid://cmiraoyeq5xh6" path="res://SCENES/sfx_manager.tscn" id="4_7fte0"]
-[ext_resource type="AudioStream" uid="uid://i0l3lbbtxr51" path="res://ASSETS/Audio/clam/clam.ogg" id="5_1t4j6"]
+[ext_resource type="Script" uid="uid://tgbloxomdyqs" path="res://enemy anemone/SCRIPTS/clam.gd" id="1_j5dn6"]
+[ext_resource type="Texture2D" uid="uid://dkq5gidklwrqd" path="res://enemy anemone/ASSETS/Art/clam/Clam.png" id="1_kwr1j"]
+[ext_resource type="PackedScene" uid="uid://tajnjj2x3pty" path="res://enemy anemone/SCENES/pearl.tscn" id="2_ud4y2"]
+[ext_resource type="PackedScene" uid="uid://cmiraoyeq5xh6" path="res://enemy anemone/SCENES/sfx_manager.tscn" id="4_7fte0"]
+[ext_resource type="AudioStream" uid="uid://i0l3lbbtxr51" path="res://enemy anemone/ASSETS/Audio/clam/clam.ogg" id="5_1t4j6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g78g5"]
 atlas = ExtResource("1_kwr1j")

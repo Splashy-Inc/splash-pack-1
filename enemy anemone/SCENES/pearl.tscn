@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://tajnjj2x3pty"]
+[gd_scene format=3 uid="uid://tajnjj2x3pty"]
 
-[ext_resource type="Texture2D" uid="uid://cqo2sbrybwpcd" path="res://ASSETS/Art/clam/Pearl.png" id="1_lrkvu"]
-[ext_resource type="Script" path="res://SCRIPTS/pearl.gd" id="1_mnynt"]
+[ext_resource type="Texture2D" uid="uid://cqo2sbrybwpcd" path="res://enemy anemone/ASSETS/Art/clam/Pearl.png" id="1_lrkvu"]
+[ext_resource type="Script" uid="uid://ctj6simpbfsyy" path="res://enemy anemone/SCRIPTS/pearl.gd" id="1_mnynt"]
 
 [node name="Pearl" type="Area2D"]
 collision_layer = 0

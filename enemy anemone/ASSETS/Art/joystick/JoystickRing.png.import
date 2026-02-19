@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkujl704yentj"
-path="res://.godot/imported/JoystickRing.png-4866e775e9e54e5f988f66f596e6fec6.ctex"
+path="res://.godot/imported/JoystickRing.png-505bc5e49f46512bcc035d3708529c23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemy-anemone/ASSETS/Art/joystick/JoystickRing.png"
-dest_files=["res://.godot/imported/JoystickRing.png-4866e775e9e54e5f988f66f596e6fec6.ctex"]
+source_file="res://enemy anemone/ASSETS/Art/joystick/JoystickRing.png"
+dest_files=["res://.godot/imported/JoystickRing.png-505bc5e49f46512bcc035d3708529c23.ctex"]
 
 [params]
 

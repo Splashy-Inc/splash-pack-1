@@ -1,12 +1,11 @@
 extends Node
 
 @export var playground_scene: PackedScene
-@export var playground: Level
+@export var playground: LevelSaloonSlots
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
+	$GameScreen/Playground.reset_pressed.connect(_on_playground_reset_pressed)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

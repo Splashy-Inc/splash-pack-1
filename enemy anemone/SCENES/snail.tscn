@@ -1,12 +1,12 @@
-[gd_scene load_steps=24 format=3 uid="uid://dc0upxl0xipa7"]
+[gd_scene format=3 uid="uid://dc0upxl0xipa7"]
 
-[ext_resource type="Script" path="res://SCRIPTS/snail.gd" id="1_lq6w6"]
-[ext_resource type="Texture2D" uid="uid://bkwevqtgn4oe2" path="res://ASSETS/Art/snail/SnailSpriteSheets.png" id="1_subfa"]
-[ext_resource type="PackedScene" uid="uid://cmiraoyeq5xh6" path="res://SCENES/sfx_manager.tscn" id="3_7hlfi"]
-[ext_resource type="AudioStream" uid="uid://cj3kk3bjimkdo" path="res://ASSETS/Audio/snail/snailIdle_1.ogg" id="4_r8njd"]
-[ext_resource type="AudioStream" uid="uid://cf814f14ldysq" path="res://ASSETS/Audio/snail/snailIdle_2.ogg" id="5_e3ec6"]
-[ext_resource type="AudioStream" uid="uid://ddqlcw3ej242h" path="res://ASSETS/Audio/snail/snailIdle_3.ogg" id="6_bn3eh"]
-[ext_resource type="AudioStream" uid="uid://cajtb7nf1gkrw" path="res://ASSETS/Audio/snail/snailIdle_4.ogg" id="7_m7htx"]
+[ext_resource type="Script" uid="uid://5ytuc75hd6bo" path="res://enemy anemone/SCRIPTS/snail.gd" id="1_lq6w6"]
+[ext_resource type="Texture2D" uid="uid://bkwevqtgn4oe2" path="res://enemy anemone/ASSETS/Art/snail/SnailSpriteSheets.png" id="1_subfa"]
+[ext_resource type="PackedScene" uid="uid://cmiraoyeq5xh6" path="res://enemy anemone/SCENES/sfx_manager.tscn" id="3_7hlfi"]
+[ext_resource type="AudioStream" uid="uid://cj3kk3bjimkdo" path="res://enemy anemone/ASSETS/Audio/snail/snailIdle_1.ogg" id="4_r8njd"]
+[ext_resource type="AudioStream" uid="uid://cf814f14ldysq" path="res://enemy anemone/ASSETS/Audio/snail/snailIdle_2.ogg" id="5_e3ec6"]
+[ext_resource type="AudioStream" uid="uid://ddqlcw3ej242h" path="res://enemy anemone/ASSETS/Audio/snail/snailIdle_3.ogg" id="6_bn3eh"]
+[ext_resource type="AudioStream" uid="uid://cajtb7nf1gkrw" path="res://enemy anemone/ASSETS/Audio/snail/snailIdle_4.ogg" id="7_m7htx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gwfo0"]
 atlas = ExtResource("1_subfa")

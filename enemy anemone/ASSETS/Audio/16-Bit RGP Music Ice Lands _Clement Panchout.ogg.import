@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dwambsmbbkw81"
-path="res://.godot/imported/16-Bit RGP Music Ice Lands _Clement Panchout.ogg-3fdfcd8646607406b8c1a529e34efa69.oggvorbisstr"
+path="res://.godot/imported/16-Bit RGP Music Ice Lands _Clement Panchout.ogg-6db177afd9e5fa48f49c1f47514be150.oggvorbisstr"
 
 [deps]
 
-source_file="res://enemy-anemone/ASSETS/Audio/16-Bit RGP Music Ice Lands _Clement Panchout.ogg"
-dest_files=["res://.godot/imported/16-Bit RGP Music Ice Lands _Clement Panchout.ogg-3fdfcd8646607406b8c1a529e34efa69.oggvorbisstr"]
+source_file="res://enemy anemone/ASSETS/Audio/16-Bit RGP Music Ice Lands _Clement Panchout.ogg"
+dest_files=["res://.godot/imported/16-Bit RGP Music Ice Lands _Clement Panchout.ogg-6db177afd9e5fa48f49c1f47514be150.oggvorbisstr"]
 
 [params]
 

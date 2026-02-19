@@ -1,11 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://blqp4w42gjwru"]
+[gd_scene format=3 uid="uid://blqp4w42gjwru"]
 
-[ext_resource type="Script" path="res://SCRIPTS/spinner.gd" id="1_bifv3"]
-[ext_resource type="PackedScene" uid="uid://couw6agdsbohf" path="res://SCENES/icon.tscn" id="2_dhysi"]
-[ext_resource type="Material" uid="uid://fhnw28jbtywg" path="res://spinner_partciles.tres" id="3_1sync"]
-[ext_resource type="AudioStream" uid="uid://diilk5f5crp3q" path="res://ASSETS/Sounds/spinner_stopping.ogg" id="4_imhhf"]
-[ext_resource type="AudioStream" uid="uid://bq3xn85nc8nh8" path="res://ASSETS/Sounds/spinner_stopped.ogg" id="5_wil7s"]
-[ext_resource type="AudioStream" uid="uid://pctgp8e4gtrn" path="res://ASSETS/Sounds/spinner_spinning.ogg" id="6_djgg1"]
+[ext_resource type="Script" uid="uid://bdx837jqe5uoj" path="res://saloon slots/SCRIPTS/spinner.gd" id="1_bifv3"]
+[ext_resource type="PackedScene" uid="uid://couw6agdsbohf" path="res://saloon slots/SCENES/icon.tscn" id="2_dhysi"]
+[ext_resource type="Material" uid="uid://fhnw28jbtywg" path="res://saloon slots/spinner_partciles.tres" id="3_1sync"]
+[ext_resource type="AudioStream" uid="uid://diilk5f5crp3q" path="res://saloon slots/ASSETS/Sounds/spinner_stopping.ogg" id="4_imhhf"]
+[ext_resource type="AudioStream" uid="uid://bq3xn85nc8nh8" path="res://saloon slots/ASSETS/Sounds/spinner_stopped.ogg" id="5_wil7s"]
+[ext_resource type="AudioStream" uid="uid://pctgp8e4gtrn" path="res://saloon slots/ASSETS/Sounds/spinner_spinning.ogg" id="6_djgg1"]
 
 [sub_resource type="Gradient" id="Gradient_gbnso"]
 offsets = PackedFloat32Array(0, 0.519481, 1)

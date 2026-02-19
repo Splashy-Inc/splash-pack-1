@@ -14,16 +14,16 @@ enum Type {
 }
 
 var texture_map := {
-	Type.COWBOY: load("res://ASSETS/Icons/Icon1CowboyHat.png"),
-	Type.JELLY: load("res://ASSETS/Icons/Icon2Jellyfish.png"),
-	Type.SNAIL: load("res://ASSETS/Icons/Icon3Snail.png"),
-	Type.CACTUS: load("res://ASSETS/Icons/Icon4Cactus.png"),
-	Type.SAW: load("res://ASSETS/Icons/Icon5Saw.png"),
-	Type.VENT: load("res://ASSETS/Icons/Icon6ThermalVent.png"),
-	Type.TOOTH: load("res://ASSETS/Icons/Icon7SharkTooth.png"),
-	Type.CLAW: load("res://ASSETS/Icons/Icon8Claw.png"),
-	Type.CLAM: load("res://ASSETS/Icons/Icon9Clam.png"),
-	Type.SPLORSH: load("res://ASSETS/Icons/Icon10Splorsh.png"),
+	Type.COWBOY: load("res://saloon slots/ASSETS/Icons/Icon1CowboyHat.png"),
+	Type.JELLY: load("res://saloon slots/ASSETS/Icons/Icon2Jellyfish.png"),
+	Type.SNAIL: load("res://saloon slots/ASSETS/Icons/Icon3Snail.png"),
+	Type.CACTUS: load("res://saloon slots/ASSETS/Icons/Icon4Cactus.png"),
+	Type.SAW: load("res://saloon slots/ASSETS/Icons/Icon5Saw.png"),
+	Type.VENT: load("res://saloon slots/ASSETS/Icons/Icon6ThermalVent.png"),
+	Type.TOOTH: load("res://saloon slots/ASSETS/Icons/Icon7SharkTooth.png"),
+	Type.CLAW: load("res://saloon slots/ASSETS/Icons/Icon8Claw.png"),
+	Type.CLAM: load("res://saloon slots/ASSETS/Icons/Icon9Clam.png"),
+	Type.SPLORSH: load("res://saloon slots/ASSETS/Icons/Icon10Splorsh.png"),
 }
 
 @export var type: Type

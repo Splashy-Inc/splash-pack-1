@@ -1,142 +1,146 @@
-[gd_scene load_steps=13 format=3 uid="uid://blf41j42m6yrd"]
+[gd_scene format=3 uid="uid://blf41j42m6yrd"]
 
-[ext_resource type="Texture2D" uid="uid://kynhem1b786u" path="res://ASSETS/BackGround.png" id="1_lqhow"]
-[ext_resource type="Material" uid="uid://bh0m8w5bd2nte" path="res://confetti_material.tres" id="2_4fhcd"]
-[ext_resource type="PackedScene" uid="uid://blqp4w42gjwru" path="res://SCENES/spinner.tscn" id="3_i0bty"]
-[ext_resource type="PackedScene" uid="uid://cl3soqbpi3kfl" path="res://SCENES/lever.tscn" id="4_viixo"]
-[ext_resource type="PackedScene" uid="uid://cxq26bgi6tp3y" path="res://SCENES/stop_button.tscn" id="5_j1vxy"]
-[ext_resource type="AudioStream" uid="uid://clhqwny34nh7g" path="res://ASSETS/Sounds/lineup_success.ogg" id="6_fvv54"]
-[ext_resource type="AudioStream" uid="uid://cmf6mdljfsvc6" path="res://ASSETS/Sounds/lineup_fail.ogg" id="7_f42gr"]
-[ext_resource type="AudioStream" uid="uid://cftenbeq82kuk" path="res://ASSETS/Sounds/win_sound.ogg" id="8_s312p"]
-[ext_resource type="AudioStream" uid="uid://bnsgswtsusn77" path="res://ASSETS/Sounds/win_voice.ogg" id="9_xg221"]
-[ext_resource type="AudioStream" uid="uid://bnlcnenbeqvtn" path="res://ASSETS/Sounds/lose_sound.ogg" id="10_5oy6x"]
+[ext_resource type="Texture2D" uid="uid://kynhem1b786u" path="res://saloon slots/ASSETS/BackGround.png" id="1_lqhow"]
+[ext_resource type="Material" uid="uid://bh0m8w5bd2nte" path="res://saloon slots/confetti_material.tres" id="2_4fhcd"]
+[ext_resource type="PackedScene" uid="uid://blqp4w42gjwru" path="res://saloon slots/SCENES/spinner.tscn" id="3_i0bty"]
+[ext_resource type="PackedScene" uid="uid://cl3soqbpi3kfl" path="res://saloon slots/SCENES/lever.tscn" id="4_viixo"]
+[ext_resource type="PackedScene" uid="uid://cxq26bgi6tp3y" path="res://saloon slots/SCENES/stop_button.tscn" id="5_j1vxy"]
+[ext_resource type="AudioStream" uid="uid://clhqwny34nh7g" path="res://saloon slots/ASSETS/Sounds/lineup_success.ogg" id="6_fvv54"]
+[ext_resource type="AudioStream" uid="uid://cmf6mdljfsvc6" path="res://saloon slots/ASSETS/Sounds/lineup_fail.ogg" id="7_f42gr"]
+[ext_resource type="AudioStream" uid="uid://cftenbeq82kuk" path="res://saloon slots/ASSETS/Sounds/win_sound.ogg" id="8_s312p"]
+[ext_resource type="AudioStream" uid="uid://bnsgswtsusn77" path="res://saloon slots/ASSETS/Sounds/win_voice.ogg" id="9_xg221"]
+[ext_resource type="AudioStream" uid="uid://bnlcnenbeqvtn" path="res://saloon slots/ASSETS/Sounds/lose_sound.ogg" id="10_5oy6x"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p21bk"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jdupu"]
 
-[node name="GameScreen" type="Node"]
+[node name="GameScreen" type="Node" unique_id=2072059448]
 
-[node name="Background" type="Node2D" parent="."]
+[node name="Background" type="Node2D" parent="." unique_id=801121243]
 
-[node name="BackgroundTexture" type="TextureRect" parent="Background"]
+[node name="BackgroundTexture" type="TextureRect" parent="Background" unique_id=520412676]
 offset_right = 640.0
 offset_bottom = 360.0
 texture = ExtResource("1_lqhow")
 
-[node name="TopRow" type="Node2D" parent="."]
+[node name="TopRow" type="Node2D" parent="." unique_id=1086312746]
 
-[node name="InfoSection" type="PanelContainer" parent="TopRow"]
+[node name="InfoSection" type="PanelContainer" parent="TopRow" unique_id=314941762]
 custom_minimum_size = Vector2(480, 48)
 offset_right = 480.0
 offset_bottom = 48.0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_p21bk")
 
-[node name="InfoBox" type="HBoxContainer" parent="TopRow/InfoSection"]
+[node name="InfoBox" type="HBoxContainer" parent="TopRow/InfoSection" unique_id=298909013]
 layout_mode = 2
 alignment = 1
 
-[node name="PanelContainer" type="PanelContainer" parent="TopRow/InfoSection/InfoBox"]
+[node name="PanelContainer" type="PanelContainer" parent="TopRow/InfoSection/InfoBox" unique_id=92642614]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxEmpty_jdupu")
 
-[node name="ResetButton" type="Button" parent="TopRow/InfoSection/InfoBox/PanelContainer"]
+[node name="ResetButton" type="Button" parent="TopRow/InfoSection/InfoBox/PanelContainer" unique_id=1510729336]
 custom_minimum_size = Vector2(64, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Reset"
 
-[node name="ScoreBox" type="HBoxContainer" parent="TopRow/InfoSection/InfoBox"]
+[node name="ScoreBox" type="HBoxContainer" parent="TopRow/InfoSection/InfoBox" unique_id=1485906040]
 z_index = 2
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
 
-[node name="PerfectConfetti" type="GPUParticles2D" parent="TopRow/InfoSection/InfoBox/ScoreBox"]
+[node name="PerfectConfetti" type="GPUParticles2D" parent="TopRow/InfoSection/InfoBox/ScoreBox" unique_id=1055699235]
 position = Vector2(75, 38)
 emitting = false
 amount = 1000
-process_material = ExtResource("2_4fhcd")
 lifetime = 4.0
+process_material = ExtResource("2_4fhcd")
 
-[node name="ScoreTitle" type="Label" parent="TopRow/InfoSection/InfoBox/ScoreBox"]
+[node name="ScoreTitle" type="Label" parent="TopRow/InfoSection/InfoBox/ScoreBox" unique_id=1648142412]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Score: "
 horizontal_alignment = 2
 
-[node name="ScoreLabel" type="Label" parent="TopRow/InfoSection/InfoBox/ScoreBox"]
+[node name="ScoreLabel" type="Label" parent="TopRow/InfoSection/InfoBox/ScoreBox" unique_id=654768100]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "0"
 
-[node name="SpinsBox" type="HBoxContainer" parent="TopRow/InfoSection/InfoBox"]
+[node name="SpinsBox" type="HBoxContainer" parent="TopRow/InfoSection/InfoBox" unique_id=3848259]
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
 
-[node name="SpinsTitle" type="Label" parent="TopRow/InfoSection/InfoBox/SpinsBox"]
+[node name="SpinsTitle" type="Label" parent="TopRow/InfoSection/InfoBox/SpinsBox" unique_id=519304000]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Spins: "
 horizontal_alignment = 2
 
-[node name="SpinsCount" type="Label" parent="TopRow/InfoSection/InfoBox/SpinsBox"]
+[node name="SpinsCount" type="Label" parent="TopRow/InfoSection/InfoBox/SpinsBox" unique_id=642760119]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "10"
 
-[node name="MiddleRow" type="Node2D" parent="."]
+[node name="MiddleRow" type="Node2D" parent="." unique_id=209976911]
 
-[node name="Spinners" type="Node2D" parent="MiddleRow"]
+[node name="Spinners" type="Node2D" parent="MiddleRow" unique_id=70092636]
 
-[node name="Spinner" parent="MiddleRow/Spinners" instance=ExtResource("3_i0bty")]
+[node name="Spinner" parent="MiddleRow/Spinners" unique_id=2083089633 instance=ExtResource("3_i0bty")]
 position = Vector2(80, 164)
 
-[node name="Spinner2" parent="MiddleRow/Spinners" instance=ExtResource("3_i0bty")]
+[node name="Spinner2" parent="MiddleRow/Spinners" unique_id=53645362 instance=ExtResource("3_i0bty")]
 position = Vector2(240, 164)
 
-[node name="Spinner3" parent="MiddleRow/Spinners" instance=ExtResource("3_i0bty")]
+[node name="Spinner3" parent="MiddleRow/Spinners" unique_id=1371700876 instance=ExtResource("3_i0bty")]
 position = Vector2(400, 164)
 
-[node name="Lever" type="Node2D" parent="MiddleRow"]
+[node name="Lever" type="Node2D" parent="MiddleRow" unique_id=659153646]
 
-[node name="Lever" parent="MiddleRow/Lever" instance=ExtResource("4_viixo")]
+[node name="Lever" parent="MiddleRow/Lever" unique_id=1349905737 instance=ExtResource("4_viixo")]
 position = Vector2(560, 180)
 
-[node name="BottomRow" type="Node2D" parent="."]
+[node name="BottomRow" type="Node2D" parent="." unique_id=1201172756]
 
-[node name="Buttons" type="Node2D" parent="BottomRow"]
+[node name="Buttons" type="Node2D" parent="BottomRow" unique_id=781541511]
 
-[node name="StopButton" parent="BottomRow/Buttons" instance=ExtResource("5_j1vxy")]
+[node name="StopButton" parent="BottomRow/Buttons" unique_id=485821070 instance=ExtResource("5_j1vxy")]
 position = Vector2(80, 320)
 
-[node name="StopButton2" parent="BottomRow/Buttons" instance=ExtResource("5_j1vxy")]
+[node name="StopButton2" parent="BottomRow/Buttons" unique_id=519798906 instance=ExtResource("5_j1vxy")]
 position = Vector2(240, 320)
 
-[node name="StopButton3" parent="BottomRow/Buttons" instance=ExtResource("5_j1vxy")]
+[node name="StopButton3" parent="BottomRow/Buttons" unique_id=1822122965 instance=ExtResource("5_j1vxy")]
 position = Vector2(400, 320)
 
-[node name="LineupSuccess" type="AudioStreamPlayer" parent="."]
+[node name="LineupSuccess" type="AudioStreamPlayer" parent="." unique_id=878410149]
 stream = ExtResource("6_fvv54")
 volume_db = 5.0
 pitch_scale = 1.5
 
-[node name="LineupFail" type="AudioStreamPlayer" parent="."]
+[node name="LineupFail" type="AudioStreamPlayer" parent="." unique_id=883305042]
 stream = ExtResource("7_f42gr")
 volume_db = 5.0
 pitch_scale = 1.5
 
-[node name="WinSound" type="AudioStreamPlayer" parent="."]
+[node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=383821386]
 stream = ExtResource("8_s312p")
 pitch_scale = 1.5
 
-[node name="WinVoice" type="AudioStreamPlayer" parent="."]
+[node name="WinVoice" type="AudioStreamPlayer" parent="." unique_id=270818807]
 stream = ExtResource("9_xg221")
 volume_db = 10.0
 
-[node name="LoseSound" type="AudioStreamPlayer" parent="."]
+[node name="LoseSound" type="AudioStreamPlayer" parent="." unique_id=1544263784]
 stream = ExtResource("10_5oy6x")
 volume_db = 10.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=655967570]
+position = Vector2(320, 180)
+zoom = Vector2(2, 2)

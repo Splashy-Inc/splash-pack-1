@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://i0l3lbbtxr51"
-path="res://.godot/imported/clam.ogg-1aed220aeabeb5b9bb72f0b23d902c21.oggvorbisstr"
+path="res://.godot/imported/clam.ogg-675e9efa8b24cd6fdc705932570afa6a.oggvorbisstr"
 
 [deps]
 
-source_file="res://enemy-anemone/ASSETS/Audio/clam/clam.ogg"
-dest_files=["res://.godot/imported/clam.ogg-1aed220aeabeb5b9bb72f0b23d902c21.oggvorbisstr"]
+source_file="res://enemy anemone/ASSETS/Audio/clam/clam.ogg"
+dest_files=["res://.godot/imported/clam.ogg-675e9efa8b24cd6fdc705932570afa6a.oggvorbisstr"]
 
 [params]
 
