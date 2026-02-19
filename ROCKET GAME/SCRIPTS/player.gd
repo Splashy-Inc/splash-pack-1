@@ -4,10 +4,10 @@ signal took_damage
 
 #VARIABLES 
 var speed = 400
-var lazer_scene = preload("res://SCENES/lazer.tscn")
+var lazer_scene = preload("res://ROCKET GAME/SCENES/lazer.tscn")
 @onready var lazer_container = $LazerContainer
 @onready var lazer_sound = $LazerSound
-
+@export var camera : Camera2D
 #Player Movement
 func _physics_process(delta):
 	velocity = Vector2(0,0)
@@ -23,7 +23,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 #Clamp Player to Play Area
-	var screen_size = get_viewport_rect().size
+	var screen_size = get_viewport_rect().size / camera.zoom.x
 	global_position = global_position.clamp(Vector2(0,0), screen_size)
 
 #Shoot Lazer

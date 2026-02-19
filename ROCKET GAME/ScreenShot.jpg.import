@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://q01focrbk0uj"
-path="res://.godot/imported/ScreenShot.jpg-ae29a3b8f7ed2f2c437f11bd7ba27e2d.ctex"
+path="res://.godot/imported/ScreenShot.jpg-ca0687a7773d383dc8587cff1f58272d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ScreenShot.jpg"
-dest_files=["res://.godot/imported/ScreenShot.jpg-ae29a3b8f7ed2f2c437f11bd7ba27e2d.ctex"]
+source_file="res://ROCKET GAME/ScreenShot.jpg"
+dest_files=["res://.godot/imported/ScreenShot.jpg-ca0687a7773d383dc8587cff1f58272d.ctex"]
 
 [params]
 

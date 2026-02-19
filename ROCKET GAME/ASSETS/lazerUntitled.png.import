@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddkugnx4h1ps"
-path="res://.godot/imported/lazerUntitled.png-dfb0a6973c64f5d2f8879b2eca61fb0e.ctex"
+path="res://.godot/imported/lazerUntitled.png-cd0cb576dbc77d68fc919afa7cce8444.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/lazerUntitled.png"
-dest_files=["res://.godot/imported/lazerUntitled.png-dfb0a6973c64f5d2f8879b2eca61fb0e.ctex"]
+source_file="res://ROCKET GAME/ASSETS/lazerUntitled.png"
+dest_files=["res://.godot/imported/lazerUntitled.png-cd0cb576dbc77d68fc919afa7cce8444.ctex"]
 
 [params]
 

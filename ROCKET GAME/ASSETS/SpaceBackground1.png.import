@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4q8krtqjixuq"
-path="res://.godot/imported/SpaceBackground1.png-79c51ca8f01964420009f79008d1be47.ctex"
+path="res://.godot/imported/SpaceBackground1.png-b8e1498102ec88f8f1355fb945357d9e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/SpaceBackground1.png"
-dest_files=["res://.godot/imported/SpaceBackground1.png-79c51ca8f01964420009f79008d1be47.ctex"]
+source_file="res://ROCKET GAME/ASSETS/SpaceBackground1.png"
+dest_files=["res://.godot/imported/SpaceBackground1.png-b8e1498102ec88f8f1355fb945357d9e.ctex"]
 
 [params]
 

@@ -10,7 +10,7 @@ var score = 0
 @onready var lazer_sound = $LazerSound
 @onready var player_hit_sound = $PlayerHitSound
 
-var game_over_scene = preload("res://SCENES/game_over_screen.tscn")
+var game_over_scene = preload("res://ROCKET GAME/SCENES/game_over_screen.tscn")
 
 func _ready():
 	hud.set_score_lable(score)

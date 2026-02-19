@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://b4h21mnubrgm5"]
+[gd_scene format=3 uid="uid://b4h21mnubrgm5"]
 
-[ext_resource type="Script" path="res://SCRIPTS/game_over_screen.gd" id="1_pq3nj"]
+[ext_resource type="Script" uid="uid://dnwcqhn0xkilj" path="res://ROCKET GAME/SCRIPTS/game_over_screen.gd" id="1_pq3nj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rtvxh"]
 bg_color = Color(0.960784, 0, 0, 0.321569)

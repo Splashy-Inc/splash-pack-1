@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://cv0c8gfo7fqda"]
+[gd_scene format=3 uid="uid://cv0c8gfo7fqda"]
 
-[ext_resource type="Script" path="res://SCRIPTS/enemy_spawner.gd" id="1_v1er3"]
+[ext_resource type="Script" uid="uid://d1l1cdkrq8et0" path="res://ROCKET GAME/SCRIPTS/enemy_spawner.gd" id="1_v1er3"]
 
 [node name="EnemySpawner" type="Node2D"]
 script = ExtResource("1_v1er3")
