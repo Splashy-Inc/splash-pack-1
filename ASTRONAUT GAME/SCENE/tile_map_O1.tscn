@@ -1,11 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://b7s2kk15xecal"]
+[gd_scene format=3 uid="uid://b7s2kk15xecal"]
 
-[ext_resource type="Texture2D" uid="uid://b3hdw3mwrbkv8" path="res://ASSETS/Scobus5/ASSETS/Scobus5Terrain.png" id="3_30s0l"]
-[ext_resource type="Texture2D" uid="uid://dcs1uv542i5q4" path="res://ASSETS/Background/Terrain/Desert4.png" id="3_tc4p3"]
-[ext_resource type="Texture2D" uid="uid://v42s363lgppy" path="res://ASSETS/Background/Terrain/Desert1.png" id="7_wtmuv"]
-[ext_resource type="Texture2D" uid="uid://du31dswipoh01" path="res://ASSETS/Background/Terrain/Desert2.png" id="8_78fyt"]
-[ext_resource type="Texture2D" uid="uid://dyyvmdcx1aa6l" path="res://ASSETS/Background/Terrain/Desert3.png" id="9_v7fdx"]
-[ext_resource type="Texture2D" uid="uid://b5d0rxcpqx7s0" path="res://ASSETS/Background/Terrain/DesertShelf.png" id="10_1xboa"]
+[ext_resource type="Texture2D" uid="uid://b3hdw3mwrbkv8" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Scobus5Terrain.png" id="3_30s0l"]
+[ext_resource type="Texture2D" uid="uid://dcs1uv542i5q4" path="res://ASTRONAUT GAME/ASSETS/Background/Terrain/Desert4.png" id="3_tc4p3"]
+[ext_resource type="Texture2D" uid="uid://v42s363lgppy" path="res://ASTRONAUT GAME/ASSETS/Background/Terrain/Desert1.png" id="7_wtmuv"]
+[ext_resource type="Texture2D" uid="uid://du31dswipoh01" path="res://ASTRONAUT GAME/ASSETS/Background/Terrain/Desert2.png" id="8_78fyt"]
+[ext_resource type="Texture2D" uid="uid://dyyvmdcx1aa6l" path="res://ASTRONAUT GAME/ASSETS/Background/Terrain/Desert3.png" id="9_v7fdx"]
+[ext_resource type="Texture2D" uid="uid://b5d0rxcpqx7s0" path="res://ASTRONAUT GAME/ASSETS/Background/Terrain/DesertShelf.png" id="10_1xboa"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_7brf5"]
 tile_data = PackedInt32Array(0, 65543, 1, 8, 65543, 1)

@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://ch06nt8sc3xu4"]
+[gd_scene format=3 uid="uid://ch06nt8sc3xu4"]
 
-[ext_resource type="Texture2D" uid="uid://btgu7g25gd5ci" path="res://ASSETS/Scobus5/ASSETS/ScobusBG/ScobusBG.png" id="1_506ee"]
-[ext_resource type="Texture2D" uid="uid://calpyywl1yihu" path="res://ASSETS/Scobus5/ASSETS/ScobusBG/ScobusOceanGodLight.png" id="2_l11o0"]
-[ext_resource type="Texture2D" uid="uid://k4oi55sac7xx" path="res://ASSETS/Scobus5/ASSETS/ScobusBG/ScobusOceanSpots.png" id="3_toidy"]
-[ext_resource type="Texture2D" uid="uid://bkmnhsk82gl1d" path="res://ASSETS/Scobus5/ASSETS/ScobusBG/ScobusOceanStones.png" id="4_7anhf"]
+[ext_resource type="Texture2D" uid="uid://btgu7g25gd5ci" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/ScobusBG/ScobusBG.png" id="1_506ee"]
+[ext_resource type="Texture2D" uid="uid://calpyywl1yihu" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/ScobusBG/ScobusOceanGodLight.png" id="2_l11o0"]
+[ext_resource type="Texture2D" uid="uid://k4oi55sac7xx" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/ScobusBG/ScobusOceanSpots.png" id="3_toidy"]
+[ext_resource type="Texture2D" uid="uid://bkmnhsk82gl1d" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/ScobusBG/ScobusOceanStones.png" id="4_7anhf"]
 
 [node name="BGScobus" type="Node2D"]
 z_index = -50

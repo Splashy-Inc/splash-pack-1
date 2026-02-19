@@ -129,7 +129,7 @@ next_level = ExtResource("2_84xwf")
 
 [node name="UILayer" parent="." unique_id=694892287 instance=ExtResource("4_suc5b")]
 
-[node name="LevelLabel" parent="UILayer/HUD" index="1"]
+[node name="LevelLabel" parent="UILayer/HUD" parent_id_path=PackedInt32Array(694892287, 212174268) index="1" unique_id=1404072643]
 text = "Level: 17"
 
 [node name="Start" parent="." unique_id=2001050236 instance=ExtResource("6_qnftl")]

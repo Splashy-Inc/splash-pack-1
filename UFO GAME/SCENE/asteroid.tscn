@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bp3e2ja8l"]
+[gd_scene format=3 uid="uid://bp3e2ja8l"]
 
-[ext_resource type="Script" path="res://SCRIPTS/asteroid.gd" id="1_e6gf2"]
-[ext_resource type="Texture2D" uid="uid://bx2w6qgbfv0yy" path="res://ASSETS/INTERACTABLES/Asteroid.png" id="2_wa8xs"]
-[ext_resource type="AudioStream" uid="uid://c6kgqddvxgtcy" path="res://ASSETS/AUDIO/AsteroidNoise.wav" id="3_34nfr"]
+[ext_resource type="Script" uid="uid://c3ltxydfrbw6a" path="res://UFO GAME/SCRIPTS/asteroid.gd" id="1_e6gf2"]
+[ext_resource type="Texture2D" uid="uid://bx2w6qgbfv0yy" path="res://UFO GAME/ASSETS/INTERACTABLES/Asteroid.png" id="2_wa8xs"]
+[ext_resource type="AudioStream" uid="uid://c6kgqddvxgtcy" path="res://UFO GAME/ASSETS/AUDIO/AsteroidNoise.wav" id="3_34nfr"]
 
 [node name="Asteroid" type="RigidBody2D"]
 collision_layer = 4

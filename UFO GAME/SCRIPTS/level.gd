@@ -24,11 +24,11 @@ func reset_player():
 	player.reset()
 
 func _on_exit_body_entered(body):
-	if body is Player:
+	if body is UFOPlayer:
 		if is_final_level || (next_level != null):
 			body.shrink()
 			await get_tree().create_timer(.5).timeout
-			Globals.update_eggs_collected(eggs_collected)
+			GlobalsWormholes.update_eggs_collected(eggs_collected)
 			if is_final_level:
 				ui_layer.show_win_screen(true)
 			else:

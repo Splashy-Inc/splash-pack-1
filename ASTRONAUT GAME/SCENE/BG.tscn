@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://d1n78tt1oejk8"]
+[gd_scene format=3 uid="uid://d1n78tt1oejk8"]
 
-[ext_resource type="Texture2D" uid="uid://c68lau6wn5xe4" path="res://ASSETS/Background/DesertBG.png" id="1_i714v"]
-[ext_resource type="Texture2D" uid="uid://d2032m6sde4ei" path="res://ASSETS/Background/DesertSky.png" id="2_f1ded"]
-[ext_resource type="Texture2D" uid="uid://umvyd6e1ieuy" path="res://ASSETS/Background/DesertClouds.png" id="3_ey4un"]
-[ext_resource type="Texture2D" uid="uid://bv4i3fkx8i4k2" path="res://ASSETS/Background/DesertCactus.png" id="4_w806d"]
+[ext_resource type="Texture2D" uid="uid://c68lau6wn5xe4" path="res://ASTRONAUT GAME/ASSETS/Background/DesertBG.png" id="1_i714v"]
+[ext_resource type="Texture2D" uid="uid://d2032m6sde4ei" path="res://ASTRONAUT GAME/ASSETS/Background/DesertSky.png" id="2_f1ded"]
+[ext_resource type="Texture2D" uid="uid://umvyd6e1ieuy" path="res://ASTRONAUT GAME/ASSETS/Background/DesertClouds.png" id="3_ey4un"]
+[ext_resource type="Texture2D" uid="uid://bv4i3fkx8i4k2" path="res://ASTRONAUT GAME/ASSETS/Background/DesertCactus.png" id="4_w806d"]
 
 [node name="BG" type="Node2D"]
 z_index = -50

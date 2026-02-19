@@ -22,6 +22,7 @@ boot_splash/image="res://SplashySplashScreen.png"
 [autoload]
 
 AudioPlayerLandfall="*uid://bdvnntnvfu4rf"
+GlobalsWormholes="*uid://c4ckvrtjovvv5"
 
 [display]
 
