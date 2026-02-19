@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cwr6cg26cwtpw"]
 
 [ext_resource type="Script" uid="uid://doq6uyl5pfwmv" path="res://SCRIPTS/DialogSystem/dialog_box.gd" id="1_ik285"]
-[ext_resource type="Texture2D" uid="uid://b4n6irf1jephl" path="res://icon.svg" id="2_nkkfn"]
+[ext_resource type="Texture2D" uid="uid://ifjt00dwsmnf" path="res://icon.svg" id="2_nkkfn"]
 [ext_resource type="PackedScene" uid="uid://cqw3k8ogffvua" path="res://SCENES/DialogSystem/dialog_button.tscn" id="5_gvo3j"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_263dt"]
@@ -9,7 +9,7 @@ bg_color = Color(0, 0, 0, 1)
 
 [node name="DialogBox" type="PanelContainer" unique_id=1988314642]
 process_mode = 3
-custom_minimum_size = Vector2(640, 90)
+custom_minimum_size = Vector2(1280, 180)
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -50,10 +50,11 @@ custom_minimum_size = Vector2(0, 16)
 layout_mode = 2
 
 [node name="DialogText" type="Label" parent="HBoxContainer/TextArea/DialogTextSection" unique_id=619871009]
-custom_minimum_size = Vector2(250, 0)
+custom_minimum_size = Vector2(500, 0)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
 autowrap_mode = 2
 visible_characters_behavior = 1
 
@@ -65,6 +66,7 @@ alignment = 1
 
 [node name="DialogButton" parent="HBoxContainer/TextArea/DialogButtonSection" unique_id=2126789626 instance=ExtResource("5_gvo3j")]
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 
 [node name="RightPanel" type="PanelContainer" parent="HBoxContainer" unique_id=1059454794]
 custom_minimum_size = Vector2(90, 90)
