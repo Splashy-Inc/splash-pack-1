@@ -1,0 +1,120 @@
+[gd_scene load_steps=11 format=3 uid="uid://blqp4w42gjwru"]
+
+[ext_resource type="Script" path="res://SCRIPTS/spinner.gd" id="1_bifv3"]
+[ext_resource type="PackedScene" uid="uid://couw6agdsbohf" path="res://SCENES/icon.tscn" id="2_dhysi"]
+[ext_resource type="Material" uid="uid://fhnw28jbtywg" path="res://spinner_partciles.tres" id="3_1sync"]
+[ext_resource type="AudioStream" uid="uid://diilk5f5crp3q" path="res://ASSETS/Sounds/spinner_stopping.ogg" id="4_imhhf"]
+[ext_resource type="AudioStream" uid="uid://bq3xn85nc8nh8" path="res://ASSETS/Sounds/spinner_stopped.ogg" id="5_wil7s"]
+[ext_resource type="AudioStream" uid="uid://pctgp8e4gtrn" path="res://ASSETS/Sounds/spinner_spinning.ogg" id="6_djgg1"]
+
+[sub_resource type="Gradient" id="Gradient_gbnso"]
+offsets = PackedFloat32Array(0, 0.519481, 1)
+colors = PackedColorArray(0.419608, 0.282353, 0.0901961, 1, 1, 1, 1, 1, 0.41868, 0.283755, 0.0899879, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_uaemb"]
+gradient = SubResource("Gradient_gbnso")
+width = 128
+height = 232
+fill_from = Vector2(0.5, 1)
+fill_to = Vector2(0.5, 0)
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_wrgfh"]
+random_pitch = 1.3
+streams_count = 1
+stream_0/stream = ExtResource("4_imhhf")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_kfimb"]
+random_pitch = 1.2
+streams_count = 1
+stream_0/stream = ExtResource("6_djgg1")
+
+[node name="Spinner" type="Node2D"]
+script = ExtResource("1_bifv3")
+
+[node name="Background" type="Sprite2D" parent="."]
+clip_children = 2
+texture = SubResource("GradientTexture2D_uaemb")
+
+[node name="Icons" type="Parallax2D" parent="Background"]
+repeat_size = Vector2(0, 800)
+repeat_times = 2
+
+[node name="IconSlot1" type="Node2D" parent="Background/Icons"]
+position = Vector2(0, -160)
+
+[node name="Icon" parent="Background/Icons/IconSlot1" instance=ExtResource("2_dhysi")]
+
+[node name="IconSlot2" type="Node2D" parent="Background/Icons"]
+position = Vector2(0, -80)
+
+[node name="Icon" parent="Background/Icons/IconSlot2" instance=ExtResource("2_dhysi")]
+type = 1
+
+[node name="IconSlot3" type="Node2D" parent="Background/Icons"]
+
+[node name="Icon" parent="Background/Icons/IconSlot3" instance=ExtResource("2_dhysi")]
+type = 2
+
+[node name="IconSlot4" type="Node2D" parent="Background/Icons"]
+position = Vector2(0, 80)
+
+[node name="Icon" parent="Background/Icons/IconSlot4" instance=ExtResource("2_dhysi")]
+type = 3
+
+[node name="IconSlot5" type="Node2D" parent="Background/Icons"]
+position = Vector2(0, 160)
+
+[node name="Icon" parent="Background/Icons/IconSlot5" instance=ExtResource("2_dhysi")]
+type = 4
+
+[node name="IconSlot6" type="Node2D" parent="Background/Icons"]
+position = Vector2(0, 240)
+
+[node name="Icon" parent="Background/Icons/IconSlot6" instance=ExtResource("2_dhysi")]
+type = 5
+
+[node name="IconSlot7" type="Node2D" parent="Background/Icons"]
+position = Vector2(0, 320)
+
+[node name="Icon" parent="Background/Icons/IconSlot7" instance=ExtResource("2_dhysi")]
+type = 6
+
+[node name="IconSlot8" type="Node2D" parent="Background/Icons"]
+position = Vector2(0, 400)
+
+[node name="Icon" parent="Background/Icons/IconSlot8" instance=ExtResource("2_dhysi")]
+type = 7
+
+[node name="IconSlot9" type="Node2D" parent="Background/Icons"]
+position = Vector2(0, 480)
+
+[node name="Icon" parent="Background/Icons/IconSlot9" instance=ExtResource("2_dhysi")]
+type = 8
+
+[node name="IconSlot10" type="Node2D" parent="Background/Icons"]
+position = Vector2(0, 560)
+
+[node name="Icon" parent="Background/Icons/IconSlot10" instance=ExtResource("2_dhysi")]
+type = 9
+
+[node name="StopParticles" type="GPUParticles2D" parent="."]
+z_index = 1
+z_as_relative = false
+position = Vector2(0, 116)
+emitting = false
+amount = 200
+process_material = ExtResource("3_1sync")
+
+[node name="Stopping" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_wrgfh")
+volume_db = 10.0
+pitch_scale = 0.6
+
+[node name="Stopped" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_wil7s")
+volume_db = 5.0
+pitch_scale = 2.0
+
+[node name="Spinning" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_kfimb")
+volume_db = 5.0
