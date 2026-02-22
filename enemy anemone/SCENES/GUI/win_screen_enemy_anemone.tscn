@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://v65h1k4msxhb"]
 
 [ext_resource type="StyleBox" uid="uid://1mss4twkxib3" path="res://enemy anemone/button_box.tres" id="1_mm3s4"]
-[ext_resource type="Script" uid="uid://ddx77wfyw8rhm" path="res://enemy anemone/SCRIPTS/win_screen.gd" id="1_ypahy"]
+[ext_resource type="Script" uid="uid://ddx77wfyw8rhm" path="res://enemy anemone/SCRIPTS/win_screen_enemy_anemone.gd" id="1_ypahy"]
 [ext_resource type="Texture2D" uid="uid://5btihv7hxfxv" path="res://enemy anemone/ASSETS/Art/player/SplorshIdle64.png" id="3_3wnac"]
 [ext_resource type="Texture2D" uid="uid://rb0fuewtvoel" path="res://enemy anemone/ASSETS/Art/BGtileset/BackgroundTileset.png" id="3_nbyho"]
 [ext_resource type="Texture2D" uid="uid://bkwevqtgn4oe2" path="res://enemy anemone/ASSETS/Art/snail/SnailSpriteSheets.png" id="4_47vxr"]

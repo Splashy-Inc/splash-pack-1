@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://dhvgc0glasyim"]
 
-[ext_resource type="Script" uid="uid://8m0lovsd5yah" path="res://enemy anemone/SCRIPTS/playground.gd" id="1_5e8d0"]
+[ext_resource type="Script" uid="uid://8m0lovsd5yah" path="res://enemy anemone/SCRIPTS/playground_enemy_anemone.gd" id="1_5e8d0"]
 [ext_resource type="Texture2D" uid="uid://rb0fuewtvoel" path="res://enemy anemone/ASSETS/Art/BGtileset/BackgroundTileset.png" id="2_57ss8"]
-[ext_resource type="PackedScene" uid="uid://c2juntykrrmxl" path="res://enemy anemone/SCENES/player.tscn" id="3_p6y3n"]
+[ext_resource type="PackedScene" uid="uid://c2juntykrrmxl" path="res://enemy anemone/SCENES/player_enemy_anemone.tscn" id="3_p6y3n"]
 [ext_resource type="PackedScene" uid="uid://clj4gjj1hlvt8" path="res://enemy anemone/SCENES/seaweed_01.tscn" id="4_5bpgj"]
 [ext_resource type="PackedScene" uid="uid://dc0upxl0xipa7" path="res://enemy anemone/SCENES/snail.tscn" id="4_k2oqr"]
 [ext_resource type="PackedScene" uid="uid://c4hsvtyukygc3" path="res://enemy anemone/SCENES/rock_01.tscn" id="4_n3boa"]
@@ -189,8 +189,6 @@ point_count = 5
 
 [node name="Playground" type="Node" unique_id=935958479]
 script = ExtResource("1_5e8d0")
-anemone_scene = ExtResource("5_4386a")
-num_enemies = null
 
 [node name="Environment" type="Node" parent="." unique_id=408262123]
 

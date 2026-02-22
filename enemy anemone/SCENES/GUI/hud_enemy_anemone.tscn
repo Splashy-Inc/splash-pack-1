@@ -1,18 +1,19 @@
 [gd_scene format=3 uid="uid://do7dpbgd6ku6n"]
 
-[ext_resource type="Script" uid="uid://d1lfs7q7axw5o" path="res://enemy anemone/SCRIPTS/hud.gd" id="1_w38b1"]
-[ext_resource type="PackedScene" uid="uid://k7ghjsy8g1k0" path="res://enemy anemone/SCENES/GUI/main_menu.tscn" id="4_f58rm"]
-[ext_resource type="PackedScene" uid="uid://c6tdu4r5v8bbs" path="res://enemy anemone/SCENES/GUI/controls_screen.tscn" id="4_sgjn6"]
-[ext_resource type="PackedScene" uid="uid://c3sldi7g5fcg6" path="res://saloon slinger/SCENES/pause_menu.tscn" id="6_k66bl"]
-[ext_resource type="PackedScene" uid="uid://v65h1k4msxhb" path="res://enemy anemone/SCENES/GUI/win_screen.tscn" id="6_s7jfo"]
-[ext_resource type="PackedScene" uid="uid://temjlvcxcb3r" path="res://enemy anemone/SCENES/GUI/loss_screen.tscn" id="7_8h0it"]
-[ext_resource type="PackedScene" uid="uid://b77mh17y84d50" path="res://enemy anemone/SCENES/GUI/mobile_controls.tscn" id="7_yobjs"]
-[ext_resource type="PackedScene" uid="uid://bvp1lppkqj5qi" path="res://enemy anemone/SCENES/GUI/level_ui.tscn" id="8_7yt6r"]
+[ext_resource type="Script" uid="uid://d1lfs7q7axw5o" path="res://enemy anemone/SCRIPTS/hud_enemy_anemone.gd" id="1_w38b1"]
+[ext_resource type="PackedScene" uid="uid://k7ghjsy8g1k0" path="res://enemy anemone/SCENES/GUI/main_menu_enemy_anemone.tscn" id="2_j0n06"]
+[ext_resource type="PackedScene" uid="uid://c6tdu4r5v8bbs" path="res://SCENES/GUI/controls_screen.tscn" id="4_sgjn6"]
+[ext_resource type="PackedScene" uid="uid://c3sldi7g5fcg6" path="res://SCENES/GUI/pause_menu.tscn" id="6_k66bl"]
+[ext_resource type="PackedScene" uid="uid://v65h1k4msxhb" path="res://SCENES/GUI/win_screen.tscn" id="6_s7jfo"]
+[ext_resource type="PackedScene" uid="uid://temjlvcxcb3r" path="res://SCENES/GUI/loss_screen.tscn" id="7_8h0it"]
+[ext_resource type="PackedScene" uid="uid://b77mh17y84d50" path="res://SCENES/GUI/mobile_controls.tscn" id="7_yobjs"]
+[ext_resource type="PackedScene" uid="uid://bvp1lppkqj5qi" path="res://SCENES/GUI/level_ui.tscn" id="8_7yt6r"]
 
 [node name="HUD" type="CanvasLayer" unique_id=620237725]
 script = ExtResource("1_w38b1")
 
 [node name="MenuScreens" type="Control" parent="." unique_id=1745061819]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -26,15 +27,17 @@ offset_right = 1280.0
 offset_bottom = 720.0
 color = Color(0, 0, 0, 0.662745)
 
-[node name="MainMenu" parent="MenuScreens" unique_id=1899339960 instance=ExtResource("4_f58rm")]
+[node name="MainMenu" parent="MenuScreens" unique_id=1888975931 instance=ExtResource("2_j0n06")]
 visible = false
 layout_mode = 0
-offset_right = 640.0
-offset_bottom = 360.0
+offset_right = 1280.0
+offset_bottom = 720.0
 
 [node name="ControlsScreen" parent="MenuScreens" unique_id=995657550 instance=ExtResource("4_sgjn6")]
 visible = false
 layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
 
 [node name="WinScreen" parent="MenuScreens" unique_id=1169747190 instance=ExtResource("6_s7jfo")]
 visible = false
@@ -60,6 +63,7 @@ grow_horizontal = 1
 grow_vertical = 1
 
 [node name="MobileControls" parent="." unique_id=1092457100 instance=ExtResource("7_yobjs")]
+visible = false
 
 [node name="LevelUI" parent="." unique_id=853786047 instance=ExtResource("8_7yt6r")]
 visible = false

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://temjlvcxcb3r"]
 
-[ext_resource type="Script" uid="uid://bexxaa8sdyous" path="res://enemy anemone/SCRIPTS/loss_screen.gd" id="1_ig5wj"]
+[ext_resource type="Script" uid="uid://bexxaa8sdyous" path="res://enemy anemone/SCRIPTS/loss_screen_enemy_anemone.gd" id="1_ig5wj"]
 [ext_resource type="StyleBox" uid="uid://1mss4twkxib3" path="res://enemy anemone/button_box.tres" id="1_kt3cy"]
 
 [node name="LossScreen" type="Control" unique_id=893784918]
