@@ -20,34 +20,51 @@ alignment = 1
 [node name="Title" type="Label" parent="MenuContent" unique_id=715066472]
 layout_mode = 2
 theme_override_font_sizes/font_size = 72
-text = "Game Title"
+text = "Splash Pack 1	"
 horizontal_alignment = 1
 
 [node name="Subtitle" type="Label" parent="MenuContent" unique_id=1542715903]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-text = "Game Subtitle"
+text = "In SPACE!"
 horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="MenuContent" unique_id=1621222299]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 32
+theme_override_constants/v_separation = 32
+columns = 3
+
+[node name="Button" type="Button" parent="MenuContent/GridContainer" unique_id=1429388856]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="MenuContent/GridContainer" unique_id=1993571288]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="MenuContent/GridContainer" unique_id=1164718386]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="MenuContent/GridContainer" unique_id=347302460]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="MenuContent/GridContainer" unique_id=1228734592]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="MenuContent/GridContainer" unique_id=1011485476]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 2
 
 [node name="MenuButtons" type="VBoxContainer" parent="MenuContent" unique_id=1981508240]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = 10
 alignment = 1
-
-[node name="PlayButton" type="Button" parent="MenuContent/MenuButtons" unique_id=1156573833]
-custom_minimum_size = Vector2(100, 20)
-layout_mode = 2
-theme_override_font_sizes/font_size = 48
-theme_override_styles/normal = ExtResource("2_y3ir5")
-text = "Play"
-
-[node name="ControlsButton" type="Button" parent="MenuContent/MenuButtons" unique_id=793462692]
-custom_minimum_size = Vector2(100, 20)
-layout_mode = 2
-theme_override_font_sizes/font_size = 48
-theme_override_styles/normal = ExtResource("2_y3ir5")
-text = "Controls"
 
 [node name="QuitButton" type="Button" parent="MenuContent/MenuButtons" unique_id=556028471]
 custom_minimum_size = Vector2(100, 20)
@@ -56,6 +73,4 @@ theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = ExtResource("2_y3ir5")
 text = "Quit"
 
-[connection signal="pressed" from="MenuContent/MenuButtons/PlayButton" to="." method="_on_play_button_pressed"]
-[connection signal="pressed" from="MenuContent/MenuButtons/ControlsButton" to="." method="_on_controls_button_pressed"]
 [connection signal="pressed" from="MenuContent/MenuButtons/QuitButton" to="." method="_on_quit_button_pressed"]
