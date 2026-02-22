@@ -23,26 +23,26 @@ anchors_preset = 0
 
 [node name="PauseButton" type="Button" parent="." unique_id=265948864]
 layout_mode = 0
-offset_left = 32.0
-offset_top = 21.0
-offset_right = 70.0
-offset_bottom = 42.0
+offset_left = 64.0
+offset_top = 42.0
+offset_right = 192.0
+offset_bottom = 101.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
 text = "PAUSE"
 
 [node name="Anemone" type="Sprite2D" parent="." unique_id=874600313]
-position = Vector2(600, 32)
-scale = Vector2(0.5, 0.5)
+position = Vector2(1200, 64)
 texture = ExtResource("1_xharn")
 hframes = 10
 
 [node name="anemone_label" type="Label" parent="." unique_id=48001831]
 layout_mode = 0
-offset_left = 550.0
-offset_top = 19.0
-offset_right = 579.0
-offset_bottom = 45.0
-theme_override_font_sizes/font_size = 32
+offset_left = 1100.0
+offset_top = 38.0
+offset_right = 1129.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 64
 text = "99"
 script = SubResource("GDScript_prxe1")
