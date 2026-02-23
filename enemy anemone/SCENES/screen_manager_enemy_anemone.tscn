@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bxq56d6rma7gn"]
+[gd_scene format=3 uid="uid://spw27ulppftv"]
 
 [ext_resource type="Script" uid="uid://bqxm1pxmcpe3n" path="res://enemy anemone/SCRIPTS/screen_manager_enemy_anemone.gd" id="1_7yicb"]
 [ext_resource type="PackedScene" uid="uid://cxhkn71uhulyx" path="res://enemy anemone/SCENES/playground_enemy_anemone.tscn" id="2_jrp6k"]
