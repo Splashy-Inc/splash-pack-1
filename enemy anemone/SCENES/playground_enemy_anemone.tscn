@@ -1,19 +1,19 @@
-[gd_scene format=4 uid="uid://dhvgc0glasyim"]
+[gd_scene format=4 uid="uid://cxhkn71uhulyx"]
 
-[ext_resource type="Script" uid="uid://8m0lovsd5yah" path="res://enemy anemone/SCRIPTS/playground_enemy_anemone.gd" id="1_5e8d0"]
-[ext_resource type="Texture2D" uid="uid://rb0fuewtvoel" path="res://enemy anemone/ASSETS/Art/BGtileset/BackgroundTileset.png" id="2_57ss8"]
-[ext_resource type="PackedScene" uid="uid://c2juntykrrmxl" path="res://enemy anemone/SCENES/player_enemy_anemone.tscn" id="3_p6y3n"]
-[ext_resource type="PackedScene" uid="uid://clj4gjj1hlvt8" path="res://enemy anemone/SCENES/seaweed_01.tscn" id="4_5bpgj"]
-[ext_resource type="PackedScene" uid="uid://dc0upxl0xipa7" path="res://enemy anemone/SCENES/snail.tscn" id="4_k2oqr"]
-[ext_resource type="PackedScene" uid="uid://c4hsvtyukygc3" path="res://enemy anemone/SCENES/rock_01.tscn" id="4_n3boa"]
-[ext_resource type="PackedScene" uid="uid://cvu135vv0vgue" path="res://enemy anemone/SCENES/anemone.tscn" id="5_4386a"]
-[ext_resource type="PackedScene" uid="uid://ccum1nvcpad2r" path="res://enemy anemone/SCENES/rock_02.tscn" id="5_iqihp"]
-[ext_resource type="PackedScene" uid="uid://bqr2narnmng87" path="res://enemy anemone/SCENES/seaweed_02.tscn" id="5_l3rsy"]
-[ext_resource type="PackedScene" uid="uid://bsa1pio43cai0" path="res://enemy anemone/SCENES/clam.tscn" id="6_55bcv"]
-[ext_resource type="PackedScene" uid="uid://cgyemiu7qsc8c" path="res://enemy anemone/SCENES/rock_03.tscn" id="6_jfe5b"]
+[ext_resource type="Script" uid="uid://8m0lovsd5yah" path="res://enemy anemone/SCRIPTS/playground_enemy_anemone.gd" id="1_ao450"]
+[ext_resource type="PackedScene" uid="uid://cvu135vv0vgue" path="res://enemy anemone/SCENES/anemone.tscn" id="2_fnfv1"]
+[ext_resource type="Texture2D" uid="uid://rb0fuewtvoel" path="res://enemy anemone/ASSETS/Art/BGtileset/BackgroundTileset.png" id="3_1rc0t"]
+[ext_resource type="PackedScene" uid="uid://clj4gjj1hlvt8" path="res://enemy anemone/SCENES/seaweed_01.tscn" id="4_atoel"]
+[ext_resource type="PackedScene" uid="uid://bqr2narnmng87" path="res://enemy anemone/SCENES/seaweed_02.tscn" id="5_ce1j8"]
+[ext_resource type="PackedScene" uid="uid://c4hsvtyukygc3" path="res://enemy anemone/SCENES/rock_01.tscn" id="6_s2648"]
+[ext_resource type="PackedScene" uid="uid://ccum1nvcpad2r" path="res://enemy anemone/SCENES/rock_02.tscn" id="7_u0v1u"]
+[ext_resource type="PackedScene" uid="uid://cgyemiu7qsc8c" path="res://enemy anemone/SCENES/rock_03.tscn" id="8_8ncnn"]
+[ext_resource type="PackedScene" uid="uid://c2juntykrrmxl" path="res://enemy anemone/SCENES/player_enemy_anemone.tscn" id="9_0cy4h"]
+[ext_resource type="PackedScene" uid="uid://dc0upxl0xipa7" path="res://enemy anemone/SCENES/snail.tscn" id="10_4s81e"]
+[ext_resource type="PackedScene" uid="uid://bsa1pio43cai0" path="res://enemy anemone/SCENES/clam.tscn" id="11_cho4w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3rhkp"]
-texture = ExtResource("2_57ss8")
+texture = ExtResource("3_1rc0t")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -188,7 +188,8 @@ _data = {
 point_count = 5
 
 [node name="Playground" type="Node" unique_id=935958479]
-script = ExtResource("1_5e8d0")
+script = ExtResource("1_ao450")
+anemone_scene = ExtResource("2_fnfv1")
 
 [node name="Environment" type="Node" parent="." unique_id=408262123]
 
@@ -199,120 +200,120 @@ tile_set = SubResource("TileSet_xwqiq")
 
 [node name="Seaweed" type="Node" parent="Environment" unique_id=559958591]
 
-[node name="Seaweed_01" parent="Environment/Seaweed" unique_id=1298795894 instance=ExtResource("4_5bpgj")]
+[node name="Seaweed_01" parent="Environment/Seaweed" unique_id=1298795894 instance=ExtResource("4_atoel")]
 position = Vector2(188, 103)
 
-[node name="Seaweed_02" parent="Environment/Seaweed" unique_id=508562817 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_02" parent="Environment/Seaweed" unique_id=508562817 instance=ExtResource("5_ce1j8")]
 position = Vector2(309, 156)
 
-[node name="Seaweed_03" parent="Environment/Seaweed" unique_id=1369751785 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_03" parent="Environment/Seaweed" unique_id=1369751785 instance=ExtResource("5_ce1j8")]
 position = Vector2(191, 202)
 
-[node name="Seaweed_04" parent="Environment/Seaweed" unique_id=1700374656 instance=ExtResource("4_5bpgj")]
+[node name="Seaweed_04" parent="Environment/Seaweed" unique_id=1700374656 instance=ExtResource("4_atoel")]
 position = Vector2(369, 248)
 
-[node name="Seaweed_05" parent="Environment/Seaweed" unique_id=1067537935 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_05" parent="Environment/Seaweed" unique_id=1067537935 instance=ExtResource("5_ce1j8")]
 position = Vector2(490, 301)
 
-[node name="Seaweed_06" parent="Environment/Seaweed" unique_id=545604590 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_06" parent="Environment/Seaweed" unique_id=545604590 instance=ExtResource("5_ce1j8")]
 position = Vector2(372, 347)
 
-[node name="Seaweed_07" parent="Environment/Seaweed" unique_id=732569632 instance=ExtResource("4_5bpgj")]
+[node name="Seaweed_07" parent="Environment/Seaweed" unique_id=732569632 instance=ExtResource("4_atoel")]
 position = Vector2(634, 74)
 
-[node name="Seaweed_08" parent="Environment/Seaweed" unique_id=730692011 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_08" parent="Environment/Seaweed" unique_id=730692011 instance=ExtResource("5_ce1j8")]
 position = Vector2(755, 127)
 
-[node name="Seaweed_09" parent="Environment/Seaweed" unique_id=1108797627 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_09" parent="Environment/Seaweed" unique_id=1108797627 instance=ExtResource("5_ce1j8")]
 position = Vector2(637, 173)
 
-[node name="Seaweed_10" parent="Environment/Seaweed" unique_id=349456372 instance=ExtResource("4_5bpgj")]
+[node name="Seaweed_10" parent="Environment/Seaweed" unique_id=349456372 instance=ExtResource("4_atoel")]
 position = Vector2(664, 329)
 
-[node name="Seaweed_11" parent="Environment/Seaweed" unique_id=777286042 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_11" parent="Environment/Seaweed" unique_id=777286042 instance=ExtResource("5_ce1j8")]
 position = Vector2(785, 382)
 
-[node name="Seaweed_12" parent="Environment/Seaweed" unique_id=1421312250 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_12" parent="Environment/Seaweed" unique_id=1421312250 instance=ExtResource("5_ce1j8")]
 position = Vector2(667, 428)
 
-[node name="Seaweed_13" parent="Environment/Seaweed" unique_id=1936697713 instance=ExtResource("4_5bpgj")]
+[node name="Seaweed_13" parent="Environment/Seaweed" unique_id=1936697713 instance=ExtResource("4_atoel")]
 position = Vector2(768, 550)
 
-[node name="Seaweed_14" parent="Environment/Seaweed" unique_id=815490648 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_14" parent="Environment/Seaweed" unique_id=815490648 instance=ExtResource("5_ce1j8")]
 position = Vector2(889, 603)
 
-[node name="Seaweed_15" parent="Environment/Seaweed" unique_id=100532422 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_15" parent="Environment/Seaweed" unique_id=100532422 instance=ExtResource("5_ce1j8")]
 position = Vector2(771, 649)
 
-[node name="Seaweed_16" parent="Environment/Seaweed" unique_id=189882060 instance=ExtResource("4_5bpgj")]
+[node name="Seaweed_16" parent="Environment/Seaweed" unique_id=189882060 instance=ExtResource("4_atoel")]
 position = Vector2(253, 717)
 
-[node name="Seaweed_17" parent="Environment/Seaweed" unique_id=412327785 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_17" parent="Environment/Seaweed" unique_id=412327785 instance=ExtResource("5_ce1j8")]
 position = Vector2(374, 770)
 
-[node name="Seaweed_18" parent="Environment/Seaweed" unique_id=1612132001 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_18" parent="Environment/Seaweed" unique_id=1612132001 instance=ExtResource("5_ce1j8")]
 position = Vector2(256, 816)
 
-[node name="Seaweed_19" parent="Environment/Seaweed" unique_id=1585700586 instance=ExtResource("4_5bpgj")]
+[node name="Seaweed_19" parent="Environment/Seaweed" unique_id=1585700586 instance=ExtResource("4_atoel")]
 position = Vector2(42, 707)
 
-[node name="Seaweed_20" parent="Environment/Seaweed" unique_id=127652961 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_20" parent="Environment/Seaweed" unique_id=127652961 instance=ExtResource("5_ce1j8")]
 position = Vector2(163, 760)
 
-[node name="Seaweed_21" parent="Environment/Seaweed" unique_id=839854570 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_21" parent="Environment/Seaweed" unique_id=839854570 instance=ExtResource("5_ce1j8")]
 position = Vector2(45, 806)
 
-[node name="Seaweed_22" parent="Environment/Seaweed" unique_id=991194154 instance=ExtResource("4_5bpgj")]
+[node name="Seaweed_22" parent="Environment/Seaweed" unique_id=991194154 instance=ExtResource("4_atoel")]
 position = Vector2(629, 849)
 
-[node name="Seaweed_23" parent="Environment/Seaweed" unique_id=738161957 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_23" parent="Environment/Seaweed" unique_id=738161957 instance=ExtResource("5_ce1j8")]
 position = Vector2(750, 902)
 
-[node name="Seaweed_24" parent="Environment/Seaweed" unique_id=1494941773 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_24" parent="Environment/Seaweed" unique_id=1494941773 instance=ExtResource("5_ce1j8")]
 position = Vector2(632, 948)
 
-[node name="Seaweed_25" parent="Environment/Seaweed" unique_id=1218982346 instance=ExtResource("4_5bpgj")]
+[node name="Seaweed_25" parent="Environment/Seaweed" unique_id=1218982346 instance=ExtResource("4_atoel")]
 position = Vector2(800, 662)
 
-[node name="Seaweed_26" parent="Environment/Seaweed" unique_id=21938794 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_26" parent="Environment/Seaweed" unique_id=21938794 instance=ExtResource("5_ce1j8")]
 position = Vector2(921, 715)
 
-[node name="Seaweed_27" parent="Environment/Seaweed" unique_id=146843828 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_27" parent="Environment/Seaweed" unique_id=146843828 instance=ExtResource("5_ce1j8")]
 position = Vector2(803, 761)
 
-[node name="Seaweed_28" parent="Environment/Seaweed" unique_id=1897284747 instance=ExtResource("4_5bpgj")]
+[node name="Seaweed_28" parent="Environment/Seaweed" unique_id=1897284747 instance=ExtResource("4_atoel")]
 position = Vector2(211, 903)
 
-[node name="Seaweed_29" parent="Environment/Seaweed" unique_id=92998485 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_29" parent="Environment/Seaweed" unique_id=92998485 instance=ExtResource("5_ce1j8")]
 position = Vector2(332, 956)
 
-[node name="Seaweed_30" parent="Environment/Seaweed" unique_id=909074652 instance=ExtResource("5_l3rsy")]
+[node name="Seaweed_30" parent="Environment/Seaweed" unique_id=909074652 instance=ExtResource("5_ce1j8")]
 position = Vector2(214, 1002)
 
 [node name="Rocks" type="Node" parent="Environment" unique_id=1362339970]
 
-[node name="Rock_01" parent="Environment/Rocks" unique_id=552449962 instance=ExtResource("4_n3boa")]
+[node name="Rock_01" parent="Environment/Rocks" unique_id=552449962 instance=ExtResource("6_s2648")]
 position = Vector2(82, 91)
 
-[node name="Rock_04" parent="Environment/Rocks" unique_id=1894002926 instance=ExtResource("4_n3boa")]
+[node name="Rock_04" parent="Environment/Rocks" unique_id=1894002926 instance=ExtResource("6_s2648")]
 position = Vector2(891, 463)
 
-[node name="Rock_05" parent="Environment/Rocks" unique_id=1191757700 instance=ExtResource("4_n3boa")]
+[node name="Rock_05" parent="Environment/Rocks" unique_id=1191757700 instance=ExtResource("6_s2648")]
 position = Vector2(130, 800)
 
-[node name="Rock_02" parent="Environment/Rocks" unique_id=726381961 instance=ExtResource("5_iqihp")]
+[node name="Rock_02" parent="Environment/Rocks" unique_id=726381961 instance=ExtResource("7_u0v1u")]
 position = Vector2(509, 828)
 
-[node name="Rock_06" parent="Environment/Rocks" unique_id=343068204 instance=ExtResource("5_iqihp")]
+[node name="Rock_06" parent="Environment/Rocks" unique_id=343068204 instance=ExtResource("7_u0v1u")]
 position = Vector2(58, 511)
 
-[node name="Rock_07" parent="Environment/Rocks" unique_id=949133986 instance=ExtResource("5_iqihp")]
+[node name="Rock_07" parent="Environment/Rocks" unique_id=949133986 instance=ExtResource("7_u0v1u")]
 position = Vector2(430, 63)
 
-[node name="Rock_03" parent="Environment/Rocks" unique_id=1799718349 instance=ExtResource("6_jfe5b")]
+[node name="Rock_03" parent="Environment/Rocks" unique_id=1799718349 instance=ExtResource("8_8ncnn")]
 position = Vector2(846, 184)
 
-[node name="Rock_08" parent="Environment/Rocks" unique_id=175875533 instance=ExtResource("6_jfe5b")]
+[node name="Rock_08" parent="Environment/Rocks" unique_id=175875533 instance=ExtResource("8_8ncnn")]
 position = Vector2(888, 926)
 
 [node name="Boundary" type="Node2D" parent="Environment" unique_id=1806154402]
@@ -348,17 +349,17 @@ rotation = 1.5707964
 
 [node name="GamePieces" type="Node" parent="." unique_id=139902813]
 
-[node name="Player" parent="GamePieces" unique_id=1100729800 instance=ExtResource("3_p6y3n")]
+[node name="Player" parent="GamePieces" unique_id=1100729800 instance=ExtResource("9_0cy4h")]
 position = Vector2(321, 497)
 
-[node name="Snail" parent="GamePieces" unique_id=965319043 instance=ExtResource("4_k2oqr")]
+[node name="Snail" parent="GamePieces" unique_id=965319043 instance=ExtResource("10_4s81e")]
 position = Vector2(520, 488)
 
-[node name="Clam" parent="GamePieces" unique_id=2007803032 instance=ExtResource("6_55bcv")]
+[node name="Clam" parent="GamePieces" unique_id=2007803032 instance=ExtResource("11_cho4w")]
 position = Vector2(243, 435)
 is_placed = true
 
-[node name="Anemone" parent="GamePieces" unique_id=221734589 instance=ExtResource("5_4386a")]
+[node name="Anemone" parent="GamePieces" unique_id=221734589 instance=ExtResource("2_fnfv1")]
 position = Vector2(87, 354)
 
 [node name="Timer" type="Timer" parent="." unique_id=717232376]

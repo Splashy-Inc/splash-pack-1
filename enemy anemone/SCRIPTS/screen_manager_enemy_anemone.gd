@@ -2,7 +2,7 @@ extends Node
 
 @export var level_scene: PackedScene
 
-@onready var hud: HUD = $HUD
+@onready var hud: HUDEnemyAnemone = $HUD
 
 var level: LevelEnemyAnemone
 var game_ended = false

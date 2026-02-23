@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://bvp1lppkqj5qi"]
+[gd_scene format=3 uid="uid://cicmuh0op153k"]
 
-[ext_resource type="Texture2D" uid="uid://c4xgh52byjoko" path="res://enemy anemone/ASSETS/Art/anemone/Anemone.png" id="1_xharn"]
+[ext_resource type="Texture2D" uid="uid://c4xgh52byjoko" path="res://enemy anemone/ASSETS/Art/anemone/Anemone.png" id="1_swbhf"]
 
 [sub_resource type="GDScript" id="GDScript_prxe1"]
 script/source = "extends Label
@@ -34,7 +34,7 @@ text = "PAUSE"
 
 [node name="Anemone" type="Sprite2D" parent="." unique_id=874600313]
 position = Vector2(1200, 64)
-texture = ExtResource("1_xharn")
+texture = ExtResource("1_swbhf")
 hframes = 10
 
 [node name="anemone_label" type="Label" parent="." unique_id=48001831]

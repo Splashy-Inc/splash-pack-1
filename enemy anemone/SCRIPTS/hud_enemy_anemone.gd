@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-class_name HUD
+class_name HUDEnemyAnemone
 
 signal play_pressed
 signal restart_pressed

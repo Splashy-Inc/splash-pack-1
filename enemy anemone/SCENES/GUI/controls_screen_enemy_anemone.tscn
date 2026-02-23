@@ -1,14 +1,14 @@
-[gd_scene format=4 uid="uid://c6tdu4r5v8bbs"]
+[gd_scene format=4 uid="uid://d30jpatxl3444"]
 
-[ext_resource type="Script" uid="uid://bajjc04pw488b" path="res://enemy anemone/SCRIPTS/controls_screen_enemy_anemone.gd" id="1_tvbxo"]
-[ext_resource type="StyleBox" uid="uid://1mss4twkxib3" path="res://enemy anemone/button_box.tres" id="2_tn6xa"]
-[ext_resource type="Texture2D" uid="uid://rb0fuewtvoel" path="res://enemy anemone/ASSETS/Art/BGtileset/BackgroundTileset.png" id="3_hgkes"]
-[ext_resource type="Texture2D" uid="uid://5btihv7hxfxv" path="res://enemy anemone/ASSETS/Art/player/SplorshIdle64.png" id="4_4m8dd"]
+[ext_resource type="Script" uid="uid://bajjc04pw488b" path="res://enemy anemone/SCRIPTS/controls_screen_enemy_anemone.gd" id="1_lpsni"]
+[ext_resource type="StyleBox" uid="uid://1mss4twkxib3" path="res://enemy anemone/button_box.tres" id="2_mqnf8"]
+[ext_resource type="Texture2D" uid="uid://rb0fuewtvoel" path="res://enemy anemone/ASSETS/Art/BGtileset/BackgroundTileset.png" id="3_q80yi"]
+[ext_resource type="Texture2D" uid="uid://5btihv7hxfxv" path="res://enemy anemone/ASSETS/Art/player/SplorshIdle64.png" id="4_dcenb"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2r28s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aimpw"]
-texture = ExtResource("3_hgkes")
+texture = ExtResource("3_q80yi")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -158,27 +158,27 @@ texture = ExtResource("3_hgkes")
 sources/0 = SubResource("TileSetAtlasSource_aimpw")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4d753"]
-atlas = ExtResource("4_4m8dd")
+atlas = ExtResource("4_dcenb")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nprcn"]
-atlas = ExtResource("4_4m8dd")
+atlas = ExtResource("4_dcenb")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m44q1"]
-atlas = ExtResource("4_4m8dd")
+atlas = ExtResource("4_dcenb")
 region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0r3rm"]
-atlas = ExtResource("4_4m8dd")
+atlas = ExtResource("4_dcenb")
 region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ronn1"]
-atlas = ExtResource("4_4m8dd")
+atlas = ExtResource("4_dcenb")
 region = Rect2(256, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2eo64"]
-atlas = ExtResource("4_4m8dd")
+atlas = ExtResource("4_dcenb")
 region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2svs3"]
@@ -213,7 +213,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 640.0
 offset_bottom = 360.0
-script = ExtResource("1_tvbxo")
+script = ExtResource("1_lpsni")
 
 [node name="ScreenRows" type="VBoxContainer" parent="." unique_id=341264848]
 custom_minimum_size = Vector2(1280, 720)
@@ -292,7 +292,7 @@ custom_minimum_size = Vector2(57, 16)
 layout_mode = 2
 size_flags_horizontal = 0
 theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = ExtResource("2_tn6xa")
+theme_override_styles/normal = ExtResource("2_mqnf8")
 text = "Left Stick"
 horizontal_alignment = 1
 
@@ -322,7 +322,7 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = ExtResource("2_tn6xa")
+theme_override_styles/normal = ExtResource("2_mqnf8")
 text = "W"
 horizontal_alignment = 1
 
@@ -336,7 +336,7 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = ExtResource("2_tn6xa")
+theme_override_styles/normal = ExtResource("2_mqnf8")
 text = "A"
 horizontal_alignment = 1
 
@@ -344,7 +344,7 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = ExtResource("2_tn6xa")
+theme_override_styles/normal = ExtResource("2_mqnf8")
 text = "S"
 horizontal_alignment = 1
 
@@ -352,7 +352,7 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = ExtResource("2_tn6xa")
+theme_override_styles/normal = ExtResource("2_mqnf8")
 text = "D"
 horizontal_alignment = 1
 
@@ -370,7 +370,7 @@ custom_minimum_size = Vector2(73, 16)
 layout_mode = 2
 size_flags_horizontal = 0
 theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = ExtResource("2_tn6xa")
+theme_override_styles/normal = ExtResource("2_mqnf8")
 text = "Blast button"
 horizontal_alignment = 1
 
@@ -388,7 +388,7 @@ custom_minimum_size = Vector2(73, 16)
 layout_mode = 2
 size_flags_horizontal = 0
 theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = ExtResource("2_tn6xa")
+theme_override_styles/normal = ExtResource("2_mqnf8")
 text = "Left Click"
 horizontal_alignment = 1
 
@@ -406,7 +406,7 @@ custom_minimum_size = Vector2(73, 16)
 layout_mode = 2
 size_flags_horizontal = 0
 theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = ExtResource("2_tn6xa")
+theme_override_styles/normal = ExtResource("2_mqnf8")
 text = "Spacebar"
 horizontal_alignment = 1
 
@@ -424,7 +424,7 @@ theme_override_constants/separation = 20
 custom_minimum_size = Vector2(70, 16)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = ExtResource("2_tn6xa")
+theme_override_styles/normal = ExtResource("2_mqnf8")
 text = "Clam button"
 horizontal_alignment = 1
 
@@ -441,7 +441,7 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(61, 16)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = ExtResource("2_tn6xa")
+theme_override_styles/normal = ExtResource("2_mqnf8")
 text = "Right Click"
 horizontal_alignment = 1
 
@@ -458,7 +458,7 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(61, 16)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = ExtResource("2_tn6xa")
+theme_override_styles/normal = ExtResource("2_mqnf8")
 text = "Left Shift"
 horizontal_alignment = 1
 

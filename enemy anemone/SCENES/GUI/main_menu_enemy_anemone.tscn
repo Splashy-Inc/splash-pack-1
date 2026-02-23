@@ -1,14 +1,14 @@
-[gd_scene format=4 uid="uid://k7ghjsy8g1k0"]
+[gd_scene format=4 uid="uid://b3ejlf1rmothd"]
 
-[ext_resource type="Script" uid="uid://o1nru5oy2a0m" path="res://enemy anemone/SCRIPTS/main_menu_enemy_anemone.gd" id="1_vkagb"]
-[ext_resource type="Texture2D" uid="uid://rb0fuewtvoel" path="res://enemy anemone/ASSETS/Art/BGtileset/BackgroundTileset.png" id="2_shsw0"]
-[ext_resource type="StyleBox" uid="uid://1mss4twkxib3" path="res://enemy anemone/button_box.tres" id="2_y3ir5"]
-[ext_resource type="Texture2D" uid="uid://b24k05xkj5jk6" path="res://enemy anemone/ASSETS/Art/blast/Blast.png" id="3_uc1aw"]
-[ext_resource type="Texture2D" uid="uid://bkwevqtgn4oe2" path="res://enemy anemone/ASSETS/Art/snail/SnailSpriteSheets.png" id="4_x27a3"]
-[ext_resource type="Texture2D" uid="uid://5btihv7hxfxv" path="res://enemy anemone/ASSETS/Art/player/SplorshIdle64.png" id="5_i5li3"]
+[ext_resource type="Script" uid="uid://o1nru5oy2a0m" path="res://enemy anemone/SCRIPTS/main_menu_enemy_anemone.gd" id="1_jr0bs"]
+[ext_resource type="Texture2D" uid="uid://rb0fuewtvoel" path="res://enemy anemone/ASSETS/Art/BGtileset/BackgroundTileset.png" id="2_egu2s"]
+[ext_resource type="Texture2D" uid="uid://b24k05xkj5jk6" path="res://enemy anemone/ASSETS/Art/blast/Blast.png" id="3_wk4mb"]
+[ext_resource type="Texture2D" uid="uid://bkwevqtgn4oe2" path="res://enemy anemone/ASSETS/Art/snail/SnailSpriteSheets.png" id="4_gbtc2"]
+[ext_resource type="Texture2D" uid="uid://5btihv7hxfxv" path="res://enemy anemone/ASSETS/Art/player/SplorshIdle64.png" id="5_i0dk3"]
+[ext_resource type="StyleBox" uid="uid://1mss4twkxib3" path="res://enemy anemone/button_box.tres" id="6_o2u5v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_anejp"]
-texture = ExtResource("2_shsw0")
+texture = ExtResource("2_egu2s")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -195,35 +195,35 @@ _data = {
 }
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t3du4"]
-atlas = ExtResource("4_x27a3")
+atlas = ExtResource("4_gbtc2")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4bsh7"]
-atlas = ExtResource("4_x27a3")
+atlas = ExtResource("4_gbtc2")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cyfrw"]
-atlas = ExtResource("4_x27a3")
+atlas = ExtResource("4_gbtc2")
 region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uasml"]
-atlas = ExtResource("4_x27a3")
+atlas = ExtResource("4_gbtc2")
 region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fdok2"]
-atlas = ExtResource("4_x27a3")
+atlas = ExtResource("4_gbtc2")
 region = Rect2(256, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qkt6w"]
-atlas = ExtResource("4_x27a3")
+atlas = ExtResource("4_gbtc2")
 region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_go2if"]
-atlas = ExtResource("4_x27a3")
+atlas = ExtResource("4_gbtc2")
 region = Rect2(384, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e3g5b"]
-atlas = ExtResource("4_x27a3")
+atlas = ExtResource("4_gbtc2")
 region = Rect2(448, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w7kgf"]
@@ -259,27 +259,27 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4d753"]
-atlas = ExtResource("5_i5li3")
+atlas = ExtResource("5_i0dk3")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nprcn"]
-atlas = ExtResource("5_i5li3")
+atlas = ExtResource("5_i0dk3")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m44q1"]
-atlas = ExtResource("5_i5li3")
+atlas = ExtResource("5_i0dk3")
 region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0r3rm"]
-atlas = ExtResource("5_i5li3")
+atlas = ExtResource("5_i0dk3")
 region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ronn1"]
-atlas = ExtResource("5_i5li3")
+atlas = ExtResource("5_i0dk3")
 region = Rect2(256, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2eo64"]
-atlas = ExtResource("5_i5li3")
+atlas = ExtResource("5_i0dk3")
 region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3ks2x"]
@@ -312,7 +312,7 @@ animations = [{
 custom_minimum_size = Vector2(1280, 720)
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_vkagb")
+script = ExtResource("1_jr0bs")
 
 [node name="Background" type="Control" parent="." unique_id=2033002168]
 anchors_preset = 0
@@ -325,7 +325,7 @@ tile_set = SubResource("TileSet_0wmpg")
 [node name="ring_of_fire" type="Sprite2D" parent="Background" unique_id=756309256]
 position = Vector2(640, 360)
 scale = Vector2(4, 4)
-texture = ExtResource("3_uc1aw")
+texture = ExtResource("3_wk4mb")
 hframes = 10
 frame = 1
 
@@ -378,21 +378,21 @@ alignment = 1
 custom_minimum_size = Vector2(100, 20)
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-theme_override_styles/normal = ExtResource("2_y3ir5")
+theme_override_styles/normal = ExtResource("6_o2u5v")
 text = "Play"
 
 [node name="ControlsButton" type="Button" parent="MenuContent/MenuButtons" unique_id=1825115580]
 custom_minimum_size = Vector2(100, 20)
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-theme_override_styles/normal = ExtResource("2_y3ir5")
+theme_override_styles/normal = ExtResource("6_o2u5v")
 text = "Controls"
 
 [node name="QuitButton" type="Button" parent="MenuContent/MenuButtons" unique_id=915938358]
 custom_minimum_size = Vector2(100, 20)
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-theme_override_styles/normal = ExtResource("2_y3ir5")
+theme_override_styles/normal = ExtResource("6_o2u5v")
 text = "Quit"
 
 [connection signal="pressed" from="MenuContent/MenuButtons/PlayButton" to="." method="_on_play_button_pressed"]

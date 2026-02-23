@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bxq56d6rma7gn"]
 
 [ext_resource type="Script" uid="uid://bqxm1pxmcpe3n" path="res://enemy anemone/SCRIPTS/screen_manager_enemy_anemone.gd" id="1_7yicb"]
-[ext_resource type="PackedScene" uid="uid://do7dpbgd6ku6n" path="res://enemy anemone/SCENES/GUI/hud_enemy_anemone.tscn" id="2_3khgq"]
-[ext_resource type="PackedScene" uid="uid://dhvgc0glasyim" path="res://enemy anemone/SCENES/playground_enemy_anemone.tscn" id="2_jrp6k"]
+[ext_resource type="PackedScene" uid="uid://cxhkn71uhulyx" path="res://enemy anemone/SCENES/playground_enemy_anemone.tscn" id="2_jrp6k"]
+[ext_resource type="PackedScene" uid="uid://be1ch0clx5oad" path="res://enemy anemone/SCENES/GUI/hud_enemy_anemone.tscn" id="3_jrp6k"]
 [ext_resource type="AudioStream" uid="uid://dwambsmbbkw81" path="res://enemy anemone/ASSETS/Audio/16-Bit RGP Music Ice Lands _Clement Panchout.ogg" id="4_u1syr"]
 
 [node name="ScreenManager" type="Node" unique_id=908012572]
@@ -10,7 +10,7 @@ process_mode = 3
 script = ExtResource("1_7yicb")
 level_scene = ExtResource("2_jrp6k")
 
-[node name="HUD" parent="." unique_id=1425417474 instance=ExtResource("2_3khgq")]
+[node name="HUD" parent="." unique_id=620237725 instance=ExtResource("3_jrp6k")]
 
 [node name="BGMusic" type="AudioStreamPlayer" parent="." unique_id=1895244787]
 stream = ExtResource("4_u1syr")

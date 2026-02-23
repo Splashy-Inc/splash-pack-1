@@ -21,7 +21,7 @@ func _process(delta):
 		calculateVector()
 	else:
 		global_position = lerp(global_position, parent.global_position, delta*10)
-		parent.posVector = Vector2(0,0)
+		parent.direction = Vector2(0,0)
 
 func calculateVector():
 	if abs((global_position.x - parent.global_position.x)) >= deadzone:

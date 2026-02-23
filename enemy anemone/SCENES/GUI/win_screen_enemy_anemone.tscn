@@ -1,13 +1,13 @@
-[gd_scene format=4 uid="uid://v65h1k4msxhb"]
+[gd_scene format=4 uid="uid://bhp2asv1v0wvj"]
 
-[ext_resource type="StyleBox" uid="uid://1mss4twkxib3" path="res://enemy anemone/button_box.tres" id="1_mm3s4"]
-[ext_resource type="Script" uid="uid://ddx77wfyw8rhm" path="res://enemy anemone/SCRIPTS/win_screen_enemy_anemone.gd" id="1_ypahy"]
-[ext_resource type="Texture2D" uid="uid://5btihv7hxfxv" path="res://enemy anemone/ASSETS/Art/player/SplorshIdle64.png" id="3_3wnac"]
-[ext_resource type="Texture2D" uid="uid://rb0fuewtvoel" path="res://enemy anemone/ASSETS/Art/BGtileset/BackgroundTileset.png" id="3_nbyho"]
-[ext_resource type="Texture2D" uid="uid://bkwevqtgn4oe2" path="res://enemy anemone/ASSETS/Art/snail/SnailSpriteSheets.png" id="4_47vxr"]
+[ext_resource type="Script" uid="uid://ddx77wfyw8rhm" path="res://enemy anemone/SCRIPTS/win_screen_enemy_anemone.gd" id="1_0lmdh"]
+[ext_resource type="StyleBox" uid="uid://1mss4twkxib3" path="res://enemy anemone/button_box.tres" id="2_sb70y"]
+[ext_resource type="Texture2D" uid="uid://rb0fuewtvoel" path="res://enemy anemone/ASSETS/Art/BGtileset/BackgroundTileset.png" id="3_6gpi6"]
+[ext_resource type="Texture2D" uid="uid://bkwevqtgn4oe2" path="res://enemy anemone/ASSETS/Art/snail/SnailSpriteSheets.png" id="4_oafda"]
+[ext_resource type="Texture2D" uid="uid://5btihv7hxfxv" path="res://enemy anemone/ASSETS/Art/player/SplorshIdle64.png" id="5_5yejo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qu1j8"]
-texture = ExtResource("3_nbyho")
+texture = ExtResource("3_6gpi6")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -157,35 +157,35 @@ texture = ExtResource("3_nbyho")
 sources/0 = SubResource("TileSetAtlasSource_qu1j8")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t3du4"]
-atlas = ExtResource("4_47vxr")
+atlas = ExtResource("4_oafda")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4bsh7"]
-atlas = ExtResource("4_47vxr")
+atlas = ExtResource("4_oafda")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cyfrw"]
-atlas = ExtResource("4_47vxr")
+atlas = ExtResource("4_oafda")
 region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uasml"]
-atlas = ExtResource("4_47vxr")
+atlas = ExtResource("4_oafda")
 region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fdok2"]
-atlas = ExtResource("4_47vxr")
+atlas = ExtResource("4_oafda")
 region = Rect2(256, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qkt6w"]
-atlas = ExtResource("4_47vxr")
+atlas = ExtResource("4_oafda")
 region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_go2if"]
-atlas = ExtResource("4_47vxr")
+atlas = ExtResource("4_oafda")
 region = Rect2(384, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e3g5b"]
-atlas = ExtResource("4_47vxr")
+atlas = ExtResource("4_oafda")
 region = Rect2(448, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_paddq"]
@@ -221,27 +221,27 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4d753"]
-atlas = ExtResource("3_3wnac")
+atlas = ExtResource("5_5yejo")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nprcn"]
-atlas = ExtResource("3_3wnac")
+atlas = ExtResource("5_5yejo")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m44q1"]
-atlas = ExtResource("3_3wnac")
+atlas = ExtResource("5_5yejo")
 region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0r3rm"]
-atlas = ExtResource("3_3wnac")
+atlas = ExtResource("5_5yejo")
 region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ronn1"]
-atlas = ExtResource("3_3wnac")
+atlas = ExtResource("5_5yejo")
 region = Rect2(256, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2eo64"]
-atlas = ExtResource("3_3wnac")
+atlas = ExtResource("5_5yejo")
 region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ubtal"]
@@ -274,7 +274,7 @@ animations = [{
 custom_minimum_size = Vector2(1280, 720)
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_ypahy")
+script = ExtResource("1_0lmdh")
 
 [node name="MenuContent" type="VBoxContainer" parent="." unique_id=1798800476]
 custom_minimum_size = Vector2(1280, 720)
@@ -302,21 +302,21 @@ theme_override_constants/separation = 20
 custom_minimum_size = Vector2(100, 20)
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-theme_override_styles/normal = ExtResource("1_mm3s4")
+theme_override_styles/normal = ExtResource("2_sb70y")
 text = "Next Round"
 
 [node name="MainMenuButton" type="Button" parent="MenuContent/MenuButtons" unique_id=1072035951]
 custom_minimum_size = Vector2(100, 20)
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-theme_override_styles/normal = ExtResource("1_mm3s4")
+theme_override_styles/normal = ExtResource("2_sb70y")
 text = "Main Menu"
 
 [node name="QuitButton" type="Button" parent="MenuContent/MenuButtons" unique_id=1248908221]
 custom_minimum_size = Vector2(100, 20)
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-theme_override_styles/normal = ExtResource("1_mm3s4")
+theme_override_styles/normal = ExtResource("2_sb70y")
 text = "Quit"
 
 [node name="Background" type="Control" parent="." unique_id=1663947323]

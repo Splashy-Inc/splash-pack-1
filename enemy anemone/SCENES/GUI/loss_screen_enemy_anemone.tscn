@@ -1,13 +1,13 @@
-[gd_scene format=3 uid="uid://temjlvcxcb3r"]
+[gd_scene format=3 uid="uid://c2nft4xky3xxv"]
 
-[ext_resource type="Script" uid="uid://bexxaa8sdyous" path="res://enemy anemone/SCRIPTS/loss_screen_enemy_anemone.gd" id="1_ig5wj"]
-[ext_resource type="StyleBox" uid="uid://1mss4twkxib3" path="res://enemy anemone/button_box.tres" id="1_kt3cy"]
+[ext_resource type="Script" uid="uid://bexxaa8sdyous" path="res://enemy anemone/SCRIPTS/loss_screen_enemy_anemone.gd" id="1_oahho"]
+[ext_resource type="StyleBox" uid="uid://1mss4twkxib3" path="res://enemy anemone/button_box.tres" id="2_nbdjd"]
 
 [node name="LossScreen" type="Control" unique_id=893784918]
 custom_minimum_size = Vector2(1280, 720)
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_ig5wj")
+script = ExtResource("1_oahho")
 
 [node name="MenuContent" type="VBoxContainer" parent="." unique_id=74808802]
 custom_minimum_size = Vector2(1280, 720)
@@ -32,21 +32,21 @@ theme_override_constants/separation = 20
 custom_minimum_size = Vector2(100, 20)
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-theme_override_styles/normal = ExtResource("1_kt3cy")
+theme_override_styles/normal = ExtResource("2_nbdjd")
 text = "Main Menu"
 
 [node name="RestartButton" type="Button" parent="MenuContent/MenuButtons" unique_id=998150810]
 custom_minimum_size = Vector2(100, 20)
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-theme_override_styles/normal = ExtResource("1_kt3cy")
+theme_override_styles/normal = ExtResource("2_nbdjd")
 text = "Restart Level"
 
 [node name="QuitButton" type="Button" parent="MenuContent/MenuButtons" unique_id=1407777218]
 custom_minimum_size = Vector2(100, 20)
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-theme_override_styles/normal = ExtResource("1_kt3cy")
+theme_override_styles/normal = ExtResource("2_nbdjd")
 text = "Quit"
 
 [connection signal="pressed" from="MenuContent/MenuButtons/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
