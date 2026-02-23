@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://k7ghjsy8g1k0"]
 
 [ext_resource type="Script" uid="uid://b43405oisie5a" path="res://SCRIPTS/main_menu.gd" id="1_vkagb"]
+[ext_resource type="Texture2D" uid="uid://qigvhtnmmw2v" path="res://ASSETS/Art/early_ots_background.png" id="2_bea8q"]
 [ext_resource type="PackedScene" uid="uid://dx0chp7qyu28g" path="res://SCENES/GUI/game_button.tscn" id="2_wpmqk"]
 [ext_resource type="StyleBox" uid="uid://1mss4twkxib3" path="res://enemy anemone/button_box.tres" id="2_y3ir5"]
 [ext_resource type="PackedScene" uid="uid://4s4dwl4ctoln" path="res://ASTRONAUT GAME/SCENE/start_menu.tscn" id="3_a16px"]
@@ -21,6 +22,13 @@ custom_minimum_size = Vector2(1280, 720)
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_vkagb")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=976444306]
+z_index = -6
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_bea8q")
 
 [node name="MenuContent" type="VBoxContainer" parent="." unique_id=478153323]
 clip_contents = true
