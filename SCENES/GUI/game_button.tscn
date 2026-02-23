@@ -1,9 +1,90 @@
 [gd_scene format=3 uid="uid://dx0chp7qyu28g"]
 
 [ext_resource type="Script" uid="uid://dwqai580kdrmj" path="res://SCRIPTS/game_button.gd" id="1_scjks"]
+[ext_resource type="Texture2D" uid="uid://1opk652mxknx" path="res://ASSETS/Art/CRT_Frame.png" id="2_02ya7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_02ya7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_02ya7"]
+bg_color = Color(0, 0, 0, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_asmqn"]
+bg_color = Color(0.225, 0.225, 0.225, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_swam8"]
+bg_color = Color(0.1, 0.1, 0.1, 0.3)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_askvw"]
+bg_color = Color(1, 1, 1, 0.75)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="Gradient" id="Gradient_02ya7"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.17283279, 0.17283264, 0.17283261, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_asmqn"]
+gradient = SubResource("Gradient_02ya7")
+
+[sub_resource type="Theme" id="Theme_swam8"]
 
 [node name="GameButton" type="Button" unique_id=2085780568]
-custom_minimum_size = Vector2(256, 256)
+z_index = 1
+theme_override_styles/normal = SubResource("StyleBoxEmpty_02ya7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_02ya7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_asmqn")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_swam8")
+theme_override_styles/focus = SubResource("StyleBoxFlat_askvw")
+icon = ExtResource("2_02ya7")
 script = ExtResource("1_scjks")
+
+[node name="TVBackground" type="TextureRect" parent="." unique_id=2011505073]
+z_index = -2
+custom_minimum_size = Vector2(176, 176)
+layout_mode = 0
+offset_left = 21.0
+offset_top = 13.0
+offset_right = 197.0
+offset_bottom = 189.0
+texture = SubResource("GradientTexture1D_asmqn")
+expand_mode = 2
+
+[node name="GameTexture" type="TextureRect" parent="." unique_id=765472008]
+z_as_relative = false
+layout_mode = 0
+offset_left = 21.0
+offset_top = 13.0
+offset_right = 197.0
+offset_bottom = 189.0
+theme = SubResource("Theme_swam8")
+expand_mode = 2
+stretch_mode = 5
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]
