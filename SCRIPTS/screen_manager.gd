@@ -4,12 +4,13 @@ extends Node
 
 @onready var hud: HUD = $HUD
 
-var level: Level
+var level: Node
 var game_ended = false
 var paused = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Globals.game_selected.connect(_set_level)
 	show_main_menu()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

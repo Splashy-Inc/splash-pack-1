@@ -1,7 +1,14 @@
 [gd_scene format=3 uid="uid://k7ghjsy8g1k0"]
 
 [ext_resource type="Script" uid="uid://b43405oisie5a" path="res://SCRIPTS/main_menu.gd" id="1_vkagb"]
+[ext_resource type="PackedScene" uid="uid://dx0chp7qyu28g" path="res://SCENES/GUI/game_button.tscn" id="2_wpmqk"]
 [ext_resource type="StyleBox" uid="uid://1mss4twkxib3" path="res://enemy anemone/button_box.tres" id="2_y3ir5"]
+[ext_resource type="PackedScene" uid="uid://4s4dwl4ctoln" path="res://ASTRONAUT GAME/SCENE/start_menu.tscn" id="3_a16px"]
+[ext_resource type="PackedScene" uid="uid://co77vqbj8tbj4" path="res://UFO GAME/SCENE/start_menu.tscn" id="4_bmvmn"]
+[ext_resource type="PackedScene" uid="uid://uu8u2nc5qbp8" path="res://ROCKET GAME/SCENES/game.tscn" id="5_k7bo5"]
+[ext_resource type="PackedScene" uid="uid://spw27ulppftv" path="res://enemy anemone/SCENES/screen_manager_enemy_anemone.tscn" id="6_23eia"]
+[ext_resource type="PackedScene" uid="uid://bkuiywlcb3jfm" path="res://saloon slinger/SCENES/start_menu.tscn" id="7_a5mwf"]
+[ext_resource type="PackedScene" uid="uid://d2hedx76cs7qs" path="res://saloon slots/SCENES/screen_manager.tscn" id="8_t3oou"]
 
 [node name="MainMenu" type="Control" unique_id=1345321880]
 custom_minimum_size = Vector2(1280, 720)
@@ -36,29 +43,29 @@ theme_override_constants/h_separation = 32
 theme_override_constants/v_separation = 32
 columns = 3
 
-[node name="Button" type="Button" parent="MenuContent/GridContainer" unique_id=1429388856]
-custom_minimum_size = Vector2(256, 256)
+[node name="GameButton" parent="MenuContent/GridContainer" unique_id=2085780568 instance=ExtResource("2_wpmqk")]
 layout_mode = 2
+game_scene = ExtResource("3_a16px")
 
-[node name="Button2" type="Button" parent="MenuContent/GridContainer" unique_id=1993571288]
-custom_minimum_size = Vector2(256, 256)
+[node name="GameButton2" parent="MenuContent/GridContainer" unique_id=497642285 instance=ExtResource("2_wpmqk")]
 layout_mode = 2
+game_scene = ExtResource("4_bmvmn")
 
-[node name="Button3" type="Button" parent="MenuContent/GridContainer" unique_id=1164718386]
-custom_minimum_size = Vector2(256, 256)
+[node name="GameButton3" parent="MenuContent/GridContainer" unique_id=194435395 instance=ExtResource("2_wpmqk")]
 layout_mode = 2
+game_scene = ExtResource("5_k7bo5")
 
-[node name="Button4" type="Button" parent="MenuContent/GridContainer" unique_id=347302460]
-custom_minimum_size = Vector2(256, 256)
+[node name="GameButton4" parent="MenuContent/GridContainer" unique_id=184273307 instance=ExtResource("2_wpmqk")]
 layout_mode = 2
+game_scene = ExtResource("6_23eia")
 
-[node name="Button5" type="Button" parent="MenuContent/GridContainer" unique_id=1228734592]
-custom_minimum_size = Vector2(256, 256)
+[node name="GameButton5" parent="MenuContent/GridContainer" unique_id=2048903122 instance=ExtResource("2_wpmqk")]
 layout_mode = 2
+game_scene = ExtResource("7_a5mwf")
 
-[node name="Button6" type="Button" parent="MenuContent/GridContainer" unique_id=1011485476]
-custom_minimum_size = Vector2(256, 256)
+[node name="GameButton6" parent="MenuContent/GridContainer" unique_id=1413564241 instance=ExtResource("2_wpmqk")]
 layout_mode = 2
+game_scene = ExtResource("8_t3oou")
 
 [node name="MenuButtons" type="VBoxContainer" parent="MenuContent" unique_id=1981508240]
 layout_mode = 2

@@ -12,7 +12,6 @@ layer = 2
 script = ExtResource("1_w38b1")
 
 [node name="MenuScreens" type="Control" parent="." unique_id=1843252566]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -27,7 +26,6 @@ offset_bottom = 360.0
 color = Color(0, 0, 0, 0.662745)
 
 [node name="MainMenu" parent="MenuScreens" unique_id=1644337908 instance=ExtResource("4_f58rm")]
-visible = false
 layout_mode = 0
 offset_right = 640.0
 offset_bottom = 360.0

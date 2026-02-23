@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dx0chp7qyu28g"]
+
+[ext_resource type="Script" uid="uid://dwqai580kdrmj" path="res://SCRIPTS/game_button.gd" id="1_scjks"]
+
+[node name="GameButton" type="Button" unique_id=2085780568]
+custom_minimum_size = Vector2(256, 256)
+script = ExtResource("1_scjks")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
