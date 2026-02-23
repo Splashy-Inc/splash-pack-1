@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://b43405oisie5a" path="res://SCRIPTS/main_menu.gd" id="1_vkagb"]
 [ext_resource type="Texture2D" uid="uid://qigvhtnmmw2v" path="res://ASSETS/Art/early_ots_background.png" id="2_bea8q"]
 [ext_resource type="PackedScene" uid="uid://dx0chp7qyu28g" path="res://SCENES/GUI/game_button.tscn" id="2_wpmqk"]
-[ext_resource type="StyleBox" uid="uid://1mss4twkxib3" path="res://enemy anemone/button_box.tres" id="2_y3ir5"]
 [ext_resource type="PackedScene" uid="uid://4s4dwl4ctoln" path="res://ASTRONAUT GAME/SCENE/start_menu.tscn" id="3_a16px"]
 [ext_resource type="Texture2D" uid="uid://ciy6txur0q1ne" path="res://ASTRONAUT GAME/ASSETS/Player/Splorsh.png" id="4_a16px"]
 [ext_resource type="PackedScene" uid="uid://co77vqbj8tbj4" path="res://UFO GAME/SCENE/start_menu.tscn" id="4_bmvmn"]
@@ -16,6 +15,37 @@
 [ext_resource type="Texture2D" uid="uid://by205yb6qxb4d" path="res://enemy anemone/Exports/index.icon.png" id="10_6geyp"]
 [ext_resource type="Texture2D" uid="uid://domt2ilfu4m12" path="res://saloon slinger/Exports/index.icon.png" id="12_ov6x7"]
 [ext_resource type="Texture2D" uid="uid://c4l3wu8al6nlu" path="res://saloon slots/ASSETS/Itch/LeverImage.png" id="14_t3oou"]
+[ext_resource type="Texture2D" uid="uid://b3clhap0lbg2u" path="res://ASSETS/Art/Early_ots_Gui.png" id="16_bea8q"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bea8q"]
+texture = ExtResource("16_bea8q")
+expand_margin_left = 48.0
+expand_margin_right = 48.0
+expand_margin_bottom = 10.0
+region_rect = Rect2(64, 0, 64, 64)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wqbys"]
+texture = ExtResource("16_bea8q")
+expand_margin_left = 32.0
+expand_margin_right = 32.0
+expand_margin_bottom = 8.0
+region_rect = Rect2(128, 0, 64, 64)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6geyp"]
+texture = ExtResource("16_bea8q")
+region_rect = Rect2(0, 64, 64, 64)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ov6x7"]
+texture = ExtResource("16_bea8q")
+region_rect = Rect2(0, 128, 64, 64)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qfbl3"]
+texture = ExtResource("16_bea8q")
+region_rect = Rect2(0, 0, 64, 64)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_afvyf"]
+texture = ExtResource("16_bea8q")
+region_rect = Rect2(0, 0, 64, 64)
 
 [node name="MainMenu" type="Control" unique_id=1345321880]
 custom_minimum_size = Vector2(1280, 720)
@@ -40,13 +70,19 @@ alignment = 1
 
 [node name="Title" type="Label" parent="MenuContent" unique_id=715066472]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 72
+theme_override_styles/normal = SubResource("StyleBoxTexture_bea8q")
 text = "Splash Pack 1	"
 horizontal_alignment = 1
 
 [node name="Subtitle" type="Label" parent="MenuContent" unique_id=1542715903]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxTexture_wqbys")
 text = "In SPACE!"
 horizontal_alignment = 1
 
@@ -97,7 +133,10 @@ alignment = 1
 custom_minimum_size = Vector2(100, 20)
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-theme_override_styles/normal = ExtResource("2_y3ir5")
+theme_override_styles/normal = SubResource("StyleBoxTexture_6geyp")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ov6x7")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qfbl3")
+theme_override_styles/focus = SubResource("StyleBoxTexture_afvyf")
 text = "Quit"
 
 [connection signal="pressed" from="MenuContent/MenuButtons/QuitButton" to="." method="_on_quit_button_pressed"]
