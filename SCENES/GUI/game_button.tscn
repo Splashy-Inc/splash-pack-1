@@ -7,27 +7,24 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_02ya7"]
 bg_color = Color(0, 0, 0, 0.6)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_asmqn"]
 bg_color = Color(0.225, 0.225, 0.225, 0.6)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_swam8"]
 bg_color = Color(0.1, 0.1, 0.1, 0.3)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_askvw"]
 bg_color = Color(1, 1, 1, 0.75)
@@ -46,6 +43,10 @@ expand_margin_top = 2.0
 expand_margin_right = 2.0
 expand_margin_bottom = 2.0
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_asmqn"]
+atlas = ExtResource("2_02ya7")
+region = Rect2(2, 1, 214, 226)
+
 [sub_resource type="Gradient" id="Gradient_02ya7"]
 offsets = PackedFloat32Array(0)
 colors = PackedColorArray(0.17283279, 0.17283264, 0.17283261, 1)
@@ -57,12 +58,14 @@ gradient = SubResource("Gradient_02ya7")
 
 [node name="GameButton" type="Button" unique_id=2085780568]
 z_index = 1
+offset_right = 214.0
+offset_bottom = 226.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_02ya7")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_02ya7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_asmqn")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_swam8")
 theme_override_styles/focus = SubResource("StyleBoxFlat_askvw")
-icon = ExtResource("2_02ya7")
+icon = SubResource("AtlasTexture_asmqn")
 script = ExtResource("1_scjks")
 
 [node name="TVBackground" type="TextureRect" parent="." unique_id=2011505073]
