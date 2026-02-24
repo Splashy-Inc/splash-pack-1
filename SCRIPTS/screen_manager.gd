@@ -31,6 +31,8 @@ func _pause_play():
 		level.pause_play()
 
 func show_main_menu():
+	if not $AudioStreamPlayer.playing:
+		$AudioStreamPlayer.play()
 	_pause_play()
 	if level:
 		level.queue_free()
@@ -97,6 +99,8 @@ func _on_level_selected(new_level_scene: PackedScene):
 	_set_level(new_level_scene)
 
 func _set_level(new_level_scene: PackedScene):
+	$AudioStreamPlayer.stop()
+	AudioPlayerWormholes.stop()
 	level_scene = new_level_scene
 	Globals.cur_level_scene = level_scene
 	_restart_level()
@@ -104,4 +108,5 @@ func _set_level(new_level_scene: PackedScene):
 
 func _on_main_menu_pressed() -> void:
 	GameMusicSaloonSlinger.stop()
+	AudioPlayerWormholes.stop()
 	show_main_menu()
