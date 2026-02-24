@@ -103,4 +103,5 @@ func _set_level(new_level_scene: PackedScene):
 	_resume_play()
 
 func _on_main_menu_pressed() -> void:
+	GameMusicSaloonSlinger.stop()
 	show_main_menu()

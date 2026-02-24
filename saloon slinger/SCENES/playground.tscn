@@ -1,23 +1,23 @@
-[gd_scene format=3 uid="uid://dhvgc0glasyim"]
+[gd_scene format=3 uid="uid://dao5nbcvii2ef"]
 
-[ext_resource type="Script" uid="uid://tq0d6pw28e25" path="res://saloon slinger/SCRIPTS/playground.gd" id="1_5e8d0"]
-[ext_resource type="Texture2D" uid="uid://civ6bqg82r1lu" path="res://saloon slinger/ASSETS/BackGround.png" id="1_thoma"]
-[ext_resource type="PackedScene" uid="uid://skhuah8qm0ks" path="res://saloon slinger/SCENES/patron.tscn" id="4_00h3x"]
-[ext_resource type="PackedScene" uid="uid://drl0fag3aodkn" path="res://saloon slinger/SCENES/drink.tscn" id="5_ucqmk"]
-[ext_resource type="PackedScene" uid="uid://bask1qktq747g" path="res://saloon slinger/SCENES/bar.tscn" id="5_ur80v"]
-[ext_resource type="Texture2D" uid="uid://b6lt1b82nsbjx" path="res://saloon slinger/ASSETS/Player/Splorsh.png" id="6_kw675"]
-[ext_resource type="Texture2D" uid="uid://dvmhs5l17ok6o" path="res://saloon slinger/ASSETS/TapOff.png" id="6_mxud1"]
-[ext_resource type="Texture2D" uid="uid://d1jiwjtrtbsy3" path="res://saloon slinger/ASSETS/Door.png" id="7_eajuj"]
-[ext_resource type="Texture2D" uid="uid://cb82fparxttyy" path="res://saloon slinger/ASSETS/TapOn.png" id="7_i3nhs"]
-[ext_resource type="AudioStream" uid="uid://b6t1mynwmg0y6" path="res://saloon slinger/ASSETS/Audio/water_leak.ogg" id="8_untao"]
-[ext_resource type="Texture2D" uid="uid://blaoqyvlttjou" path="res://saloon slinger/ASSETS/Player/SplorshSling.png" id="9_jygwl"]
-[ext_resource type="Texture2D" uid="uid://dcjtm7ykd40o0" path="res://saloon slinger/ASSETS/Player/SplorshTap.png" id="10_e26ao"]
+[ext_resource type="Script" uid="uid://tq0d6pw28e25" path="res://saloon slinger/SCRIPTS/playground.gd" id="1_6sx85"]
+[ext_resource type="PackedScene" uid="uid://drl0fag3aodkn" path="res://saloon slinger/SCENES/drink.tscn" id="2_vwiwv"]
+[ext_resource type="PackedScene" uid="uid://skhuah8qm0ks" path="res://saloon slinger/SCENES/patron.tscn" id="3_ej1lk"]
+[ext_resource type="Texture2D" uid="uid://civ6bqg82r1lu" path="res://saloon slinger/ASSETS/BackGround.png" id="4_77d7u"]
+[ext_resource type="PackedScene" uid="uid://bask1qktq747g" path="res://saloon slinger/SCENES/bar.tscn" id="5_otrcy"]
+[ext_resource type="Texture2D" uid="uid://dvmhs5l17ok6o" path="res://saloon slinger/ASSETS/TapOff.png" id="6_r30ss"]
+[ext_resource type="Texture2D" uid="uid://cb82fparxttyy" path="res://saloon slinger/ASSETS/TapOn.png" id="7_kfj3j"]
+[ext_resource type="AudioStream" uid="uid://b6t1mynwmg0y6" path="res://saloon slinger/ASSETS/Audio/water_leak.ogg" id="8_b4osx"]
+[ext_resource type="Texture2D" uid="uid://d1jiwjtrtbsy3" path="res://saloon slinger/ASSETS/Door.png" id="9_u1vuh"]
+[ext_resource type="Texture2D" uid="uid://b6lt1b82nsbjx" path="res://saloon slinger/ASSETS/Player/Splorsh.png" id="10_e2bxa"]
+[ext_resource type="Texture2D" uid="uid://blaoqyvlttjou" path="res://saloon slinger/ASSETS/Player/SplorshSling.png" id="11_qse6h"]
+[ext_resource type="Texture2D" uid="uid://dcjtm7ykd40o0" path="res://saloon slinger/ASSETS/Player/SplorshTap.png" id="12_5jn7k"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tbf1d"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_mxud1")
+"texture": ExtResource("6_r30ss")
 }],
 "loop": true,
 "name": &"idle",
@@ -25,7 +25,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_i3nhs")
+"texture": ExtResource("7_kfj3j")
 }],
 "loop": true,
 "name": &"pour",
@@ -34,13 +34,13 @@ animations = [{
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_lp4cc"]
 streams_count = 1
-stream_0/stream = ExtResource("8_untao")
+stream_0/stream = ExtResource("8_b4osx")
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8ixy6"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_kw675")
+"texture": ExtResource("10_e2bxa")
 }],
 "loop": true,
 "name": &"default",
@@ -48,7 +48,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_jygwl")
+"texture": ExtResource("11_qse6h")
 }],
 "loop": false,
 "name": &"sling",
@@ -56,7 +56,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("10_e26ao")
+"texture": ExtResource("12_5jn7k")
 }],
 "loop": true,
 "name": &"tap",
@@ -68,16 +68,16 @@ outline_size = 5
 outline_color = Color(0, 0, 0, 1)
 
 [node name="Playground" type="Node" unique_id=1134468173]
-script = ExtResource("1_5e8d0")
-drink_scene = ExtResource("5_ucqmk")
-patron_scene = ExtResource("4_00h3x")
+script = ExtResource("1_6sx85")
+drink_scene = ExtResource("2_vwiwv")
+patron_scene = ExtResource("3_ej1lk")
 
 [node name="Background" type="Node2D" parent="." unique_id=375471081]
 z_index = -1
 
 [node name="BackGround" type="Sprite2D" parent="Background" unique_id=1426909295]
 position = Vector2(320, 180)
-texture = ExtResource("1_thoma")
+texture = ExtResource("4_77d7u")
 
 [node name="Patrons" type="Node2D" parent="." unique_id=1124369150]
 position = Vector2(0, 75)
@@ -85,7 +85,7 @@ position = Vector2(0, 75)
 [node name="Bartop" type="Node2D" parent="." unique_id=887389230]
 position = Vector2(0, 75)
 
-[node name="Bar" parent="Bartop" unique_id=1495606994 instance=ExtResource("5_ur80v")]
+[node name="Bar" parent="Bartop" unique_id=1495606994 instance=ExtResource("5_otrcy")]
 position = Vector2(319, 180)
 
 [node name="Tap" type="AnimatedSprite2D" parent="Bartop" unique_id=1518995914]
@@ -110,7 +110,7 @@ position = Vector2(600, 170)
 [node name="Door" type="Sprite2D" parent="Bartop" unique_id=1313458873]
 z_index = -1
 position = Vector2(409, -35)
-texture = ExtResource("7_eajuj")
+texture = ExtResource("9_u1vuh")
 
 [node name="Bartender" type="Node2D" parent="." unique_id=1981666377]
 position = Vector2(0, 75)

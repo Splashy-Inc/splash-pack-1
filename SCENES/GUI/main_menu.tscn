@@ -121,33 +121,40 @@ columns = 3
 layout_mode = 2
 game_scene = ExtResource("3_a16px")
 game_texture = ExtResource("4_a16px")
+game_name = "Landfall"
 
 [node name="GameButton2" parent="MenuContent/GridContainer" unique_id=497642285 instance=ExtResource("2_wpmqk")]
 layout_mode = 2
 game_scene = ExtResource("4_bmvmn")
 game_texture = ExtResource("6_t3oou")
+game_name = "Wormholes"
 
 [node name="GameButton3" parent="MenuContent/GridContainer" unique_id=194435395 instance=ExtResource("2_wpmqk")]
 layout_mode = 2
 game_scene = ExtResource("5_k7bo5")
 game_texture = ExtResource("8_bea8q")
+game_name = "Rockets"
 
 [node name="GameButton4" parent="MenuContent/GridContainer" unique_id=184273307 instance=ExtResource("2_wpmqk")]
 layout_mode = 2
 game_scene = ExtResource("6_23eia")
 game_texture = ExtResource("10_6geyp")
+game_name = "Enemy Anemone"
 
 [node name="GameButton5" parent="MenuContent/GridContainer" unique_id=2048903122 instance=ExtResource("2_wpmqk")]
 layout_mode = 2
 game_scene = ExtResource("7_a5mwf")
 game_texture = ExtResource("12_ov6x7")
+game_name = "Saloon Slinger"
 
 [node name="GameButton6" parent="MenuContent/GridContainer" unique_id=1413564241 instance=ExtResource("2_wpmqk")]
 layout_mode = 2
 game_scene = ExtResource("8_t3oou")
 game_texture = ExtResource("14_t3oou")
+game_name = "Saloon Slots"
 
 [node name="MenuButtons" type="VBoxContainer" parent="MenuContent" unique_id=1981508240]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = 10

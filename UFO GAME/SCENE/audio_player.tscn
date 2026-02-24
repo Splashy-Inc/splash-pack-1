@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://27g8rn77wckx"]
 
-[ext_resource type="Script" uid="uid://bocdygbm58qgn" path="res://UFO GAME/SCENE/audio_player.gd" id="1_3cwom"]
+[ext_resource type="Script" uid="uid://bocdygbm58qgn" path="res://UFO GAME/SCRIPTS/audio_player.gd" id="1_3cwom"]
 [ext_resource type="AudioStream" uid="uid://c3sdce2nda6ch" path="res://UFO GAME/ASSETS/AUDIO/UFOgame.mp3" id="1_frcib"]
 
 [node name="AudioPlayer" type="Node" unique_id=761720985]

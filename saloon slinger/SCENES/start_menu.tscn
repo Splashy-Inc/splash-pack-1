@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bkuiywlcb3jfm"]
 
 [ext_resource type="Script" uid="uid://2h5rg4jfnh0s" path="res://saloon slinger/SCRIPTS/start_menu.gd" id="1_lvjy2"]
-[ext_resource type="PackedScene" uid="uid://dhvgc0glasyim" path="res://saloon slinger/SCENES/playground.tscn" id="2_mpfrd"]
+[ext_resource type="PackedScene" uid="uid://dao5nbcvii2ef" path="res://saloon slinger/SCENES/playground.tscn" id="2_mpfrd"]
 [ext_resource type="Texture2D" uid="uid://bmm65txmgfwt6" path="res://saloon slinger/ASSETS/BG4MainMenu.png" id="2_vudfm"]
 
 [node name="StartMenu" type="Node" unique_id=68970510]

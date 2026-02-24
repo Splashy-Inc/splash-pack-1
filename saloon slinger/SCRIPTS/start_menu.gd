@@ -4,6 +4,9 @@ extends Node
 
 @onready var main_menu: Control = $MainMenu
 
+func _ready() -> void:
+	GameMusicSaloonSlinger.play()
+
 func _on_play_button_pressed() -> void:
 	main_menu.hide()
 	add_child(level_scene.instantiate())
