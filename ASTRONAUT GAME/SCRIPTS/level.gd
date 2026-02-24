@@ -1,5 +1,9 @@
 extends Node2D
 
+signal level_selected(level_scene: PackedScene)
+signal level_reset
+signal menu_pressed
+
 @export var next_level: PackedScene = null
 @export var is_final_level: bool = false
 
@@ -17,6 +21,8 @@ var time_left
 var win = false
 
 func _ready():
+	if is_instance_valid(hud):
+		hud.menu_pressed.connect(_on_menu_pressed)
 	player = get_tree().get_first_node_in_group("player")
 	if player != null and start != null:
 		player.global_position = start.get_spawn_posistion()
@@ -51,7 +57,7 @@ func _ready():
 	
 func _process(delta):
 	if Input.is_action_just_pressed("reset"):
-		get_tree().reload_current_scene()
+		level_reset.emit()
 	
 func _on_death_zone_body_entered(body):
 	_on_player_died()
@@ -66,9 +72,7 @@ func _on_player_died():
 func reset_player():
 	AudioPlayerLandfall.play_sfx("hurt")
 	player.velocity = Vector2.ZERO
-	#player.global_position = start.get_spawn_posistion()
-	get_tree().call_deferred("reload_current_scene")
-	
+	player.global_position = start.get_spawn_posistion()
 	
 #Load next level
 func _on_exit_body_entered(body):
@@ -81,6 +85,8 @@ func _on_exit_body_entered(body):
 			if is_final_level:
 				ui_layer.show_win_screen(true)
 			else:
-				get_tree().change_scene_to_packed(next_level)
+				level_selected.emit(next_level)
 			
-	
+
+func _on_menu_pressed():
+	menu_pressed.emit()

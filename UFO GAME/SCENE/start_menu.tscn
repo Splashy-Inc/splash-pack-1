@@ -13,6 +13,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xi58c")
+parent_path = "res://SCENES/screen_manager.tscn"
 
 [node name="BGMenus" parent="." unique_id=2017946529 instance=ExtResource("2_4m0sl")]
 

@@ -12,7 +12,6 @@
 [ext_resource type="AudioStream" uid="uid://b6t1mynwmg0y6" path="res://saloon slinger/ASSETS/Audio/water_leak.ogg" id="8_untao"]
 [ext_resource type="Texture2D" uid="uid://blaoqyvlttjou" path="res://saloon slinger/ASSETS/Player/SplorshSling.png" id="9_jygwl"]
 [ext_resource type="Texture2D" uid="uid://dcjtm7ykd40o0" path="res://saloon slinger/ASSETS/Player/SplorshTap.png" id="10_e26ao"]
-[ext_resource type="PackedScene" uid="uid://bxwj3vvikmli0" path="res://saloon slinger/SCENES/hud.tscn" id="12_gvr3o"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tbf1d"]
 animations = [{
@@ -133,8 +132,6 @@ offset_right = 202.0
 offset_bottom = 104.0
 text = "Click + drag or swipe right"
 label_settings = SubResource("LabelSettings_xbnqf")
-
-[node name="HUD" parent="." unique_id=1169399404 instance=ExtResource("12_gvr3o")]
 
 [connection signal="bar_slot_emptied" from="Bartop/Bar" to="." method="_on_bar_slot_emptied"]
 [connection signal="animation_finished" from="Bartender/Bartender" to="." method="_on_bartender_animation_finished"]

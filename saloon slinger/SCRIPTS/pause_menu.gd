@@ -15,3 +15,7 @@ func _on_restart_button_pressed() -> void:
 func pause():
 	show()
 	get_tree().paused = true
+
+
+func _on_quit_button_pressed() -> void:
+	Globals.return_to_main_menu.emit()

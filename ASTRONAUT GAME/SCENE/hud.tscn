@@ -65,3 +65,4 @@ visible = false
 layout_mode = 1
 
 [connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]
+[connection signal="menu_pressed" from="Pause" to="." method="_on_menu_pressed"]

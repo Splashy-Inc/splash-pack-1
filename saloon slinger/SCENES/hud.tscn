@@ -1,18 +1,20 @@
-[gd_scene format=3 uid="uid://bxwj3vvikmli0"]
+[gd_scene format=3 uid="uid://wk5iei6khri0"]
 
-[ext_resource type="Script" uid="uid://bskvacrrwj755" path="res://saloon slinger/SCRIPTS/hud.gd" id="1_sx7pg"]
-[ext_resource type="PackedScene" uid="uid://c3sldi7g5fcg6" path="res://saloon slinger/SCENES/pause_menu.tscn" id="2_l7tlb"]
+[ext_resource type="Script" uid="uid://bskvacrrwj755" path="res://saloon slinger/SCRIPTS/hud.gd" id="1_6odo3"]
+[ext_resource type="PackedScene" uid="uid://dkot5jyc3iby4" path="res://saloon slinger/SCENES/pause_menu.tscn" id="2_14ioh"]
 
-[node name="HUD" type="Control"]
+[node name="HUD" type="Control" unique_id=2084079718]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -640.0
+offset_bottom = -360.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_sx7pg")
+script = ExtResource("1_6odo3")
 
-[node name="PauseButton" type="Button" parent="."]
+[node name="PauseButton" type="Button" parent="." unique_id=1521143963]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -22,7 +24,7 @@ offset_bottom = 31.0
 grow_horizontal = 0
 text = "Pause"
 
-[node name="PauseMenu" parent="." instance=ExtResource("2_l7tlb")]
+[node name="PauseMenu" parent="." unique_id=2072154376 instance=ExtResource("2_14ioh")]
 visible = false
 layout_mode = 1
 

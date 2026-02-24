@@ -63,6 +63,7 @@ func updated_animation(direction):
 			
 func hit():
 	died.emit()
+	free()
 
 func add_speed_influencer(influencer):
 	if not influencer in speed_influencers:

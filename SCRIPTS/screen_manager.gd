@@ -11,6 +11,7 @@ var paused = true
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Globals.game_selected.connect(_set_level)
+	Globals.return_to_main_menu.connect(_on_main_menu_pressed)
 	show_main_menu()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

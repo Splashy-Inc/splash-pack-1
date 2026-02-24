@@ -2,6 +2,7 @@ extends Node
 
 signal info_updated
 signal game_selected(game_scene: PackedScene)
+signal return_to_main_menu
 
 var cur_level_scene: PackedScene
 

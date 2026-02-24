@@ -2,7 +2,28 @@
 
 [ext_resource type="Script" uid="uid://d3qallcqx5833" path="res://ASTRONAUT GAME/SCRIPTS/levels_menu.gd" id="1_iwb1a"]
 [ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://ASTRONAUT GAME/SCENE/BG.tscn" id="1_qrqwm"]
+[ext_resource type="PackedScene" uid="uid://4s4dwl4ctoln" path="res://ASTRONAUT GAME/SCENE/start_menu.tscn" id="2_45p14"]
 [ext_resource type="FontFile" uid="uid://cka5ber341jij" path="res://ASTRONAUT GAME/ASSETS/m5x7.ttf" id="2_coc65"]
+[ext_resource type="PackedScene" uid="uid://bpvqwvas53dap" path="res://ASTRONAUT GAME/SCENE/level_1.tscn" id="3_2c8eu"]
+[ext_resource type="PackedScene" uid="uid://bxjc38uhnal60" path="res://ASTRONAUT GAME/SCENE/level_02.tscn" id="4_cvxji"]
+[ext_resource type="PackedScene" uid="uid://dtjpy157bqm16" path="res://ASTRONAUT GAME/SCENE/level_03.tscn" id="5_ew6v7"]
+[ext_resource type="PackedScene" uid="uid://w4hv7utmdr0h" path="res://ASTRONAUT GAME/SCENE/level_4.tscn" id="6_dmqvf"]
+[ext_resource type="PackedScene" uid="uid://c51kgjlmi2swh" path="res://ASTRONAUT GAME/SCENE/level_05.tscn" id="7_eapye"]
+[ext_resource type="PackedScene" uid="uid://cg1y144xml4wf" path="res://ASTRONAUT GAME/SCENE/level_06.tscn" id="8_nyah6"]
+[ext_resource type="PackedScene" uid="uid://c7g16k1xl4y35" path="res://ASTRONAUT GAME/SCENE/level_07.tscn" id="9_kpgqw"]
+[ext_resource type="PackedScene" uid="uid://cqpvn2hm8krat" path="res://ASTRONAUT GAME/SCENE/level_08.tscn" id="10_0rrht"]
+[ext_resource type="PackedScene" uid="uid://bdwubm8uoqty3" path="res://ASTRONAUT GAME/SCENE/level_09.tscn" id="11_yiw4s"]
+[ext_resource type="PackedScene" uid="uid://komu852dqkfm" path="res://ASTRONAUT GAME/SCENE/level_10.tscn" id="12_cex48"]
+[ext_resource type="PackedScene" uid="uid://elfwk57rxtd3" path="res://ASTRONAUT GAME/SCENE/level_11.tscn" id="13_t0o2r"]
+[ext_resource type="PackedScene" uid="uid://c5pqvxmfkv6yl" path="res://ASTRONAUT GAME/SCENE/level_12.tscn" id="14_oytoj"]
+[ext_resource type="PackedScene" uid="uid://c8k872a0p1ttb" path="res://ASTRONAUT GAME/SCENE/level_13.tscn" id="15_ok8sa"]
+[ext_resource type="PackedScene" uid="uid://bk5rvrl2ttmxg" path="res://ASTRONAUT GAME/SCENE/level_14.tscn" id="16_inqkm"]
+[ext_resource type="PackedScene" uid="uid://dip1fk52kl443" path="res://ASTRONAUT GAME/SCENE/level_15.tscn" id="17_tk26u"]
+[ext_resource type="PackedScene" uid="uid://blefjsowfc0ls" path="res://ASTRONAUT GAME/SCENE/level_16.tscn" id="18_acovl"]
+[ext_resource type="PackedScene" uid="uid://knujxxilujj" path="res://ASTRONAUT GAME/SCENE/level_17.tscn" id="19_xs01x"]
+[ext_resource type="PackedScene" uid="uid://gsiavitygeh5" path="res://ASTRONAUT GAME/SCENE/level_18.tscn" id="20_uasbt"]
+[ext_resource type="PackedScene" uid="uid://b3oec2y30bauq" path="res://ASTRONAUT GAME/SCENE/level_19.tscn" id="21_t811b"]
+[ext_resource type="PackedScene" uid="uid://be5nae6lix3yf" path="res://ASTRONAUT GAME/SCENE/level_20.tscn" id="22_7lc63"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_l34hs"]
 font = ExtResource("2_coc65")
@@ -32,6 +53,8 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 64
 script = ExtResource("1_iwb1a")
+start_menu_scene = ExtResource("2_45p14")
+levels_scenes = Array[PackedScene]([ExtResource("3_2c8eu"), ExtResource("4_cvxji"), ExtResource("5_ew6v7"), ExtResource("6_dmqvf"), ExtResource("7_eapye"), ExtResource("8_nyah6"), ExtResource("9_kpgqw"), ExtResource("10_0rrht"), ExtResource("11_yiw4s"), ExtResource("12_cex48"), ExtResource("13_t0o2r"), ExtResource("14_oytoj"), ExtResource("15_ok8sa"), ExtResource("16_inqkm"), ExtResource("17_tk26u"), ExtResource("18_acovl"), ExtResource("19_xs01x"), ExtResource("20_uasbt"), ExtResource("21_t811b"), ExtResource("22_7lc63")])
 
 [node name="LevelSelectLabel" type="Label" parent="." unique_id=1884150432]
 layout_mode = 2

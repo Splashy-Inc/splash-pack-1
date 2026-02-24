@@ -45,7 +45,7 @@ func toggle_pause_menu():
 			_resume_play()
 
 func _on_quit_pressed():
-	get_tree().quit()
+	Globals.return_to_main_menu.emit()
 
 func _on_play_pressed():
 	if game_ended or not level:
@@ -56,6 +56,7 @@ func _on_play_pressed():
 func _input(event):
 	if event.is_action_pressed("pause"):
 		toggle_pause_menu()
+		get_viewport().set_input_as_handled()
 
 func _restart_level():
 	game_ended = false
