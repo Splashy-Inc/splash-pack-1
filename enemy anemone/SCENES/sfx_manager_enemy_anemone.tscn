@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://cmiraoyeq5xh6"]
-
-[ext_resource type="Script" uid="uid://ciha8n8tkv3lt" path="res://enemy anemone/SCRIPTS/sfx_manager_enemy_anemone.gd" id="1_craok"]
-
-[node name="SFXManager" type="Node2D" unique_id=1924909682]
-script = ExtResource("1_craok")

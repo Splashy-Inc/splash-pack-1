@@ -16,6 +16,7 @@ var active = true
 
 func _physics_process(delta):
 	if is_on_floor() == false:
+		print(gravity)
 		velocity.y += gravity * delta
 		if velocity.y > 500: 
 			velocity.y = 500
@@ -30,6 +31,7 @@ func _physics_process(delta):
 		
 		direction = Input.get_axis("move_left", "move_right")
 	if direction != 0:
+		print(direction)
 		animated_sprite.flip_h = direction == -1
 	
 	velocity.x = direction * speed * speed_multiplier
@@ -62,8 +64,9 @@ func updated_animation(direction):
 			animated_sprite.play("fall")
 			
 func hit():
+	collision_layer = 0
+	queue_free()
 	died.emit()
-	free()
 
 func add_speed_influencer(influencer):
 	if not influencer in speed_influencers:

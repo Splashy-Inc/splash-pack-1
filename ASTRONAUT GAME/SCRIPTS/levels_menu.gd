@@ -3,11 +3,11 @@ extends Control
 signal return_to_start_menu
 signal level_selected(level_scene: PackedScene)
 
-@export var start_menu_scene : PackedScene
+@export var start_menu_path : String
 @export var levels_scenes : Array[PackedScene]
 
 func _on_back_button_pressed():
-	Globals.game_selected.emit(start_menu_scene)
+	Globals.game_selected.emit(load(start_menu_path))
 
 #Kromulon Levels
 

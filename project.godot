@@ -51,7 +51,7 @@ Enemy=""
 [gui]
 
 theme/default_font_multichannel_signed_distance_field=true
-theme/custom_font="res://enemy anemone/ASSETS/Font/m5x7.ttf"
+theme/custom_font="uid://di1ynwh6doxnf"
 
 [input]
 
