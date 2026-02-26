@@ -1,9 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://fsueg6sfts72"]
+[gd_scene format=3 uid="uid://fsueg6sfts72"]
 
-[ext_resource type="Texture2D" uid="uid://bpodrygx85xk6" path="res://ASSETS/Scobus5/ASSETS/Watertop1.png" id="1_6ubas"]
-[ext_resource type="Texture2D" uid="uid://ct0lvt00d2q77" path="res://ASSETS/Scobus5/ASSETS/Watertop2.png" id="2_a77lh"]
-[ext_resource type="Texture2D" uid="uid://qrmkw4nnsqyb" path="res://ASSETS/Scobus5/ASSETS/Watertop3.png" id="3_m5uut"]
-[ext_resource type="Texture2D" uid="uid://b11ss4tpkpa8i" path="res://ASSETS/Scobus5/ASSETS/Watertop4.png" id="4_f5j5w"]
+[ext_resource type="Texture2D" uid="uid://bpodrygx85xk6" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Watertop1.png" id="1_6ubas"]
+[ext_resource type="Texture2D" uid="uid://ct0lvt00d2q77" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Watertop2.png" id="2_a77lh"]
+[ext_resource type="Texture2D" uid="uid://qrmkw4nnsqyb" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Watertop3.png" id="3_m5uut"]
+[ext_resource type="Texture2D" uid="uid://b11ss4tpkpa8i" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Watertop4.png" id="4_f5j5w"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sfuy3"]
 animations = [{

@@ -1,11 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://4s4dwl4ctoln"]
+[gd_scene format=3 uid="uid://4s4dwl4ctoln"]
 
-[ext_resource type="Script" path="res://SCRIPTS/start_menu.gd" id="1_d16bv"]
-[ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://SCENE/BG.tscn" id="1_uabni"]
+[ext_resource type="Script" uid="uid://bcekqbhh0piqs" path="res://ASTRONAUT GAME/SCRIPTS/start_menu.gd" id="1_d16bv"]
+[ext_resource type="PackedScene" uid="uid://d1n78tt1oejk8" path="res://ASTRONAUT GAME/SCENE/BG.tscn" id="1_uabni"]
+[ext_resource type="PackedScene" uid="uid://cvwve3jatgqb4" path="res://ASTRONAUT GAME/SCENE/intro_scene.tscn" id="2_60yf3"]
+[ext_resource type="FontFile" uid="uid://cka5ber341jij" path="res://ASTRONAUT GAME/ASSETS/m5x7.ttf" id="2_rev71"]
+[ext_resource type="PackedScene" uid="uid://d0bdhkxhkgqr8" path="res://ASTRONAUT GAME/SCENE/levels_menu.tscn" id="3_jlmnr"]
+[ext_resource type="PackedScene" uid="uid://ctluvdgy8jdmu" path="res://ASTRONAUT GAME/SCENE/audio_player.tscn" id="6_jlmnr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_j1j0g"]
 line_spacing = 5.0
-font_size = 30
+font = ExtResource("2_rev71")
+font_size = 128
 font_color = Color(1, 0.956863, 0.678431, 1)
 outline_size = 5
 outline_color = Color(0.858824, 0.603922, 0.34902, 1)
@@ -13,24 +18,26 @@ shadow_size = 5
 shadow_color = Color(0, 0, 0, 0.992157)
 shadow_offset = Vector2(5, 5)
 
-[node name="StartMenu" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="StartMenu" type="Node" unique_id=1495955884]
 script = ExtResource("1_d16bv")
+intro_scene = ExtResource("2_60yf3")
+levels_menu_scene = ExtResource("3_jlmnr")
 
-[node name="Title" type="Label" parent="."]
+[node name="StartMenu" type="Control" parent="." unique_id=265385966]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="StartMenu" unique_id=85593460]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -199.0
+offset_left = 328.0
 offset_top = 11.0
-offset_right = 199.0
-offset_bottom = 100.0
+offset_right = 912.0
+offset_bottom = 220.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.988235, 0.988235, 0.988235, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
@@ -42,55 +49,61 @@ label_settings = SubResource("LabelSettings_j1j0g")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BG" parent="." instance=ExtResource("1_uabni")]
+[node name="BG" parent="StartMenu" unique_id=124558317 instance=ExtResource("1_uabni")]
 
-[node name="StartButton" type="Button" parent="."]
+[node name="StartButton" type="Button" parent="StartMenu" unique_id=1768575854]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -65.0
-offset_top = -15.0
-offset_right = 65.0
-offset_bottom = 16.0
+offset_left = 541.0
+offset_top = 304.5
+offset_right = 699.0
+offset_bottom = 376.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("2_rev71")
+theme_override_font_sizes/font_size = 80
 text = "START"
 
-[node name="LevelsButton" type="Button" parent="."]
+[node name="LevelsButton" type="Button" parent="StartMenu" unique_id=742604931]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -45.0
-offset_top = -110.0
-offset_right = 49.0
-offset_bottom = -74.0
+offset_left = 535.5
+offset_top = 534.0
+offset_right = 708.5
+offset_bottom = 606.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("2_rev71")
+theme_override_font_sizes/font_size = 80
 text = "Levels"
 
-[node name="QuitButton" type="Button" parent="."]
+[node name="QuitButton" type="Button" parent="StartMenu" unique_id=1161323040]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -34.0
-offset_top = 70.0
-offset_right = 36.0
-offset_bottom = 101.0
+offset_left = 577.0
+offset_top = 396.0
+offset_right = 665.0
+offset_bottom = 455.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_rev71")
+theme_override_font_sizes/font_size = 64
 text = "Quit"
 
-[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="LevelsButton" to="." method="_on_levels_button_pressed"]
-[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[node name="AudioPlayer" parent="." unique_id=392042502 instance=ExtResource("6_jlmnr")]
+
+[connection signal="pressed" from="StartMenu/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="StartMenu/LevelsButton" to="." method="_on_levels_button_pressed"]
+[connection signal="pressed" from="StartMenu/QuitButton" to="." method="_on_quit_button_pressed"]

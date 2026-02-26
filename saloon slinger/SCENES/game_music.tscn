@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c64yrwii7b6nr"]
+
+[ext_resource type="Script" uid="uid://bocdygbm58qgn" path="res://UFO GAME/SCRIPTS/audio_player.gd" id="1_dowjy"]
+[ext_resource type="AudioStream" uid="uid://bjvx1oiadoto2" path="res://saloon slinger/ASSETS/Audio/saloon.ogg" id="1_fg3r6"]
+
+[node name="GameMusic" type="Node" unique_id=112449978]
+script = ExtResource("1_dowjy")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=290182974]
+stream = ExtResource("1_fg3r6")
+volume_db = -10.0

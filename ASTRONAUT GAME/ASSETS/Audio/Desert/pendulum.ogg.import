@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ckmg0mrigu7og"
-path="res://.godot/imported/pendulum.ogg-0a63467e2b4ae7da4f639fac442d0dd0.oggvorbisstr"
+path="res://.godot/imported/pendulum.ogg-fc1a45606558fb80b80daac3e8737558.oggvorbisstr"
 
 [deps]
 
-source_file="res://ASSETS/Audio/Desert/pendulum.ogg"
-dest_files=["res://.godot/imported/pendulum.ogg-0a63467e2b4ae7da4f639fac442d0dd0.oggvorbisstr"]
+source_file="res://ASTRONAUT GAME/ASSETS/Audio/Desert/pendulum.ogg"
+dest_files=["res://.godot/imported/pendulum.ogg-fc1a45606558fb80b80daac3e8737558.oggvorbisstr"]
 
 [params]
 

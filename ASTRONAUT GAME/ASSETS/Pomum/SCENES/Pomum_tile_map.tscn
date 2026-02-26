@@ -1,6 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://dgx6ngsqs1asd"]
+[gd_scene format=3 uid="uid://dgx6ngsqs1asd"]
 
-[ext_resource type="Texture2D" uid="uid://bd4f2sxo08i3i" path="res://ASSETS/Pomum/ASSETS/Terrain/PomumTerrain.png" id="1_xtj25"]
+[ext_resource type="Texture2D" uid="uid://bd4f2sxo08i3i" path="res://ASTRONAUT GAME/ASSETS/Pomum/ASSETS/Terrain/PomumTerrain.png" id="1_xtj25"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_inqyx"]
 tile_data = PackedInt32Array(0, 131072, 1, 8, 131072, 1)

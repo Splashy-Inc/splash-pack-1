@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://hngg4k8fs6h"
+path="res://.godot/imported/Hep Cat Jive.mp3-364b4d587e71bf314c01ff6a9256d70b.mp3str"
+
+[deps]
+
+source_file="res://ASSETS/Hep Cat Jive.mp3"
+dest_files=["res://.godot/imported/Hep Cat Jive.mp3-364b4d587e71bf314c01ff6a9256d70b.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

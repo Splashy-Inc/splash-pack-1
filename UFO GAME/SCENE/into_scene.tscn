@@ -1,10 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://id6tv0fprkeu"]
+[gd_scene format=3 uid="uid://id6tv0fprkeu"]
 
-[ext_resource type="Script" path="res://SCRIPTS/into_scene.gd" id="1_r55il"]
-[ext_resource type="Texture2D" uid="uid://ousoteoa23yy" path="res://ASSETS/PLAYER/SploshShipSpriteSheet.png" id="2_pe8a0"]
-[ext_resource type="PackedScene" uid="uid://c5aeo451sdwy" path="res://SCENE/background_01.tscn" id="3_m6rkd"]
-[ext_resource type="AudioStream" uid="uid://xqbkjstiepn4" path="res://ASSETS/AUDIO/SaveMyBabies.ogg" id="4_74w4n"]
-[ext_resource type="Texture2D" uid="uid://ddiwmx7e3agtq" path="res://ASSETS/fish_watercolor_neutral.png" id="9_u7oet"]
+[ext_resource type="Script" uid="uid://bptytxjsdlvip" path="res://UFO GAME/SCRIPTS/into_scene.gd" id="1_r55il"]
+[ext_resource type="Texture2D" uid="uid://ousoteoa23yy" path="res://UFO GAME/ASSETS/PLAYER/SploshShipSpriteSheet.png" id="2_pe8a0"]
+[ext_resource type="PackedScene" uid="uid://c5aeo451sdwy" path="res://UFO GAME/SCENE/background_01.tscn" id="3_m6rkd"]
+[ext_resource type="AudioStream" uid="uid://xqbkjstiepn4" path="res://UFO GAME/ASSETS/AUDIO/SaveMyBabies.ogg" id="4_74w4n"]
+[ext_resource type="FontFile" uid="uid://cka5ber341jij" path="res://ASTRONAUT GAME/ASSETS/m5x7.ttf" id="4_ptv1y"]
+[ext_resource type="Texture2D" uid="uid://ddiwmx7e3agtq" path="res://UFO GAME/ASSETS/fish_watercolor_neutral.png" id="9_u7oet"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tg4oo"]
 atlas = ExtResource("2_pe8a0")
@@ -120,48 +121,50 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_yjivs"]
 _data = {
-"RESET": SubResource("Animation_ea1tq"),
-"splashy_spiral": SubResource("Animation_vxg4k")
+&"RESET": SubResource("Animation_ea1tq"),
+&"splashy_spiral": SubResource("Animation_vxg4k")
 }
 
 [sub_resource type="LabelSettings" id="LabelSettings_t548a"]
 line_spacing = 1.0
-font_size = 22
+font = ExtResource("4_ptv1y")
+font_size = 48
 outline_size = 5
 outline_color = Color(0, 0, 0, 1)
 
-[node name="IntoScene" type="CanvasLayer"]
+[node name="IntoScene" type="CanvasLayer" unique_id=1261209261]
 script = ExtResource("1_r55il")
 
-[node name="Splashy" type="Node" parent="."]
+[node name="Background_01" parent="." unique_id=1950660039 instance=ExtResource("3_m6rkd")]
+position = Vector2(795, 506)
 
-[node name="Sprite" type="AnimatedSprite2D" parent="Splashy"]
+[node name="Splashy" type="Node" parent="." unique_id=2028060529]
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Splashy" unique_id=1973320672]
 position = Vector2(1099, 461)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_vnpfl")
 autoplay = "default"
 frame_progress = 0.47556
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Splashy"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Splashy" unique_id=367891703]
 root_node = NodePath("../..")
-libraries = {
-"": SubResource("AnimationLibrary_yjivs")
-}
+libraries/ = SubResource("AnimationLibrary_yjivs")
 
-[node name="Dialog" type="PanelContainer" parent="."]
+[node name="Dialog" type="PanelContainer" parent="." unique_id=152075892]
 visible = false
-offset_top = 534.0
+offset_top = 526.0
 offset_right = 1280.0
-offset_bottom = 722.0
+offset_bottom = 720.0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Dialog"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Dialog" unique_id=1131995703]
 layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="Spacer" type="Container" parent="Dialog/HBoxContainer"]
+[node name="Spacer" type="Container" parent="Dialog/HBoxContainer" unique_id=1849419008]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Dialog/HBoxContainer"]
+[node name="Label" type="Label" parent="Dialog/HBoxContainer" unique_id=1748643570]
 custom_minimum_size = Vector2(592, 188)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -174,24 +177,22 @@ Please save them Captain Splorsh! Please!"
 label_settings = SubResource("LabelSettings_t548a")
 autowrap_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="Dialog/HBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="Dialog/HBoxContainer" unique_id=408341791]
 layout_mode = 2
 texture = ExtResource("9_u7oet")
 expand_mode = 3
 flip_h = true
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Dialog"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Dialog" unique_id=1231177590]
 stream = ExtResource("4_74w4n")
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=685269800]
 offset_left = 1169.0
 offset_top = 18.0
 offset_right = 1265.0
 offset_bottom = 54.0
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("4_ptv1y")
+theme_override_font_sizes/font_size = 48
 text = "Next"
-
-[node name="Background_01" parent="." instance=ExtResource("3_m6rkd")]
-position = Vector2(795, 506)
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

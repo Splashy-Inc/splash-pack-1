@@ -1,8 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://bgggrt1p3ejsy"]
+[gd_scene format=3 uid="uid://bgggrt1p3ejsy"]
 
-[ext_resource type="Script" path="res://SCRIPTS/player.gd" id="1_2yrnq"]
-[ext_resource type="Texture2D" uid="uid://d17y5ad37yor" path="res://ASSETS/Splishship.png" id="1_rtesh"]
-[ext_resource type="AudioStream" uid="uid://dwrdowqvywxpg" path="res://ASSETS/PEW.wav" id="3_yanck"]
+[ext_resource type="Script" uid="uid://6xrnmd71vyxr" path="res://ROCKET GAME/SCRIPTS/game.gd" id="1_2yrnq"]
+[ext_resource type="Texture2D" uid="uid://d17y5ad37yor" path="res://ROCKET GAME/ASSETS/Splishship.png" id="1_rtesh"]
+[ext_resource type="AudioStream" uid="uid://dwrdowqvywxpg" path="res://ROCKET GAME/ASSETS/PEW.wav" id="3_yanck"]
 
 [sub_resource type="Gradient" id="Gradient_7mxca"]
 offsets = PackedFloat32Array(0.106557, 0.581967, 1)

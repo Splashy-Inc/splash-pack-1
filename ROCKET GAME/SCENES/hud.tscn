@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dg5bjrwdd0x71"]
+[gd_scene format=3 uid="uid://dg5bjrwdd0x71"]
 
-[ext_resource type="Script" path="res://SCRIPTS/hud.gd" id="1_mir7y"]
-[ext_resource type="Texture2D" uid="uid://bg8w8056ydpkc" path="res://ASSETS/SplishLife.png" id="2_66hcs"]
+[ext_resource type="Script" uid="uid://drh23775h63v4" path="res://ROCKET GAME/SCRIPTS/hud.gd" id="1_mir7y"]
+[ext_resource type="Texture2D" uid="uid://bg8w8056ydpkc" path="res://ROCKET GAME/ASSETS/SplishLife.png" id="2_66hcs"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8dine"]
 font_size = 48

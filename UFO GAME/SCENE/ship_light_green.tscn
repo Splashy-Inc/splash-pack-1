@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c8bmf4h8y3gvh"]
+[gd_scene format=3 uid="uid://c8bmf4h8y3gvh"]
 
-[ext_resource type="Texture2D" uid="uid://bvjqthq7u0s21" path="res://ASSETS/SHIPUPGRADES/ShipLightGreen.png" id="1_02wt8"]
-[ext_resource type="Script" path="res://SCRIPTS/ship_light_green.gd" id="1_3nohb"]
-[ext_resource type="AudioStream" uid="uid://chdu6bl2qu0sj" path="res://ASSETS/AUDIO/EggNoise.wav" id="3_tpeux"]
+[ext_resource type="Texture2D" uid="uid://bvjqthq7u0s21" path="res://UFO GAME/ASSETS/SHIPUPGRADES/ShipLightGreen.png" id="1_02wt8"]
+[ext_resource type="Script" uid="uid://fa1y1nhs40wm" path="res://UFO GAME/SCRIPTS/ship_light_green.gd" id="1_3nohb"]
+[ext_resource type="AudioStream" uid="uid://chdu6bl2qu0sj" path="res://UFO GAME/ASSETS/AUDIO/EggNoise.wav" id="3_tpeux"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w8lep"]
 radius = 4.0

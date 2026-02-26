@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ddqlcw3ej242h"
+path="res://.godot/imported/snailIdle_3.ogg-ac71c79d11e1bab88f9c009bf8a6375a.oggvorbisstr"
+
+[deps]
+
+source_file="res://enemy anemone/ASSETS/Audio/snail/snailIdle_3.ogg"
+dest_files=["res://.godot/imported/snailIdle_3.ogg-ac71c79d11e1bab88f9c009bf8a6375a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

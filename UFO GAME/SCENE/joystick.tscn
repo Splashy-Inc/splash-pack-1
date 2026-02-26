@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cfbse8qnrkqdr"]
+[gd_scene format=3 uid="uid://cfbse8qnrkqdr"]
 
-[ext_resource type="Script" path="res://SCRIPTS/joystick.gd" id="1_nsi5b"]
-[ext_resource type="Texture2D" uid="uid://b5k6cdvhkme5f" path="res://ASSETS/PLAYER/JoystickRing.png" id="2_55knc"]
-[ext_resource type="Texture2D" uid="uid://cblkb2nyvuba6" path="res://ASSETS/PLAYER/Joystick.png" id="3_uls3t"]
-[ext_resource type="Script" path="res://SCRIPTS/knob.gd" id="4_s6r2d"]
+[ext_resource type="Script" uid="uid://bhi4wqpixrdtd" path="res://UFO GAME/SCRIPTS/joystick.gd" id="1_nsi5b"]
+[ext_resource type="Texture2D" uid="uid://b5k6cdvhkme5f" path="res://UFO GAME/ASSETS/PLAYER/JoystickRing.png" id="2_55knc"]
+[ext_resource type="Texture2D" uid="uid://cblkb2nyvuba6" path="res://UFO GAME/ASSETS/PLAYER/Joystick.png" id="3_uls3t"]
+[ext_resource type="Script" uid="uid://iu8sx78ks08q" path="res://UFO GAME/SCRIPTS/knob.gd" id="4_s6r2d"]
 
 [node name="joystick" type="Node2D"]
 z_index = 10

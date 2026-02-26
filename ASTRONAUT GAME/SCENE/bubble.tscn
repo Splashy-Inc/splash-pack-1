@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://ckra64lrageiy"]
+[gd_scene format=3 uid="uid://ckra64lrageiy"]
 
-[ext_resource type="Texture2D" uid="uid://djwi7mkwim2bp" path="res://ASSETS/Other/BubbleA.png" id="1_0ktl1"]
-[ext_resource type="Texture2D" uid="uid://dxb8l708b1ror" path="res://ASSETS/Other/BubbleB.png" id="2_8o7rh"]
+[ext_resource type="Texture2D" uid="uid://djwi7mkwim2bp" path="res://ASTRONAUT GAME/ASSETS/Other/BubbleA.png" id="1_0ktl1"]
+[ext_resource type="Texture2D" uid="uid://dxb8l708b1ror" path="res://ASTRONAUT GAME/ASSETS/Other/BubbleB.png" id="2_8o7rh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ysj8y"]
 animations = [{

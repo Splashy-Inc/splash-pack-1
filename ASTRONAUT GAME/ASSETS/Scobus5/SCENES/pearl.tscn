@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://ewfy6gokgqr3"]
+[gd_scene format=3 uid="uid://ewfy6gokgqr3"]
 
-[ext_resource type="Script" path="res://ASSETS/Scobus5/SCRIPTS/pearl.gd" id="1_013jy"]
-[ext_resource type="Texture2D" uid="uid://dtr7oejui0e0w" path="res://ASSETS/Scobus5/ASSETS/Pearl.png" id="1_dyhjj"]
+[ext_resource type="Script" uid="uid://cqn3fa5xww31y" path="res://ASTRONAUT GAME/ASSETS/Scobus5/SCRIPTS/pearl.gd" id="1_013jy"]
+[ext_resource type="Texture2D" uid="uid://dtr7oejui0e0w" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Pearl.png" id="1_dyhjj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_81vqp"]
 radius = 7.0

@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dwvh6tkxy5h0x"]
+[gd_scene format=3 uid="uid://dwvh6tkxy5h0x"]
 
-[ext_resource type="Script" path="res://SCRIPTS/start.gd" id="1_ytgjj"]
-[ext_resource type="Texture2D" uid="uid://b4wmkc4l71lgf" path="res://ASSETS/INTERACTABLES/BlackHoleBlue.png" id="2_4udw3"]
+[ext_resource type="Script" uid="uid://c060iwul36usb" path="res://UFO GAME/SCRIPTS/start.gd" id="1_ytgjj"]
+[ext_resource type="Texture2D" uid="uid://b4wmkc4l71lgf" path="res://UFO GAME/ASSETS/INTERACTABLES/BlackHoleBlue.png" id="2_4udw3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3wf57"]
 radius = 24.0208

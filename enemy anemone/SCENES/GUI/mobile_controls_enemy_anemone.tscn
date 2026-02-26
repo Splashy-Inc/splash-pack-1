@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://cwo3k3i7xwa1o"]
+
+[ext_resource type="Script" uid="uid://bgy631mv21i6o" path="res://enemy anemone/SCRIPTS/mobile_controls_enemy_anemone.gd" id="1_paf51"]
+[ext_resource type="PackedScene" uid="uid://cdjtvgaru7332" path="res://enemy anemone/SCENES/joystick_enemy_anemone.tscn" id="2_wxafq"]
+[ext_resource type="Texture2D" uid="uid://dderrxfilnhs6" path="res://enemy anemone/ASSETS/Art/blast/BlastButton.png" id="3_3vbqi"]
+[ext_resource type="Texture2D" uid="uid://5gafi3uh3r8w" path="res://enemy anemone/ASSETS/Art/clam/ClamButton.png" id="4_fkft4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dwxfs"]
+atlas = ExtResource("3_3vbqi")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8f7xx"]
+atlas = ExtResource("3_3vbqi")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g55o3"]
+atlas = ExtResource("4_fkft4")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mjog"]
+atlas = ExtResource("4_fkft4")
+region = Rect2(64, 0, 64, 64)
+
+[node name="MobileControls" type="Control" unique_id=503196827]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -360.0
+offset_right = 640.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_paf51")
+
+[node name="Joystick" parent="." unique_id=1764812670 instance=ExtResource("2_wxafq")]
+position = Vector2(202, 530)
+scale = Vector2(2, 2)
+
+[node name="BlastButton" type="TouchScreenButton" parent="." unique_id=1008949983]
+position = Vector2(946, 537)
+scale = Vector2(2, 2)
+texture_normal = SubResource("AtlasTexture_dwxfs")
+texture_pressed = SubResource("AtlasTexture_8f7xx")
+action = "blast"
+
+[node name="ClamButton" type="TouchScreenButton" parent="." unique_id=1461392982]
+position = Vector2(1092, 376)
+scale = Vector2(2, 2)
+texture_normal = SubResource("AtlasTexture_g55o3")
+texture_pressed = SubResource("AtlasTexture_2mjog")
+action = "tower"

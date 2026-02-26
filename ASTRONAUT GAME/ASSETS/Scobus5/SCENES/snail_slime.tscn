@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bj66u8iqvnjo4"]
+[gd_scene format=3 uid="uid://bj66u8iqvnjo4"]
 
-[ext_resource type="Script" path="res://ASSETS/Scobus5/SCRIPTS/snail_slime.gd" id="1_pk1gm"]
-[ext_resource type="Texture2D" uid="uid://c670vmnbkh765" path="res://ASSETS/Scobus5/ASSETS/SnailSlime.png" id="2_u4nee"]
-[ext_resource type="AudioStream" uid="uid://ck1s3xrbpgw0n" path="res://ASSETS/Scobus5/ASSETS/Scobus5Audio/slime.ogg" id="3_qp7kg"]
+[ext_resource type="Script" uid="uid://c7ym2js27yj1k" path="res://ASTRONAUT GAME/ASSETS/Scobus5/SCRIPTS/snail_slime.gd" id="1_pk1gm"]
+[ext_resource type="Texture2D" uid="uid://c670vmnbkh765" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/SnailSlime.png" id="2_u4nee"]
+[ext_resource type="AudioStream" uid="uid://ck1s3xrbpgw0n" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Scobus5Audio/slime.ogg" id="3_qp7kg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_826o3"]
 size = Vector2(16, 13)

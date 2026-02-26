@@ -1,6 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://c3yy7vfwkshnm"]
+[gd_scene format=3 uid="uid://c3yy7vfwkshnm"]
 
-[ext_resource type="Texture2D" uid="uid://d3j5363a7onp1" path="res://ASSETS/Scobus5/ASSETS/JellyfishSprite.png" id="1_a2ocu"]
+[ext_resource type="Texture2D" uid="uid://d3j5363a7onp1" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/JellyfishSprite.png" id="1_a2ocu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_asplf"]
 atlas = ExtResource("1_a2ocu")

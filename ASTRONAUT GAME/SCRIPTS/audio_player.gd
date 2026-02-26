@@ -1,7 +1,7 @@
 extends Node
 
-var hurt = preload("res://ASSETS/Audio/HURT.mp3")
-var jump = preload("res://ASSETS/Audio/JUMP.mp3")
+var hurt = preload("res://ASTRONAUT GAME/ASSETS/Audio/HURT.mp3")
+var jump = preload("res://ASTRONAUT GAME/ASSETS/Audio/JUMP.mp3")
 
 func play_sfx(sfx_name: String):
 	var stream = null

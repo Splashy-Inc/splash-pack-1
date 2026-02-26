@@ -1,5 +1,6 @@
 extends CharacterBody2D
-class_name Player
+
+class_name UFOPlayer
 
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var joystick = $joystick

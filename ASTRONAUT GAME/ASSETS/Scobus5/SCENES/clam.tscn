@@ -1,9 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://dgyexjakcxy4h"]
+[gd_scene format=3 uid="uid://dgyexjakcxy4h"]
 
-[ext_resource type="Texture2D" uid="uid://urweab74mxio" path="res://ASSETS/Scobus5/ASSETS/Clam.png" id="1_eeoy7"]
-[ext_resource type="Script" path="res://ASSETS/Scobus5/SCRIPTS/clam.gd" id="1_ku6ly"]
-[ext_resource type="PackedScene" uid="uid://ewfy6gokgqr3" path="res://ASSETS/Scobus5/SCENES/pearl.tscn" id="2_4svol"]
-[ext_resource type="AudioStream" uid="uid://dgye6wl3dg263" path="res://ASSETS/Scobus5/ASSETS/Scobus5Audio/clam.ogg" id="4_3xlwo"]
+[ext_resource type="Texture2D" uid="uid://urweab74mxio" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Clam.png" id="1_eeoy7"]
+[ext_resource type="Script" uid="uid://gmcgle7dyvvj" path="res://ASTRONAUT GAME/ASSETS/Scobus5/SCRIPTS/clam.gd" id="1_ku6ly"]
+[ext_resource type="PackedScene" uid="uid://ewfy6gokgqr3" path="res://ASTRONAUT GAME/ASSETS/Scobus5/SCENES/pearl.tscn" id="2_4svol"]
+[ext_resource type="AudioStream" uid="uid://dgye6wl3dg263" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Scobus5Audio/clam.ogg" id="4_3xlwo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_otbhw"]
 atlas = ExtResource("1_eeoy7")

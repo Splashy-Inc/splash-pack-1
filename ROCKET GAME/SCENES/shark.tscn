@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://c8hho56hgxi3n"]
+[gd_scene format=3 uid="uid://c8hho56hgxi3n"]
 
-[ext_resource type="Script" path="res://SCRIPTS/Shark.gd" id="1_r3s11"]
-[ext_resource type="Texture2D" uid="uid://bj6sfxesn80k" path="res://ASSETS/SharkShip.png" id="2_m80i4"]
+[ext_resource type="Script" uid="uid://dkdpoyxwhvxef" path="res://ROCKET GAME/SCRIPTS/Shark.gd" id="1_r3s11"]
+[ext_resource type="Texture2D" uid="uid://bj6sfxesn80k" path="res://ROCKET GAME/ASSETS/SharkShip.png" id="2_m80i4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4iqqp"]
 radius = 15.0

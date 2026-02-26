@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bnu4udtgu8krc"]
+[gd_scene format=3 uid="uid://bnu4udtgu8krc"]
 
-[ext_resource type="Script" path="res://SCRIPTS/lazer.gd" id="1_q4jw7"]
-[ext_resource type="Texture2D" uid="uid://ddkugnx4h1ps" path="res://ASSETS/lazerUntitled.png" id="1_tfag7"]
+[ext_resource type="Script" uid="uid://8wcyidwmyw65" path="res://ROCKET GAME/SCRIPTS/lazer.gd" id="1_q4jw7"]
+[ext_resource type="Texture2D" uid="uid://ddkugnx4h1ps" path="res://ROCKET GAME/ASSETS/lazerUntitled.png" id="1_tfag7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wx7ck"]
 size = Vector2(32, 10)

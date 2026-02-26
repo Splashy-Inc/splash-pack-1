@@ -8,4 +8,4 @@ func _ready():
 	$Button.show()
 
 func _on_button_pressed():
-	get_tree().change_scene_to_file("res://SCENE/start_menu.tscn")
+	get_tree().change_scene_to_file("res://UFO GAME/SCENE/start_menu.tscn")

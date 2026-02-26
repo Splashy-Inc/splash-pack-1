@@ -1,8 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://cbyj7euuswjtr"]
+[gd_scene format=3 uid="uid://cbyj7euuswjtr"]
 
-[ext_resource type="Script" path="res://SCRIPTS/trap.gd" id="1_w8xcx"]
-[ext_resource type="Texture2D" uid="uid://bgvhhadadm0g2" path="res://ASSETS/Scobus5/ASSETS/ClawSpriteSheet.png" id="2_6yq0q"]
-[ext_resource type="AudioStream" uid="uid://jwtiojkfpsoj" path="res://ASSETS/Scobus5/ASSETS/Scobus5Audio/claw.ogg" id="3_xkunp"]
+[ext_resource type="Script" uid="uid://0lcoshvc0f45" path="res://ASTRONAUT GAME/SCRIPTS/trap.gd" id="1_w8xcx"]
+[ext_resource type="Texture2D" uid="uid://bgvhhadadm0g2" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/ClawSpriteSheet.png" id="2_6yq0q"]
+[ext_resource type="AudioStream" uid="uid://jwtiojkfpsoj" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Scobus5Audio/claw.ogg" id="3_xkunp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3frlw"]
 atlas = ExtResource("2_6yq0q")

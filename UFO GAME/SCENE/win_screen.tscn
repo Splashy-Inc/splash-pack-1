@@ -1,16 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://crv7ahv2ehlq8"]
+[gd_scene format=3 uid="uid://crv7ahv2ehlq8"]
 
-[ext_resource type="Script" path="res://SCRIPTS/win_screen.gd" id="1_mckso"]
-[ext_resource type="Texture2D" uid="uid://ddiwmx7e3agtq" path="res://ASSETS/fish_watercolor_neutral.png" id="2_vuwoo"]
+[ext_resource type="Script" uid="uid://dlq18fhcqwnah" path="res://UFO GAME/SCRIPTS/win_screen.gd" id="1_mckso"]
+[ext_resource type="Texture2D" uid="uid://ddiwmx7e3agtq" path="res://UFO GAME/ASSETS/fish_watercolor_neutral.png" id="2_vuwoo"]
+[ext_resource type="FontFile" uid="uid://cka5ber341jij" path="res://ASTRONAUT GAME/ASSETS/m5x7.ttf" id="3_armfj"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_kvav0"]
-font_size = 60
+font = ExtResource("3_armfj")
+font_size = 128
 outline_size = 5
 outline_color = Color(0, 0, 0, 1)
 shadow_color = Color(0, 0, 0, 1)
 shadow_offset = Vector2(5, 1)
 
-[node name="WinScreen" type="Control"]
+[node name="WinScreen" type="Control" unique_id=1207752952]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -19,7 +21,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_mckso")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=627923877]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,13 +30,13 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.490196)
 
-[node name="FishWatercolorNeutral" type="Sprite2D" parent="."]
+[node name="FishWatercolorNeutral" type="Sprite2D" parent="." unique_id=1412997620]
 position = Vector2(178, 358)
 rotation = -0.462512
 scale = Vector2(1.22972, 1.22972)
 texture = ExtResource("2_vuwoo")
 
-[node name="Win" type="Label" parent="."]
+[node name="Win" type="Label" parent="." unique_id=2095615592]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -52,7 +54,7 @@ label_settings = SubResource("LabelSettings_kvav0")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Score" type="Label" parent="."]
+[node name="Score" type="Label" parent="." unique_id=1668994656]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -70,7 +72,7 @@ label_settings = SubResource("LabelSettings_kvav0")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=299330455]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -83,7 +85,8 @@ offset_right = 68.0
 offset_bottom = 204.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 25
+theme_override_fonts/font = ExtResource("3_armfj")
+theme_override_font_sizes/font_size = 48
 text = "Now what?"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

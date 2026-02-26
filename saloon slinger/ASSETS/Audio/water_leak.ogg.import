@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b6t1mynwmg0y6"
+path="res://.godot/imported/water_leak.ogg-1e084ed2522765603ca19a7c6fde7aac.oggvorbisstr"
+
+[deps]
+
+source_file="res://saloon slinger/ASSETS/Audio/water_leak.ogg"
+dest_files=["res://.godot/imported/water_leak.ogg-1e084ed2522765603ca19a7c6fde7aac.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

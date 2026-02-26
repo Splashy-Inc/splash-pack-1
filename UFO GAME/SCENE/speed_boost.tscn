@@ -1,13 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://b312dkg3bdpq5"]
+[gd_scene format=3 uid="uid://b312dkg3bdpq5"]
 
-[ext_resource type="Script" path="res://SCRIPTS/speed_boost.gd" id="1_crh60"]
-[ext_resource type="Texture2D" uid="uid://1ua4lmmc5exb" path="res://ASSETS/INTERACTABLES/Boost1.png" id="2_kb26s"]
-[ext_resource type="Texture2D" uid="uid://cd88bnnqofjal" path="res://ASSETS/INTERACTABLES/Boost2.png" id="3_p0ti4"]
-[ext_resource type="Texture2D" uid="uid://bgr7xjj0wjkru" path="res://ASSETS/INTERACTABLES/Boost3.png" id="4_iaamp"]
-[ext_resource type="Texture2D" uid="uid://drrnif17yle1l" path="res://ASSETS/INTERACTABLES/Boost4.png" id="5_eljox"]
-[ext_resource type="Texture2D" uid="uid://bhorwodo64ah" path="res://ASSETS/INTERACTABLES/Boost5.png" id="6_a8mol"]
-[ext_resource type="Texture2D" uid="uid://cdk1vjqpbn1x1" path="res://ASSETS/INTERACTABLES/Boost6.png" id="7_bcr0c"]
-[ext_resource type="AudioStream" uid="uid://b0djprj5dtpkf" path="res://ASSETS/AUDIO/Speedboost.wav" id="8_mfw8d"]
+[ext_resource type="Script" uid="uid://bhfgxm8fcmlr1" path="res://UFO GAME/SCRIPTS/speed_boost.gd" id="1_crh60"]
+[ext_resource type="Texture2D" uid="uid://1ua4lmmc5exb" path="res://UFO GAME/ASSETS/INTERACTABLES/Boost1.png" id="2_kb26s"]
+[ext_resource type="Texture2D" uid="uid://cd88bnnqofjal" path="res://UFO GAME/ASSETS/INTERACTABLES/Boost2.png" id="3_p0ti4"]
+[ext_resource type="Texture2D" uid="uid://bgr7xjj0wjkru" path="res://UFO GAME/ASSETS/INTERACTABLES/Boost3.png" id="4_iaamp"]
+[ext_resource type="Texture2D" uid="uid://drrnif17yle1l" path="res://UFO GAME/ASSETS/INTERACTABLES/Boost4.png" id="5_eljox"]
+[ext_resource type="Texture2D" uid="uid://bhorwodo64ah" path="res://UFO GAME/ASSETS/INTERACTABLES/Boost5.png" id="6_a8mol"]
+[ext_resource type="Texture2D" uid="uid://cdk1vjqpbn1x1" path="res://UFO GAME/ASSETS/INTERACTABLES/Boost6.png" id="7_bcr0c"]
+[ext_resource type="AudioStream" uid="uid://b0djprj5dtpkf" path="res://UFO GAME/ASSETS/AUDIO/Speedboost.wav" id="8_mfw8d"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v825y"]
 animations = [{

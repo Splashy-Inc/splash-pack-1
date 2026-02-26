@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cka5ber341jij"
-path="res://.godot/imported/m5x7.ttf-c08415e38e26d6bc322c110aa998b90b.fontdata"
+path="res://.godot/imported/m5x7.ttf-ba97971aa21ae348cb44f1fe193f54a1.fontdata"
 
 [deps]
 
-source_file="res://ASSETS/m5x7.ttf"
-dest_files=["res://.godot/imported/m5x7.ttf-c08415e38e26d6bc322c110aa998b90b.fontdata"]
+source_file="res://ASTRONAUT GAME/ASSETS/m5x7.ttf"
+dest_files=["res://.godot/imported/m5x7.ttf-ba97971aa21ae348cb44f1fe193f54a1.fontdata"]
 
 [params]
 
@@ -21,8 +21,10 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
+modulate_color_glyphs=false
 hinting=1
 subpixel_positioning=1
+keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]

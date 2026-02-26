@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://c2nft4xky3xxv"]
+
+[ext_resource type="Script" uid="uid://bexxaa8sdyous" path="res://enemy anemone/SCRIPTS/loss_screen_enemy_anemone.gd" id="1_oahho"]
+[ext_resource type="StyleBox" uid="uid://1mss4twkxib3" path="res://enemy anemone/button_box.tres" id="2_nbdjd"]
+
+[node name="LossScreen" type="Control" unique_id=893784918]
+custom_minimum_size = Vector2(1280, 720)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_oahho")
+
+[node name="MenuContent" type="VBoxContainer" parent="." unique_id=74808802]
+custom_minimum_size = Vector2(1280, 720)
+layout_mode = 0
+offset_right = 255.0
+offset_bottom = 204.0
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Title" type="Label" parent="MenuContent" unique_id=2049540813]
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "You lose..."
+horizontal_alignment = 1
+
+[node name="MenuButtons" type="VBoxContainer" parent="MenuContent" unique_id=856310290]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 20
+
+[node name="MainMenuButton" type="Button" parent="MenuContent/MenuButtons" unique_id=842906116]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = ExtResource("2_nbdjd")
+text = "Main Menu"
+
+[node name="RestartButton" type="Button" parent="MenuContent/MenuButtons" unique_id=998150810]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = ExtResource("2_nbdjd")
+text = "Restart Level"
+
+[node name="QuitButton" type="Button" parent="MenuContent/MenuButtons" unique_id=1407777218]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = ExtResource("2_nbdjd")
+text = "Quit"
+
+[connection signal="pressed" from="MenuContent/MenuButtons/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="MenuContent/MenuButtons/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="MenuContent/MenuButtons/QuitButton" to="." method="_on_quit_button_pressed"]

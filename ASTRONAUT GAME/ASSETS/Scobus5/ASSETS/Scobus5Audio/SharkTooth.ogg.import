@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://8jrfjgc12wad"
-path="res://.godot/imported/SharkTooth.ogg-f46c75d2a7bf8855a7a3a956244c89f0.oggvorbisstr"
+path="res://.godot/imported/SharkTooth.ogg-10e218ef05d64e252b52aaa32e4ba47c.oggvorbisstr"
 
 [deps]
 
-source_file="res://ASSETS/Scobus5/ASSETS/Scobus5Audio/SharkTooth.ogg"
-dest_files=["res://.godot/imported/SharkTooth.ogg-f46c75d2a7bf8855a7a3a956244c89f0.oggvorbisstr"]
+source_file="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Scobus5Audio/SharkTooth.ogg"
+dest_files=["res://.godot/imported/SharkTooth.ogg-10e218ef05d64e252b52aaa32e4ba47c.oggvorbisstr"]
 
 [params]
 

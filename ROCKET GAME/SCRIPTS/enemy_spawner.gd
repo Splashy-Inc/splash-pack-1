@@ -3,8 +3,8 @@ extends Node2D
 signal shark_spawned(shark_instance)
 signal path_enemy_spawned(path_enemy_instance)
 
-var shark_scene = preload("res://SCENES/shark.tscn")
-var path_enemy_scene = preload("res://SCENES/path_enemy.tscn")
+var shark_scene = preload("res://ROCKET GAME/SCENES/shark.tscn")
+var path_enemy_scene = preload("res://ROCKET GAME/SCENES/path_enemy.tscn")
 
 @onready var spawn_positions = $SpawnPositions
 

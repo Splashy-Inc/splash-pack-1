@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bctn3b76vyeir"
-path="res://.godot/imported/JUMP.mp3-19f75691269909f42f75b4d73736716c.mp3str"
+path="res://.godot/imported/JUMP.mp3-41125dfd3294ed5ad1550e14f6a0ee87.mp3str"
 
 [deps]
 
-source_file="res://ASSETS/Audio/JUMP.mp3"
-dest_files=["res://.godot/imported/JUMP.mp3-19f75691269909f42f75b4d73736716c.mp3str"]
+source_file="res://ASTRONAUT GAME/ASSETS/Audio/JUMP.mp3"
+dest_files=["res://.godot/imported/JUMP.mp3-41125dfd3294ed5ad1550e14f6a0ee87.mp3str"]
 
 [params]
 

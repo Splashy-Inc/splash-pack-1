@@ -1,8 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://6j5hge64tn42"]
+[gd_scene format=3 uid="uid://6j5hge64tn42"]
 
-[ext_resource type="Script" path="res://SCRIPTS/pause_menu.gd" id="1_segg2"]
+[ext_resource type="Script" uid="uid://gqjyggwjevwb" path="res://UFO GAME/SCRIPTS/pause_menu.gd" id="1_segg2"]
+[ext_resource type="FontFile" uid="uid://cka5ber341jij" path="res://ASTRONAUT GAME/ASSETS/m5x7.ttf" id="2_asc4s"]
 
-[node name="Pause_menu" type="Control"]
+[node name="Pause_menu" type="Control" unique_id=1024000945]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 15
@@ -12,7 +13,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_segg2")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1078048050]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,7 +22,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.490196)
 
-[node name="MainMenu" type="Button" parent="."]
+[node name="MainMenu" type="Button" parent="." unique_id=528742827]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -34,10 +35,11 @@ offset_right = 85.5
 offset_bottom = -18.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 30
+theme_override_fonts/font = ExtResource("2_asc4s")
+theme_override_font_sizes/font_size = 64
 text = "Main Menu"
 
-[node name="Resume" type="Button" parent="."]
+[node name="Resume" type="Button" parent="." unique_id=678367263]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -50,7 +52,8 @@ offset_right = 62.0
 offset_bottom = 80.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 30
+theme_override_fonts/font = ExtResource("2_asc4s")
+theme_override_font_sizes/font_size = 64
 text = "Resume"
 
 [connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]

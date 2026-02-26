@@ -1,13 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://cp3kjiywwu83x"]
+[gd_scene format=3 uid="uid://cp3kjiywwu83x"]
 
-[ext_resource type="Script" path="res://SCRIPTS/jump_pad.gd" id="1_blivp"]
-[ext_resource type="Texture2D" uid="uid://ck22tiv3pqr4b" path="res://ASSETS/Other/JumpPadA.png" id="2_gq1fs"]
-[ext_resource type="Texture2D" uid="uid://dbfvl4jbkqsbn" path="res://ASSETS/Other/JumpPadC.png" id="3_5y56x"]
-[ext_resource type="Texture2D" uid="uid://bg1ysn7pu86k8" path="res://ASSETS/Other/JumpPadD.png" id="4_fourm"]
-[ext_resource type="Texture2D" uid="uid://l4vuupix8dvb" path="res://ASSETS/Other/JumpPadE.png" id="5_pmuel"]
-[ext_resource type="Texture2D" uid="uid://6e6t8bnb3y2d" path="res://ASSETS/Other/JumpPadF.png" id="6_wjg4p"]
-[ext_resource type="Texture2D" uid="uid://c835t84g1wg7r" path="res://ASSETS/Other/JumpPadB.png" id="7_lnwnt"]
-[ext_resource type="AudioStream" uid="uid://bfagv4uaaw6u4" path="res://ASSETS/Audio/Desert/jump_pad.ogg" id="8_oaook"]
+[ext_resource type="Script" uid="uid://ymuj1m1vj3wk" path="res://ASTRONAUT GAME/SCRIPTS/jump_pad.gd" id="1_blivp"]
+[ext_resource type="Texture2D" uid="uid://ck22tiv3pqr4b" path="res://ASTRONAUT GAME/ASSETS/Other/JumpPadA.png" id="2_gq1fs"]
+[ext_resource type="Texture2D" uid="uid://dbfvl4jbkqsbn" path="res://ASTRONAUT GAME/ASSETS/Other/JumpPadC.png" id="3_5y56x"]
+[ext_resource type="Texture2D" uid="uid://bg1ysn7pu86k8" path="res://ASTRONAUT GAME/ASSETS/Other/JumpPadD.png" id="4_fourm"]
+[ext_resource type="Texture2D" uid="uid://l4vuupix8dvb" path="res://ASTRONAUT GAME/ASSETS/Other/JumpPadE.png" id="5_pmuel"]
+[ext_resource type="Texture2D" uid="uid://6e6t8bnb3y2d" path="res://ASTRONAUT GAME/ASSETS/Other/JumpPadF.png" id="6_wjg4p"]
+[ext_resource type="Texture2D" uid="uid://c835t84g1wg7r" path="res://ASTRONAUT GAME/ASSETS/Other/JumpPadB.png" id="7_lnwnt"]
+[ext_resource type="AudioStream" uid="uid://bfagv4uaaw6u4" path="res://ASTRONAUT GAME/ASSETS/Audio/Desert/jump_pad.ogg" id="8_oaook"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_d4v88"]
 animations = [{

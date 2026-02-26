@@ -1,11 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://dlonkosvlpesj"]
+[gd_scene format=3 uid="uid://dlonkosvlpesj"]
 
-[ext_resource type="Script" path="res://SCRIPTS/hud.gd" id="1_7nb6x"]
-[ext_resource type="Texture2D" uid="uid://bvjqthq7u0s21" path="res://ASSETS/SHIPUPGRADES/ShipLightGreen.png" id="2_01qiw"]
-[ext_resource type="PackedScene" uid="uid://6j5hge64tn42" path="res://SCENE/pause_menu.tscn" id="3_tf2bh"]
+[ext_resource type="Script" uid="uid://cqf8t3atvxa1p" path="res://UFO GAME/SCRIPTS/hud.gd" id="1_7nb6x"]
+[ext_resource type="Texture2D" uid="uid://bvjqthq7u0s21" path="res://UFO GAME/ASSETS/SHIPUPGRADES/ShipLightGreen.png" id="2_01qiw"]
+[ext_resource type="FontFile" uid="uid://cka5ber341jij" path="res://ASTRONAUT GAME/ASSETS/m5x7.ttf" id="2_bon3e"]
+[ext_resource type="PackedScene" uid="uid://6j5hge64tn42" path="res://UFO GAME/SCENE/pause_menu.tscn" id="3_tf2bh"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ddpme"]
-font_size = 30
+font = ExtResource("2_bon3e")
+font_size = 64
 outline_size = 5
 outline_color = Color(0, 0, 0, 1)
 
@@ -15,11 +17,12 @@ outline_size = 5
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_8meuj"]
-font_size = 30
+font = ExtResource("2_bon3e")
+font_size = 64
 outline_size = 5
 outline_color = Color(0, 0, 0, 1)
 
-[node name="HUD" type="Control" groups=["HUD"]]
+[node name="HUD" type="Control" unique_id=2001240072 groups=["HUD"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -29,7 +32,7 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_7nb6x")
 
-[node name="LevelLabel" type="Label" parent="."]
+[node name="LevelLabel" type="Label" parent="." unique_id=1154854455]
 layout_mode = 0
 offset_left = 6.0
 offset_top = 7.0
@@ -40,7 +43,7 @@ label_settings = SubResource("LabelSettings_ddpme")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="EggsTextureRect" type="TextureRect" parent="."]
+[node name="EggsTextureRect" type="TextureRect" parent="." unique_id=983790702]
 layout_mode = 0
 offset_left = 1093.0
 offset_top = 9.0
@@ -48,7 +51,7 @@ offset_right = 1133.0
 offset_bottom = 49.0
 texture = ExtResource("2_01qiw")
 
-[node name="X" type="Label" parent="."]
+[node name="X" type="Label" parent="." unique_id=488109944]
 layout_mode = 0
 offset_left = 1148.0
 offset_top = 9.0
@@ -57,16 +60,16 @@ offset_bottom = 51.0
 text = "X"
 label_settings = SubResource("LabelSettings_edjih")
 
-[node name="EggsCollected" type="Label" parent="."]
+[node name="EggsCollected" type="Label" parent="." unique_id=1281076059]
 layout_mode = 0
 offset_left = 1187.0
-offset_top = 10.0
-offset_right = 1227.0
-offset_bottom = 52.0
+offset_top = 2.0
+offset_right = 1275.0
+offset_bottom = 53.0
 text = "0"
 label_settings = SubResource("LabelSettings_8meuj")
 
-[node name="Pause" type="Button" parent="."]
+[node name="Pause" type="Button" parent="." unique_id=1629220212]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -75,10 +78,11 @@ offset_left = -47.5
 offset_right = 47.5
 offset_bottom = 50.0
 grow_horizontal = 2
-theme_override_font_sizes/font_size = 30
+theme_override_fonts/font = ExtResource("2_bon3e")
+theme_override_font_sizes/font_size = 64
 text = "Pause"
 
-[node name="Pause_menu" parent="." instance=ExtResource("3_tf2bh")]
+[node name="Pause_menu" parent="." unique_id=363132650 instance=ExtResource("3_tf2bh")]
 visible = false
 layout_mode = 1
 

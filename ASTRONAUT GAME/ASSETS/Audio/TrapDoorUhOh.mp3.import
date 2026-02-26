@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://sjvq38e46v0c"
-path="res://.godot/imported/TrapDoorUhOh.mp3-ea1c8d78e136aac7fc10085828622405.mp3str"
+path="res://.godot/imported/TrapDoorUhOh.mp3-8254bac8d5ce8b9299a82b0c40be2b2d.mp3str"
 
 [deps]
 
-source_file="res://ASSETS/Audio/TrapDoorUhOh.mp3"
-dest_files=["res://.godot/imported/TrapDoorUhOh.mp3-ea1c8d78e136aac7fc10085828622405.mp3str"]
+source_file="res://ASTRONAUT GAME/ASSETS/Audio/TrapDoorUhOh.mp3"
+dest_files=["res://.godot/imported/TrapDoorUhOh.mp3-8254bac8d5ce8b9299a82b0c40be2b2d.mp3str"]
 
 [params]
 

@@ -3,21 +3,23 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pom6q8txrvsf"
-path="res://.godot/imported/Star_01.png-cd864b7f108b3518b0228ae06886f988.ctex"
+path="res://.godot/imported/Star_01.png-e6adbdfe27f22f9e16e80ab7fe0219c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/INTERACTABLES/STAR/Star_01.png"
-dest_files=["res://.godot/imported/Star_01.png-cd864b7f108b3518b0228ae06886f988.ctex"]
+source_file="res://UFO GAME/ASSETS/INTERACTABLES/STAR/Star_01.png"
+dest_files=["res://.godot/imported/Star_01.png-e6adbdfe27f22f9e16e80ab7fe0219c6.ctex"]
 
 [params]
 
 compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
@@ -25,6 +27,10 @@ mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

@@ -1,8 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://dyp2m5krd85j6"]
+[gd_scene format=3 uid="uid://dyp2m5krd85j6"]
 
-[ext_resource type="Script" path="res://SCRIPTS/trap.gd" id="1_b7thu"]
-[ext_resource type="Texture2D" uid="uid://qr85xmt7akcf" path="res://ASSETS/Other/cactusA.png" id="2_611fp"]
-[ext_resource type="AudioStream" uid="uid://c6ngv4enjsfm8" path="res://ASSETS/Audio/Desert/cactus.ogg" id="3_rmr0j"]
+[ext_resource type="Script" uid="uid://0lcoshvc0f45" path="res://ASTRONAUT GAME/SCRIPTS/trap.gd" id="1_b7thu"]
+[ext_resource type="Texture2D" uid="uid://qr85xmt7akcf" path="res://ASTRONAUT GAME/ASSETS/Other/cactusA.png" id="2_611fp"]
+[ext_resource type="AudioStream" uid="uid://c6ngv4enjsfm8" path="res://ASTRONAUT GAME/ASSETS/Audio/Desert/cactus.ogg" id="3_rmr0j"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_66x5q"]
 radius = 16.0

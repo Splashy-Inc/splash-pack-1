@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2oxd5gviwrqd"]
+[gd_scene format=3 uid="uid://c2oxd5gviwrqd"]
 
-[ext_resource type="Script" path="res://SCRIPTS/asteroid.gd" id="1_0vmic"]
-[ext_resource type="Texture2D" uid="uid://dkto0rukrb5h1" path="res://ASSETS/INTERACTABLES/Satalite.png" id="2_01hwt"]
-[ext_resource type="AudioStream" uid="uid://sdqwrtgqtdkw" path="res://ASSETS/AUDIO/SataliteNoise.wav" id="3_elqi2"]
+[ext_resource type="Script" uid="uid://c3ltxydfrbw6a" path="res://UFO GAME/SCRIPTS/asteroid.gd" id="1_0vmic"]
+[ext_resource type="Texture2D" uid="uid://dkto0rukrb5h1" path="res://UFO GAME/ASSETS/INTERACTABLES/Satalite.png" id="2_01hwt"]
+[ext_resource type="AudioStream" uid="uid://sdqwrtgqtdkw" path="res://UFO GAME/ASSETS/AUDIO/SataliteNoise.wav" id="3_elqi2"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g4rcn"]
 

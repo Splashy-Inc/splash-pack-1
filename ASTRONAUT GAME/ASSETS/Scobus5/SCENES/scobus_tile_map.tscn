@@ -1,6 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://bqhm3ilh2l7e3"]
+[gd_scene format=3 uid="uid://bqhm3ilh2l7e3"]
 
-[ext_resource type="Texture2D" uid="uid://b3hdw3mwrbkv8" path="res://ASSETS/Scobus5/ASSETS/Scobus5Terrain.png" id="1_wbcrr"]
+[ext_resource type="Texture2D" uid="uid://b3hdw3mwrbkv8" path="res://ASTRONAUT GAME/ASSETS/Scobus5/ASSETS/Scobus5Terrain.png" id="1_wbcrr"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_inqyx"]
 tile_data = PackedInt32Array(0, 131072, 1, 8, 131072, 1)

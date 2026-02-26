@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://2nas7neg6gq7"]
+[gd_scene format=3 uid="uid://2nas7neg6gq7"]
 
-[ext_resource type="Script" path="res://SCRIPTS/track.gd" id="1_ej2n6"]
-[ext_resource type="Texture2D" uid="uid://5cp43ev7b0w" path="res://ASSETS/TRACKS/Maze_07.png" id="2_r04ry"]
-[ext_resource type="Texture2D" uid="uid://b0r0hirudieln" path="res://ASSETS/TRACKS/MazeBoundry_07.png" id="3_ryuxb"]
+[ext_resource type="Script" uid="uid://cdhvlcw4vy83l" path="res://UFO GAME/SCRIPTS/track.gd" id="1_ej2n6"]
+[ext_resource type="Texture2D" uid="uid://5cp43ev7b0w" path="res://UFO GAME/ASSETS/TRACKS/Maze_07.png" id="2_r04ry"]
+[ext_resource type="Texture2D" uid="uid://b0r0hirudieln" path="res://UFO GAME/ASSETS/TRACKS/MazeBoundry_07.png" id="3_ryuxb"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_p1nov"]
 friction = 0.0
