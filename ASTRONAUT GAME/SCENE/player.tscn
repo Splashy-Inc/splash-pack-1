@@ -125,3 +125,4 @@ polygon = PackedVector2Array(-7, 15, -6, -10, -2, -14, 2, -14, 6, -10, 7, 15)
 zoom = Vector2(2.667, 2.667)
 
 [node name="TouchControls" parent="." unique_id=1299070268 instance=ExtResource("5_d6242")]
+visible = false
